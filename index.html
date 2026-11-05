@@ -13,8 +13,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@300;400;500;600&display=swap">
-<link rel="stylesheet" href="css/malssi.css">
-<script type="module" src="js/app.js"></script>
+<link rel="stylesheet" href="build/m-02ea45f439.css">
+<script type="module" src="build/m-02ea45f439.js"></script>
 </head>
 <body>
 <noscript><p style="padding:24px">MALSSI a besoin de JavaScript pour fonctionner.</p></noscript>
@@ -24,7 +24,7 @@
   var errs = [];
   addEventListener('error', function (e) { errs.push((e.message || 'ressource introuvable') + (e.filename ? ' (' + e.filename.split('/').pop() + ')' : e.target && e.target.src ? ' (' + e.target.src.split('/').pop() + ')' : '')); }, true);
   addEventListener('unhandledrejection', function (e) { errs.push(String(e.reason && e.reason.message || e.reason)); });
-  var MODS = ['store', 'fsrs', 'hangul', 'tts', 'ui', 'magpie', 'config', 'anki', 'sync', 'content', 'focus', 'views/today', 'views/parcours', 'views/reviser', 'views/profil', 'views/mots', 'views/topik', 'views/accueil', 'app'];
+  
   function show(diag) {
     if (document.querySelector('.shell')) return;
     document.body.innerHTML = '<div style="max-width:620px;margin:12vh auto;padding:24px;font:16px/1.6 system-ui,sans-serif">' +
@@ -36,13 +36,8 @@
   }
   setTimeout(function () {
     if (document.querySelector('.shell')) return;
-    // Essaie chaque module séparément pour trouver celui qui échoue et pourquoi
-    var out = [];
-    Promise.all(MODS.map(function (m) {
-      var u = 'js/' + m + '.js?diag=' + Date.now();
-      return fetch(u, { cache: 'no-store' }).then(function (r) { if (!r.ok) out.push(m + '.js : HTTP ' + r.status); return import('./' + u).catch(function (e) { out.push(m + '.js : ' + (e && e.message || e)); }); })
-        .catch(function (e) { out.push(m + '.js : téléchargement bloqué (' + (e && e.message || e) + ')'); });
-    })).then(function () { show(out.length ? out.slice(0, 6).join(' · ') : 'tous les modules se chargent séparément'); }, function () { show(''); });
+    var src = (document.querySelector('script[type=module]') || {}).src || '';
+    fetch(src, { cache: 'no-store' }).then(function (r) { show('fichier principal : HTTP ' + r.status); }, function (e) { show('fichier principal bloqué par le navigateur ou une extension (' + (e && e.message || e) + ')'); });
   }, 8000);
 })();
 </script>
