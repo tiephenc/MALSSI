@@ -2,7 +2,7 @@
    Fichiers du site : réseau d'abord (les mises à jour arrivent tout de suite), copie locale sinon.
    Polices Google : copie locale d'abord. Comptes et Ko-fi : jamais mis en cache.
    Changer VERSION à chaque publication. */
-const VERSION = 'malssi-2026-11-05-b';
+const VERSION = 'malssi-2026-11-05-c';
 const SHELL = ['./', './index.html', './manifest.webmanifest', './css/malssi.css', './icons/icon.svg', './icons/icon-192.png',
   './js/app.js', './js/store.js', './js/fsrs.js', './js/hangul.js', './js/tts.js', './js/ui.js', './js/magpie.js', './js/content.js',
   './js/anki.js', './js/sync.js', './js/config.js', './js/focus.js', './js/views/today.js', './js/views/parcours.js',

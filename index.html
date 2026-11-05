@@ -18,5 +18,20 @@
 </head>
 <body>
 <noscript><p style="padding:24px">MALSSI a besoin de JavaScript pour fonctionner.</p></noscript>
+<script>
+/* Filet de sécurité : si le site ne démarre pas, on affiche la raison au lieu d'une page vide. */
+(function () {
+  var errs = [];
+  addEventListener('error', function (e) { errs.push((e.message || 'ressource introuvable') + (e.filename ? ' (' + e.filename.split('/').pop() + ')' : e.target && e.target.src ? ' (' + e.target.src.split('/').pop() + ')' : '')); }, true);
+  addEventListener('unhandledrejection', function (e) { errs.push(String(e.reason && e.reason.message || e.reason)); });
+  setTimeout(function () {
+    if (document.querySelector('.shell')) return;
+    document.body.innerHTML = '<div style="max-width:560px;margin:15vh auto;padding:24px;font:16px/1.6 system-ui,sans-serif">' +
+      '<h1 style="font-size:1.4rem">MALSSI n\'a pas pu démarrer</h1><p>Rechargez la page (Ctrl + Maj + R). Si le problème persiste, utilisez une version récente de Chrome, Edge, Firefox ou Safari.</p>' +
+      (errs.length ? '<p style="font-size:.85rem;opacity:.7">Détail : ' + errs.slice(0, 3).join(' · ').replace(/</g, '&lt;') + '</p>' : '') +
+      '<p><button onclick="location.reload()" style="padding:10px 18px">Recharger</button></p></div>';
+  }, 8000);
+})();
+</script>
 </body>
 </html>

@@ -64,7 +64,8 @@ function route() {
 async function boot() {
   applyTheme(); shell();
   $('#main').innerHTML = '<p class="muted">Chargement…</p>';
-  await loadContent();
+  try { await loadContent(); }
+  catch (e) { console.error(e); $('#main').innerHTML = '<div class="empty">Le contenu n\'a pas pu être chargé. Vérifiez votre connexion, puis <a href="javascript:location.reload()">rechargez la page</a>.</div>'; return; }
   try { await anki.loadDecks(); } catch (e) {}
   try { await loadActiveTiers(); } catch (e) {}
   mountFocus();
