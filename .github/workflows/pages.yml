@@ -1,5 +1,5 @@
 # Publication de MALSSI sur GitHub Pages.
-# Remplace la publication « depuis une branche », dont l'étape de déploiement dépassait le délai de 10 minutes.
+# Remplace la publication « depuis une branche », dont l'étape de déploiement était restée bloquée.
 name: Publier le site
 on:
   push:
@@ -30,7 +30,11 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+      # Un ancien déploiement « depuis une branche » est resté bloqué côté GitHub et empêche tout nouveau déploiement :
+      # on l'annule s'il est encore en cours (sans effet sinon).
+      - name: Annuler un déploiement bloqué
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${{ github.repository }}/pages/deployments/cc14189aa36839d331af95d8a333d7a6bd932351/cancel" || true
       - id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          timeout: 1800000
