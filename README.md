@@ -2,7 +2,10 @@
 
 Site gratuit pour apprendre le coréen en français, du hangeul au TOPIK II (6급). Il reprend le moteur de KOTONOHA :
 
-- un parcours d'unités (étape 0 « hangeul » disponible ; 1급 à 6급 en préparation) ;
+- un parcours de 70 unités : le hangeul (10 unités), puis les niveaux 1급 à 6급 (60 unités, 137 points de grammaire) ;
+- des listes de vocabulaire par niveau et un dictionnaire intégré (≈20 000 sens du 한국어기초사전) ;
+- des épreuves blanches au format du TOPIK I et II et un atelier d'écriture (questions 51 à 54) ;
+- une page d'accueil animée ;
 - la révision espacée FSRS-4.5, avec une séance du jour ;
 - un vocabulaire vérifié dans le 한국어기초사전 ;
 - l'import de paquets Anki (.apkg), lus sur l'appareil ;
@@ -15,7 +18,8 @@ Auteur : Titi (Tiéphen Chauvin). Soutenir le projet : https://ko-fi.com/tiephen
 ## Contenu du dépôt
 
 - `index.html`, `css/`, `js/` : le site (modules ES, aucune dépendance npm).
-- `data/etape0.json` : les unités rédigées pour MALSSI.
+- `data/etape0.json`, `data/niveau1.json` à `niveau6.json`, `data/ecriture.json` : les unités et sujets rédigés pour MALSSI.
+- `data/vocab/`, `data/dico.json` : listes par niveau et dictionnaire, construits par `tools/build_vocab.py` à partir du 한국어기초사전.
 - `data/lexique.json` : prononciation, niveau et sens de référence de chaque mot, extraits du 한국어기초사전 par `tools/verifier.py`.
 - `vendor/` : sql.js et fzstd (lecture des paquets Anki).
 - `sw.js`, `manifest.webmanifest`, `icons/` : installation et hors connexion.
@@ -42,7 +46,7 @@ node tools/check.mjs
 ## Licences
 
 - **Textes, exercices, illustrations (dont la pie) et code** : © Tiéphen Chauvin, tous droits réservés, sauf mention contraire ci-dessous.
-- **`data/lexique.json`** : données extraites du 한국어기초사전, © 국립국어원 (Institut national de la langue coréenne), licence CC BY-SA 2.0 KR. Ce fichier reste sous cette licence.
+- **`data/lexique.json`, `data/dico.json`, `data/vocab/`** : données extraites du 한국어기초사전, © 국립국어원 (Institut national de la langue coréenne), licence CC BY-SA 2.0 KR. Ces fichiers restent sous cette licence.
 - **sql.js** (`vendor/sql-wasm.*`) : licence MIT. **fzstd** (`vendor/fzstd.js`) : © Arjun Barrett, licence MIT.
 - **Polices** : Gowun Batang, IBM Plex Sans KR (Google Fonts, SIL Open Font License 1.1).
 

@@ -7,7 +7,7 @@ export const dayKey = (t = Date.now()) => { const d = new Date(startOfDay(t)); r
 export function blank() {
   return { v: 1, updated: 0, cards: {}, units: {}, days: {}, nd: { d: '', n: 0 },
     set: { nd: 10, dir: 'kf', rr: 1, theme: 'auto', voice: '' },
-    focus: { set: { work: 25, brk: 5, sound: 1 }, log: {} }, anki: { decks: {} } };
+    focus: { set: { work: 25, brk: 5, sound: 1 }, log: {} }, anki: { decks: {} }, lists: {}, topik: {}, writing: {} };
 }
 function normalize(s) {
   const b = blank();

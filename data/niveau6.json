@@ -1,0 +1,102 @@
+{
+  "id": "niveau6",
+  "niveau": 6,
+  "titre": "6급 · Registre soutenu",
+  "intro": "Le 6급 demande de maîtriser l'argumentation écrite, le registre soutenu, les expressions idiomatiques et les proverbes. C'est le niveau de l'essai de 600 à 700 caractères (question 54).",
+  "unites": [
+    {
+      "id": "N6-01", "titre": "Quitte à…", "theme": "Détermination",
+      "objectif": "Je sais exprimer une détermination absolue et une concession littéraire.",
+      "intro": "Ces tournures expriment une résolution qui ne recule devant aucun prix. On les rencontre dans les éditoriaux, les discours et la littérature.",
+      "points": [
+        {"f": "-는 한이 있더라도", "k": ["-는 한이 있더라도"], "s": "« Quitte à », « même s'il faut en arriver à ».",
+         "c": ["Verbe + -는 한이 있더라도 : 밤을 새우는 한이 있더라도."],
+         "ex": [["밤을 새우[는 한이 있더라도] 오늘 끝내겠다.", "Quitte à y passer la nuit, je finirai aujourd'hui."], ["손해를 보[는 한이 있더라도] 약속은 지켜야 한다.", "Même s'il faut y perdre, une promesse doit être tenue."]]},
+        {"f": "-(으)ㄹ망정", "k": ["-을망정", "-ㄹ망정"], "s": "« Même si…, du moins… » ; « plutôt… que… ».",
+         "c": ["Radical + -(으)ㄹ망정 : 가난할망정, 굶을망정."],
+         "ex": [["가난[할망정] 비굴하게 살고 싶지는 않다.", "Pauvre, peut-être, mais je ne veux pas vivre dans la bassesse."], ["몸은 비록 늙[을망정] 마음은 젊다.", "Le corps a beau vieillir, le cœur reste jeune."]]},
+        {"f": "-(으)ㄴ들", "k": ["-은들", "-ㄴ들"], "s": "« À supposer même que…, (à quoi bon ?) » ; suivi d'une question rhétorique.",
+         "c": ["Radical + -(으)ㄴ들 : 후회한들, 돈이 많은들."],
+         "ex": [["지금 후회[한들] 무슨 소용이 있겠는가?", "À quoi bon regretter maintenant ?"], ["돈이 많[은들] 건강을 잃으면 무슨 의미가 있을까?", "À quoi bon être riche si l'on perd la santé ?"]]}
+      ],
+      "mots": [["각오", "résolution, détermination"], ["결심", "décision ferme"], ["의지", "volonté"], ["신념", "conviction"], ["손해", "perte, préjudice"], ["가난하다", "pauvre"], ["비굴하다", "servile, lâche"], ["자존심", "amour-propre, fierté"], ["끈기", "ténacité"], ["굳다", "dur, ferme"], ["단호하다", "résolu, catégorique"], ["불굴", "inflexibilité, fermeté"], ["좌절", "découragement, échec"], ["극복", "surmontement, dépassement"], ["역경", "adversité"]]
+    },
+    {
+      "id": "N6-02", "titre": "Il ne reste qu'à…", "theme": "Discours officiel",
+      "objectif": "Je sais employer les formules de modestie et de conclusion du discours formel.",
+      "intro": "Dans les discours, les remerciements et les éditoriaux, quelques tournures marquent la modestie (« je n'ai fait que… ») ou l'intensité (« on ne peut plus… »).",
+      "points": [
+        {"f": "-(으)ㄹ 따름이다 · -(으)ㄹ 뿐이다", "k": ["-을 따름이다", "-ㄹ 따름이다", "-을 뿐이다"], "s": "« Ne faire que », « il n'y a que » ; modestie ou sentiment unique.",
+         "c": ["Radical + -(으)ㄹ 따름이다 : 감사할 따름입니다.", "-(으)ㄹ 뿐이다 est l'équivalent moins solennel."],
+         "ex": [["저는 맡은 일을 했[을 따름입니다].", "Je n'ai fait que mon travail."], ["도와주셔서 그저 감사[할 따름입니다].", "Je ne peux que vous remercier de votre aide."]]},
+        {"f": "-기 그지없다", "k": ["그지없다"], "s": "« On ne peut plus », « infiniment ».",
+         "c": ["Adjectif + -기 그지없다 : 기쁘기 그지없다, 안타깝기 그지없다."],
+         "ex": [["이렇게 다시 만나니 반갑[기 그지없다].", "Je suis on ne peut plus heureux de vous revoir ainsi."], ["사고 소식을 들으니 안타깝[기 그지없다].", "La nouvelle de l'accident est infiniment triste."]]},
+        {"f": "-느니만큼", "k": ["-느니만큼"], "s": "« Dans la mesure où », « puisque (justement) ».",
+         "c": ["Verbe + -느니만큼 ; adjectif + -(으)니만큼."],
+         "ex": [["중요한 일이[니만큼] 신중하게 결정해야 한다.", "C'est une affaire importante, il faut donc décider avec prudence."], ["모두가 기대하[느니만큼] 최선을 다하겠습니다.", "Puisque tout le monde compte sur nous, nous ferons de notre mieux."]]}
+      ],
+      "mots": [["감사", "remerciement, gratitude"], ["영광", "honneur, gloire"], ["겸손", "modestie"], ["소감", "impressions, sentiments"], ["축사", "discours de félicitations"], ["연설", "discours"], ["안타깝다", "regrettable, navrant"], ["벅차다", "accablant, débordant"], ["감격", "émotion profonde"], ["진심", "sincérité"], ["최선", "le mieux, le meilleur"], ["맡다", "se charger de"], ["그저", "simplement, seulement"], ["신중히", "prudemment"], ["책무", "devoir, responsabilité"]]
+    },
+    {
+      "id": "N6-03", "titre": "Selon, à l'approche de", "theme": "Presse et sources",
+      "objectif": "Je sais citer une source et situer un événement dans le style journalistique.",
+      "intro": "Les articles de presse coréens emploient des formules figées pour citer une source, situer une date ou introduire un contexte.",
+      "points": [
+        {"f": "에 의하면 · 에 따르면", "k": ["의하다", "따르다"], "s": "« Selon », « d'après » (une source).",
+         "c": ["N에 의하면 / N에 따르면 + -다고 한다 : 보도에 의하면 …다고 한다."],
+         "ex": [["조사 결과[에 의하면] 청년층의 독서량이 줄었다고 한다.", "Selon les résultats de l'enquête, les jeunes lisent moins."], ["기상청[에 따르면] 내일은 전국에 비가 내린다.", "D'après l'agence météorologique, il pleuvra demain dans tout le pays."]]},
+        {"f": "-는 가운데 · -는바", "k": ["가운데", "-는바"], "s": "-는 가운데 : « alors que, dans un contexte où ». -는바 : « étant donné que » (très formel).",
+         "c": ["Verbe : -는 가운데 ; adjectif : -(으)ㄴ 가운데 : 추운 날씨가 계속되는 가운데.", "-는바 / -(으)ㄴ바 : 검토한바."],
+         "ex": [["경기가 침체된 [가운데] 물가는 계속 오르고 있다.", "Alors que l'économie stagne, les prix continuent d'augmenter."], ["자료를 검토한[바] 몇 가지 문제가 발견되었다.", "L'examen des documents a révélé plusieurs problèmes."]]},
+        {"f": "에 즈음하여 · -기에 앞서", "k": ["즈음", "앞서다"], "s": "에 즈음하여 : « à l'occasion de, à l'approche de ». -기에 앞서 : « avant de » (formel).",
+         "c": ["N에 즈음하여 : 개교 100주년에 즈음하여.", "Radical + -기에 앞서 : 회의를 시작하기에 앞서."],
+         "ex": [["새해[에 즈음하여] 대통령이 담화를 발표했다.", "À l'approche du Nouvel An, le président a prononcé une allocution."], ["회의를 시작하[기에 앞서] 인사 말씀을 드리겠습니다.", "Avant de commencer la réunion, permettez-moi quelques mots d'accueil."]]}
+      ],
+      "mots": [["보도", "reportage, information"], ["기자", "journaliste"], ["언론", "presse, médias"], ["여론", "opinion publique"], ["발표", "exposé, annonce"], ["담화", "déclaration, allocution"], ["경기", "conjoncture économique"], ["침체", "stagnation, marasme"], ["물가", "prix, coût de la vie"], ["검토", "examen, étude"], ["발견", "découverte"], ["정부", "gouvernement"], ["대통령", "président (de la République)"], ["청년", "jeune (adulte)"], ["전국", "tout le pays"]]
+    },
+    {
+      "id": "N6-04", "titre": "La nominalisation", "theme": "Écrire un essai",
+      "objectif": "Je sais transformer une proposition en nom pour écrire de façon concise et soutenue.",
+      "intro": "Le registre écrit soutenu condense les idées en noms. -음 / -기 transforment un verbe en nom ; les noms sino-coréens en -하다 permettent de nominaliser sans terminaison.",
+      "points": [
+        {"f": "-(으)ㅁ · -기", "k": ["-음", "-기"], "s": "-(으)ㅁ : fait accompli ou constaté (notes, avis, constats). -기 : action envisagée, procédure, préférence.",
+         "c": ["-(으)ㅁ : 먹음, 했음, 없음 ; emplois : 알리다, 밝히다, 깨닫다 + -음을.", "-기 : 먹기, 하기 ; emplois : -기 시작하다, -기 쉽다, -기 위해서, -기로 하다."],
+         "n": "Dans les notes et avis, -(으)ㅁ termine la phrase : 내일 회의 없음 (pas de réunion demain).",
+         "ex": [["그는 자신의 잘못을 인정[했음]을 밝혔다.", "Il a fait savoir qu'il avait reconnu sa faute."], ["건강을 지키[기] 위해서는 꾸준한 운동이 필요하다.", "Pour rester en bonne santé, il faut faire du sport régulièrement."]]},
+        {"f": "-기 위해서 · -(으)ㅁ에도 불구하고", "k": ["위하다", "불구하다"], "s": "« Afin de » et « malgré le fait que », deux charnières de l'essai.",
+         "c": ["Radical + -기 위해(서) ; N을 / 를 위해(서).", "-(으)ㅁ에도 불구하고 ; N에도 불구하고."],
+         "ex": [["많은 노력[에도 불구하고] 문제는 해결되지 않았다.", "Malgré de nombreux efforts, le problème n'a pas été résolu."], ["위험함[에도 불구하고] 그는 도전을 멈추지 않았다.", "Malgré le danger, il n'a pas cessé de relever le défi."]]}
+      ],
+      "mots": [["인정", "reconnaissance, admission"], ["밝히다", "éclaircir, révéler"], ["깨닫다", "se rendre compte"], ["불구하다", "malgré, en dépit de"], ["위하다", "agir pour, penser à (quelqu'un)"], ["논리", "logique"], ["논거", "argument"], ["타당하다", "valable, pertinent"], ["설득력", "force de persuasion"], ["관점", "point de vue"], ["입장", "position, point de vue"], ["반박", "réfutation"], ["견해", "opinion, avis"], ["시사점", "suggestion, enseignement implicite"], ["바람직하다", "souhaitable"]]
+    },
+    {
+      "id": "N6-05", "titre": "Les expressions idiomatiques", "theme": "관용구",
+      "objectif": "Je comprends les expressions idiomatiques les plus fréquentes du TOPIK.",
+      "intro": "Les 관용구 associent souvent une partie du corps à un verbe. Leur sens n'est pas déductible mot à mot ; le TOPIK II en teste régulièrement en lecture et en écoute.",
+      "points": [
+        {"f": "Le corps dans les expressions", "k": ["관용구"], "s": "Quelques expressions très fréquentes construites sur une partie du corps.",
+         "c": ["발이 넓다 : avoir un large réseau (« pied large »).", "손이 크다 : être généreux, faire de grandes quantités (« main grande »).", "눈이 높다 : être exigeant (« yeux hauts »).", "귀가 얇다 : être influençable (« oreilles fines »).", "입이 무겁다 : savoir garder un secret (« bouche lourde »).", "얼굴이 두껍다 : être effronté (« visage épais »).", "머리를 맞대다 : se concerter (« joindre les têtes »).", "손을 떼다 : abandonner, se retirer d'une affaire (« détacher la main »)."],
+         "ex": [["그 사람은 [발이 넓어서] 모르는 사람이 없다.", "Il a un si large réseau qu'il connaît tout le monde."], ["민지는 [입이 무거우니까] 비밀을 말해도 괜찮아.", "Minji sait garder un secret, tu peux lui confier le tien."]]},
+        {"f": "Émotions et situations", "k": ["관용구"], "s": "Expressions de sentiments et de situations.",
+         "c": ["애가 타다 : se ronger les sangs.", "가슴이 뜨끔하다 : avoir un pincement de culpabilité.", "눈코 뜰 새 없다 : être débordé (« pas le temps d'ouvrir les yeux et le nez »).", "바가지를 쓰다 : se faire arnaquer.", "미역국을 먹다 : échouer à un examen (« manger de la soupe d'algues »).", "한턱내다 : offrir un repas, régaler."],
+         "ex": [["요즘 [눈코 뜰 새 없이] 바빠요.", "Ces temps-ci, je suis débordé."], ["시험에 붙어서 오늘은 내가 [한턱낼게].", "J'ai réussi l'examen, aujourd'hui c'est moi qui régale."]]}
+      ],
+      "mots": [["관용구", "expression idiomatique"], ["발", "pied"], ["손", "main"], ["입", "bouche"], ["귀", "oreille"], ["가슴", "poitrine, cœur"], ["얼굴", "visage"], ["넓다", "large, spacieux"], ["무겁다", "lourd"], ["얇다", "mince, fin"], ["두껍다", "épais"], ["비밀", "secret"], ["바가지", "calebasse, arnaque"], ["한턱", "régalade, tournée"], ["붙다", "réussir (un examen), coller"]]
+    },
+    {
+      "id": "N6-06", "titre": "Les proverbes", "theme": "속담",
+      "objectif": "Je comprends les proverbes coréens les plus cités et sais les employer dans un essai.",
+      "intro": "Les 속담 sont des proverbes traditionnels, anonymes et transmis oralement. Ils apparaissent dans les questions de lecture et sont appréciés en conclusion d'un essai.",
+      "points": [
+        {"f": "Proverbes de la vie quotidienne", "k": ["속담"], "s": "Proverbes anciens, transmis par la tradition populaire.",
+         "c": ["가는 말이 고와야 오는 말이 곱다 : on récolte ce que l'on sème (les paroles qui partent doivent être douces pour que celles qui reviennent le soient).", "낮말은 새가 듣고 밤말은 쥐가 듣는다 : les murs ont des oreilles.", "티끌 모아 태산 : les petits ruisseaux font les grandes rivières.", "소 잃고 외양간 고친다 : réparer l'étable après avoir perdu la vache (agir trop tard).", "누워서 떡 먹기 : simple comme bonjour (manger du tteok couché).", "백지장도 맞들면 낫다 : l'union fait la force (même une feuille de papier se porte mieux à deux)."],
+         "ex": [["[티끌 모아 태산]이라고 매일 조금씩 저축했다.", "Comme on dit, les petits ruisseaux font les grandes rivières : j'ai épargné un peu chaque jour."], ["이 문제는 [누워서 떡 먹기]예요.", "Ce problème, c'est simple comme bonjour."]]},
+        {"f": "Employer un proverbe : -(이)라고 · -다는 말이 있듯이", "k": ["-다는"], "s": "Introduire un proverbe dans un texte.",
+         "c": ["Proverbe + -(이)라고 : « comme on dit… ».", "Proverbe + -다는 말이 있듯이 : « comme le dit le proverbe… » (essai)."],
+         "ex": [["'백지장도 맞들면 낫다'[는 말이 있듯이] 협력이 중요하다.", "Comme le dit le proverbe, l'union fait la force : la coopération est essentielle."], ["'소 잃고 외양간 고친다'[라고] 미리 대비해야 한다.", "Comme on dit, il ne faut pas attendre la catastrophe : il faut se préparer à l'avance."]]}
+      ],
+      "mots": [["속담", "proverbe"], ["티끌", "poussière"], ["태산", "grande montagne"], ["외양간", "étable"], ["떡", "gâteau de riz (tteok)"], ["눕다", "s'allonger"], ["저축", "épargne"], ["협력", "collaboration, coopération"], ["교훈", "leçon, enseignement"], ["지혜", "sagesse"], ["조상", "ancêtres"], ["전하다", "transmettre"], ["비유", "métaphore, comparaison"], ["곱다", "beau, doux"], ["맞들다", "porter à deux"]]
+    }
+  ]
+}

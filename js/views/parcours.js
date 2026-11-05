@@ -1,18 +1,11 @@
 // MALSSI · Parcours, unités et exercices
-import { C, unitOpen, wordInfo, rr } from '../content.js';
+import { C, unitOpen, wordInfo, rr, markEx, blankEx, exAnswer, plainEx } from '../content.js';
 import { S, save } from '../store.js';
 import { esc, $, $$, shuffle, pick, gradeTag, toast } from '../ui.js';
 import { playBtn, speak, hasVoice } from '../tts.js';
 import { split, join, INI, VOW, FIN } from '../hangul.js';
 
-const LEVELS = [
-  ['1급', 'Survivre au quotidien : se présenter, acheter, commander, l\'heure.'],
-  ['2급', 'La vie quotidienne et les services publics.'],
-  ['3급', 'La vie sociale, le style écrit, premières rédactions.'],
-  ['4급', 'Actualités et sujets abstraits ; l\'essai court.'],
-  ['5급', 'Textes spécialisés, expressions figées, proverbes.'],
-  ['6급', 'Argumentation et registre soutenu ; l\'essai long.']];
-
+const KO_LEVEL = { 0: '한글', 1: '1급', 2: '2급', 3: '3급', 4: '4급', 5: '5급', 6: '6급' };
 function unitStatus(u) {
   const st = S.units[u.id];
   if (st && st.done) return `<span class="st ok">${st.best != null ? 'Terminée · ' + st.best + ' %' : 'Terminée'}</span>`;
@@ -20,44 +13,55 @@ function unitStatus(u) {
   return unitOpen(u) ? '<span class="st">À faire</span>' : '<span class="st">Plus tard</span>';
 }
 export function viewParcours(el) {
-  const e = C.etapes[0];
-  const done = C.units.filter(u => S.units[u.id] && S.units[u.id].done).length;
+  const all = C.units.length, done = C.units.filter(u => S.units[u.id] && S.units[u.id].done).length;
+  const cur = C.units.find(u => !(S.units[u.id] && S.units[u.id].done));
   el.innerHTML = `
     <h1>Le parcours</h1>
-    <p class="muted prose">Du hangeul au 6급, dans l'ordre du programme international de coréen standard. Chaque unité terminée ajoute ses mots à vos révisions.</p>
-    <section class="level">
-      <h2><span class="ko">한글</span> ${esc(e.titre.replace('Étape 0 · ', ''))} <small>${done} / ${C.units.length} unités</small></h2>
+    <p class="muted prose">Du hangeul au 6급, dans l'ordre du programme international de coréen standard. Chaque unité terminée ajoute ses mots à vos révisions. ${done} unité${done > 1 ? 's' : ''} terminée${done > 1 ? 's' : ''} sur ${all}.</p>
+    <nav class="lvl-tabs" aria-label="Niveaux">${C.etapes.map(e => { const us = e.unites, d = us.filter(u => S.units[u.id] && S.units[u.id].done).length;
+      return `<a href="#lvl-${e.id}" class="${cur && cur.etape === e.id ? 'cur' : ''}"><b class="ko">${KO_LEVEL[e.niveau || 0]}</b><span class="bar"><i style="width:${Math.round(d / us.length * 100)}%"></i></span></a>`; }).join('')}</nav>
+    ${C.etapes.map(e => { const d = e.unites.filter(u => S.units[u.id] && S.units[u.id].done).length; return `
+    <section class="level" id="lvl-${e.id}">
+      <h2><span class="ko">${KO_LEVEL[e.niveau || 0]}</span> ${esc(e.titre.replace(/^[^·]*· /, ''))} <small>${d} / ${e.unites.length}</small></h2>
       <p class="muted prose">${esc(e.intro)}</p>
-      <ol class="units">${C.units.map(u => `
-        <li class="${unitOpen(u) ? '' : 'locked'}"><a href="#/unite/${u.id}">
+      <ol class="units">${e.unites.map(u => `
+        <li class="${unitOpen(u) ? '' : 'locked'}${cur === u ? ' now' : ''}"><a href="#/unite/${u.id}">
           <span class="code">${u.id}</span>
           <span class="ti"><b>${esc(u.titre)}</b><span>${esc(u.objectif)}</span></span>
           ${unitStatus(u)}</a></li>`).join('')}
       </ol>
-    </section>
-    <section class="level">
-      <h2>Les six niveaux du TOPIK <small>en préparation</small></h2>
-      <div class="soon">${LEVELS.map(([k, d]) => `<div><b>${k}</b>${esc(d)}</div>`).join('')}</div>
-    </section>`;
+    </section>`; }).join('')}`;
+  $$('.lvl-tabs a', el).forEach(a => a.onclick = ev => { ev.preventDefault(); const t = document.querySelector(a.getAttribute('href')); t && t.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); });
 }
 
+function pointHtml(p, i) {
+  return `<article class="gpoint" id="p-${i}">
+    <h3><span class="ko">${esc(p.f)}</span></h3>
+    <p class="gsens">${esc(p.s)}</p>
+    <ul class="gcons">${p.c.map(c => `<li>${esc(c).replace(/([\uAC00-\uD7A3ㄱ-ㅣ()\-/]+[\uAC00-\uD7A3ㄱ-ㅣ]+)/g, '<span class="ko">$1</span>')}</li>`).join('')}</ul>
+    ${p.n ? `<p class="note small"><b>Attention.</b> ${esc(p.n)}</p>` : ''}
+    <div class="gex">${p.ex.map(([ko, fr]) => `<div class="exl"><p class="ko"><span>${markEx(ko, esc)}</span> ${playBtn(plainEx(ko), 'la phrase')}</p><p class="small muted">${esc(fr)}</p></div>`).join('')}</div>
+  </article>`;
+}
 export function viewUnit(el, id) {
   const u = C.byId[id];
   if (!u) { el.innerHTML = '<div class="empty">Cette unité n\'existe pas. <a href="#/parcours">Retour au parcours</a></div>'; return; }
   if (!S.units[u.id]) { S.units[u.id] = { at: Date.now() }; save(); }
-  const nextU = C.units[u.n + 1];
+  const nextU = C.units[u.n + 1], prevU = C.units[u.n - 1];
+  const gram = !!u.points;
   el.innerHTML = `
     <header class="unit-head">
       <a class="small" href="#/parcours">← Parcours</a>
-      <p class="code" style="margin:12px 0 4px">${u.id}</p>
+      <p class="code" style="margin:12px 0 4px">${u.id}${u.theme ? ' · ' + esc(u.theme) : ''}</p>
       <h1>${esc(u.titre)}</h1>
       <p class="goal">${esc(u.objectif)}</p>
       ${hasVoice() ? '' : '<p class="note small">Aucune voix coréenne n\'est installée dans ce navigateur : l\'écoute est indisponible. Sous Windows, ajoutez la langue coréenne (Paramètres › Heure et langue › Voix) ; Chrome et Edge en proposent souvent une.</p>'}
     </header>
     <nav class="toc" aria-label="Sections de l'unité">
-      <a href="#s-cours">Cours</a>${u.lettres.length ? '<a href="#s-lettres">Lettres</a>' : ''}<a href="#s-mots">Mots</a><a href="#s-ex">Exercices</a>
+      <a href="#s-cours">Cours</a>${gram ? u.points.map((p, i) => `<a href="#p-${i}" class="ko">${esc(p.f.split(' (')[0])}</a>`).join('') : ''}${!gram && u.lettres.length ? '<a href="#s-lettres">Lettres</a>' : ''}<a href="#s-mots">Mots</a><a href="#s-ex">Exercices</a>
     </nav>
-    <section class="sec prose" id="s-cours"><h2>Cours</h2>
+    ${gram ? `<section class="sec prose" id="s-cours"><h2>Cours</h2><p>${esc(u.intro)}</p>${u.points.map(pointHtml).join('')}</section>`
+    : `<section class="sec prose" id="s-cours"><h2>Cours</h2>
       ${u.explication.map(p => `<p>${p}</p>`).join('')}
       ${u.attention ? `<p class="note"><b>Attention.</b> ${u.attention}</p>` : ''}
     </section>
@@ -65,12 +69,13 @@ export function viewUnit(el, id) {
       <div class="letters">${u.lettres.map(l => `
         <div class="letter"><div class="g ko">${l.j}</div>
           <div class="meta"><div class="top"><span class="rr">${esc(l.rr)}</span>${l.nom ? `<span class="nm">${l.nom}</span>` : ''}${playBtn(l.son, l.j)}</div>
-          <span class="muted">${l.fr}</span></div></div>`).join('')}</div></section>` : ''}
+          <span class="muted">${l.fr}</span></div></div>`).join('')}</div></section>` : ''}`}
     <section class="sec" id="s-mots"><h2>Les mots</h2>
       <p class="small muted">Prononciation, niveau et sens vérifiés dans le 한국어기초사전. Les gloses françaises sont rédigées pour MALSSI.</p>
       <div class="words">${u.mots.map(([ko, fr]) => wordRow(ko, fr)).join('')}</div></section>
     <section class="sec" id="s-ex"><h2>Exercices</h2><div id="quiz"></div></section>
-    <div class="row" style="margin-top:32px">${nextU ? `<a class="btn ghost" href="#/unite/${nextU.id}">Unité suivante : ${esc(nextU.titre)}</a>` : ''}</div>`;
+    <div class="row unit-nav">${prevU ? `<a class="btn ghost" href="#/unite/${prevU.id}">← ${esc(prevU.titre)}</a>` : ''}${nextU ? `<a class="btn ghost" href="#/unite/${nextU.id}">${esc(nextU.titre)} →</a>` : ''}</div>`;
+  $$('.toc a', el).forEach(a => a.onclick = ev => { ev.preventDefault(); const t = document.getElementById(a.getAttribute('href').slice(1)); t && t.scrollIntoView({ behavior: 'smooth' }); });
   startQuiz($('#quiz', el), u);
 }
 export function wordRow(ko, fr) {
@@ -83,7 +88,30 @@ export function wordRow(ko, fr) {
 }
 
 // ---------- Exercices générés à partir de l'unité ----------
+function buildGrammarQ(u) {
+  const lvl = C.units.filter(x => x.niveau === u.niveau && x.points);
+  const pool = [...new Set(lvl.flatMap(x => x.points.flatMap(p => p.ex.map(e => exAnswer(e[0])))))];
+  const known = C.units.filter(x => x.niveau <= u.niveau && x.niveau >= u.niveau - 1).flatMap(x => x.mots);
+  const Q = [];
+  u.points.forEach(p => p.ex.forEach(([ko, fr]) => {
+    const ans = exAnswer(ko), near = pool.filter(x => Math.abs(x.length - ans.length) <= 2), others = pick(near.length > 6 ? near : pool, 3, [ans]);
+    if (others.length === 3) Q.push({ type: 'trou', prompt: blankEx(ko), sent: true, sub: fr, right: ans, choices: shuffle([ans, ...others]), koChoices: true, say: plainEx(ko), q: 'Complétez la phrase. (' + p.f.split(' (')[0] + ')' });
+  }));
+  const exs = u.points.flatMap(p => p.ex);
+  if (hasVoice()) shuffle(exs).slice(0, 2).forEach(([ko, fr]) => {
+    const others = pick(C.units.filter(x => x.niveau === u.niveau && x.points).flatMap(x => x.points.flatMap(p => p.ex.map(e => e[1]))), 3, [fr]);
+    Q.push({ type: 'ecoute', prompt: null, say: plainEx(ko), right: fr, choices: shuffle([fr, ...others]), q: 'Écoutez la phrase, puis choisissez sa traduction.' });
+  });
+  shuffle(u.mots).slice(0, 4).forEach(([ko, fr]) => {
+    Q.push({ type: 'sens', prompt: ko, ko: true, say: ko, right: fr, choices: shuffle([fr, ...pick(known.map(m => m[1]), 3, [fr])]), q: 'Que signifie ce mot ?' });
+  });
+  shuffle(u.mots).slice(0, 2).forEach(([ko, fr]) => {
+    Q.push({ type: 'mot', prompt: fr, right: ko, choices: shuffle([ko, ...pick(known.map(m => m[0]), 3, [ko])]), koChoices: true, q: 'Quel mot correspond à ce sens ?' });
+  });
+  return shuffle(Q).slice(0, 12);
+}
 function buildQuestions(u) {
+  if (u.points) return buildGrammarQ(u);
   const letters = u.lettres.filter(l => l.rr && l.j);
   const allLetters = C.units.slice(0, u.n + 1).flatMap(x => x.lettres);
   const words = u.mots.map(m => m[0]);
@@ -142,6 +170,7 @@ function startQuiz(box, u) {
     const head = `<div class="qprog"><span>Question ${i + 1} / ${Q.length}</span><span>${ok} bonne${ok > 1 ? 's' : ''} réponse${ok > 1 ? 's' : ''}</span></div><p class="q">${esc(q.q)}</p>`;
     if (q.type === 'bloc') return showBloc(q, head);
     const pr = q.prompt == null ? `<div class="prompt">${playBtn(q.say, 'le mot')}</div>` :
+      q.sent ? `<div class="prompt sent ko">${esc(q.prompt)}</div>` :
       `<div class="prompt ${q.ko ? '' : 'fr'}">${esc(q.prompt)}${q.say && q.type !== 'sens' ? playBtn(q.say) : ''}</div>`;
     box.innerHTML = `<div class="quiz">${head}${pr}<div class="choices">${q.choices.map(c => `<button type="button" class="${q.koChoices ? 'ko' : ''}">${esc(c)}</button>`).join('')}</div><p class="feedback" aria-live="polite"></p></div>`;
     if (q.type === 'ecoute') setTimeout(() => speak(q.say), 250);
@@ -152,7 +181,8 @@ function startQuiz(box, u) {
       const fb = $('.feedback', box); fb.className = 'feedback ' + (good ? 'ok' : 'ko');
       fb.textContent = good ? 'Juste.' : 'La bonne réponse : ' + q.right + '.';
       if (q.type === 'sens' || q.type === 'mot') speak(q.type === 'sens' ? q.prompt : q.right);
-      i++; setTimeout(show, good ? 900 : 1900);
+      if (q.type === 'trou') { speak(q.say); fb.textContent += ' ' + q.sub; }
+      i++; setTimeout(show, q.type === 'trou' ? (good ? 2200 : 3200) : good ? 900 : 1900);
     });
     const first = $('.choices button', box); first && first.focus({ preventScroll: true });
   };

@@ -1,0 +1,248 @@
+{
+  "id": "niveau1",
+  "niveau": 1,
+  "titre": "1급 · Premiers pas",
+  "intro": "Le 1급 correspond aux situations de survie : se présenter, parler de sa famille, acheter, commander, demander l'heure et le chemin. Vous y apprenez le style poli courant (해요체), les particules de base, les nombres et le passé.",
+  "unites": [
+    {
+      "id": "N1-01", "titre": "Je m'appelle…", "theme": "Se présenter",
+      "objectif": "Je sais dire mon nom, ma nationalité et mon métier.",
+      "intro": "Une présentation coréenne tient en trois phrases : 안녕하세요, puis votre nom, puis votre nationalité ou votre métier. Il suffit pour cela de la copule 이에요 / 예요 et de la particule de thème 은 / 는.",
+      "points": [
+        {"f": "N이에요 / 예요", "k": ["이다"], "s": "« être » quand on identifie quelque chose ou quelqu'un : « c'est N », « je suis N ».",
+         "c": ["Nom terminé par une consonne + 이에요 : 학생이에요.", "Nom terminé par une voyelle + 예요 : 의사예요.", "Question : même forme, intonation montante : 학생이에요?"],
+         "n": "En style poli formel (discours, présentations officielles), on dit N입니다 [임니다] et, à la question, N입니까?",
+         "ex": [["저는 학생[이에요].", "Je suis étudiant(e)."], ["제 친구는 의사[예요].", "Mon ami(e) est médecin."], ["저는 프랑스 사람[입니다].", "Je suis Français(e). (formel)"]]},
+        {"f": "은 / 는 (thème)", "k": ["은", "는"], "s": "Marque le thème : ce dont on parle. « Quant à moi… », « Pour ce qui est de… ».",
+         "c": ["Après consonne : 은 (이름은, 선생님은).", "Après voyelle : 는 (저는, 친구는)."],
+         "n": "은 / 는 sert aussi à opposer deux choses : 커피는 좋아해요, 차는 안 좋아해요 (le café, oui ; le thé, non).",
+         "ex": [["저[는] 마리예요.", "Moi, c'est Marie."], ["제 이름[은] 토마예요.", "Mon nom est Thomas."]]}
+      ],
+      "mots": [["이름", "nom, prénom"], ["학생", "élève, étudiant"], ["선생님", "professeur"], ["의사", "médecin"], ["회사원", "employé de bureau"], ["사람", "personne"], ["나라", "pays"], ["한국", "Corée (du Sud)"], ["프랑스", "France"], ["일본", "Japon"], ["미국", "États-Unis"], ["중국", "Chine"], ["저", "moi, je (modeste)"], ["제", "mon, ma (modeste)"], ["반갑다", "content (de rencontrer)"]]
+    },
+    {
+      "id": "N1-02", "titre": "Ce n'est pas ça", "theme": "Objets de la classe",
+      "objectif": "Je sais nier une identité et désigner les objets autour de moi.",
+      "intro": "Pour dire ce qu'une chose n'est pas, on emploie 아니에요 avec la particule de sujet 이 / 가. Les démonstratifs 이 · 그 · 저 permettent de pointer les objets proches de vous, de votre interlocuteur ou éloignés des deux.",
+      "points": [
+        {"f": "N이 / 가 아니에요", "k": ["아니다"], "s": "« Ce n'est pas N », « je ne suis pas N ».",
+         "c": ["Après consonne : N이 아니에요 (학생이 아니에요).", "Après voyelle : N가 아니에요 (의사가 아니에요)."],
+         "n": "Pour répondre non à une question, on dit 아니요 puis la phrase : 아니요, 학생이 아니에요.",
+         "ex": [["저는 학생[이 아니에요].", "Je ne suis pas étudiant(e)."], ["이건 커피[가 아니에요]. 차예요.", "Ce n'est pas du café. C'est du thé."]]},
+        {"f": "이 / 가 (sujet)", "k": ["이", "가"], "s": "Marque le sujet grammatical : qui fait l'action, qui est dans tel état.",
+         "c": ["Après consonne : 이 (책이, 사람이).", "Après voyelle : 가 (친구가, 커피가)."],
+         "n": "Avec 저, 나, 누구, la particule 가 change la forme : 저 → 제가, 나 → 내가, 누구 → 누가.",
+         "ex": [["누[가] 선생님이에요?", "Qui est le professeur ?"], ["가방[이] 커요.", "Le sac est grand."]]},
+        {"f": "이것 · 그것 · 저것", "k": ["이것", "그것", "저것"], "s": "Démonstratifs : 이것 (ceci, près de moi), 그것 (cela, près de vous ou déjà mentionné), 저것 (cela là-bas, loin de nous deux).",
+         "c": ["À l'oral, on raccourcit : 이거 · 그거 · 저거.", "Avec le sujet : 이게 · 그게 · 저게 (= 이것이…).", "Devant un nom : 이 책, 그 사람, 저 가방."],
+         "n": "« Qu'est-ce que c'est ? » se dit 이게 뭐예요?",
+         "ex": [["[이거] 뭐예요?", "Qu'est-ce que c'est ?"], ["[저] 사람은 누구예요?", "Qui est cette personne là-bas ?"]]}
+      ],
+      "mots": [["책", "livre"], ["가방", "sac"], ["연필", "crayon"], ["볼펜", "stylo à bille"], ["공책", "cahier"], ["책상", "bureau, table de travail"], ["의자", "chaise"], ["시계", "montre, horloge"], ["우산", "parapluie"], ["휴대폰", "téléphone portable"], ["이것", "ceci"], ["그것", "cela"], ["저것", "cela (là-bas)"], ["뭐", "quoi"], ["누구", "qui"]]
+    },
+    {
+      "id": "N1-03", "titre": "Il y a, il n'y a pas", "theme": "La maison et les lieux",
+      "objectif": "Je sais dire ce qu'il y a quelque part et où se trouvent les choses.",
+      "intro": "있다 et 없다 expriment à la fois l'existence (« il y a ») et la possession (« avoir »). Avec la particule 에, ils situent les choses dans l'espace.",
+      "points": [
+        {"f": "있어요 / 없어요", "k": ["있다", "없다"], "s": "« Il y a / il n'y a pas », « avoir / ne pas avoir ».",
+         "c": ["N이 / 가 있어요 : il y a N, j'ai N.", "N이 / 가 없어요 : il n'y a pas N, je n'ai pas N."],
+         "n": "Pour une personne qu'on respecte, on remplace 있어요 par 계세요 : 선생님이 교실에 계세요.",
+         "ex": [["동생[이 있어요]?", "Tu as un petit frère ou une petite sœur ?"], ["오늘은 시간[이 없어요].", "Aujourd'hui, je n'ai pas le temps."]]},
+        {"f": "N에 있다 (lieu)", "k": ["에"], "s": "에 indique l'endroit où l'on se trouve : « être à, dans, sur ».",
+         "c": ["Lieu + 에 + 있다 / 없다 : 집에 있어요.", "Positions : N 위에 (sur), 아래에 (sous), 앞에 (devant), 뒤에 (derrière), 옆에 (à côté), 안에 (dans)."],
+         "n": "Ordre coréen : d'abord le repère, puis la position. « Sous la table » se dit 책상 아래에 (table + dessous).",
+         "ex": [["화장실은 어디[에 있어요]?", "Où sont les toilettes ?"], ["가방은 의자 [위에] 있어요.", "Le sac est sur la chaise."]]}
+      ],
+      "mots": [["집", "maison"], ["방", "chambre, pièce"], ["화장실", "toilettes, salle de bain"], ["부엌", "cuisine (pièce)"], ["거실", "salon"], ["교실", "salle de classe"], ["위", "dessus"], ["아래", "dessous"], ["앞", "devant"], ["뒤", "derrière"], ["옆", "côté"], ["안", "intérieur"], ["밖", "dehors"], ["여기", "ici"], ["어디", "où (quel lieu)"]]
+    },
+    {
+      "id": "N1-04", "titre": "Le style poli 해요", "theme": "Activités quotidiennes",
+      "objectif": "Je sais conjuguer un verbe au présent poli et dire ce que je fais.",
+      "intro": "Les verbes coréens se citent avec -다 (가다, 먹다). On retire -다 pour obtenir le radical, puis on ajoute une terminaison. Le style 해요체 est la forme polie de tous les jours : elle sert pour affirmer, demander, proposer et inviter.",
+      "points": [
+        {"f": "-아요 / -어요 / 해요", "k": ["-아요", "-어요"], "s": "Présent poli courant (affirmation, question, suggestion).",
+         "c": ["Dernière voyelle du radical ㅏ ou ㅗ → -아요 : 살다 → 살아요, 좋다 → 좋아요.", "Autres voyelles → -어요 : 먹다 → 먹어요, 읽다 → 읽어요.", "하다 → 해요 : 공부하다 → 공부해요.", "Contractions : 가 + 아요 → 가요, 오 + 아요 → 와요, 마시 + 어요 → 마셔요, 배우 + 어요 → 배워요."],
+         "n": "Le sujet est souvent omis quand il est évident : 뭐 해요? (Qu'est-ce que tu fais ?), 공부해요 (J'étudie).",
+         "ex": [["저는 매일 커피를 마[셔요].", "Je bois du café tous les jours."], ["주말에 뭐 [해요]?", "Qu'est-ce que tu fais le week-end ?"], ["날씨가 정말 좋[아요].", "Il fait vraiment beau."]]},
+        {"f": "을 / 를 (objet)", "k": ["을", "를"], "s": "Marque le complément d'objet direct.",
+         "c": ["Après consonne : 을 (밥을, 책을).", "Après voyelle : 를 (커피를, 영화를)."],
+         "n": "À l'oral, la particule d'objet tombe souvent : 커피 마셔요.",
+         "ex": [["아침에 빵[을] 먹어요.", "Le matin, je mange du pain."], ["친구가 영화[를] 봐요.", "Mon ami regarde un film."]]}
+      ],
+      "mots": [["가다", "aller"], ["오다", "venir"], ["먹다", "manger"], ["마시다", "boire"], ["보다", "voir, regarder"], ["읽다", "lire"], ["자다", "dormir"], ["일하다", "travailler"], ["공부하다", "étudier"], ["만나다", "rencontrer"], ["좋아하다", "aimer, apprécier"], ["배우다", "apprendre"], ["밥", "riz cuit, repas"], ["영화", "film"], ["친구", "ami, amie"]]
+    },
+    {
+      "id": "N1-05", "titre": "Où allez-vous ?", "theme": "La ville",
+      "objectif": "Je sais dire où je vais et ce que j'y fais.",
+      "intro": "Deux particules de lieu se partagent le travail : 에 indique la destination (avec aller, venir) et 에서 le lieu où se déroule une action.",
+      "points": [
+        {"f": "N에 가다 / 오다", "k": ["에"], "s": "에 marque la destination d'un déplacement, et aussi le moment (à telle heure, tel jour).",
+         "c": ["Lieu + 에 가요 / 와요 : 학교에 가요.", "Temps + 에 : 세 시에, 월요일에, 주말에."],
+         "n": "Pas de 에 après 오늘, 내일, 어제, 지금 : 내일 가요.",
+         "ex": [["어디[에] 가요?", "Où vas-tu ?"], ["토요일[에] 시장[에] 가요.", "Samedi, je vais au marché."]]},
+        {"f": "N에서 (lieu de l'action)", "k": ["에서"], "s": "Lieu où l'on fait quelque chose : « à, dans » avec un verbe d'action.",
+         "c": ["Lieu + 에서 + verbe d'action : 도서관에서 공부해요."],
+         "n": "Comparez : 집에 있어요 (je suis à la maison) et 집에서 쉬어요 (je me repose à la maison). 에서 marque aussi le point de départ : 파리에서 왔어요.",
+         "ex": [["식당[에서] 점심을 먹어요.", "Je déjeune au restaurant."], ["도서관[에서] 책을 읽어요.", "Je lis à la bibliothèque."]]}
+      ],
+      "mots": [["학교", "école"], ["회사", "entreprise, société"], ["식당", "restaurant"], ["도서관", "bibliothèque"], ["시장", "marché"], ["은행", "banque"], ["병원", "hôpital"], ["약국", "pharmacie"], ["우체국", "bureau de poste"], ["공원", "parc"], ["카페", "café (établissement)"], ["백화점", "grand magasin"], ["쉬다", "se reposer"], ["주말", "week-end"], ["점심", "déjeuner"]]
+    },
+    {
+      "id": "N1-06", "titre": "Les nombres sino-coréens", "theme": "Prix, dates, téléphone",
+      "objectif": "Je sais lire un prix, une date et un numéro de téléphone.",
+      "intro": "Le coréen a deux séries de nombres. La série d'origine chinoise (일, 이, 삼…) sert pour les prix, les dates, les numéros, les minutes et les étages. Votre japonais vous aide : 一 二 三 se lisent 일 이 삼.",
+      "points": [
+        {"f": "일 · 이 · 삼… (nombres sino-coréens)", "k": ["일", "이", "삼", "십", "백", "천", "만"], "s": "1 à 10 : 일, 이, 삼, 사, 오, 육, 칠, 팔, 구, 십. Puis 백 (100), 천 (1 000), 만 (10 000).",
+         "c": ["On compose comme en chinois : 15 = 십오, 20 = 이십, 345 = 삼백사십오.", "On ne dit pas 일 devant 십, 백, 천, 만 : 100 = 백, 10 000 = 만.", "Le coréen compte par dizaines de milliers : 50 000 = 오만, 120 000 = 십이만."],
+         "n": "Prix : 원 (won). 15 000원 = 만 오천 원. Téléphone : 0 se dit 공 : 010 = 공일공.",
+         "ex": [["이거 얼마예요? — [만 오천] 원이에요.", "Combien ça coûte ? — 15 000 wons."], ["오늘은 [시월 십오]일이에요.", "Aujourd'hui, c'est le 15 octobre."]]},
+        {"f": "Dates : 년 · 월 · 일", "k": ["년", "월", "일"], "s": "On dit l'année, puis le mois, puis le jour, tous avec les nombres sino-coréens.",
+         "c": ["2026년 11월 5일 : 이천이십육 년 십일월 오 일.", "Mois irréguliers : 6월 = 유월, 10월 = 시월."],
+         "n": "« Quel jour ? » : 며칠이에요? « Quel mois ? » : 몇 월이에요?",
+         "ex": [["생일이 [며칠]이에요?", "C'est quand, ton anniversaire ?"], ["[유월] 이십일 일이에요.", "C'est le 21 juin."]]}
+      ],
+      "mots": [["원", "won (monnaie)"], ["얼마", "combien"], ["전화번호", "numéro de téléphone"], ["생일", "anniversaire"], ["오늘", "aujourd'hui"], ["내일", "demain"], ["어제", "hier"], ["년", "an, année"], ["월", "mois"], ["일", "jour (date)"], ["며칠", "quel jour, combien de jours"], ["주", "semaine"], ["월요일", "lundi"], ["금요일", "vendredi"], ["일요일", "dimanche"]]
+    },
+    {
+      "id": "N1-07", "titre": "Les nombres coréens et l'heure", "theme": "Compter, dire l'heure",
+      "objectif": "Je sais compter des objets et des personnes, et dire l'heure.",
+      "intro": "La série d'origine coréenne (하나, 둘, 셋…) sert pour compter les choses avec un compteur (개, 명, 잔…) et pour les heures. Les minutes, elles, restent sino-coréennes.",
+      "points": [
+        {"f": "하나 · 둘 · 셋… et compteurs", "k": ["하나", "둘", "셋", "개", "명"], "s": "1 à 10 : 하나, 둘, 셋, 넷, 다섯, 여섯, 일곱, 여덟, 아홉, 열. On compte avec un compteur placé après le nombre.",
+         "c": ["Devant un compteur, 1 à 4 et 20 raccourcissent : 한, 두, 세, 네, 스무 : 한 개, 두 명, 세 잔, 스무 살.", "Ordre : nom + nombre + compteur : 사과 두 개 (deux pommes), 학생 세 명 (trois élèves)."],
+         "n": "Compteurs utiles : 개 (objets), 명 (personnes), 잔 (verres, tasses), 병 (bouteilles), 권 (livres), 마리 (animaux), 살 (âge).",
+         "ex": [["커피 [두 잔] 주세요.", "Deux cafés, s'il vous plaît."], ["동생이 [한 명] 있어요.", "J'ai un petit frère (ou une petite sœur)."]]},
+        {"f": "L'heure : 시 · 분", "k": ["시", "분"], "s": "Heures en nombres coréens + 시 ; minutes en nombres sino-coréens + 분.",
+         "c": ["3 h 20 : 세 시 이십 분.", "et demie : 반 (두 시 반).", "matin : 오전 ; après-midi : 오후."],
+         "n": "« Quelle heure est-il ? » : 몇 시예요?",
+         "ex": [["지금 [몇 시]예요?", "Quelle heure est-il ?"], ["수업은 [아홉 시 반]에 시작해요.", "Le cours commence à 9 h 30."]]}
+      ],
+      "mots": [["하나", "un"], ["둘", "deux"], ["셋", "trois"], ["넷", "quatre"], ["다섯", "cinq"], ["여섯", "six"], ["일곱", "sept"], ["여덟", "huit"], ["아홉", "neuf"], ["열", "dix"], ["개", "objet (compteur)"], ["명", "personne (compteur)"], ["잔", "verre, tasse"], ["시", "heure"], ["분", "minute"]]
+    },
+    {
+      "id": "N1-08", "titre": "Je n'aime pas, je ne peux pas", "theme": "Goûts et capacités",
+      "objectif": "Je sais mettre une phrase à la forme négative et dire ce que je ne peux pas faire.",
+      "intro": "Le coréen a deux négations : 안 (je ne fais pas, par choix ou par fait) et 못 (je ne peux pas, malgré moi). Chacune a une forme courte, placée devant le verbe, et une forme longue, placée après le radical.",
+      "points": [
+        {"f": "안 · -지 않다", "k": ["안", "-지 않다"], "s": "Négation simple : « ne… pas ».",
+         "c": ["Forme courte : 안 + verbe : 안 먹어요.", "Forme longue : radical + -지 않아요 : 먹지 않아요.", "Avec N하다, 안 se place devant 하다 : 공부 안 해요 (et non 안 공부해요)."],
+         "n": "La forme longue est un peu plus soutenue et plus fréquente à l'écrit.",
+         "ex": [["저는 고기를 [안] 먹어요.", "Je ne mange pas de viande."], ["오늘은 춥[지 않아요].", "Il ne fait pas froid aujourd'hui."]]},
+        {"f": "못 · -지 못하다", "k": ["못", "-지 못하다"], "s": "Impossibilité : « ne pas pouvoir ».",
+         "c": ["Forme courte : 못 + verbe : 못 가요.", "Forme longue : radical + -지 못해요 : 가지 못해요.", "Avec N하다 : 수영 못 해요."],
+         "n": "못 해요 se prononce [모태요] (aspiration). Avec un adjectif, on nie avec 안 ou -지 않다 ; 못 ne s'emploie pas ainsi.",
+         "ex": [["내일은 바빠서 [못] 가요.", "Demain je suis occupé, je ne peux pas venir."], ["저는 수영을 [못 해요].", "Je ne sais pas nager."]]},
+        {"f": "-(으)ㄹ 수 있다 / 없다", "k": ["-을 수 있다", "-ㄹ 수 있다"], "s": "Possibilité ou capacité : « pouvoir », « savoir faire ».",
+         "c": ["Radical à consonne + -을 수 있다 : 먹을 수 있어요.", "Radical à voyelle ou en ㄹ + -ㄹ 수 있다 : 갈 수 있어요, 만들 수 있어요 (ㄹ tombe)."],
+         "n": "-(으)ㄹ 수 없다 équivaut à peu près à 못 : 갈 수 없어요 = 못 가요.",
+         "ex": [["한국어를 읽[을 수 있어요]?", "Tu sais lire le coréen ?"], ["오늘은 만날 [수 없어요].", "Aujourd'hui, on ne peut pas se voir."]]}
+      ],
+      "mots": [["수영", "natation"], ["운동", "sport, exercice"], ["노래", "chanson"], ["요리", "cuisine (activité)"], ["운전", "conduite (automobile)"], ["피아노", "piano"], ["춤", "danse"], ["고기", "viande"], ["술", "alcool"], ["담배", "cigarette"], ["맵다", "épicé, piquant"], ["춥다", "froid (temps)"], ["덥다", "chaud (temps)"], ["바쁘다", "occupé"], ["잘", "bien"]]
+    },
+    {
+      "id": "N1-09", "titre": "Hier, j'ai…", "theme": "Le week-end dernier",
+      "objectif": "Je sais raconter ce que j'ai fait au passé.",
+      "intro": "Le passé se forme avec -았- / -었-, inséré entre le radical et la terminaison. La règle de choix est la même que pour -아요 / -어요.",
+      "points": [
+        {"f": "-았- / -었- (passé)", "k": ["-았-", "-었-"], "s": "Action ou état passé.",
+         "c": ["ㅏ / ㅗ → -았어요 : 가다 → 갔어요, 보다 → 봤어요.", "Autres → -었어요 : 먹다 → 먹었어요, 마시다 → 마셨어요.", "하다 → 했어요 : 공부했어요.", "Nom + 이었어요 / 였어요 : 학생이었어요, 의사였어요."],
+         "n": "Le passé coréen couvre à la fois le passé composé et l'imparfait français, et aussi un état acquis : 결혼했어요 = « je suis marié(e) ».",
+         "ex": [["어제 친구를 만[났어요].", "Hier, j'ai vu un ami."], ["주말에 뭐 [했어요]?", "Qu'as-tu fait ce week-end ?"]]},
+        {"f": "-고 (et, puis)", "k": ["-고"], "s": "Relie deux actions ou deux états : « et », « puis ».",
+         "c": ["Radical + -고 : 먹고, 크고.", "Le temps se marque à la fin de la phrase : 밥을 먹고 커피를 마셨어요."],
+         "n": "-고 aligne deux faits ; pour une succession où la première action prépare la seconde (s'asseoir puis…), on emploiera -아서 / -어서 (N1-11).",
+         "ex": [["밥을 먹[고] 영화를 봤어요.", "J'ai mangé, puis j'ai vu un film."], ["이 식당은 싸[고] 맛있어요.", "Ce restaurant est bon marché et bon."]]}
+      ],
+      "mots": [["어제", "hier"], ["지난주", "la semaine dernière"], ["주말", "week-end"], ["여행", "voyage"], ["산책", "promenade"], ["청소", "ménage, nettoyage"], ["빨래", "lessive, linge"], ["쇼핑", "shopping"], ["사진", "photo"], ["찍다", "prendre (une photo)"], ["놀다", "s'amuser, jouer"], ["재미있다", "intéressant, amusant"], ["피곤하다", "fatigué"], ["같이", "ensemble"], ["그리고", "et"]]
+    },
+    {
+      "id": "N1-10", "titre": "Asseyez-vous, s'il vous plaît", "theme": "Au restaurant",
+      "objectif": "Je sais demander poliment, interdire et commander.",
+      "intro": "-(으)세요 est la forme polie de la demande : « faites ceci, s'il vous plaît ». C'est aussi la formule que vous entendrez dans tous les commerces. L'interdiction se forme avec -지 마세요.",
+      "points": [
+        {"f": "-(으)세요", "k": ["-으세요", "-세요"], "s": "Demande ou conseil poli : « veuillez… ».",
+         "c": ["Radical à consonne + -으세요 : 앉다 → 앉으세요.", "Radical à voyelle + -세요 : 가다 → 가세요.", "Radical en ㄹ : ㄹ tombe : 만들다 → 만드세요."],
+         "n": "Pour commander : N 주세요 (« donnez-moi N »). Quelques verbes ont une forme honorifique propre : 먹다 / 마시다 → 드세요, 자다 → 주무세요, 있다 → 계세요.",
+         "ex": [["여기 앉[으세요].", "Asseyez-vous ici."], ["비빔밥 하나 [주세요].", "Un bibimbap, s'il vous plaît."]]},
+        {"f": "-지 마세요", "k": ["-지 말다"], "s": "Interdiction polie : « ne faites pas… ».",
+         "c": ["Radical + -지 마세요 : 가지 마세요, 먹지 마세요."],
+         "n": "Sur les panneaux, vous verrez la forme écrite -지 마십시오.",
+         "ex": [["여기에서 사진을 찍[지 마세요].", "Ne prenez pas de photos ici."], ["걱정하[지 마세요].", "Ne vous inquiétez pas."]]},
+        {"f": "-고 싶다", "k": ["-고 싶다"], "s": "Désir : « vouloir », « avoir envie de ».",
+         "c": ["Radical + -고 싶어요 : 먹고 싶어요.", "Pour parler d'un tiers : -고 싶어 해요 : 동생이 가고 싶어 해요."],
+         "n": "Au restaurant, 뭐 먹고 싶어요? est plus naturel que « que voulez-vous ? ».",
+         "ex": [["불고기를 먹[고 싶어요].", "J'ai envie de manger du bulgogi."], ["한국에 가[고 싶어요].", "Je veux aller en Corée."]]}
+      ],
+      "mots": [["메뉴", "menu"], ["물", "eau"], ["주다", "donner"], ["앉다", "s'asseoir"], ["맛있다", "bon, délicieux"], ["맛없다", "pas bon"], ["비빔밥", "bibimbap"], ["불고기", "bulgogi"], ["김치", "kimchi"], ["냉면", "nouilles froides"], ["계산", "addition, paiement"], ["카드", "carte"], ["현금", "espèces"], ["숟가락", "cuillère"], ["젓가락", "baguettes"]]
+    },
+    {
+      "id": "N1-11", "titre": "Parce que, mais", "theme": "Le temps qu'il fait",
+      "objectif": "Je sais donner une raison et exprimer une opposition.",
+      "intro": "-아서 / -어서 relie une cause à sa conséquence ; -지만 oppose deux idées. Ce sont les premiers connecteurs qui rendent vos phrases plus longues et plus naturelles.",
+      "points": [
+        {"f": "-아서 / -어서 (cause, enchaînement)", "k": ["-아서", "-어서"], "s": "Cause : « comme…, parce que… ». Aussi : action préparatoire suivie d'une autre (aller à la poste et y envoyer…).",
+         "c": ["ㅏ / ㅗ → -아서 : 좋아서. Autres → -어서 : 먹어서. 하다 → 해서.", "Jamais de passé devant -아서 : 어제 바빠서 못 갔어요 (et non 바빴어서).", "Jamais d'ordre ni de proposition après -아서 de cause."],
+         "n": "Avec un nom : N(이)라서 : 주말이라서 사람이 많아요.",
+         "ex": [["비가 와[서] 집에 있었어요.", "Comme il pleuvait, je suis resté(e) à la maison."], ["학교에 가[서] 공부했어요.", "Je suis allé(e) à l'école et j'y ai étudié."]]},
+        {"f": "-지만", "k": ["-지만"], "s": "Opposition : « mais ».",
+         "c": ["Radical + -지만 : 비싸지만, 먹었지만 (le passé est possible)."],
+         "n": "En début de phrase : 하지만 ou 그렇지만 (« mais »).",
+         "ex": [["한국어는 어렵[지만] 재미있어요.", "Le coréen est difficile mais intéressant."], ["비싸[지만] 샀어요.", "C'était cher, mais je l'ai acheté."]]}
+      ],
+      "mots": [["날씨", "temps (météo)"], ["비", "pluie"], ["눈", "neige"], ["바람", "vent"], ["맑다", "clair, dégagé"], ["흐리다", "nuageux, couvert"], ["따뜻하다", "doux, chaud"], ["시원하다", "frais"], ["봄", "printemps"], ["여름", "été"], ["가을", "automne"], ["겨울", "hiver"], ["어렵다", "difficile"], ["쉽다", "facile"], ["하지만", "mais, cependant"]]
+    },
+    {
+      "id": "N1-12", "titre": "Et si on y allait ?", "theme": "Rendez-vous et projets",
+      "objectif": "Je sais proposer une sortie, parler de mes projets et d'un but.",
+      "intro": "Pour proposer, le coréen emploie -(으)ㄹ까요? (« on…? ») et -(으)ㅂ시다 (« allons… »). Pour l'avenir, -(으)ㄹ 거예요. Pour le but d'un déplacement, -(으)러 가다.",
+      "points": [
+        {"f": "-(으)ㄹ까요? · -(으)ㅂ시다", "k": ["-을까요", "-ㄹ까요", "-읍시다", "-ㅂ시다"], "s": "-(으)ㄹ까요? : proposer ou demander l'avis (« on va… ? », « je… ? »). -(으)ㅂ시다 : proposer avec assurance (« allons… »).",
+         "c": ["Consonne : 먹을까요?, 먹읍시다.", "Voyelle ou ㄹ : 갈까요?, 갑시다 ; 만들까요?, 만듭시다."],
+         "n": "-(으)ㅂ시다 sonne un peu directif envers un supérieur : préférez alors -(으)ㄹ까요? ou -(으)시지요.",
+         "ex": [["같이 점심 먹[을까요]?", "On déjeune ensemble ?"], ["내일 다시 만납[시다].", "Retrouvons-nous demain."]]},
+        {"f": "-(으)ㄹ 거예요 (futur)", "k": ["-을 것", "-ㄹ 것"], "s": "Projet ou prévision : « je vais… », « ça va… ».",
+         "c": ["Consonne : 먹을 거예요. Voyelle ou ㄹ : 갈 거예요, 만들 거예요."],
+         "n": "Question sur les projets : 방학에 뭐 할 거예요? (Que vas-tu faire pendant les vacances ?)",
+         "ex": [["내년에 한국에 갈 [거예요].", "L'année prochaine, j'irai en Corée."], ["내일은 비가 [올 거예요].", "Demain, il va pleuvoir."]]},
+        {"f": "-(으)러 가다 / 오다", "k": ["-으러", "-러"], "s": "But d'un déplacement : « aller (venir) faire… ».",
+         "c": ["Consonne : 먹으러 가요. Voyelle ou ㄹ : 보러 가요, 놀러 가요."],
+         "n": "Seulement avec des verbes de déplacement (가다, 오다, 다니다, 나가다…).",
+         "ex": [["영화 보[러] 갈까요?", "On va voir un film ?"], ["친구가 놀[러] 왔어요.", "Un ami est venu (pour passer du temps ensemble)."]]}
+      ],
+      "mots": [["약속", "rendez-vous, promesse"], ["시간", "temps, heure"], ["내년", "l'année prochaine"], ["다음", "prochain, suivant"], ["방학", "vacances scolaires"], ["휴가", "congé, vacances"], ["계획", "projet, plan"], ["콘서트", "concert"], ["바다", "mer"], ["산", "montagne"], ["등산", "randonnée en montagne"], ["기다리다", "attendre"], ["만나다", "rencontrer"], ["다시", "encore, de nouveau"], ["좋다", "bon, bien"]]
+    },
+    {
+      "id": "N1-13", "titre": "Aussi, seulement, de", "theme": "La famille",
+      "objectif": "Je sais présenter ma famille avec 도, 만 et 의.",
+      "intro": "Trois petites particules très fréquentes : 도 (« aussi »), 만 (« seulement ») et 의 (possession). 도 et 만 remplacent la particule de sujet ou d'objet.",
+      "points": [
+        {"f": "도 · 만", "k": ["도", "만"], "s": "도 : « aussi, même ». 만 : « seulement, ne… que ».",
+         "c": ["Ils remplacent 이 / 가 et 을 / 를 : 저도 학생이에요, 물만 마셔요.", "Ils s'ajoutent après les autres particules : 집에서도, 한국에만."],
+         "n": "Dans une phrase négative, 도 signifie « non plus » : 저도 안 가요 (moi non plus, je n'y vais pas).",
+         "ex": [["저[도] 커피를 좋아해요.", "Moi aussi, j'aime le café."], ["주말에는 집에서 잠[만] 자요.", "Le week-end, je ne fais que dormir à la maison."]]},
+        {"f": "의 (possession)", "k": ["의"], "s": "« de » possessif : 친구의 가방 (le sac de mon ami).",
+         "c": ["N1 + 의 + N2 : 선생님의 책.", "Prononcé le plus souvent [에]."],
+         "n": "Contractions très fréquentes : 저의 → 제, 나의 → 내, 너의 → 네. À l'oral, 의 tombe souvent : 친구 가방.",
+         "ex": [["이건 [제] 동생의 사진이에요.", "C'est la photo de mon petit frère."], ["아버지[의] 고향은 부산이에요.", "La ville natale de mon père est Busan."]]}
+      ],
+      "mots": [["가족", "famille"], ["아버지", "père"], ["어머니", "mère"], ["부모님", "parents"], ["형", "grand frère (pour un garçon)"], ["오빠", "grand frère (pour une fille)"], ["누나", "grande sœur (pour un garçon)"], ["언니", "grande sœur (pour une fille)"], ["동생", "frère ou sœur cadet(te)"], ["할머니", "grand-mère"], ["할아버지", "grand-père"], ["아들", "fils"], ["딸", "fille"], ["남편", "mari"], ["아내", "épouse"]]
+    },
+    {
+      "id": "N1-14", "titre": "De… à…", "theme": "Transports et horaires",
+      "objectif": "Je sais indiquer un point de départ, une limite et un moyen de transport.",
+      "intro": "부터 et 까지 bornent le temps (« de… à… »), 에서 et 까지 bornent l'espace. (으)로 indique le moyen ou la direction.",
+      "points": [
+        {"f": "부터 · 까지 / 에서 · 까지", "k": ["부터", "까지", "에서"], "s": "Début et fin d'une durée ou d'un trajet.",
+         "c": ["Temps : 아홉 시부터 여섯 시까지.", "Lieu : 서울에서 부산까지."],
+         "n": "까지 seul signifie aussi « jusqu'à, d'ici à » : 내일까지 (d'ici demain).",
+         "ex": [["수업은 아홉 시[부터] 한 시[까지]예요.", "Le cours a lieu de 9 h à 13 h."], ["집[에서] 학교[까지] 멀어요?", "C'est loin, de chez toi à l'école ?"]]},
+        {"f": "(으)로 (moyen, direction)", "k": ["으로", "로"], "s": "Moyen (« en, avec ») et direction (« vers »).",
+         "c": ["Après une consonne autre que ㄹ : 으로 (손으로, 오른쪽으로).", "Après une voyelle ou ㄹ : 로 (버스로, 지하철로)."],
+         "n": "Pour les directions dans la rue : 왼쪽으로 가세요 (allez à gauche), 쭉 가세요 (allez tout droit).",
+         "ex": [["학교에 버스[로] 가요.", "Je vais à l'école en bus."], ["오른쪽[으로] 가세요.", "Allez vers la droite."]]}
+      ],
+      "mots": [["버스", "bus"], ["지하철", "métro"], ["택시", "taxi"], ["기차", "train"], ["비행기", "avion"], ["역", "gare, station"], ["정류장", "arrêt (de bus)"], ["표", "billet, ticket"], ["타다", "prendre (un véhicule)"], ["내리다", "descendre"], ["갈아타다", "changer (de ligne)"], ["걸리다", "prendre (du temps)"], ["멀다", "loin"], ["가깝다", "proche"], ["왼쪽", "gauche"]]
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "id": "niveau4",
+  "niveau": 4,
+  "titre": "4급 · Actualités et idées",
+  "intro": "Le 4급 vise la compréhension des actualités et des sujets abstraits courants. Vous y apprenez les connecteurs qui structurent une argumentation et rédigez l'essai court de la question 53.",
+  "unites": [
+    {
+      "id": "N4-01", "titre": "Non seulement… mais aussi", "theme": "Présenter un sujet",
+      "objectif": "Je sais ajouter des arguments et opposer deux aspects d'un sujet.",
+      "intro": "Une argumentation coréenne s'appuie sur des connecteurs nets : -(으)ㄹ 뿐만 아니라 pour ajouter, -는 반면에 pour opposer.",
+      "points": [
+        {"f": "-(으)ㄹ 뿐만 아니라", "k": ["-을 뿐만 아니라", "-ㄹ 뿐만 아니라"], "s": "« Non seulement…, mais aussi… ».",
+         "c": ["Radical + -(으)ㄹ 뿐만 아니라 : 쌀 뿐만 아니라, 먹을 뿐만 아니라.", "Nom : N뿐만 아니라 : 학생뿐만 아니라 선생님도.", "La seconde partie contient souvent 도 ou 까지."],
+         "ex": [["이 앱은 무료[일 뿐만 아니라] 사용하기도 쉽다.", "Cette application est non seulement gratuite, mais aussi facile à utiliser."], ["운동은 몸[뿐만 아니라] 마음에도 좋다.", "Le sport est bon pour le corps, mais aussi pour l'esprit."]]},
+        {"f": "-는 반면에", "k": ["-는 반면에"], "s": "Opposition de deux aspects d'une même chose : « alors que », « en revanche ».",
+         "c": ["Verbe : -는 반면에. Adjectif : -(으)ㄴ 반면에 : 편리한 반면에."],
+         "ex": [["도시 생활은 편리한 [반면에] 스트레스가 많다.", "La vie en ville est pratique, mais en revanche stressante."], ["이 일은 월급이 많[은 반면에] 쉬는 날이 적다.", "Ce travail paie bien, mais en contrepartie il y a peu de jours de repos."]]}
+      ],
+      "mots": [["장점", "avantage, point fort"], ["단점", "inconvénient, point faible"], ["편리하다", "pratique, commode"], ["효과", "effet, efficacité"], ["영향", "influence"], ["문제점", "problème, point problématique"], ["해결", "solution, résolution"], ["방안", "mesure, moyen"], ["측면", "aspect"], ["반면", "à l'inverse, d'un autre côté"], ["긍정적", "positif"], ["부정적", "négatif"], ["이용", "utilisation"], ["사용", "usage, utilisation"], ["무료", "gratuité"]]
+    },
+    {
+      "id": "N4-02", "titre": "Plus…, plus…", "theme": "Tendances et statistiques",
+      "objectif": "Je sais décrire une évolution et une proportion.",
+      "intro": "-(으)ㄹ수록 décrit une évolution parallèle. Avec 에 따라 et 에 비해, vous disposez des outils de la question 51-53 : commenter un graphique.",
+      "points": [
+        {"f": "-(으)ㄹ수록", "k": ["-을수록", "-ㄹ수록"], "s": "« Plus…, plus… ».",
+         "c": ["Radical + -(으)ㄹ수록 : 많을수록, 갈수록.", "Forme renforcée : -(으)면 -(으)ㄹ수록 : 보면 볼수록."],
+         "ex": [["나이가 들[수록] 시간이 빨리 간다.", "Plus on vieillit, plus le temps passe vite."], ["한국어는 배우면 배[울수록] 재미있다.", "Plus on apprend le coréen, plus c'est intéressant."]]},
+        {"f": "에 따라 · 에 비해", "k": ["따르다", "비하다"], "s": "에 따라 : « selon, en fonction de ». 에 비해 : « par rapport à, comparé à ».",
+         "c": ["N에 따라 : 지역에 따라, 나이에 따라.", "N에 비해 : 작년에 비해, 다른 나라에 비해."],
+         "n": "Vocabulaire des graphiques : 증가하다 (augmenter), 감소하다 (diminuer), 차지하다 (représenter), 꾸준히 (régulièrement), 급격히 (brutalement).",
+         "ex": [["작년[에 비해] 관광객이 20% 증가했다.", "Le nombre de touristes a augmenté de 20 % par rapport à l'an dernier."], ["나이[에 따라] 좋아하는 운동이 다르다.", "Le sport préféré varie selon l'âge."]]}
+      ],
+      "mots": [["통계", "statistiques"], ["그래프", "graphique"], ["비율", "proportion, taux"], ["차지하다", "occuper, représenter"], ["증가하다", "augmenter"], ["감소하다", "diminuer"], ["꾸준히", "continuellement, inlassablement"], ["급격히", "brusquement"], ["점차", "progressivement"], ["대상", "objet, public visé"], ["응답자", "personne interrogée"], ["절반", "moitié"], ["이상", "égal ou plus, au moins"], ["이하", "moins de, au-dessous"], ["추세", "tendance"]]
+    },
+    {
+      "id": "N4-03", "titre": "À cause de…", "theme": "Imprévus et conséquences",
+      "objectif": "Je sais exprimer une cause imprévue et ses conséquences négatives.",
+      "intro": "Le coréen nuance la cause : -는 바람에 (imprévu soudain), -는 탓에 (faute, reproche), -는 통에 (agitation, désordre). Ces trois tournures introduisent toujours une conséquence négative.",
+      "points": [
+        {"f": "-는 바람에", "k": ["-는 바람에"], "s": "Cause imprévue d'une conséquence négative : « à cause de ce que… ».",
+         "c": ["Verbe + -는 바람에, suivi du passé : 늦잠을 자는 바람에 늦었어요."],
+         "ex": [["갑자기 비가 오[는 바람에] 옷이 다 젖었다.", "Il s'est mis à pleuvoir soudain, et je suis trempé."], ["휴대폰이 고장 나[는 바람에] 연락을 못 했어요.", "Mon téléphone est tombé en panne, je n'ai pas pu te contacter."]]},
+        {"f": "-는 탓에 · -는 통에", "k": ["-는 탓", "-는 통에"], "s": "-는 탓에 : cause blâmée (« par la faute de »). -는 통에 : agitation qui empêche (« avec tout ce… »).",
+         "c": ["Verbe : -는 탓에 / -는 통에. Adjectif : -(으)ㄴ 탓에. Nom : N 탓에, N 통에."],
+         "ex": [["운동을 안 하[는 탓에] 체력이 약해졌다.", "Faute de faire du sport, ma condition physique s'est dégradée."], ["옆집이 시끄럽게 하[는 통에] 잠을 못 잤다.", "Avec tout le bruit des voisins, je n'ai pas pu dormir."]]}
+      ],
+      "mots": [["갑자기", "soudain"], ["취소", "annulation"], ["연기", "report, remise"], ["지연", "retard"], ["고장", "panne"], ["사고", "accident"], ["교통", "circulation, transports"], ["막히다", "être bouché, embouteillé"], ["젖다", "être mouillé"], ["시끄럽다", "bruyant"], ["체력", "force physique"], ["탓", "faute"], ["원인", "cause"], ["피해", "dommage, préjudice"], ["책임", "responsabilité"]]
+    },
+    {
+      "id": "N4-04", "titre": "Ce n'est pas possible que…", "theme": "Jugements et déductions",
+      "objectif": "Je sais exprimer une certitude négative et une déduction.",
+      "intro": "-(으)ㄹ 리가 없다 exclut une possibilité ; -는 셈이다 tire une conclusion « en somme » ; -다시피 rappelle un fait connu.",
+      "points": [
+        {"f": "-(으)ㄹ 리가 없다", "k": ["-을 리가 없다", "-ㄹ 리가 없다"], "s": "« Il est impossible que », « il n'y a aucune raison pour que ».",
+         "c": ["Radical + -(으)ㄹ 리가 없다 : 그럴 리가 없어요."],
+         "n": "그럴 리가요! (« pas possible ! ») est une réaction courante.",
+         "ex": [["그렇게 착한 사람이 거짓말을 할 [리가 없다].", "Il est impossible qu'une personne aussi gentille mente."], ["열심히 준비했으니까 떨어질 [리가 없어요].", "Tu as bien préparé, tu ne peux pas échouer."]]},
+        {"f": "-는 셈이다 · -다시피", "k": ["셈", "-다시피"], "s": "-는 셈이다 : « cela revient à », « en somme ». -다시피 : « comme vous le savez / le voyez ».",
+         "c": ["Verbe : -는 셈이다 ; passé : -(으)ㄴ 셈이다.", "-다시피 avec les verbes de perception ou de savoir : 알다시피, 보시다시피, 아시다시피."],
+         "ex": [["일주일에 다섯 번 가니까 거의 매일 가[는 셈이에요].", "J'y vais cinq fois par semaine, c'est presque tous les jours en somme."], ["보시[다시피] 이 방은 아주 넓습니다.", "Comme vous pouvez le voir, cette pièce est très spacieuse."]]}
+      ],
+      "mots": [["판단", "jugement"], ["추측", "supposition"], ["사실", "fait, réalité"], ["거짓말", "mensonge"], ["진실", "vérité"], ["증거", "preuve"], ["가능성", "possibilité"], ["확률", "probabilité"], ["당연하다", "naturel, évident"], ["분명하다", "clair, évident"], ["틀림없다", "sans aucun doute"], ["착하다", "gentil, sympathique"], ["떨어지다", "tomber, échouer"], ["합격", "admission, réussite"], ["거의", "presque"]]
+    },
+    {
+      "id": "N4-05", "titre": "Tant que, pendant que j'y suis", "theme": "Occasions et conditions",
+      "objectif": "Je sais exprimer une condition durable et saisir une occasion.",
+      "intro": "-는 한 pose une condition qui dure ; -는 김에 profite d'une occasion pour faire autre chose ; -(으)ㄹ 겸 réunit deux buts.",
+      "points": [
+        {"f": "-는 한", "k": ["-는 한"], "s": "« Tant que », « dans la mesure où ».",
+         "c": ["Verbe : -는 한 : 포기하지 않는 한.", "Souvent avec une négation dans la condition."],
+         "ex": [["포기하지 않[는 한] 기회는 또 온다.", "Tant qu'on n'abandonne pas, une autre chance viendra."], ["제가 아[는 한] 그 사람은 정직해요.", "À ma connaissance, cette personne est honnête."]]},
+        {"f": "-는 김에 · -(으)ㄹ 겸", "k": ["-는 김에", "겸"], "s": "-는 김에 : « pendant que j'y suis, autant… ». -(으)ㄹ 겸 : « à la fois pour… et pour… ».",
+         "c": ["Verbe : -는 김에 (présent), -(으)ㄴ 김에 (passé) : 나온 김에.", "-(으)ㄹ 겸 : 운동도 할 겸 걸어서 가요. Nom : N 겸 N : 아침 겸 점심."],
+         "ex": [["시장에 가[는 김에] 우유도 좀 사 와.", "Puisque tu vas au marché, rapporte aussi du lait."], ["운동도 [할 겸] 걸어서 출근해요.", "Je vais au travail à pied, entre autres pour faire du sport."]]}
+      ],
+      "mots": [["기회", "occasion, chance"], ["포기", "abandon"], ["노력", "effort"], ["목표", "objectif"], ["정직하다", "honnête"], ["조건", "condition"], ["가능하다", "possible"], ["불가능하다", "impossible"], ["겸", "et aussi, à la fois"], ["걸어가다", "aller à pied"], ["들르다", "passer (chez)"], ["심부름", "commission, course (pour quelqu'un)"], ["부탁", "demande, service"], ["동시", "simultanéité"], ["마침", "justement"]]
+    },
+    {
+      "id": "N4-06", "titre": "Ça vaut la peine", "theme": "Recommander",
+      "objectif": "Je sais recommander quelque chose et dire qu'un effort est vain.",
+      "intro": "-(으)ㄹ 만하다 juge qu'une chose mérite qu'on la fasse ; -아 / -어 봤자 dit au contraire que l'effort ne servira à rien.",
+      "points": [
+        {"f": "-(으)ㄹ 만하다", "k": ["-을 만하다", "-ㄹ 만하다"], "s": "« Valoir la peine de », « être digne de ».",
+         "c": ["Radical + -(으)ㄹ 만하다 : 볼 만하다, 먹을 만하다, 믿을 만하다."],
+         "ex": [["그 영화는 한번 볼 [만해요].", "Ce film vaut la peine d'être vu."], ["이 식당은 값에 비해 먹을 [만해요].", "Ce restaurant est correct pour le prix."]]},
+        {"f": "-아 / -어 봤자", "k": ["-아 봤자", "-어 봤자"], "s": "« Avoir beau…, ça ne servira à rien ».",
+         "c": ["Radical + -아 / 어 봤자 : 말해 봤자, 가 봤자."],
+         "ex": [["지금 가 [봤자] 문을 닫았을 거예요.", "Même si tu y vas maintenant, ce sera fermé."], ["걱정해 [봤자] 소용없어요.", "Ça ne sert à rien de s'inquiéter."]]},
+        {"f": "-(으)ㄹ 테니까", "k": ["-을 테니까", "-ㄹ 테니까"], "s": "Intention ou supposition qui justifie la suite : « puisque je vais… », « puisque ce sera sans doute… ».",
+         "c": ["Radical + -(으)ㄹ 테니까 : 제가 할 테니까, 추울 테니까."],
+         "ex": [["청소는 제가 [할 테니까] 좀 쉬세요.", "Je vais faire le ménage, reposez-vous un peu."], ["밖은 추[울 테니까] 따뜻하게 입어.", "Il doit faire froid dehors, habille-toi chaudement."]]}
+      ],
+      "mots": [["추천", "recommandation"], ["감상", "impression, appréciation"], ["평가", "évaluation"], ["가치", "valeur"], ["소용", "utilité"], ["믿다", "croire, faire confiance"], ["볼거리", "chose à voir"], ["먹을거리", "chose à manger"], ["관광지", "site touristique"], ["인기", "popularité"], ["실망", "déception"], ["만족", "satisfaction"], ["기대", "attente, espoir"], ["별로", "pas particulièrement, pas vraiment"], ["꼭", "absolument, sans faute"]]
+    },
+    {
+      "id": "N4-07", "titre": "On dirait que…", "theme": "Observer et déduire",
+      "objectif": "Je sais exprimer une impression nuancée et un enchaînement surprenant.",
+      "intro": "-는 듯하다 est la version écrite et soutenue de -는 것 같다. -더니 relie un constat passé à ce qui a suivi.",
+      "points": [
+        {"f": "-는 듯하다", "k": ["-는 듯하다"], "s": "« Il semble que », « on dirait que » (style écrit).",
+         "c": ["Verbe : -는 듯하다. Adjectif : -(으)ㄴ 듯하다. Futur : -(으)ㄹ 듯하다."],
+         "ex": [["밖에 눈이 오[는 듯하다].", "On dirait qu'il neige dehors."], ["그는 이미 알고 있[는 듯했다].", "Il semblait déjà le savoir."]]},
+        {"f": "-더니", "k": ["-더니"], "s": "Constat passé suivi d'un changement ou d'une conséquence : « alors que… maintenant », « …et puis ».",
+         "c": ["Radical + -더니 (pour un tiers ou une chose) : 흐리더니 비가 온다.", "Avec -았 / 었더니 (pour soi) : 운동을 했더니 건강해졌다."],
+         "ex": [["아침에는 맑[더니] 오후에 비가 왔다.", "Il faisait beau le matin, et l'après-midi il a plu."], ["매일 운동했[더니] 몸이 가벼워졌다.", "J'ai fait du sport tous les jours, et je me sens plus léger."]]},
+        {"f": "-기만 하다", "k": ["-기만 하다"], "s": "« Ne faire que », « se contenter de ».",
+         "c": ["Radical + -기만 하다 : 웃기만 해요, 보기만 했어요."],
+         "ex": [["그는 아무 말 없이 웃[기만 했다].", "Il s'est contenté de sourire, sans rien dire."], ["걱정하[기만 하지] 말고 행동해 보세요.", "Au lieu de seulement vous inquiéter, agissez."]]}
+      ],
+      "mots": [["표정", "expression du visage"], ["태도", "attitude"], ["반응", "réaction"], ["눈치", "tact, perspicacité"], ["짐작", "supposition, estimation"], ["이미", "déjà"], ["여전히", "toujours, comme avant"], ["드디어", "enfin"], ["훨씬", "beaucoup plus"], ["변화", "changement"], ["행동", "comportement, action"], ["침묵", "silence"], ["모습", "apparence, allure"], ["상황", "situation"], ["관찰", "observation"]]
+    },
+    {
+      "id": "N4-08", "titre": "Même si, et", "theme": "L'écrit argumentatif",
+      "objectif": "Je sais employer les connecteurs écrits de l'essai (question 53-54).",
+      "intro": "À l'écrit, -(으)며 remplace -고, -기에 donne une raison et -(으)ㄹ지라도 introduit une concession forte. Ces formes donnent à vos rédactions le registre attendu.",
+      "points": [
+        {"f": "-(으)며", "k": ["-으며", "-며"], "s": "Équivalent écrit de -고 (et) ou de -(으)면서 (tout en).",
+         "c": ["Consonne : -으며 : 많으며. Voyelle ou ㄹ : -며 : 크며, 만들며."],
+         "ex": [["이 지역은 공기가 맑으[며] 경치가 아름답다.", "Cette région a un air pur et de beaux paysages."], ["그는 웃으[며] 인사했다.", "Il a salué en souriant."]]},
+        {"f": "-(으)ㄹ지라도", "k": ["-을지라도", "-ㄹ지라도"], "s": "Concession forte : « même si », « quand bien même ».",
+         "c": ["Radical + -(으)ㄹ지라도 : 힘들지라도, 실패할지라도.", "Souvent avec 아무리 ou 비록."],
+         "ex": [["아무리 바쁠[지라도] 건강을 챙겨야 한다.", "Aussi occupé que l'on soit, il faut prendre soin de sa santé."], ["비록 실패할[지라도] 도전해 볼 것이다.", "Même si j'échoue, je vais tenter ma chance."]]},
+        {"f": "-기에", "k": ["-기에"], "s": "Raison (style écrit ou soutenu) : « comme », « vu que ».",
+         "c": ["Radical + -기에 : 비가 오기에, 좋기에."],
+         "ex": [["날씨가 좋[기에] 산책을 나갔다.", "Comme il faisait beau, je suis sorti me promener."], ["가격이 싸[기에] 두 개를 샀다.", "Comme le prix était bas, j'en ai acheté deux."]]}
+      ],
+      "mots": [["주장", "opinion défendue, thèse"], ["근거", "fondement, argument"], ["예", "exemple"], ["결론", "conclusion"], ["서론", "introduction"], ["본론", "corps (d'un texte), développement"], ["비록", "bien que, même si"], ["아무리", "aussi… que"], ["반드시", "sûrement, sans faute"], ["게다가", "en outre"], ["또한", "aussi, en outre"], ["즉", "c'est-à-dire"], ["그러므로", "par conséquent"], ["도전", "défi"], ["실패", "échec"]]
+    },
+    {
+      "id": "N4-09", "titre": "Il arrive souvent que…", "theme": "Habitudes de vie",
+      "objectif": "Je sais décrire une mauvaise habitude et une vérité générale.",
+      "intro": "-기 일쑤이다 décrit une chose (généralement fâcheuse) qui arrive souvent ; -기 마련이다 énonce ce qui arrive forcément.",
+      "points": [
+        {"f": "-기 일쑤이다", "k": ["-기 일쑤이다"], "s": "« Il arrive souvent que », « avoir la fâcheuse habitude de ».",
+         "c": ["Radical + -기 일쑤이다 : 늦기 일쑤이다, 잊어버리기 일쑤이다."],
+         "ex": [["바쁘면 아침을 거르[기 일쑤이다].", "Quand je suis occupé, il m'arrive souvent de sauter le petit-déjeuner."], ["그는 약속 시간에 늦[기 일쑤였다].", "Il était souvent en retard aux rendez-vous."]]},
+        {"f": "-기 마련이다", "k": ["-기 마련이다"], "s": "Vérité générale : « il est normal que », « forcément ».",
+         "c": ["Radical + -기 마련이다 : 실수하기 마련이다."],
+         "n": "Synonyme proche : -는 법이다 (niveau 5).",
+         "ex": [["처음에는 누구나 실수하[기 마련이다].", "Au début, tout le monde fait des erreurs."], ["시간이 지나면 잊혀지[기 마련이다].", "Avec le temps, on oublie forcément."]]},
+        {"f": "-아 / -어서인지", "k": ["-아서인지", "-어서인지"], "s": "Cause supposée : « peut-être parce que… ».",
+         "c": ["Radical + -아 / 어서인지 : 피곤해서인지, 주말이어서인지."],
+         "ex": [["피곤해[서인지] 머리가 아프다.", "J'ai mal à la tête, peut-être à cause de la fatigue."], ["주말이어[서인지] 길이 많이 막혔다.", "Peut-être parce que c'était le week-end, la route était très encombrée."]]}
+      ],
+      "mots": [["습관", "habitude"], ["거르다", "sauter (un repas)"], ["과식", "excès de nourriture"], ["야식", "repas de nuit"], ["운동량", "quantité d'exercice"], ["수면", "sommeil"], ["부족", "manque, insuffisance"], ["스트레스", "stress"], ["피로", "fatigue"], ["누구", "qui, quelqu'un"], ["자연스럽다", "naturel"], ["흔하다", "commun, fréquent"], ["점점", "peu à peu"], ["버릇", "manie, habitude"], ["고치다", "réparer, corriger"]]
+    }
+  ]
+}

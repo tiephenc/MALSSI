@@ -1,0 +1,157 @@
+{
+  "id": "niveau3",
+  "niveau": 3,
+  "titre": "3급 · La vie sociale",
+  "intro": "Le 3급 ouvre le TOPIK II. Vous y racontez ce que vous avez constaté, rapportez les paroles des autres, découvrez le style écrit -ㄴ다 et commencez la rédaction (questions 51 et 52).",
+  "unites": [
+    {
+      "id": "N3-01", "titre": "J'ai constaté que…", "theme": "Raconter une observation",
+      "objectif": "Je sais rapporter ce que j'ai vu ou vécu moi-même.",
+      "intro": "-더- signale un souvenir de perception directe : on rapporte ce que l'on a soi-même vu, entendu ou ressenti. À l'oral poli, il apparaît surtout dans -더라고요.",
+      "points": [
+        {"f": "-더라고요", "k": ["-더라고요"], "s": "Rapporter un constat personnel passé : « j'ai remarqué que… », « figure-toi que… ».",
+         "c": ["Radical + -더라고요 : 맛있더라고요, 많더라고요.", "Nom : N(이)더라고요 : 학생이더라고요."],
+         "n": "On ne l'emploie pas pour ses propres actions volontaires : 제가 밥을 먹더라고요 est fautif. En revanche, pour ses sensations, c'est naturel : 저는 좀 춥더라고요.",
+         "ex": [["그 식당 음식이 정말 맛있[더라고요].", "J'ai trouvé que la cuisine de ce restaurant était vraiment bonne."], ["주말에 공원에 사람이 많[더라고요].", "Il y avait beaucoup de monde au parc ce week-end."]]},
+        {"f": "-는 편이다", "k": ["-는 편이다", "-은 편이다"], "s": "Tendance : « plutôt », « avoir tendance à ».",
+         "c": ["Verbe : -는 편이다 : 많이 먹는 편이에요.", "Adjectif : -(으)ㄴ 편이다 : 조용한 편이에요."],
+         "n": "Pratique pour adoucir un jugement sur soi ou sur les autres.",
+         "ex": [["저는 아침을 많이 먹[는 편이에요].", "Je mange plutôt beaucoup le matin."], ["이 동네는 조용한 [편이에요].", "Ce quartier est plutôt calme."]]}
+      ],
+      "mots": [["경치", "paysage, vue"], ["분위기", "ambiance"], ["손님", "client, invité"], ["줄", "file, ligne"], ["서다", "se tenir debout"], ["붐비다", "être bondé"], ["한가하다", "tranquille, peu fréquenté"], ["친절하다", "aimable, gentil"], ["불친절하다", "désagréable, peu aimable"], ["대체로", "en général"], ["특히", "spécialement, particulièrement"], ["의외로", "contre toute attente"], ["예상", "prévision, attente"], ["느낌", "impression, sensation"], ["성격", "caractère"]]
+    },
+    {
+      "id": "N3-02", "titre": "Parce que j'étais occupé à…", "theme": "S'excuser, s'expliquer",
+      "objectif": "Je sais justifier un empêchement et raconter une action interrompue.",
+      "intro": "-느라고 explique qu'une activité a empêché autre chose. -다가 décrit une action interrompue ou un changement en cours de route.",
+      "points": [
+        {"f": "-느라고", "k": ["-느라고"], "s": "« Parce que j'étais occupé à… » : une activité a pris le temps ou l'énergie nécessaires à autre chose.",
+         "c": ["Verbe d'action + -느라고 : 공부하느라고, 준비하느라고.", "Même sujet dans les deux propositions ; pas de passé devant -느라고."],
+         "n": "Souvent suivi d'une conséquence négative : 못 했어요, 늦었어요, 피곤해요.",
+         "ex": [["숙제를 하[느라고] 잠을 못 잤어요.", "J'étais occupé par mes devoirs, je n'ai pas pu dormir."], ["발표를 준비하[느라고] 바빴어요.", "J'étais occupé à préparer mon exposé."]]},
+        {"f": "-다가", "k": ["-다가"], "s": "Action interrompue par une autre : « en train de… quand… », « puis ».",
+         "c": ["Radical + -다가 : 걷다가, 자다가.", "Au passé (-았 / 었다가) : action terminée puis suivie d'une autre en sens contraire : 갔다가 왔어요 (je suis allé puis revenu)."],
+         "ex": [["길을 걷[다가] 친구를 만났어요.", "En marchant dans la rue, j'ai croisé un ami."], ["창문을 열었[다가] 추워서 닫았어요.", "J'ai ouvert la fenêtre, puis je l'ai refermée parce qu'il faisait froid."]]}
+      ],
+      "mots": [["미안하다", "désolé"], ["사과하다", "s'excuser"], ["변명", "excuse, justification"], ["지각", "retard"], ["늦잠", "grasse matinée"], ["발표", "exposé, annonce"], ["과제", "devoir, tâche"], ["마감", "date limite"], ["밤", "nuit"], ["새다", "passer (la nuit)"], ["졸다", "somnoler"], ["잊어버리다", "oublier"], ["떨어뜨리다", "faire tomber"], ["다치다", "se blesser"], ["넘어지다", "tomber, chuter"]]
+    },
+    {
+      "id": "N3-03", "titre": "Il paraît que…", "theme": "Rapporter des paroles",
+      "objectif": "Je sais rapporter ce que quelqu'un a dit, demandé ou proposé.",
+      "intro": "Le discours indirect coréen change de terminaison selon le type de phrase rapportée : affirmation (-다고), question (-냐고), proposition (-자고), ordre (-(으)라고).",
+      "points": [
+        {"f": "-다고 하다 (affirmation rapportée)", "k": ["-다고", "-ㄴ다고", "-는다고"], "s": "« Il dit que… », « il paraît que… ».",
+         "c": ["Adjectif : -다고 해요 : 바쁘다고 해요.", "Verbe : -ㄴ / 는다고 해요 : 간다고, 먹는다고.", "Passé : -았 / 었다고 : 갔다고.", "Nom : N(이)라고 해요 : 학생이라고 해요."],
+         "n": "Contraction très courante : -대요 (-다고 해요) : 바쁘대요, 온대요.",
+         "ex": [["민수 씨가 오늘 바쁘[다고 했어요].", "Minsu a dit qu'il était occupé aujourd'hui."], ["내일 비가 온[대요].", "Il paraît qu'il pleuvra demain."]]},
+        {"f": "-냐고 · -자고 · -(으)라고", "k": ["-냐고", "-자고", "-라고"], "s": "Question rapportée (-냐고), proposition rapportée (-자고), ordre rapporté (-(으)라고).",
+         "c": ["Question : -(느)냐고 했어요 : 어디 가냐고 물었어요.", "Proposition : -자고 했어요 : 같이 가자고 했어요.", "Ordre : -(으)라고 했어요 : 일찍 오라고 했어요.", "Demande de service : -아 / 어 달라고 했어요 (pour moi) : 도와 달라고 했어요."],
+         "ex": [["친구가 같이 영화를 보[자고] 했어요.", "Mon ami m'a proposé d'aller voir un film."], ["선생님이 내일 일찍 오[라고] 하셨어요.", "Le professeur m'a dit de venir tôt demain."]]}
+      ],
+      "mots": [["소문", "rumeur"], ["소식", "nouvelles"], ["뉴스", "informations, actualités"], ["전하다", "transmettre"], ["묻다", "demander, interroger"], ["대답하다", "répondre"], ["부탁하다", "demander (un service)"], ["제안", "proposition"], ["명령", "ordre"], ["설명하다", "expliquer"], ["이야기", "histoire, conversation"], ["대화", "conversation, dialogue"], ["의견", "opinion, avis"], ["직접", "directement, en personne"], ["듣다", "écouter, entendre"]]
+    },
+    {
+      "id": "N3-04", "titre": "Le style écrit", "theme": "Journal et rédaction",
+      "objectif": "Je sais écrire au style neutre -ㄴ다 / -는다 utilisé dans les textes et à la question 53-54.",
+      "intro": "Les journaux, les livres et les rédactions du TOPIK emploient le style 한다체 : ni poli ni familier, il est neutre et impersonnel. Le savoir est indispensable dès la question 51.",
+      "points": [
+        {"f": "-ㄴ다 / -는다 / -다", "k": ["-ㄴ다", "-는다", "-다"], "s": "Style écrit neutre (affirmation).",
+         "c": ["Verbe à voyelle : -ㄴ다 : 간다, 본다. Radical en ㄹ : ㄹ tombe : 산다 (살다).", "Verbe à consonne : -는다 : 먹는다, 읽는다.", "Adjectif et 있다 / 없다 : -다 : 좋다, 있다.", "Passé : -았 / 었다 : 갔다. Futur : -(으)ㄹ 것이다. Nom : N이다."],
+         "n": "À l'écrit, on préfère aussi les formes pleines : 것이 (et non 게), 무엇 (et non 뭐), 그러나 (et non 하지만).",
+         "ex": [["나는 매일 아침 신문을 읽[는다].", "Je lis le journal chaque matin."], ["요즘 혼자 사는 사람이 늘고 [있다].", "Le nombre de personnes vivant seules augmente."]]},
+        {"f": "-는 데다가", "k": ["-는 데다가"], "s": "Ajout : « en plus de… », « non seulement…, mais aussi… ».",
+         "c": ["Verbe : -는 데다가 : 비가 오는 데다가.", "Adjectif : -(으)ㄴ 데다가 : 싼 데다가.", "Nom : N인 데다가."],
+         "n": "Les deux éléments vont dans le même sens (deux qualités ou deux défauts).",
+         "ex": [["이 식당은 음식이 맛있[는 데다가] 값도 싸다.", "Ce restaurant est bon et, en plus, pas cher."], ["바람이 부[는 데다가] 비까지 왔다.", "Il y avait du vent, et en plus il s'est mis à pleuvoir."]]}
+      ],
+      "mots": [["신문", "journal"], ["기사", "article"], ["글", "texte, écrit"], ["작문", "rédaction, composition"], ["주제", "sujet, thème"], ["내용", "contenu, fond"], ["결과", "résultat"], ["원인", "cause"], ["증가", "augmentation"], ["감소", "diminution"], ["조사", "enquête"], ["응답", "réponse (à une enquête)"], ["비율", "proportion, taux"], ["그러나", "mais, cependant"], ["따라서", "par conséquent"]]
+    },
+    {
+      "id": "N3-05", "titre": "Préparer à l'avance", "theme": "Organisation de la maison",
+      "objectif": "Je sais dire qu'une action a été faite et son résultat conservé.",
+      "intro": "-아 / -어 놓다 et -아 / -어 두다 insistent sur l'état qui reste après l'action : on fait quelque chose « pour que ce soit fait », souvent en prévision.",
+      "points": [
+        {"f": "-아 / -어 놓다 · 두다", "k": ["-아 놓다", "-어 놓다", "-아 두다", "-어 두다"], "s": "Faire quelque chose et en laisser le résultat : « à l'avance », « laisser ».",
+         "c": ["열다 → 열어 놓다 (laisser ouvert), 사다 → 사 두다 (acheter à l'avance), 예약하다 → 예약해 놓다."],
+         "n": "-아 / 어 두다 souligne un peu plus la durée ou la prévision.",
+         "ex": [["손님이 오기 전에 음식을 만들[어 놓았어요].", "J'ai préparé à manger avant l'arrivée des invités."], ["비행기 표를 미리 사 [두세요].", "Achetez votre billet d'avion à l'avance."]]},
+        {"f": "-(으)ㄴ 채로", "k": ["-은 채로", "-ㄴ 채로"], "s": "« Tel quel », « en restant dans l'état de… ».",
+         "c": ["Verbe au passé : -(으)ㄴ 채(로) : 신발을 신은 채로, 불을 켠 채로."],
+         "ex": [["피곤해서 옷을 입[은 채로] 잤어요.", "J'étais fatigué, j'ai dormi tout habillé."], ["창문을 연 [채로] 외출했어요.", "Je suis sorti en laissant la fenêtre ouverte."]]}
+      ],
+      "mots": [["미리", "à l'avance"], ["예약", "réservation"], ["정리", "rangement"], ["준비물", "affaires à préparer"], ["냉장고", "réfrigérateur"], ["불", "lumière, feu"], ["켜다", "allumer"], ["끄다", "éteindre"], ["창문", "fenêtre"], ["서랍", "tiroir"], ["넣다", "mettre dedans"], ["꺼내다", "sortir (un objet)"], ["걸다", "accrocher"], ["두다", "poser, mettre"], ["놓다", "poser, mettre"]]
+    },
+    {
+      "id": "N3-06", "titre": "Je me demande si…", "theme": "Incertitudes",
+      "objectif": "Je sais intégrer une question indirecte et exprimer un doute.",
+      "intro": "-는지 transforme une question en élément de phrase : « savoir si », « je me demande où ». -(으)ㄹ지 fait de même pour l'avenir.",
+      "points": [
+        {"f": "-는지 · -(으)ㄹ지", "k": ["-는지", "-을지", "-ㄹ지"], "s": "Question indirecte : « si », « où », « quand »… + savoir, demander, ne pas savoir.",
+         "c": ["Verbe : -는지 : 어디 사는지 알아요?", "Adjectif : -(으)ㄴ지 : 얼마나 큰지.", "Avenir ou hésitation : -(으)ㄹ지 : 갈지 말지 고민이에요.", "Passé : -았 / 었는지."],
+         "n": "-는지 알다 / 모르다 et -(으)ㄹ지 모르겠다 sont très fréquents à l'oral.",
+         "ex": [["그 사람이 어디 사[는지] 알아요?", "Tu sais où habite cette personne ?"], ["내일 비가 올[지] 모르겠어요.", "Je ne sais pas s'il va pleuvoir demain."]]},
+        {"f": "-는 동안", "k": ["-는 동안"], "s": "« Pendant que », « pendant ».",
+         "c": ["Verbe : -는 동안 : 기다리는 동안.", "Nom de durée : N 동안 : 일 년 동안, 방학 동안."],
+         "ex": [["친구를 기다리[는 동안] 책을 읽었어요.", "J'ai lu en attendant mon ami."], ["방학 [동안] 아르바이트를 했어요.", "J'ai fait un petit boulot pendant les vacances."]]}
+      ],
+      "mots": [["고민", "souci, hésitation"], ["결정", "décision"], ["선택", "choix"], ["확인", "vérification"], ["궁금하다", "curieux (de savoir)"], ["걱정", "inquiétude"], ["확실하다", "certain, sûr"], ["불안하다", "anxieux"], ["기억", "souvenir, mémoire"], ["잊다", "oublier"], ["알아보다", "se renseigner"], ["정하다", "décider, fixer"], ["동안", "pendant, durée"], ["아르바이트", "petit boulot, travail à temps partiel"], ["얼마나", "combien, à quel point"]]
+    },
+    {
+      "id": "N3-07", "titre": "J'ai failli…", "theme": "Petits incidents",
+      "objectif": "Je sais raconter ce qui a failli arriver et ce qui est arrivé malgré moi.",
+      "intro": "-(으)ㄹ 뻔하다 raconte un incident évité de justesse. -고 말다 et -아 / -어 버리다 racontent au contraire ce qui est arrivé, souvent avec regret ou soulagement.",
+      "points": [
+        {"f": "-(으)ㄹ 뻔하다", "k": ["-을 뻔하다", "-ㄹ 뻔하다"], "s": "« Avoir failli », « être à deux doigts de ».",
+         "c": ["Toujours au passé : 넘어질 뻔했어요, 늦을 뻔했어요."],
+         "n": "Souvent précédé de 하마터면 (« pour un peu ») : 하마터면 사고가 날 뻔했어요.",
+         "ex": [["길이 미끄러워서 넘어질 [뻔했어요].", "La route était glissante, j'ai failli tomber."], ["알람을 못 들어서 지각할 [뻔했어요].", "Je n'ai pas entendu le réveil, j'ai failli être en retard."]]},
+        {"f": "-고 말다 · -아 / -어 버리다", "k": ["-고 말다", "-아 버리다", "-어 버리다"], "s": "Achèvement d'une action, souvent regrettable (-고 말다) ou vécue comme un soulagement ou un regret (-아 / 어 버리다).",
+         "c": ["Radical + -고 말았다 : 울고 말았다.", "Radical + -아 / 어 버리다 : 잊어버리다, 먹어 버리다."],
+         "ex": [["참으려고 했지만 결국 울[고 말았어요].", "J'ai essayé de me retenir, mais j'ai fini par pleurer."], ["동생이 케이크를 다 먹어 [버렸어요].", "Mon petit frère a mangé tout le gâteau."]]}
+      ],
+      "mots": [["사고", "accident"], ["실수", "erreur"], ["잃어버리다", "perdre"], ["고장", "panne"], ["미끄럽다", "glissant"], ["놓치다", "rater, manquer"], ["깨지다", "se casser"], ["찢어지다", "se déchirer"], ["결국", "finalement"], ["하마터면", "pour un peu, faillir"], ["다행", "chance, soulagement"], ["놀라다", "être surpris, s'effrayer"], ["후회", "regret"], ["울다", "pleurer"], ["참다", "se retenir, supporter"]]
+    },
+    {
+      "id": "N3-08", "titre": "Pour que, comme", "theme": "Consignes et conseils",
+      "objectif": "Je sais exprimer un but avec -도록 et suivre une consigne avec -는 대로.",
+      "intro": "-도록 indique le but ou le degré (« de façon à »), -는 대로 signifie « comme », « conformément à », ou « dès que ».",
+      "points": [
+        {"f": "-도록", "k": ["-도록"], "s": "But ou degré : « pour que », « de façon à », « jusqu'à ».",
+         "c": ["Radical + -도록 : 늦지 않도록, 잘 들리도록.", "Degré : 밤늦도록 (jusque tard dans la nuit)."],
+         "n": "-도록 하다 sert à donner une consigne ferme mais polie : 내일까지 내도록 하세요.",
+         "ex": [["감기에 걸리지 않[도록] 조심하세요.", "Faites attention à ne pas attraper froid."], ["뒤에서도 잘 보이[도록] 크게 쓰세요.", "Écrivez gros, pour qu'on voie bien du fond."]]},
+        {"f": "-는 대로", "k": ["-는 대로"], "s": "« Comme », « conformément à » ; « dès que ».",
+         "c": ["Présent : -는 대로 : 말하는 대로. Passé : -(으)ㄴ 대로 : 배운 대로.", "Nom : N대로 : 계획대로, 약속대로.", "« Dès que » : 도착하는 대로 연락하세요."],
+         "ex": [["제가 하[는 대로] 따라 해 보세요.", "Faites comme moi."], ["집에 도착하[는 대로] 전화할게요.", "Je t'appelle dès que j'arrive à la maison."]]}
+      ],
+      "mots": [["방법", "méthode, façon"], ["순서", "ordre, séquence"], ["설명서", "mode d'emploi"], ["따르다", "suivre"], ["지키다", "respecter, protéger"], ["주의", "attention, prudence"], ["안전", "sécurité"], ["건강하다", "en bonne santé"], ["푹", "profondément (dormir)"], ["충분히", "suffisamment"], ["규칙적", "régulier"], ["습관", "habitude"], ["줄이다", "réduire"], ["늘리다", "augmenter, accroître"], ["계획", "projet, plan"]]
+    },
+    {
+      "id": "N3-09", "titre": "Le passif et le causatif", "theme": "Décrire des faits",
+      "objectif": "Je reconnais les verbes passifs et causatifs les plus fréquents.",
+      "intro": "Le coréen forme beaucoup de passifs et de causatifs en insérant -이-, -히-, -리- ou -기- dans le radical. La forme n'est pas prévisible : il faut apprendre les paires une à une, comme des mots de vocabulaire.",
+      "points": [
+        {"f": "Le passif (-이- -히- -리- -기-)", "k": ["-이-", "-히-", "-리-", "-기-", "피동"], "s": "L'action est subie par le sujet : « être vu, être ouvert… ».",
+         "c": ["-이- : 보다 → 보이다, 쓰다 → 쓰이다, 놓다 → 놓이다.", "-히- : 닫다 → 닫히다, 먹다 → 먹히다, 잡다 → 잡히다.", "-리- : 열다 → 열리다, 듣다 → 들리다, 팔다 → 팔리다.", "-기- : 안다 → 안기다, 끊다 → 끊기다."],
+         "n": "Pour les verbes en 하다, le passif se forme avec 되다 : 사용하다 → 사용되다.",
+         "ex": [["바람 때문에 문이 [닫혔어요].", "La porte s'est fermée à cause du vent."], ["여기에서 바다가 [보여요].", "D'ici, on voit la mer."]]},
+        {"f": "Le causatif (-이- -히- -리- -기- -우-) · -게 하다", "k": ["-우-", "-게 하다", "사동"], "s": "Faire faire, laisser faire : « faire manger, faire asseoir… ».",
+         "c": ["먹다 → 먹이다, 앉다 → 앉히다, 울다 → 울리다, 웃다 → 웃기다, 자다 → 재우다.", "Forme analytique, valable pour tous les verbes : -게 하다 : 먹게 하다."],
+         "ex": [["엄마가 아기에게 우유를 [먹였어요].", "La maman a donné du lait au bébé."], ["그 영화가 사람들을 [웃겼어요].", "Ce film a fait rire les gens."]]}
+      ],
+      "mots": [["보이다", "être vu, se voir"], ["들리다", "être entendu, s'entendre"], ["열리다", "s'ouvrir"], ["닫히다", "se fermer"], ["팔리다", "se vendre"], ["잡히다", "être attrapé"], ["걸리다", "prendre (du temps), être accroché"], ["바뀌다", "changer, être changé"], ["먹이다", "nourrir, faire manger"], ["앉히다", "faire asseoir"], ["웃기다", "faire rire"], ["울리다", "faire pleurer, faire sonner"], ["입히다", "habiller"], ["씻기다", "laver (quelqu'un)"], ["알리다", "informer, annoncer"]]
+    },
+    {
+      "id": "N3-10", "titre": "Le style familier 반말", "theme": "Entre amis",
+      "objectif": "Je sais comprendre et employer le style familier avec mes proches.",
+      "intro": "Le 반말 est le style des amis proches, des personnes plus jeunes et de la famille. Il se forme simplement en retirant -요 du style 해요체, avec quelques formes propres.",
+      "points": [
+        {"f": "-아 / -어 (반말)", "k": ["-아", "-어", "-야"], "s": "Style familier : même conjugaison que 해요체, sans -요.",
+         "c": ["가요 → 가, 먹어요 → 먹어, 했어요 → 했어.", "Copule : 학생이에요 → 학생이야, 친구예요 → 친구야.", "Appel : N아 / 야 : 민수야!, 지은아!", "Proposition : -자 : 가자, 먹자. Oui / non : 응, 아니."],
+         "n": "Ne passez au 반말 qu'après accord (말 놓을까요? « on se tutoie ? »). Avec un aîné ou un inconnu, c'est impoli.",
+         "ex": [["지금 뭐 [해]?", "Tu fais quoi ?"], ["우리 같이 밥 먹[자].", "Mangeons ensemble."], ["나는 학생이[야].", "Je suis étudiant."]]}
+      ],
+      "mots": [["응", "oui (familier)"], ["아니", "non (familier)"], ["나", "moi, je"], ["너", "toi, tu"], ["우리", "nous"], ["얘", "cet enfant, lui"], ["진짜", "vraiment (familier)"], ["완전히", "complètement"], ["친하다", "proche, intime"], ["사이", "relation"], ["동갑", "personne du même âge"], ["선배", "aîné (école, travail)"], ["후배", "cadet (école, travail)"], ["반말", "langage familier"], ["존댓말", "langage poli"]]
+    }
+  ]
+}

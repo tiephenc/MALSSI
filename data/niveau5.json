@@ -1,0 +1,133 @@
+{
+  "id": "niveau5",
+  "niveau": 5,
+  "titre": "5급 · Textes spécialisés",
+  "intro": "Le 5급 suppose de comprendre des textes spécialisés (économie, science, société) et des tournures soutenues. Les connecteurs de ce niveau sont rares à l'oral mais fréquents dans les questions de lecture 30 à 50 du TOPIK II.",
+  "unites": [
+    {
+      "id": "N5-01", "titre": "Heureusement que…", "theme": "Le hasard et la chance",
+      "objectif": "Je sais exprimer le soulagement et une hypothèse contraire aux faits.",
+      "intro": "-기에 망정이지 dit « heureusement que… sinon… ». La suite décrit ce qui serait arrivé, au conditionnel passé.",
+      "points": [
+        {"f": "-기에 망정이지", "k": ["-기에 망정이지"], "s": "« Heureusement que…, sinon… ».",
+         "c": ["Radical (souvent au passé) + -기에 망정이지 : 일찍 출발했기에 망정이지.", "Suite fréquente : -았 / 었을 것이다, -(으)ㄹ 뻔했다."],
+         "ex": [["우산을 가져왔[기에 망정이지] 다 젖을 뻔했다.", "Heureusement que j'avais pris un parapluie, sinon j'aurais été trempé."], ["미리 예약했[기에 망정이지] 자리가 없었을 거예요.", "Heureusement que j'avais réservé, sinon il n'y aurait plus eu de place."]]},
+        {"f": "-(으)ㄴ 나머지", "k": ["-은 나머지"], "s": "Conséquence d'un excès : « à force de », « tellement… que ».",
+         "c": ["Verbe ou adjectif + -(으)ㄴ 나머지 : 긴장한 나머지, 기쁜 나머지."],
+         "ex": [["너무 긴장한 [나머지] 준비한 말을 다 잊어버렸다.", "J'étais tellement nerveux que j'ai oublié tout ce que j'avais préparé."], ["기쁜 [나머지] 눈물을 흘렸다.", "De joie, elle a versé des larmes."]]}
+      ],
+      "mots": [["운", "chance, sort"], ["우연", "hasard"], ["다행히", "heureusement"], ["불행", "malheur"], ["위기", "crise"], ["무사히", "sain et sauf, sans incident"], ["긴장", "tension, nervosité"], ["흘리다", "déverser, laisser couler"], ["순간", "instant"], ["당황하다", "être décontenancé"], ["대비", "préparation, prévision"], ["예방", "prévention"], ["미처", "préalablement, à temps (avec négation)"], ["간신히", "de justesse"], ["다치다", "se blesser"]]
+    },
+    {
+      "id": "N5-02", "titre": "Alors que, pourtant", "theme": "Attentes déçues",
+      "objectif": "Je sais exprimer un contraste entre une attente et la réalité.",
+      "intro": "-건만 et -는 마당에 appartiennent au registre soutenu. Ils opposent une situation et ce qui s'est passé malgré elle.",
+      "points": [
+        {"f": "-건만", "k": ["-건만"], "s": "« Pourtant », « bien que » (écrit, littéraire).",
+         "c": ["Radical (souvent au passé) + -건만 : 말렸건만, 노력했건만."],
+         "ex": [["그렇게 말렸[건만] 그는 결국 떠났다.", "On avait pourtant tout fait pour l'en dissuader, il est parti malgré tout."], ["열심히 노력했[건만] 결과는 좋지 않았다.", "J'avais pourtant fait de gros efforts, le résultat n'a pas été bon."]]},
+        {"f": "-는 마당에", "k": ["-는 마당에"], "s": "« Dans une situation où…, à ce stade où… » ; souvent suivi d'une question rhétorique.",
+         "c": ["Verbe : -는 마당에 ; passé : -(으)ㄴ 마당에."],
+         "ex": [["이미 끝난 [마당에] 후회해서 뭐 하겠어요?", "À quoi bon regretter, maintenant que c'est fini ?"], ["회사가 어려운 [마당에] 휴가를 갈 수는 없다.", "Dans la situation difficile où se trouve l'entreprise, je ne peux pas partir en congé."]]}
+      ],
+      "mots": [["말리다", "empêcher, dissuader"], ["기대", "attente, espoir"], ["어긋나다", "aller à l'encontre, dévier"], ["실망하다", "être déçu"], ["허무하다", "vain, futile"], ["아쉽다", "regrettable, dommage"], ["후회하다", "regretter"], ["소용", "utilité"], ["결과", "résultat"], ["과정", "processus"], ["끝내", "finalement, jusqu'au bout"], ["이미", "déjà"], ["어차피", "de toute façon"], ["상황", "situation"], ["처지", "situation, condition"]]
+    },
+    {
+      "id": "N5-03", "titre": "Plutôt que de…", "theme": "Choix et préférences",
+      "objectif": "Je sais exprimer une préférence radicale et une concession.",
+      "intro": "-(으)ㄹ 바에야 rejette une option au profit d'une autre ; -(으)ㄹ지언정 accepte un inconvénient pour éviter pire.",
+      "points": [
+        {"f": "-(으)ㄹ 바에야", "k": ["-을 바에야", "-ㄹ 바에야"], "s": "« Plutôt que de…, mieux vaut… ».",
+         "c": ["Radical + -(으)ㄹ 바에야 : 이렇게 살 바에야.", "Suite : -는 게 낫다, -겠다."],
+         "ex": [["억지로 할 [바에야] 안 하는 게 낫다.", "Plutôt que de le faire à contrecœur, mieux vaut ne pas le faire."], ["택시를 기다[릴 바에야] 걸어가겠어요.", "Plutôt que d'attendre un taxi, je vais y aller à pied."]]},
+        {"f": "-(으)ㄹ지언정", "k": ["-을지언정", "-ㄹ지언정"], "s": "« Quitte à…, (je ne ferai pas…) » ; « même si…, du moins… ».",
+         "c": ["Radical + -(으)ㄹ지언정 : 굶을지언정, 늦을지언정."],
+         "ex": [["굶[을지언정] 남의 것은 훔치지 않겠다.", "Quitte à mourir de faim, je ne volerai pas ce qui est aux autres."], ["조금 늦[을지언정] 실수는 하지 마세요.", "Quitte à être un peu en retard, ne faites pas d'erreur."]]},
+        {"f": "-(으)나 마나", "k": ["-으나 마나", "-나 마나"], "s": "« Que l'on fasse ou non, c'est pareil ».",
+         "c": ["Radical + -(으)나 마나 : 보나 마나, 물어보나 마나."],
+         "ex": [["보[나 마나] 또 늦잠을 잤을 거예요.", "Pas besoin de vérifier, il a encore fait la grasse matinée."], ["지금 가[나 마나] 표가 없을 거야.", "Que tu y ailles ou non, il n'y aura plus de billets."]]}
+      ],
+      "mots": [["억지로", "de force, à contrecœur"], ["차라리", "plutôt, mieux vaut"], ["낫다", "meilleur, préférable"], ["굶다", "jeûner, se priver de manger"], ["훔치다", "voler, dérober"], ["양보", "concession"], ["타협", "compromis"], ["고집", "entêtement"], ["희생", "sacrifice"], ["원칙", "principe"], ["포기하다", "abandonner"], ["선호", "préférence"], ["기준", "critère"], ["가치관", "valeurs (personnelles)"], ["뻔하다", "évident"]]
+    },
+    {
+      "id": "N5-04", "titre": "Tant que c'est ainsi…", "theme": "Principes et règles",
+      "objectif": "Je sais énoncer une conséquence logique et une loi générale.",
+      "intro": "-는 이상 tire une conséquence d'un fait établi ; -는 법이다 énonce une règle de la vie ; -기 나름이다 dit que tout dépend de quelque chose.",
+      "points": [
+        {"f": "-는 이상", "k": ["-는 이상"], "s": "« Du moment que », « dès lors que ».",
+         "c": ["Verbe : -는 이상 ; passé : -(으)ㄴ 이상 : 시작한 이상."],
+         "ex": [["일을 시작한 [이상] 끝까지 해야 한다.", "Dès lors qu'on a commencé, il faut aller jusqu'au bout."], ["규칙이 있[는 이상] 지켜야 한다.", "Du moment qu'il y a une règle, il faut la respecter."]]},
+        {"f": "-는 법이다", "k": ["-는 법이다"], "s": "Loi générale : « c'est ainsi que va… », « il est dans l'ordre des choses que ».",
+         "c": ["Verbe : -는 법이다. Adjectif : -(으)ㄴ 법이다."],
+         "ex": [["노력하면 좋은 결과가 나오[는 법이다].", "Quand on fait des efforts, les bons résultats finissent par venir."], ["누구에게나 힘든 시기가 있[는 법이다].", "Chacun traverse des périodes difficiles."]]},
+        {"f": "-기 나름이다", "k": ["-기 나름이다"], "s": "« Tout dépend de la manière de… ».",
+         "c": ["Radical + -기 나름이다 : 생각하기 나름이다, 하기 나름이다."],
+         "ex": [["행복은 생각하[기 나름이다].", "Le bonheur dépend de la façon de voir les choses."], ["결과는 네가 하[기 나름이야].", "Le résultat dépend de toi."]]}
+      ],
+      "mots": [["법칙", "loi, règle"], ["진리", "vérité"], ["당연히", "naturellement, bien sûr"], ["끝", "fin"], ["책임감", "sens des responsabilités"], ["의무", "obligation, devoir"], ["권리", "droit"], ["자세", "posture, attitude"], ["시기", "période, époque"], ["행복", "bonheur"], ["태도", "attitude"], ["달라지다", "changer"], ["노력하다", "faire des efforts"], ["마음먹다", "se décider"], ["기회", "occasion, chance"]]
+    },
+    {
+      "id": "N5-05", "titre": "D'ailleurs, afin de", "theme": "Discours formel",
+      "objectif": "Je sais employer les connecteurs du discours formel et des annonces officielles.",
+      "intro": "-거니와, -고자 et -(으)므로 sont typiques des discours, annonces et textes administratifs.",
+      "points": [
+        {"f": "-거니와", "k": ["-거니와"], "s": "« De plus », « non seulement…, mais encore ».",
+         "c": ["Radical + -거니와 : 맛도 좋거니와 값도 싸다."],
+         "ex": [["그는 실력도 뛰어나[거니와] 성격도 좋다.", "Il est très compétent et, de plus, il a bon caractère."], ["이 방법은 시간도 절약되[거니와] 비용도 적게 든다.", "Cette méthode fait gagner du temps et, de plus, coûte peu."]]},
+        {"f": "-고자", "k": ["-고자"], "s": "But ou intention (formel) : « afin de », « dans le but de ».",
+         "c": ["Radical + -고자 : 알리고자, 소개하고자 합니다."],
+         "ex": [["오늘은 새로운 제도를 소개하[고자] 합니다.", "Aujourd'hui, je souhaite vous présenter le nouveau dispositif."], ["환경을 보호하[고자] 캠페인을 시작했다.", "Nous avons lancé une campagne afin de protéger l'environnement."]]},
+        {"f": "-(으)므로", "k": ["-으므로", "-므로"], "s": "Cause (écrit formel) : « étant donné que », « puisque ».",
+         "c": ["Consonne : -으므로 : 많으므로. Voyelle ou ㄹ : -므로 : 크므로."],
+         "ex": [["안전을 위해 공사 중이[므로] 출입을 금지합니다.", "Pour des raisons de sécurité, l'accès est interdit, des travaux étant en cours."], ["비가 많이 내렸으[므로] 경기는 연기되었다.", "Le match a été reporté en raison des fortes pluies."]]}
+      ],
+      "mots": [["제도", "système, dispositif"], ["정책", "politique (mesures)"], ["시행", "mise en œuvre"], ["안내", "information, guide"], ["공지", "annonce, avis"], ["출입", "entrée et sortie, accès"], ["금지하다", "interdire"], ["보호하다", "protéger"], ["절약", "économie, épargne"], ["비용", "coût, frais"], ["뛰어나다", "remarquable, excellent"], ["공사", "travaux"], ["협조", "coopération"], ["양해", "compréhension"], ["참여", "participation"]]
+    },
+    {
+      "id": "N5-06", "titre": "On dirait bien que…", "theme": "Indices et déductions",
+      "objectif": "Je sais déduire à partir d'indices et décrire une action bâclée.",
+      "intro": "-는 모양이다 déduit à partir de ce qu'on observe. -는 둥 마는 둥 décrit une action faite à moitié.",
+      "points": [
+        {"f": "-는 모양이다", "k": ["-는 모양이다"], "s": "Déduction à partir d'un indice : « on dirait que », « apparemment ».",
+         "c": ["Verbe : -는 모양이다. Adjectif : -(으)ㄴ 모양이다. Passé : -(으)ㄴ 모양이다.", "Souvent précédé de -는 걸 보니 (« à voir… »)."],
+         "ex": [["불이 꺼진 걸 보니 다들 자[는 모양이다].", "À voir les lumières éteintes, on dirait que tout le monde dort."], ["표정이 밝은 걸 보니 시험을 잘 본 [모양이에요].", "À voir son visage radieux, il a dû réussir son examen."]]},
+        {"f": "-는 둥 마는 둥", "k": ["-는 둥 마는 둥"], "s": "Faire quelque chose à moitié, sans vraiment le faire.",
+         "c": ["Verbe + -는 둥 마는 둥 하다 : 먹는 둥 마는 둥 하다."],
+         "ex": [["늦어서 아침을 먹[는 둥 마는 둥] 하고 나왔다.", "J'étais en retard, j'ai à peine touché à mon petit-déjeuner."], ["그는 내 말을 듣[는 둥 마는 둥] 했다.", "Il m'écoutait d'une oreille distraite."]]},
+        {"f": "-다 못해", "k": ["-다 못하다"], "s": "« À bout de…, finir par » ; « tellement… que ».",
+         "c": ["Radical + -다 못해 : 참다 못해, 기다리다 못해."],
+         "ex": [["참[다 못해] 한마디 했다.", "À bout de patience, j'ai fini par dire un mot."], ["기다리[다 못해] 먼저 떠났다.", "Lassé d'attendre, il est parti avant."]]}
+      ],
+      "mots": [["단서", "indice"], ["흔적", "trace"], ["눈치채다", "se rendre compte"], ["낌새", "indice, signe"], ["대충", "grossièrement, à la va-vite"], ["건성", "négligence, à moitié"], ["성의", "sincérité, bonne volonté"], ["한마디", "un mot"], ["견디다", "endurer, supporter"], ["참다", "se retenir, supporter"], ["지치다", "être épuisé"], ["답답하다", "étouffant, frustrant"], ["짜증", "énervement"], ["불만", "mécontentement"], ["밝다", "lumineux, clair"]]
+    },
+    {
+      "id": "N5-07", "titre": "Ça a beau être…", "theme": "Reproches et indulgence",
+      "objectif": "Je sais exprimer qu'une raison ne justifie pas un comportement.",
+      "intro": "-기로서니 conteste une justification ; -기 십상이다 prévient d'un risque presque certain.",
+      "points": [
+        {"f": "-기로서니", "k": ["-기로서니"], "s": "« Même si…, ce n'est pas une raison pour… » ; souvent suivi d'une question rhétorique.",
+         "c": ["Radical + -기로서니 : 바쁘기로서니, 화가 났기로서니."],
+         "ex": [["아무리 바쁘[기로서니] 전화 한 통 못 하니?", "Tu as beau être occupé, tu ne peux même pas passer un coup de fil ?"], ["화가 났[기로서니] 물건을 던지면 안 되지.", "Même en colère, on ne lance pas les objets."]]},
+        {"f": "-기 십상이다", "k": ["-기 십상이다"], "s": "« Risquer fort de », « c'est le meilleur moyen de ».",
+         "c": ["Radical + -기 십상이다 : 실수하기 십상이다, 감기에 걸리기 십상이다."],
+         "ex": [["서두르면 실수하[기 십상이다].", "Quand on se dépêche, on risque fort de se tromper."], ["얇게 입고 나가면 감기에 걸리[기 십상이에요].", "Si tu sors peu couvert, tu vas sûrement attraper froid."]]}
+      ],
+      "mots": [["핑계", "prétexte"], ["변명하다", "donner des excuses, se justifier"], ["탓하다", "blâmer"], ["화", "colère"], ["던지다", "lancer, jeter"], ["무례하다", "impoli"], ["예의", "politesse, bonnes manières"], ["너그럽다", "indulgent, généreux"], ["용서", "pardon"], ["서두르다", "se presser"], ["얇다", "mince, fin"], ["위험", "danger"], ["경고", "avertissement"], ["신중하다", "prudent, circonspect"], ["함부로", "à tort et à travers"]]
+    },
+    {
+      "id": "N5-08", "titre": "Le vocabulaire sino-coréen", "theme": "Mots savants",
+      "objectif": "Je sais décomposer un mot sino-coréen pour en deviner le sens.",
+      "intro": "Environ la moitié du vocabulaire coréen, et bien plus dans les textes spécialisés, est d'origine chinoise. Connaître une syllabe hanja permet de deviner des dizaines de mots. Votre japonais est ici un atout majeur : 學 (학, gaku), 生 (생, sei), 國 (국, koku).",
+      "points": [
+        {"f": "Les syllabes hanja productives", "k": ["한자어"], "s": "Un même hanja garde sa lecture dans tous les mots où il apparaît.",
+         "c": ["학 (學, étudier) : 학교, 학생, 학습, 과학, 대학.", "생 (生, naître, vivre) : 학생, 생활, 생일, 인생, 선생님.", "국 (國, pays) : 한국, 외국, 국가, 국제, 국민.", "사 (事, affaire) : 사건, 사고, 사업, 행사."],
+         "n": "Repérez les homonymes : 사 peut être 事, 社, 四, 死… Le contexte et la fiche du dictionnaire tranchent.",
+         "ex": [["[국제] 교류가 활발해지고 있다.", "Les échanges internationaux deviennent plus actifs."], ["그는 [인생]의 목표를 세웠다.", "Il s'est fixé un but dans la vie."]]},
+        {"f": "Les suffixes savants : -적, -화, -성", "k": ["-적", "-화", "-성"], "s": "-적 (的) forme des adjectifs (« -ique »), -화 (化) des processus (« -isation »), -성 (性) des qualités (« -ité »).",
+         "c": ["-적 : 경제적, 문화적, 적극적. Devant un nom : -적인 (경제적인 문제) ; adverbe : -적으로.", "-화 : 세계화, 현대화, 고령화.", "-성 : 가능성, 중요성, 안전성."],
+         "ex": [["고령[화]는 심각한 사회 문제이다.", "Le vieillissement de la population est un grave problème social."], ["환경 보호의 중요[성]이 커지고 있다.", "L'importance de la protection de l'environnement grandit."]]}
+      ],
+      "mots": [["한자어", "mot d'origine chinoise (sino-coréen)"], ["국제", "international"], ["인생", "vie (existence)"], ["교류", "échange"], ["경제적", "économique"], ["적극적", "actif, positif"], ["세계화", "mondialisation"], ["현대화", "modernisation"], ["고령화", "vieillissement"], ["중요성", "importance"], ["안전성", "sécurité, fiabilité"], ["사업", "projet, activité, affaires"], ["사건", "événement, affaire"], ["국민", "peuple, nation"], ["활발하다", "actif, animé"]]
+    }
+  ]
+}

@@ -23,11 +23,16 @@ const RI = { 'ㄱ':'g','ㄲ':'kk','ㄴ':'n','ㄷ':'d','ㄸ':'tt','ㄹ':'r','ㅁ'
 const RV = { 'ㅏ':'a','ㅐ':'ae','ㅑ':'ya','ㅒ':'yae','ㅓ':'eo','ㅔ':'e','ㅕ':'yeo','ㅖ':'ye','ㅗ':'o','ㅘ':'wa','ㅙ':'wae','ㅚ':'oe','ㅛ':'yo','ㅜ':'u','ㅝ':'wo','ㅞ':'we','ㅟ':'wi','ㅠ':'yu','ㅡ':'eu','ㅢ':'ui','ㅣ':'i' };
 const RF = { '':'', 'ㄱ':'k','ㄲ':'k','ㅋ':'k','ㄴ':'n','ㄷ':'t','ㅅ':'t','ㅆ':'t','ㅈ':'t','ㅊ':'t','ㅌ':'t','ㅎ':'t','ㄹ':'l','ㅁ':'m','ㅂ':'p','ㅍ':'p','ㅇ':'ng' };
 // Romanise une forme déjà prononcée (les assimilations sont dans la prononciation).
-export function romanize(pron) {
+// La romanisation révisée ne note pas le durcissement (씻다 → ssitda) : si l'orthographe a une consonne douce
+// là où la prononciation a une tendue, on garde la douce.
+const TENSE = { 'ㄲ': 'ㄱ', 'ㄸ': 'ㄷ', 'ㅃ': 'ㅂ', 'ㅆ': 'ㅅ', 'ㅉ': 'ㅈ' };
+export function romanize(pron, spelled) {
   if (!pron) return '';
   const word = pron.split('/')[0].replace(/[ː\s]/g, '');
   const sy = [...word].map(split);
   if (sy.some(s => !s)) return '';
+  const orig = spelled ? [...spelled.replace(/\s/g, '')].map(split) : null;
+  if (orig && orig.length === sy.length && !orig.some(o => !o)) sy.forEach((s, k) => { if (k > 0 && TENSE[s.i] && orig[k].i === TENSE[s.i]) s.i = orig[k].i; });
   let out = '';
   sy.forEach((s, k) => {
     let ini = RI[s.i];

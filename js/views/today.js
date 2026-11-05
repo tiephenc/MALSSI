@@ -35,7 +35,7 @@ export function viewToday(el) {
   const steps = [
     { done: q.due.length === 0 && td.n > 0, t: 'Réviser', d: q.due.length ? `${q.due.length} carte${q.due.length > 1 ? 's' : ''} à revoir aujourd'hui` : st.total ? 'Rien à revoir pour l\'instant' : 'Vos révisions commencent après la première unité', href: '#/reviser', go: q.due.length > 0 },
     { done: q.fresh.length === 0 && (S.nd.d === dayKey() && S.nd.n > 0), t: 'Nouveaux mots', d: q.fresh.length ? `${q.fresh.length} mot${q.fresh.length > 1 ? 's' : ''} à découvrir (limite : ${S.set.nd} par jour)` : newLeft() === 0 ? 'Limite du jour atteinte' : 'Terminez une unité pour en débloquer', href: '#/reviser', go: q.fresh.length > 0 },
-    { done: !u, t: u ? `Unité ${u.id}` : 'Étape 0 terminée', d: u ? u.titre : 'Les unités du 1급 arrivent bientôt', href: u ? '#/unite/' + u.id : '#/parcours', go: !!u }];
+    { done: !u, t: u ? `Unité ${u.id}` : 'Parcours terminé', d: u ? u.titre : 'Parcours terminé : place aux épreuves blanches', href: u ? '#/unite/' + u.id : '#/parcours', go: !!u }];
   const firstGo = steps.find(s => s.go);
   const hello = !Object.keys(S.units).length ? 'Bienvenue. Commencez par l\'unité H01 : en dix unités, vous saurez lire le hangeul.'
     : td.n ? `Déjà ${td.n} réponse${td.n > 1 ? 's' : ''} aujourd'hui, dont ${td.ok} juste${td.ok > 1 ? 's' : ''}.` : 'Une séance courte chaque jour vaut mieux qu\'une longue le dimanche.';

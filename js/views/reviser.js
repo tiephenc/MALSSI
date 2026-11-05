@@ -5,6 +5,7 @@ import { next, fmtIv } from '../fsrs.js';
 import { esc, $, $$, toast, gradeTag } from '../ui.js';
 import { playBtn, speak } from '../tts.js';
 import * as anki from '../anki.js';
+import { motsNav } from './mots.js';
 
 const GR = [[1, 'À revoir'], [2, 'Difficile'], [3, 'Correct'], [4, 'Facile']];
 let keyHandler = null;
@@ -68,7 +69,7 @@ export function viewReviser(el) {
 export function viewVocab(el) {
   const all = allCards();
   const units = C.units.filter(u => S.units[u.id] && S.units[u.id].done);
-  el.innerHTML = `<h1>Vocabulaire</h1>
+  el.innerHTML = `${motsNav('#/vocabulaire')}<h1>Mes mots</h1>
     <p class="muted prose">Tous les mots de vos unités terminées et de vos paquets Anki, avec leur état de révision.</p>
     <div class="voc-tools"><input type="text" id="vq" placeholder="Chercher un mot, en coréen ou en français" aria-label="Chercher un mot">
       <select id="vs" aria-label="Source"><option value="">Toutes les sources</option>${units.map(u => `<option value="${u.id}">${u.id} · ${esc(u.titre)}</option>`).join('')}${Object.entries(S.anki.decks).map(([id, d]) => `<option value="a:${id}">Anki · ${esc(d.name)}</option>`).join('')}</select></div>

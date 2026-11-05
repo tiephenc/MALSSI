@@ -65,6 +65,7 @@ export function viewAbout(el) {
   el.innerHTML = `<div class="prose stack">
     <div class="row">${magpie(64)}<h1 style="margin:0"><span class="ko">말씨</span> MALSSI</h1></div>
     <p>MALSSI (말씨, « manière de parler ») est un site gratuit pour apprendre le coréen en français, du hangeul au TOPIK II (6급). Il fonctionne hors connexion et s'installe comme une application.</p>
+    <p>Les sujets d'écriture et les épreuves blanches sont rédigés ou générés pour MALSSI ; ils reprennent les formats du TOPIK, pas ses sujets. Les annales officielles sont publiées gratuitement par le NIIED sur topik.go.kr.</p>
     <p class="note small">MALSSI est un projet personnel, sans lien avec le NIIED (국립국제교육원), qui organise le TOPIK, ni avec l'Institut national de la langue coréenne (국립국어원).</p>
     <h2>Soutenir le projet</h2>
     <p>Le site est gratuit et sans publicité. Si vous voulez aider à couvrir le temps passé, vous pouvez offrir un café sur Ko-fi. Le paiement se fait entièrement chez Ko-fi : MALSSI ne voit aucune donnée bancaire.</p>
@@ -74,7 +75,7 @@ export function viewAbout(el) {
     <p>L'écoute utilise la synthèse vocale de votre navigateur : ce n'est pas un enregistrement humain.</p>
     <h2>Licences</h2>
     <ul>
-      <li><b>Prononciations, niveaux et sens de référence</b> (fichier <code>data/lexique.json</code>) : extraits du 한국어기초사전, © 국립국어원, licence <a href="https://creativecommons.org/licenses/by-sa/2.0/kr/" target="_blank" rel="noopener">CC BY-SA 2.0 KR</a>. Ce fichier reste sous cette licence.</li>
+      <li><b>Dictionnaire, listes par niveau, prononciations et sens de référence</b> (fichiers <code>data/lexique.json</code>, <code>data/dico.json</code>, <code>data/vocab/</code>), ainsi que les phrases d'exemple du dictionnaire utilisées dans les épreuves blanches : extraits du 한국어기초사전, © 국립국어원, licence <a href="https://creativecommons.org/licenses/by-sa/2.0/kr/" target="_blank" rel="noopener">CC BY-SA 2.0 KR</a>. Ces fichiers restent sous cette licence.</li>
       <li><b>Romanisation</b> : système officiel de romanisation révisée du coréen (2000).</li>
       <li><b>Textes, exercices, illustrations (dont la pie) et code</b> : © ${esc(CONFIG.author)}, tous droits réservés, sauf mention contraire.</li>
       <li><b>Lecture des paquets Anki</b> : sql.js (licence MIT) ; décompression zstd : fzstd, © Arjun Barrett (licence MIT).</li>

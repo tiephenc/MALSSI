@@ -31,6 +31,11 @@ def main(lexpath):
     for f in files:
         data = json.load(open(f, encoding='utf-8'))
         for u in data['unites']:
+            for pt in u.get('points', []):
+                for k in pt.get('k', []):
+                    if k not in lex: errors.append(f"{u['id']} grammaire « {pt['f']} » : clé {k} absente du dictionnaire")
+                for ex in pt.get('ex', []):
+                    if ex[0].count('[') < 1 or ex[0].count('[') != ex[0].count(']'): errors.append(f"{u['id']} exemple sans repère [ ] : {ex[0]}")
             for item in u.get('mots', []):
                 ko, gloss = item[0], item[1]
                 senses = lex.get(ko, [])

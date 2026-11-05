@@ -1,0 +1,224 @@
+{
+  "id": "niveau2",
+  "niveau": 2,
+  "titre": "2급 · La vie quotidienne",
+  "intro": "Le 2급 couvre la vie de tous les jours et les services publics : téléphoner, prendre rendez-vous, aller à la banque ou chez le médecin. Vous y construisez des phrases complexes avec les propositions relatives, la condition, la cause et les premières formes honorifiques.",
+  "unites": [
+    {
+      "id": "N2-01", "titre": "Le livre que j'ai lu", "theme": "Décrire les gens et les choses",
+      "objectif": "Je sais construire une proposition relative au présent, au passé et au futur.",
+      "intro": "En coréen, tout ce qui décrit un nom se place devant lui, sous une forme spéciale (관형형). « Le livre que je lis » devient « je-lis livre » : 읽는 책.",
+      "points": [
+        {"f": "-는 · -(으)ㄴ (relatives)", "k": ["-는", "-은", "-ㄴ"], "s": "Transforme un verbe ou un adjectif en qualificatif placé devant un nom.",
+         "c": ["Verbe au présent : radical + -는 : 먹는 사람 (la personne qui mange).", "Verbe au passé : radical + -(으)ㄴ : 먹은 음식, 본 영화.", "Adjectif : radical + -(으)ㄴ : 작은 가방, 예쁜 꽃.", "있다 / 없다 et leurs composés prennent -는 : 맛있는 음식, 재미없는 영화."],
+         "n": "Le radical en ㄹ perd son ㄹ : 살다 → 사는 곳, 만들다 → 만든 케이크.",
+         "ex": [["지금 [읽는] 책이 재미있어요.", "Le livre que je lis en ce moment est intéressant."], ["어제 [본] 영화는 좀 길었어요.", "Le film que j'ai vu hier était un peu long."], ["[작은] 가방을 사고 싶어요.", "Je voudrais acheter un petit sac."]]},
+        {"f": "-(으)ㄹ (relative au futur)", "k": ["-을", "-ㄹ"], "s": "Relative tournée vers l'avenir ou vers une possibilité : « à faire », « qu'on va… ».",
+         "c": ["Consonne : -을 : 먹을 음식. Voyelle ou ㄹ : -ㄹ : 볼 영화, 살 집."],
+         "n": "Cette forme entre dans beaucoup de tournures : -(으)ㄹ 때, -(으)ㄹ 거예요, -(으)ㄹ 수 있다.",
+         "ex": [["내일 [할] 일이 많아요.", "J'ai beaucoup de choses à faire demain."], ["주말에 [볼] 영화를 골랐어요.", "J'ai choisi le film que je vais voir ce week-end."]]}
+      ],
+      "mots": [["예쁘다", "joli"], ["작다", "petit"], ["크다", "grand"], ["길다", "long"], ["짧다", "court"], ["키", "taille (d'une personne)"], ["머리", "tête, cheveux"], ["안경", "lunettes"], ["옷", "vêtement"], ["입다", "porter (un vêtement)"], ["친절하다", "aimable, gentil"], ["조용하다", "calme, silencieux"], ["유명하다", "célèbre"], ["새", "nouveau, neuf"], ["일", "travail, tâche"]]
+    },
+    {
+      "id": "N2-02", "titre": "Si…, comme…", "theme": "À la banque, à la poste",
+      "objectif": "Je sais exprimer une condition et justifier une demande.",
+      "intro": "-(으)면 pose une condition (« si »), -(으)니까 donne une raison qu'on veut faire accepter, souvent avant une demande ou une proposition.",
+      "points": [
+        {"f": "-(으)면", "k": ["-으면", "-면"], "s": "Condition ou hypothèse : « si », « quand ».",
+         "c": ["Consonne : 먹으면. Voyelle ou ㄹ : 가면, 살면.", "Nom : N(이)면 : 학생이면, 내일이면."],
+         "n": "Pour une hypothèse irréelle : -았 / 었으면 : 시간이 있었으면 갔을 거예요.",
+         "ex": [["시간이 있[으면] 같이 가요.", "Si tu as le temps, allons-y ensemble."], ["돈을 찾[으면] 수수료가 있어요?", "Si je retire de l'argent, y a-t-il des frais ?"]]},
+        {"f": "-(으)니까", "k": ["-으니까", "-니까"], "s": "Raison, souvent suivie d'un ordre ou d'une proposition : « puisque… ».",
+         "c": ["Consonne : 많으니까. Voyelle ou ㄹ : 비싸니까, 머니까 (멀다).", "Le passé est possible : 늦었으니까."],
+         "n": "Différence clé : après -아서 / -어서, pas d'ordre ni de proposition ; après -(으)니까, c'est permis. 비가 오니까 우산을 가져가세요 (et non 비가 와서 가져가세요).",
+         "ex": [["오늘은 은행이 문을 닫[으니까] 내일 가세요.", "La banque est fermée aujourd'hui, allez-y demain."], ["늦었[으니까] 택시를 탑시다.", "Puisqu'on est en retard, prenons un taxi."]]}
+      ],
+      "mots": [["통장", "livret de banque, compte"], ["돈", "argent"], ["찾다", "retirer (de l'argent), chercher"], ["보내다", "envoyer"], ["소포", "colis"], ["편지", "lettre"], ["우표", "timbre"], ["주소", "adresse"], ["환전", "change (de devises)"], ["수수료", "frais, commission"], ["서명", "signature"], ["문", "porte"], ["닫다", "fermer"], ["열다", "ouvrir"], ["늦다", "en retard, tard"]]
+    },
+    {
+      "id": "N2-03", "titre": "Le contexte : -는데", "theme": "Au téléphone",
+      "objectif": "Je sais poser le contexte avant une question et nuancer une réponse.",
+      "intro": "-는데 est l'une des terminaisons les plus fréquentes de l'oral. Elle pose une situation de fond avant d'enchaîner, ou introduit un léger contraste.",
+      "points": [
+        {"f": "-는데 / -(으)ㄴ데", "k": ["-는데", "-은데", "-ㄴ데"], "s": "Arrière-plan (« je… alors… »), contraste léger (« mais »), ou fin de phrase hésitante.",
+         "c": ["Verbe et 있다 / 없다 : -는데 : 가는데, 맛있는데.", "Adjectif : -(으)ㄴ데 : 좋은데, 비싼데.", "Nom : N인데 : 학생인데.", "Passé : -았 / 었는데 : 갔는데."],
+         "n": "En fin de phrase (-는데요), il adoucit ou laisse attendre une réponse : 지금 없는데요 (il n'est pas là, en fait…).",
+         "ex": [["여보세요, 민수 씨 친구[인데요], 민수 씨 있어요?", "Allô, je suis un ami de Minsu, il est là ?"], ["이 옷은 예쁜[데] 좀 비싸요.", "Ce vêtement est joli, mais un peu cher."]]},
+        {"f": "-지요 (-죠)", "k": ["-지요"], "s": "Chercher l'accord, vérifier une information : « n'est-ce pas ? », « bien sûr ».",
+         "c": ["Radical + -지요, contracté en -죠 : 덥죠?, 알죠?"],
+         "n": "Avec un mot interrogatif, -지요 rend la question plus douce : 누구시죠?",
+         "ex": [["오늘 날씨가 정말 덥[죠]?", "Il fait vraiment chaud aujourd'hui, hein ?"], ["실례지만 누구[시죠]?", "Excusez-moi, qui êtes-vous ?"]]}
+      ],
+      "mots": [["전화", "téléphone, appel"], ["전화하다", "téléphoner"], ["받다", "recevoir, répondre"], ["걸다", "passer (un appel)"], ["바꾸다", "changer, passer (quelqu'un)"], ["메시지", "message"], ["연락", "contact, communication"], ["번호", "numéro"], ["잠깐", "un instant"], ["다시", "encore, de nouveau"], ["실례", "impolitesse, dérangement"], ["모르다", "ne pas savoir"], ["알다", "savoir, connaître"], ["말하다", "parler, dire"], ["여보세요", "allô"]]
+    },
+    {
+      "id": "N2-04", "titre": "Essayer, faire pour quelqu'un", "theme": "Les achats",
+      "objectif": "Je sais demander d'essayer quelque chose et demander un service.",
+      "intro": "Les verbes auxiliaires se greffent sur la forme -아 / -어 du verbe principal. 보다 (voir) devient « essayer de », 주다 (donner) devient « faire pour quelqu'un ».",
+      "points": [
+        {"f": "-아 / -어 보다", "k": ["-아 보다", "-어 보다"], "s": "Essayer, tenter l'expérience ; au passé : « avoir déjà fait ».",
+         "c": ["좋아 보다 ? non : avec un verbe uniquement : 입어 보다, 먹어 보다, 가 보다.", "Au passé : 가 봤어요 (j'y suis déjà allé)."],
+         "n": "-아 / -어 보세요 est une invitation polie : 한번 먹어 보세요 (goûtez donc).",
+         "ex": [["이 옷 입[어 봐도] 돼요?", "Je peux essayer ce vêtement ?"], ["제주도에 가 [봤어요]?", "Tu es déjà allé à Jeju ?"]]},
+        {"f": "-아 / -어 주다", "k": ["-아 주다", "-어 주다"], "s": "Faire quelque chose pour quelqu'un, rendre un service.",
+         "c": ["Radical + -아 / -어 주다 : 도와주다, 사 주다.", "Demande : -아 / -어 주세요 : 깎아 주세요."],
+         "n": "Pour quelqu'un de plus âgé ou de statut supérieur : -아 / -어 드리다 : 제가 도와 드릴게요.",
+         "ex": [["좀 깎아 [주세요].", "Faites-moi un petit prix, s'il vous plaît."], ["친구가 생일 선물을 사 [줬어요].", "Mon ami m'a offert un cadeau d'anniversaire."]]}
+      ],
+      "mots": [["사다", "acheter"], ["팔다", "vendre"], ["값", "prix"], ["비싸다", "cher, coûteux"], ["싸다", "bon marché, abordable"], ["깎다", "baisser (un prix)"], ["사이즈", "taille (vêtement)"], ["색깔", "couleur"], ["바지", "pantalon"], ["치마", "jupe"], ["신발", "chaussures"], ["모자", "chapeau, casquette"], ["선물", "cadeau"], ["돕다", "aider"], ["교환", "échange"]]
+    },
+    {
+      "id": "N2-05", "titre": "En train de, déjà fait", "theme": "Loisirs et expériences",
+      "objectif": "Je sais dire ce que je suis en train de faire et parler de mes expériences.",
+      "intro": "-고 있다 décrit une action en cours ; -(으)ㄴ 적이 있다 parle d'une expérience vécue au moins une fois.",
+      "points": [
+        {"f": "-고 있다", "k": ["-고 있다"], "s": "Action en cours (« être en train de ») ou habitude actuelle.",
+         "c": ["Radical + -고 있다 : 먹고 있어요, 배우고 있어요.", "Honorifique : -고 계시다 : 할머니께서 주무시고 계세요."],
+         "n": "Avec les verbes de port de vêtements (입다, 신다, 쓰다), -고 있다 décrit aussi l'état : 안경을 쓰고 있어요 (il porte des lunettes).",
+         "ex": [["지금 뭐 하[고 있어요]?", "Qu'est-ce que tu es en train de faire ?"], ["요즘 피아노를 배우[고 있어요].", "En ce moment, j'apprends le piano."]]},
+        {"f": "-(으)ㄴ 적이 있다 / 없다", "k": ["-은 적이 있다", "-ㄴ 적이 있다"], "s": "Avoir (ou ne jamais avoir) vécu une expérience.",
+         "c": ["Consonne : 먹은 적이 있어요. Voyelle : 간 적이 있어요.", "Souvent combiné avec -아 / -어 보다 : 가 본 적이 있어요."],
+         "n": "Pour une habitude, n'employez pas cette forme : 매일 운동한 적이 있어요 n'a pas de sens.",
+         "ex": [["한국 음식을 먹어 본 [적이 있어요]?", "Tu as déjà goûté à la cuisine coréenne ?"], ["저는 비행기를 탄 [적이 없어요].", "Je n'ai jamais pris l'avion."]]}
+      ],
+      "mots": [["취미", "loisir, passe-temps"], ["요즘", "ces temps-ci, maintenant"], ["음악", "musique"], ["듣다", "écouter"], ["그림", "dessin, peinture"], ["그리다", "dessiner, peindre"], ["게임", "jeu"], ["축구", "football"], ["야구", "base-ball"], ["자전거", "vélo"], ["캠핑", "camping"], ["독서", "lecture"], ["경험", "expérience"], ["처음", "première fois, début"], ["한번", "une fois"]]
+    },
+    {
+      "id": "N2-06", "titre": "Il faut, on peut, on ne doit pas", "theme": "Règles et santé",
+      "objectif": "Je sais exprimer l'obligation, la permission et l'interdiction.",
+      "intro": "Trois tournures à connaître ensemble : -아야 하다 (il faut), -아도 되다 (on peut), -(으)면 안 되다 (on ne doit pas). Elles reviennent dans les consignes, chez le médecin, au travail.",
+      "points": [
+        {"f": "-아야 / -어야 하다", "k": ["-아야 하다", "-어야 하다"], "s": "Obligation, nécessité : « devoir », « il faut ».",
+         "c": ["ㅏ / ㅗ : -아야 해요 ; autres : -어야 해요 ; 하다 : 해야 해요.", "-아야 되다 est équivalent et très courant à l'oral."],
+         "n": "« Ne pas avoir besoin de » : -지 않아도 되다 : 오지 않아도 돼요.",
+         "ex": [["약을 하루에 세 번 먹[어야 해요].", "Il faut prendre le médicament trois fois par jour."], ["내일까지 숙제를 [해야 돼요].", "Je dois faire mes devoirs pour demain."]]},
+        {"f": "-아도 / -어도 되다", "k": ["-아도 되다", "-어도 되다"], "s": "Permission : « pouvoir, avoir le droit ».",
+         "c": ["앉아도 돼요?, 먹어도 돼요?, 해도 돼요?"],
+         "n": "Seul, -아도 / -어도 signifie « même si » : 비가 와도 가요.",
+         "ex": [["여기 앉[아도 돼요]?", "Je peux m'asseoir ici ?"], ["창문을 열[어도 돼요]?", "Je peux ouvrir la fenêtre ?"]]},
+        {"f": "-(으)면 안 되다", "k": ["-으면 안 되다", "-면 안 되다"], "s": "Interdiction : « on ne doit pas ».",
+         "c": ["Consonne : 먹으면 안 돼요. Voyelle : 피우면 안 돼요."],
+         "n": "Réponse naturelle à 해도 돼요? : 네, 해도 돼요 ou 아니요, 하면 안 돼요.",
+         "ex": [["병원에서 큰 소리로 말하[면 안 돼요].", "Il ne faut pas parler fort à l'hôpital."], ["술을 마시[면 안 돼요].", "Vous ne devez pas boire d'alcool."]]}
+      ],
+      "mots": [["약", "médicament"], ["감기", "rhume"], ["열", "fièvre"], ["기침", "toux"], ["아프다", "avoir mal, malade"], ["머리", "tête"], ["배", "ventre"], ["목", "gorge, cou"], ["건강", "santé"], ["진찰", "consultation (médicale)"], ["주사", "piqûre, injection"], ["낫다", "guérir"], ["조심하다", "faire attention"], ["규칙", "règle"], ["금지", "interdiction"]]
+    },
+    {
+      "id": "N2-07", "titre": "Avant, après, pendant", "theme": "Une journée",
+      "objectif": "Je sais situer des actions les unes par rapport aux autres.",
+      "intro": "Quatre tournures temporelles : -기 전에 (avant de), -(으)ㄴ 후에 (après avoir), -(으)면서 (tout en), -(으)ㄹ 때 (quand).",
+      "points": [
+        {"f": "-기 전에 · -(으)ㄴ 후에", "k": ["-기 전에", "-은 후에", "-ㄴ 후에"], "s": "« Avant de… » et « après avoir… ».",
+         "c": ["Radical + -기 전에 : 자기 전에.", "Consonne : -은 후에 : 먹은 후에. Voyelle : -ㄴ 후에 : 본 후에.", "Avec un nom : N 전에, N 후에 : 수업 전에, 식사 후에."],
+         "n": "-(으)ㄴ 다음에 et -(으)ㄴ 뒤에 sont des équivalents de -(으)ㄴ 후에.",
+         "ex": [["자[기 전에] 이를 닦아요.", "Je me brosse les dents avant de dormir."], ["밥을 먹[은 후에] 산책해요.", "Je me promène après avoir mangé."]]},
+        {"f": "-(으)면서", "k": ["-으면서", "-면서"], "s": "Simultanéité : « tout en… », « en même temps que… ».",
+         "c": ["Consonne : 먹으면서. Voyelle ou ㄹ : 보면서, 놀면서."],
+         "n": "Les deux actions ont le même sujet.",
+         "ex": [["음악을 들으[면서] 공부해요.", "J'étudie en écoutant de la musique."], ["커피를 마시[면서] 이야기했어요.", "Nous avons discuté en buvant un café."]]},
+        {"f": "-(으)ㄹ 때", "k": ["-을 때", "-ㄹ 때"], "s": "« Quand », « lorsque ».",
+         "c": ["Consonne : 먹을 때. Voyelle ou ㄹ : 갈 때, 놀 때.", "Passé accompli : -았 / 었을 때 : 한국에 갔을 때.", "Nom : N 때 : 방학 때, 어릴 때."],
+         "ex": [["시간이 있[을 때] 책을 읽어요.", "Je lis quand j'ai du temps."], ["한국에 갔[을 때] 김치를 처음 먹었어요.", "Quand je suis allé en Corée, j'ai mangé du kimchi pour la première fois."]]}
+      ],
+      "mots": [["아침", "matin, petit-déjeuner"], ["저녁", "soir, dîner"], ["일어나다", "se lever"], ["씻다", "se laver"], ["닦다", "essuyer, brosser"], ["출근", "aller au travail"], ["퇴근", "sortie du travail"], ["수업", "cours"], ["시작하다", "commencer"], ["끝나다", "finir"], ["보통", "d'habitude"], ["항상", "toujours"], ["가끔", "parfois"], ["자주", "souvent"], ["매일", "chaque jour"]]
+    },
+    {
+      "id": "N2-08", "titre": "Supposer, décider", "theme": "Le temps et les projets",
+      "objectif": "Je sais faire une supposition et annoncer une intention.",
+      "intro": "-겠- exprime à la fois la supposition (« ça doit… ») et l'intention ferme. -는 것 같다 est la manière la plus courante d'exprimer une impression ou une opinion prudente.",
+      "points": [
+        {"f": "-겠-", "k": ["-겠-"], "s": "Supposition à partir d'un indice (« ça doit être… ») ou intention à la première personne (« je vais… »).",
+         "c": ["Radical + -겠어요 : 맛있겠어요, 하겠어요.", "Formules figées : 잘 먹겠습니다, 알겠습니다, 처음 뵙겠습니다."],
+         "n": "알겠어요 (j'ai compris, d'accord) et 모르겠어요 (je ne sais pas trop) sont plus polis que 알아요 / 몰라요.",
+         "ex": [["와, 맛있[겠어요]!", "Oh, ça a l'air délicieux !"], ["내일부터 운동을 하[겠어요].", "À partir de demain, je vais faire du sport."]]},
+        {"f": "-는 것 같다", "k": ["-는 것 같다", "-은 것 같다", "-을 것 같다"], "s": "Impression, opinion adoucie : « il semble que », « je crois que ».",
+         "c": ["Verbe présent : -는 것 같다 : 오는 것 같아요.", "Adjectif : -(으)ㄴ 것 같다 : 비싼 것 같아요.", "Passé : -(으)ㄴ 것 같다 : 간 것 같아요.", "Avenir, supposition : -(으)ㄹ 것 같다 : 비가 올 것 같아요."],
+         "n": "Les Coréens l'emploient souvent pour adoucir un avis, même sûr : 이게 더 좋은 것 같아요.",
+         "ex": [["밖에 비가 오[는 것 같아요].", "On dirait qu'il pleut dehors."], ["내일은 추[울 것 같아요].", "Je pense qu'il fera froid demain."]]}
+      ],
+      "mots": [["날씨", "temps (météo)"], ["기온", "température"], ["눈", "neige"], ["구름", "nuage"], ["태풍", "typhon"], ["장마", "saison des pluies"], ["덥다", "chaud (temps)"], ["춥다", "froid (temps)"], ["따뜻하다", "doux, chaud"], ["쌀쌀하다", "frisquet"], ["내리다", "tomber (pluie, neige)"], ["그치다", "cesser"], ["예보", "prévision"], ["아마", "peut-être, probablement"], ["벌써", "déjà"]]
+    },
+    {
+      "id": "N2-09", "titre": "Parce que, pour", "theme": "Études et travail",
+      "objectif": "Je sais exprimer une cause objective et une intention.",
+      "intro": "-기 때문에 donne une cause marquée, souvent à l'écrit ou pour insister. -(으)려고 exprime l'intention, le but.",
+      "points": [
+        {"f": "-기 때문에 · N 때문에", "k": ["때문"], "s": "Cause : « parce que », « à cause de ».",
+         "c": ["Radical + -기 때문에 : 바쁘기 때문에.", "Passé : -았 / 었기 때문에 : 늦었기 때문에.", "Nom : N 때문에 : 비 때문에, 시험 때문에."],
+         "n": "Comme -아서, pas d'ordre ni de proposition après -기 때문에.",
+         "ex": [["시험이 있[기 때문에] 주말에도 공부해요.", "Comme j'ai un examen, j'étudie même le week-end."], ["눈 [때문에] 비행기가 늦게 출발했어요.", "À cause de la neige, l'avion est parti en retard."]]},
+        {"f": "-(으)려고 (하다)", "k": ["-으려고", "-려고", "-려고 하다"], "s": "But (« pour ») ou intention (« avoir l'intention de »).",
+         "c": ["Consonne : 먹으려고. Voyelle ou ㄹ : 사려고, 만들려고.", "En fin de phrase : -(으)려고 해요 : 다음 달에 이사하려고 해요."],
+         "n": "Contrairement à -(으)러, -(으)려고 s'emploie avec tous les verbes, mais jamais avec un ordre après lui.",
+         "ex": [["한국 회사에서 일하[려고] 한국어를 배워요.", "J'apprends le coréen pour travailler dans une entreprise coréenne."], ["다음 달에 이사하[려고 해요].", "J'ai l'intention de déménager le mois prochain."]]}
+      ],
+      "mots": [["시험", "examen"], ["숙제", "devoir (scolaire)"], ["준비", "préparation"], ["대학교", "université"], ["전공", "spécialité (études)"], ["졸업", "fin d'études, diplôme"], ["취직", "embauche, trouver un emploi"], ["직장", "lieu de travail, emploi"], ["회의", "réunion"], ["출장", "voyage d'affaires"], ["월급", "salaire"], ["이사", "déménagement"], ["열심히", "avec ardeur"], ["계속", "continuellement"], ["필요하다", "nécessaire"]]
+    },
+    {
+      "id": "N2-10", "titre": "Plus que, le plus", "theme": "Comparer",
+      "objectif": "Je sais comparer et exprimer le superlatif.",
+      "intro": "La comparaison se fait avec la particule 보다 (« que ») et souvent l'adverbe 더 (« plus »). Le superlatif se forme avec 제일 ou 가장.",
+      "points": [
+        {"f": "보다 (더) · 제일 / 가장", "k": ["보다", "제일", "가장"], "s": "« plus… que », « le plus ».",
+         "c": ["A가 B보다 (더) + adjectif : 서울이 부산보다 커요.", "제일 / 가장 + adjectif : 제일 좋아요."],
+         "n": "Attention : 보다 est aussi le verbe « voir ». Comme particule, il se colle au nom comparé : 어제보다.",
+         "ex": [["오늘은 어제[보다] 따뜻해요.", "Aujourd'hui, il fait plus doux qu'hier."], ["저는 여름을 [제일] 좋아해요.", "C'est l'été que je préfère."]]},
+        {"f": "-게 (adverbe)", "k": ["-게"], "s": "Transforme un adjectif en adverbe : « de façon… ».",
+         "c": ["Radical + -게 : 맛있게, 예쁘게, 크게."],
+         "n": "맛있게 드세요 (bon appétit, littéralement « mangez délicieusement ») et 재미있게 보세요 sont des formules quotidiennes.",
+         "ex": [["맛있[게] 드세요.", "Bon appétit."], ["좀 크[게] 말해 주세요.", "Parlez un peu plus fort, s'il vous plaît."]]}
+      ],
+      "mots": [["더", "plus, davantage"], ["덜", "moins"], ["제일", "le plus"], ["가장", "le plus"], ["비슷하다", "semblable"], ["다르다", "différent"], ["같다", "identique, pareil"], ["빠르다", "rapide"], ["느리다", "lent"], ["무겁다", "lourd"], ["가볍다", "léger"], ["높다", "haut"], ["낮다", "bas"], ["넓다", "large, spacieux"], ["좁다", "étroit"]]
+    },
+    {
+      "id": "N2-11", "titre": "Je vais le faire !", "theme": "Promesses et réactions",
+      "objectif": "Je sais promettre, réagir avec surprise et parler de changements.",
+      "intro": "-(으)ㄹ게요 engage le locuteur envers son interlocuteur ; -네요 exprime une découverte sur le moment ; -아 / -어지다 décrit un changement d'état.",
+      "points": [
+        {"f": "-(으)ㄹ게요", "k": ["-을게요", "-ㄹ게요"], "s": "Promesse ou décision prise en tenant compte de l'autre : « je vais… (pour toi) ».",
+         "c": ["Consonne : 먹을게요. Voyelle ou ㄹ : 갈게요, 만들게요.", "Seulement à la première personne, jamais en question."],
+         "n": "Comparez : 갈 거예요 (je vais y aller, c'est mon plan) et 갈게요 (j'y vais, je m'y engage envers vous).",
+         "ex": [["제가 [할게요].", "Je m'en occupe."], ["내일 다시 연락[할게요].", "Je vous recontacte demain."]]},
+        {"f": "-네요", "k": ["-네요"], "s": "Constat ou surprise sur le moment : « tiens, … ! ».",
+         "c": ["Radical + -네요 : 맛있네요, 크네요. Radical en ㄹ : ㄹ tombe : 머네요 (멀다)."],
+         "ex": [["한국어를 잘하[시네요].", "Vous parlez bien coréen !"], ["벌써 열 시[네요].", "Tiens, il est déjà dix heures."]]},
+        {"f": "-아 / -어지다 (devenir)", "k": ["-아지다", "-어지다"], "s": "Avec un adjectif : « devenir ».",
+         "c": ["좋다 → 좋아지다, 따뜻하다 → 따뜻해지다, 예쁘다 → 예뻐지다."],
+         "n": "Ne confondez pas avec -게 되다 (N2-12), qui s'emploie avec les verbes.",
+         "ex": [["날씨가 많이 따뜻해[졌어요].", "Il fait beaucoup plus doux."], ["한국어 실력이 좋아[졌어요].", "Mon niveau de coréen s'est amélioré."]]}
+      ],
+      "mots": [["약속하다", "promettre"], ["연락하다", "contacter"], ["도착하다", "arriver"], ["출발하다", "partir"], ["벌써", "déjà"], ["아직", "encore, pas encore"], ["정말", "vraiment"], ["진짜", "vraiment (familier)"], ["갑자기", "soudain"], ["점점", "peu à peu"], ["많이", "beaucoup"], ["조금", "un peu"], ["변하다", "changer"], ["실력", "compétence, niveau"], ["잘하다", "bien faire, être doué"]]
+    },
+    {
+      "id": "N2-12", "titre": "Le respect : -(으)시-", "theme": "Parler aux aînés",
+      "objectif": "Je sais employer l'honorifique pour parler d'une personne respectée.",
+      "intro": "L'honorifique (높임말) marque le respect envers la personne dont on parle. Il se marque sur le verbe (-(으)시-), sur les particules (께서, 께) et par des mots spéciaux.",
+      "points": [
+        {"f": "-(으)시-", "k": ["-으시-", "-시-"], "s": "Suffixe de respect envers le sujet de la phrase.",
+         "c": ["Consonne : -으세요 / -으셨어요 : 읽으세요, 읽으셨어요.", "Voyelle : -세요 / -셨어요 : 가세요, 가셨어요.", "Verbes spéciaux : 먹다 → 드시다 (잡수시다), 자다 → 주무시다, 있다 → 계시다, 말하다 → 말씀하시다."],
+         "n": "On ne s'applique jamais l'honorifique à soi-même : 제가 가세요 est fautif.",
+         "ex": [["할머니께서 신문을 읽[으세요].", "Grand-mère lit le journal."], ["선생님, 점심 [드셨어요]?", "Professeur, avez-vous déjeuné ?"]]},
+        {"f": "께서 · 께 · 드리다", "k": ["께서", "께", "드리다"], "s": "께서 remplace 이 / 가 ; 께 remplace 에게 ; 드리다 remplace 주다 quand on donne à une personne respectée.",
+         "c": ["아버지께서 오셨어요.", "선생님께 선물을 드렸어요."],
+         "n": "Mots honorifiques courants : 집 → 댁, 나이 → 연세, 이름 → 성함, 생일 → 생신, 사람 → 분.",
+         "ex": [["아버지[께서] 회사에 가셨어요.", "Mon père est parti au travail."], ["부모님[께] 편지를 드렸어요.", "J'ai remis une lettre à mes parents."]]}
+      ],
+      "mots": [["잡수시다", "manger (honorifique)"], ["주무시다", "dormir (honorifique)"], ["계시다", "être, se trouver (honorifique)"], ["말씀", "parole (honorifique)"], ["댁", "maison (honorifique)"], ["연세", "âge (honorifique)"], ["성함", "nom (honorifique)"], ["생신", "anniversaire (honorifique)"], ["분", "personne (honorifique)"], ["드리다", "offrir, donner (honorifique)"], ["뵙다", "voir, rencontrer (honorifique)"], ["여쭙다", "demander (honorifique)"], ["어른", "adulte, aîné"], ["손님", "client, invité"], ["사장", "patron, directeur (PDG)"]]
+    },
+    {
+      "id": "N2-13", "titre": "Finir par, il est vrai que", "theme": "Vie en Corée",
+      "objectif": "Je sais raconter un changement de situation et faire une concession.",
+      "intro": "-게 되다 raconte un changement qui ne dépend pas entièrement de soi (« finir par », « en venir à »). -기는 하지만 concède un point avant d'apporter une réserve.",
+      "points": [
+        {"f": "-게 되다", "k": ["-게 되다"], "s": "Changement de situation, souvent indépendant de la volonté : « finir par », « se retrouver à ».",
+         "c": ["Radical + -게 되다 : 알게 되다, 살게 되다.", "Le plus souvent au passé : 한국에서 일하게 됐어요."],
+         "ex": [["회사 때문에 서울에서 살[게 됐어요].", "À cause du travail, je me suis retrouvé à vivre à Séoul."], ["그 친구를 어떻게 알[게 됐어요]?", "Comment as-tu connu cet ami ?"]]},
+        {"f": "-기는 하지만", "k": ["-기는"], "s": "Concession : « c'est vrai que…, mais… ».",
+         "c": ["Radical + -기는 하지만 (ou -기는 -지만, en répétant le verbe) : 맵기는 하지만 / 맵기는 맵지만."],
+         "ex": [["한국 음식이 맵[기는 하지만] 맛있어요.", "C'est vrai que la cuisine coréenne est épicée, mais elle est bonne."], ["비싸[기는 하지만] 품질이 좋아요.", "C'est cher, certes, mais la qualité est bonne."]]}
+      ],
+      "mots": [["생활", "vie (quotidienne)"], ["문화", "culture"], ["외국인", "étranger (personne)"], ["적응", "adaptation"], ["익숙하다", "habitué"], ["불편하다", "malcommode, gênant"], ["편하다", "confortable, pratique"], ["외롭다", "seul, isolé"], ["그립다", "regretter, manquer"], ["고향", "ville natale"], ["이웃", "voisin"], ["동네", "quartier"], ["느끼다", "ressentir"], ["처음", "première fois, début"], ["점점", "peu à peu"]]
+    }
+  ]
+}
