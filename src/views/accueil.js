@@ -1,51 +1,51 @@
-// MALSSI · page d'accueil animée
-// Ouverture : les trois signes fondateurs des voyelles (le ciel ·, la terre ㅡ, l'être humain ㅣ) apparaissent,
-// puis le nom 말씨 se trace trait par trait ; la pie traverse la page. Le défilement assemble ensuite des syllabes,
-// déroule les niveaux, trace la courbe d'oubli et remplit une grille 원고지.
+// MALSSI · page d'accueil immersive
+// Une nuit de montagne à l'encre : lune, brume, pétales de prunier qui dérivent ; le nom 말씨 se trace,
+// puis le défilement fait gravir le sentier des sept étapes, assemble des syllabes, trace la courbe d'oubli
+// et remplit une grille 원고지.
 import { C } from '../content.js';
 import { CONFIG } from '../config.js';
 import { magpie } from '../magpie.js';
 import { $, $$, esc } from '../ui.js';
-import { speak } from '../tts.js';
+import { inkScene } from '../scene.js';
+import { carte, placeStations } from '../carte.js';
 
 const KO = { 0: '한글', 1: '1급', 2: '2급', 3: '3급', 4: '4급', 5: '5급', 6: '6급' };
+let stop = null; export function stopAccueil() { if (stop) stop(); stop = null; }
+
 export function viewAccueil(el) {
   document.body.classList.add('is-landing');
   const nPts = C.units.reduce((a, u) => a + (u.points ? u.points.length : 0), 0);
   const nWords = Object.keys(C.lex).length;
+  const zero = C.etapes.map(() => 0);
   el.innerHTML = `
   <div class="lp">
-    <header class="lp-top"><a class="lp-brand" href="#/accueil">${magpie(34, { label: '' })}<b class="ko">말씨</b><span>MALSSI</span></a>
-      <nav><a href="#/apropos">À propos</a><a class="btn sm main" href="#/">Ouvrir le site</a></nav></header>
-
     <section class="lp-hero" aria-labelledby="lp-h">
-      <svg class="lp-signs" viewBox="0 0 300 300" aria-hidden="true">
-        <circle class="s-sky" cx="150" cy="58" r="20"/>
-        <rect class="s-earth" x="40" y="150" width="220" height="16" rx="3"/>
-        <rect class="s-man" x="142" y="96" width="16" height="170" rx="3"/>
-      </svg>
-      <svg class="lp-title" viewBox="0 0 640 260" role="img" aria-label="말씨">
-        <text x="50%" y="205" text-anchor="middle" class="ko">말씨</text>
-      </svg>
-      <div class="lp-pie" aria-hidden="true">${magpie(84, { label: '' })}</div>
-      <h1 id="lp-h" class="lp-claim">Le coréen, du hangeul au 6급.<br><span>En français, gratuitement.</span></h1>
-      <p class="lp-sub">Un parcours rédigé et vérifié, la révision espacée FSRS, des épreuves blanches au format du TOPIK et un atelier d'écriture. Tout fonctionne dans votre navigateur, même hors connexion.</p>
-      <div class="row lp-cta"><a class="btn main lg" href="#/unite/H01">Commencer par le hangeul</a><a class="btn ghost lg" href="#/parcours">Voir le parcours</a></div>
+      <canvas class="lp-sky" aria-hidden="true"></canvas>
+      <header class="lp-top"><a class="lp-brand" href="#/accueil">${magpie(34, { label: '' })}<b class="ko">말씨</b><span>MALSSI</span></a>
+        <nav><a href="#/parcours">Parcours</a><a href="#/topik">TOPIK</a><a href="#/apropos">À propos</a><a class="btn sm glow" href="#/">Ouvrir le site</a></nav></header>
+      <div class="lp-center">
+        <p class="lp-kicker">Apprendre le coréen en français</p>
+        <svg class="lp-title" viewBox="0 0 640 260" role="img" aria-label="말씨"><text x="50%" y="205" text-anchor="middle" class="ko">말씨</text></svg>
+        <h1 id="lp-h" class="lp-claim">Du hangeul au 6급,<br>une montagne à gravir pas à pas.</h1>
+        <p class="lp-sub">Un parcours rédigé et vérifié, la révision espacée FSRS, des épreuves blanches au format du TOPIK et un atelier d'écriture. Gratuit, sans publicité, utilisable hors connexion.</p>
+        <div class="row lp-cta"><a class="btn main lg glow" href="#/unite/H01">Commencer par le hangeul</a><a class="btn ghost lg" href="#/parcours">Voir le parcours</a></div>
+      </div>
       <p class="lp-hint" aria-hidden="true">Faites défiler</p>
+    </section>
+
+    <section class="lp-sec lp-path" aria-labelledby="lpath-h">
+      <div class="lp-txt"><h2 id="lpath-h">Sept étapes jusqu'au sommet</h2>
+        <p>${C.units.length} unités, ${nPts} points de grammaire et ${nWords} mots vérifiés, puis 20 000 sens du dictionnaire de l'Institut national de la langue coréenne. Chaque unité terminée vous fait monter d'un pas sur le sentier.</p>
+        <ol class="lp-steps">${C.etapes.map(e => `<li><b class="ko">${KO[e.niveau || 0]}</b> ${esc(e.titre.replace(/^[^·]*· /, ''))} <small>${e.unites.length} unités</small></li>`).join('')}</ol></div>
+      <div class="lp-map">${carte(C.etapes, zero, { big: true })}</div>
     </section>
 
     <section class="lp-sec lp-blocks" aria-labelledby="lb-h">
       <div class="lp-txt"><h2 id="lb-h">Une écriture en blocs</h2>
-        <p>Le hangeul a été conçu en 1446 pour être appris en quelques jours. Chaque syllabe assemble une consonne, une voyelle et parfois une consonne finale dans un carré. Touchez une syllabe pour l'entendre.</p></div>
+        <p>Le hangeul a été promulgué en 1446 pour être appris en quelques jours. Chaque syllabe assemble une consonne, une voyelle et parfois une consonne finale dans un carré. Touchez une syllabe pour l'entendre.</p></div>
       <div class="lp-syls">${[['한', 'ㅎ', 'ㅏ', 'ㄴ'], ['국', 'ㄱ', 'ㅜ', 'ㄱ'], ['어', 'ㅇ', 'ㅓ', '']].map(([s, i, v, f], k) => `
         <button class="lp-syl" type="button" data-say="${s}" style="--d:${k * 0.25}s" aria-label="Écouter ${s}">
           <span class="pc i ko">${i}</span><span class="pc v ko ${'ㅜㅗㅡ'.includes(v) ? 'h' : ''}">${v}</span>${f ? `<span class="pc f ko">${f}</span>` : ''}<span class="whole ko">${s}</span></button>`).join('')}</div>
-    </section>
-
-    <section class="lp-sec lp-levels" aria-labelledby="ll-h">
-      <h2 id="ll-h">Sept étapes jusqu'au sommet</h2>
-      <p class="lp-lead">${C.units.length} unités, ${nPts} points de grammaire, ${nWords} mots vérifiés dans le parcours et 20 000 sens du dictionnaire de l'Institut national de la langue coréenne.</p>
-      <ol class="lp-track">${C.etapes.map((e, k) => `<li style="--k:${k}"><a href="#/parcours"><b class="ko">${KO[e.niveau || 0]}</b><span>${esc(e.titre.replace(/^[^·]*· /, ''))}</span><small>${e.unites.length} unités</small></a></li>`).join('')}</ol>
     </section>
 
     <section class="lp-sec lp-curve" aria-labelledby="lc-h">
@@ -65,16 +65,30 @@ export function viewAccueil(el) {
       <div class="lp-wongo ko" aria-hidden="true">${(() => { const t = '오늘날 많은 사람들이 스마트폰으로 소통한다.'.split(''); return t.map((c, k) => `<i style="--k:${k}">${c === ' ' ? '' : c}</i>`).join('') + '<i></i>'.repeat(Math.ceil(t.length / 10) * 10 + 10 - t.length); })()}</div>
     </section>
 
-    <section class="lp-sec lp-end">
-      <div class="lp-pie2">${magpie(96, { label: '' })}</div>
-      <h2>La pie annonce les bonnes nouvelles.</h2>
-      <p>En Corée, le chant de la pie (까치) annonce une visite ou une bonne nouvelle. La vôtre : le hangeul s'apprend dès aujourd'hui.</p>
-      <div class="row lp-cta"><a class="btn main lg" href="#/unite/H01">Commencer</a><a class="btn ghost lg" href="${CONFIG.kofi}" target="_blank" rel="noopener">Soutenir sur Ko-fi</a></div>
-      <p class="small muted">Gratuit, sans publicité, sans compte obligatoire. Contenu vérifié dans le 한국어기초사전 (CC BY-SA 2.0 KR).</p>
+    <section class="lp-sec lp-feats" aria-label="Fonctionnalités">
+      ${[['오늘', 'La séance du jour', 'Révisions, nouveaux mots et prochaine unité, réunis en une seule liste.'],
+         ['단어', 'Listes et dictionnaire', 'Tout le vocabulaire noté du 한국어기초사전, par niveau et par thème.'],
+         ['시험', 'Épreuves blanches', 'TOPIK I et II chronométrés, corrigés question par question.'],
+         ['집중', 'Minuteur Focus', 'Des périodes de travail et de pause pour garder le rythme.'],
+         ['Anki', 'Import Anki', 'Vos paquets .apkg, lus sur votre appareil, révisés avec FSRS.'],
+         ['나', 'Vos données', 'Tout reste sur votre appareil ; un compte est facultatif.']].map(([k, t, d], i) => `<article style="--i:${i}"><b class="ko">${k}</b><h3>${t}</h3><p>${d}</p></article>`).join('')}
+    </section>
+
+    <section class="lp-end">
+      <canvas class="lp-sky2" aria-hidden="true"></canvas>
+      <div class="lp-end-in">
+        <div class="lp-pie2">${magpie(96, { label: '' })}</div>
+        <h2>La pie annonce les bonnes nouvelles.</h2>
+        <p>En Corée, le chant de la pie (까치) annonce une visite ou une bonne nouvelle. La vôtre : le hangeul s'apprend dès aujourd'hui.</p>
+        <div class="row lp-cta"><a class="btn main lg glow" href="#/unite/H01">Commencer</a><a class="btn ghost lg" href="${CONFIG.kofi}" target="_blank" rel="noopener">Soutenir sur Ko-fi</a></div>
+        <p class="small">Gratuit, sans publicité, sans compte obligatoire. Contenu vérifié dans le 한국어기초사전 (CC BY-SA 2.0 KR).</p>
+      </div>
     </section>
   </div>`;
-  // Révélations au défilement (une seule fois par section)
-  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.3 });
+  const stops = [inkScene($('.lp-sky', el), { night: true, petals: 54 }), inkScene($('.lp-sky2', el), { night: true, petals: 24, moonX: 0.2, moonY: 0.3 })];
+  stopAccueil(); stop = () => stops.forEach(f => f());
+  placeStations(el);
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.25 });
   $$('.lp-sec', el).forEach(s => io.observe(s));
   requestAnimationFrame(() => $('.lp-hero', el).classList.add('go'));
 }

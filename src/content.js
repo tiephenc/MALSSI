@@ -9,6 +9,9 @@ export async function loadContent() {
   const files = ['etape0', 'niveau1', 'niveau2', 'niveau3', 'niveau4', 'niveau5', 'niveau6'];
   const [lex, ...etapes] = await Promise.all([fetch('data/lexique.json').then(r => r.json()), ...files.map(f => fetch('data/' + f + '.json').then(r => r.json()))]);
   C.lex = lex; C.etapes = etapes; C.units = []; C.byId = {};
+  // compléments : dialogue, lecture, note culturelle (fichiers data/plusN.json)
+  const plus = await Promise.all([1, 2, 3, 4, 5, 6].map(n => fetch(`data/plus${n}.json`).then(r => r.ok ? r.json() : {}).catch(() => ({}))));
+  for (const e of etapes) { const P = plus[(e.niveau || 0) - 1]; if (P) e.unites.forEach(u => { const x = P[u.id]; if (x) Object.assign(u, x); }); }
   for (const e of etapes) e.unites.forEach(u => { Object.assign(u, { etape: e.id, niveau: e.niveau || 0, n: C.units.length, k: e.unites.indexOf(u) }); C.units.push(u); C.byId[u.id] = u; });
 }
 // Listes de vocabulaire par niveau (chargées à la demande)

@@ -1,0 +1,86 @@
+{
+  "N1-01": {
+    "dia": [["민준", "안녕하세요. 저는 김민준이에요.", "Bonjour. Je suis Kim Minjun."], ["클레르", "안녕하세요. 제 이름은 클레르예요.", "Bonjour. Je m'appelle Claire."], ["민준", "클레르 씨는 어느 나라 사람이에요?", "Claire, de quel pays êtes-vous ?"], ["클레르", "프랑스 사람이에요. 민준 씨는 학생이에요?", "Je suis Française. Minjun, vous êtes étudiant ?"], ["민준", "아니요, 저는 회사원이에요. 반가워요.", "Non, je suis employé de bureau. Enchanté."], ["클레르", "저도 반가워요.", "Enchantée aussi."]],
+    "lec": {"t": "자기소개", "ko": "안녕하세요. 저는 클레르예요. 프랑스 사람이에요. 저는 학생이에요. 서울에서 한국어를 공부해요. 제 친구 민준 씨는 한국 사람이에요. 민준 씨는 회사원이에요.", "fr": "Bonjour. Je suis Claire. Je suis Française. Je suis étudiante. J'étudie le coréen à Séoul. Mon ami Minjun est Coréen. Minjun est employé de bureau.",
+      "q": [["Quelle est la nationalité de Claire ?", ["Coréenne", "Française", "Japonaise", "Américaine"], 1], ["Que fait Minjun ?", ["Il est étudiant", "Il est professeur", "Il est employé de bureau", "Il est médecin"], 2]]},
+    "cul": "En Corée, on ajoute 씨 après le prénom (ou le nom complet) pour s'adresser poliment à quelqu'un de son âge : 민준 씨. On ne l'emploie jamais pour soi-même, ni avec un supérieur, que l'on appelle par son titre (선생님, 과장님…)."
+  },
+  "N1-02": {
+    "dia": [["점원", "어서 오세요.", "Bienvenue."], ["손님", "이거 뭐예요?", "Qu'est-ce que c'est ?"], ["점원", "그건 공책이에요.", "C'est un cahier."], ["손님", "저것도 공책이에요?", "Ça, là-bas, c'est aussi un cahier ?"], ["점원", "아니요, 저건 공책이 아니에요. 책이에요.", "Non, ce n'est pas un cahier. C'est un livre."]],
+    "lec": {"t": "제 가방", "ko": "이건 제 가방이에요. 가방 안에 책이 있어요. 그리고 공책하고 연필이 있어요. 우산은 없어요. 이 볼펜은 제 볼펜이 아니에요. 친구 볼펜이에요.", "fr": "Voici mon sac. Dans le sac, il y a un livre. Il y a aussi un cahier et un crayon. Il n'y a pas de parapluie. Ce stylo n'est pas le mien. C'est celui de mon ami.",
+      "q": [["Qu'est-ce qui n'est pas dans le sac ?", ["Un livre", "Un cahier", "Un parapluie", "Un crayon"], 2], ["À qui est le stylo ?", ["À moi", "À l'ami", "Au professeur", "On ne sait pas"], 1]]},
+    "cul": "Dans les boutiques coréennes, on vous accueille presque toujours par 어서 오세요 (« entrez vite, bienvenue »). Il n'est pas nécessaire d'y répondre ; un léger signe de tête suffit."
+  },
+  "N1-03": {
+    "dia": [["수진", "토마 씨, 집이 어디에 있어요?", "Thomas, où se trouve ta maison ?"], ["토마", "학교 앞에 있어요.", "Elle est devant l'école."], ["수진", "집에 방이 몇 개 있어요?", "Combien de pièces y a-t-il chez toi ?"], ["토마", "방이 하나 있어요. 작아요.", "Il y a une chambre. C'est petit."], ["수진", "부엌도 있어요?", "Il y a aussi une cuisine ?"], ["토마", "네, 방 옆에 부엌이 있어요.", "Oui, la cuisine est à côté de la chambre."]],
+    "lec": {"t": "우리 집", "ko": "우리 집은 학교 옆에 있어요. 집에 방이 두 개 있어요. 큰 방에는 책상하고 의자가 있어요. 책상 위에 컴퓨터가 있어요. 작은 방에는 침대가 있어요. 거실은 없어요.", "fr": "Ma maison est à côté de l'école. Il y a deux chambres. Dans la grande, il y a un bureau et une chaise. Sur le bureau, il y a un ordinateur. Dans la petite, il y a un lit. Il n'y a pas de salon.",
+      "q": [["Où est la maison ?", ["Devant l'école", "À côté de l'école", "Derrière la banque", "Près du parc"], 1], ["Qu'y a-t-il sur le bureau ?", ["Un lit", "Une chaise", "Un ordinateur", "Un livre"], 2]]},
+    "cul": "Beaucoup d'étudiants coréens vivent dans un 원룸 (« one-room ») : un studio avec un coin cuisine, souvent près de l'université. On en trouve aussi en 고시원, de très petites chambres meublées bon marché."
+  },
+  "N1-04": {
+    "dia": [["지은", "마리 씨, 주말에 뭐 해요?", "Marie, qu'est-ce que tu fais le week-end ?"], ["마리", "보통 집에서 쉬어요. 책을 읽어요.", "D'habitude je me repose à la maison. Je lis."], ["지은", "저는 친구를 만나요. 같이 영화를 봐요.", "Moi, je vois des amis. On regarde un film ensemble."], ["마리", "좋아요! 저도 영화를 좋아해요.", "Super ! Moi aussi j'aime les films."], ["지은", "그럼 이번 주말에 같이 봐요.", "Alors, regardons-en un ensemble ce week-end."]],
+    "lec": {"t": "마리 씨의 하루", "ko": "마리 씨는 아침에 빵을 먹어요. 그리고 커피를 마셔요. 오전에 학교에서 한국어를 배워요. 오후에 도서관에서 공부해요. 저녁에 친구를 만나요. 밤에는 일찍 자요.", "fr": "Le matin, Marie mange du pain. Puis elle boit un café. Le matin, elle apprend le coréen à l'école. L'après-midi, elle étudie à la bibliothèque. Le soir, elle voit des amis. La nuit, elle se couche tôt.",
+      "q": [["Que fait Marie l'après-midi ?", ["Elle mange", "Elle étudie à la bibliothèque", "Elle voit des amis", "Elle dort"], 1], ["Que boit-elle le matin ?", ["Du thé", "Du lait", "Du café", "De l'eau"], 2]]},
+    "cul": "La forme -아요 / -어요 est celle que vous entendrez le plus en Corée : dans les magasins, à la télévision, entre collègues. Elle est polie sans être cérémonieuse, et convient presque partout."
+  },
+  "N1-05": {
+    "dia": [["유나", "어디에 가요?", "Où vas-tu ?"], ["레오", "도서관에 가요. 거기에서 숙제를 해요.", "Je vais à la bibliothèque. J'y fais mes devoirs."], ["유나", "저는 은행에 가요.", "Moi, je vais à la banque."], ["레오", "은행이 어디에 있어요?", "Où est la banque ?"], ["유나", "우체국 옆에 있어요. 그럼 이따가 카페에서 만나요.", "À côté de la poste. Alors on se retrouve plus tard au café."]],
+    "lec": {"t": "토요일", "ko": "토요일 아침에 시장에 가요. 시장에서 과일을 사요. 점심에는 식당에서 비빔밥을 먹어요. 오후에는 공원에 가요. 공원에서 산책해요. 저녁에 집에서 쉬어요.", "fr": "Le samedi matin, je vais au marché. J'y achète des fruits. Le midi, je mange un bibimbap au restaurant. L'après-midi, je vais au parc. Je m'y promène. Le soir, je me repose à la maison.",
+      "q": [["Où achète-t-on des fruits ?", ["Au restaurant", "Au marché", "Au parc", "À la maison"], 1], ["Que fait-on au parc ?", ["On mange", "On se promène", "On étudie", "On dort"], 1]]},
+    "cul": "Les marchés traditionnels (전통 시장), comme Gwangjang ou Namdaemun à Séoul, restent très vivants. On y mange debout ou sur de petits bancs : 빈대떡 (galette de haricot mungo), 김밥, 떡볶이."
+  },
+  "N1-06": {
+    "dia": [["점원", "어서 오세요.", "Bienvenue."], ["손님", "이 우산 얼마예요?", "Combien coûte ce parapluie ?"], ["점원", "만 이천 원이에요.", "12 000 wons."], ["손님", "그럼 이 모자는 얼마예요?", "Et ce chapeau, combien ?"], ["점원", "팔천오백 원이에요.", "8 500 wons."], ["손님", "모자 주세요. 카드 돼요?", "Je prends le chapeau. La carte, c'est possible ?"], ["점원", "네, 돼요.", "Oui, c'est possible."]],
+    "lec": {"t": "생일", "ko": "제 생일은 칠월 십일이에요. 올해 생일은 토요일이에요. 친구들하고 식당에서 저녁을 먹어요. 식당 전화번호는 공이의 삼사오의 육칠팔구예요. 저는 지금 스물다섯 살이에요.", "fr": "Mon anniversaire est le 10 juillet. Cette année, il tombe un samedi. Je dîne au restaurant avec des amis. Le numéro du restaurant est le 02-345-6789. J'ai maintenant vingt-cinq ans.",
+      "q": [["Quand est l'anniversaire ?", ["Le 7 octobre", "Le 10 juillet", "Le 17 juin", "Le 10 juin"], 1], ["Quel jour tombe-t-il cette année ?", ["Vendredi", "Samedi", "Dimanche", "Lundi"], 1]]},
+    "cul": "Dans un numéro de téléphone, le tiret se lit souvent 의, prononcé [에] : 공이의 삼사오… Pour l'âge, les Coréens emploient depuis 2023 l'âge international (만 나이) dans les documents officiels, mais on entend encore l'ancien « âge coréen »."
+  },
+  "N1-07": {
+    "dia": [["직원", "몇 분이세요?", "Vous êtes combien ?"], ["손님", "세 명이에요.", "Nous sommes trois."], ["직원", "이쪽으로 오세요. 뭐 드릴까요?", "Par ici. Que désirez-vous ?"], ["손님", "김밥 두 줄하고 라면 하나 주세요.", "Deux rouleaux de gimbap et un ramyeon, s'il vous plaît."], ["손님", "그리고 물 세 잔 주세요.", "Et trois verres d'eau, s'il vous plaît."]],
+    "lec": {"t": "나의 하루", "ko": "저는 아침 일곱 시에 일어나요. 여덟 시 반에 회사에 가요. 회사는 아홉 시에 시작해요. 점심은 열두 시에 먹어요. 저녁 여섯 시에 집에 와요. 밤 열한 시에 자요.", "fr": "Je me lève à 7 h. À 8 h 30, je vais au travail. Le travail commence à 9 h. Je déjeune à midi. Je rentre à 18 h. Je me couche à 23 h.",
+      "q": [["À quelle heure commence le travail ?", ["7 h", "8 h 30", "9 h", "12 h"], 2], ["À quelle heure se couche-t-on ?", ["21 h", "22 h", "23 h", "minuit"], 2]]},
+    "cul": "Au restaurant, l'eau est servie gratuitement, souvent en libre-service (셀프). Les plats d'accompagnement (반찬) sont offerts et resservis à volonté : 반찬 더 주세요."
+  },
+  "N1-08": {
+    "dia": [["하준", "에마 씨, 김치를 먹어요?", "Emma, tu manges du kimchi ?"], ["에마", "아니요, 너무 매워서… 안 먹어요.", "Non, c'est trop épicé… je n'en mange pas."], ["하준", "그럼 술은 마셔요?", "Et l'alcool, tu en bois ?"], ["에마", "아니요, 술도 안 마셔요. 하준 씨는 수영할 수 있어요?", "Non, je ne bois pas d'alcool non plus. Hajun, tu sais nager ?"], ["하준", "아니요, 저는 수영을 못 해요. 하지만 운전은 할 수 있어요.", "Non, je ne sais pas nager. Mais je sais conduire."]],
+    "lec": {"t": "할 수 있어요, 못 해요", "ko": "제 동생은 요리를 잘해요. 피아노도 칠 수 있어요. 하지만 운전은 못 해요. 저는 요리를 못 해요. 피아노도 못 쳐요. 그렇지만 수영은 잘할 수 있어요.", "fr": "Mon petit frère cuisine bien. Il sait aussi jouer du piano. Mais il ne sait pas conduire. Moi, je ne sais pas cuisiner. Je ne sais pas jouer du piano non plus. En revanche, je nage bien.",
+      "q": [["Que ne sait pas faire le petit frère ?", ["Cuisiner", "Jouer du piano", "Conduire", "Nager"], 2], ["Que sait faire le narrateur ?", ["Cuisiner", "Nager", "Jouer du piano", "Conduire"], 1]]},
+    "cul": "Pour refuser poliment de la nourriture, les Coréens évitent un 안 먹어요 sec : ils disent plutôt 괜찮아요 (« ça va, merci ») ou 배불러요 (« je n'ai plus faim »)."
+  },
+  "N1-09": {
+    "dia": [["서연", "주말 잘 보냈어요?", "Tu as passé un bon week-end ?"], ["루카", "네, 친구하고 부산에 갔어요.", "Oui, je suis allé à Busan avec un ami."], ["서연", "와, 부산에서 뭐 했어요?", "Waouh, qu'est-ce que vous avez fait à Busan ?"], ["루카", "바다를 보고 회를 먹었어요. 사진도 많이 찍었어요.", "On a vu la mer et mangé du poisson cru. J'ai aussi pris beaucoup de photos."], ["서연", "재미있었어요?", "C'était bien ?"], ["루카", "네, 정말 재미있었어요. 그런데 좀 피곤했어요.", "Oui, vraiment. Mais j'étais un peu fatigué."]],
+    "lec": {"t": "지난 주말", "ko": "지난 토요일에 청소를 하고 빨래를 했어요. 오후에는 동생하고 같이 쇼핑을 했어요. 일요일에는 날씨가 좋았어요. 그래서 공원에서 산책하고 사진을 찍었어요. 저녁에는 집에서 쉬었어요.", "fr": "Samedi dernier, j'ai fait le ménage et la lessive. L'après-midi, je suis allé faire du shopping avec mon petit frère. Dimanche, il faisait beau. Alors je me suis promené au parc et j'ai pris des photos. Le soir, je me suis reposé à la maison.",
+      "q": [["Qu'a-t-on fait samedi matin ?", ["Du shopping", "Le ménage et la lessive", "Une promenade", "Des photos"], 1], ["Pourquoi est-on allé au parc dimanche ?", ["Il faisait beau", "Il pleuvait", "Pour voir un ami", "Pour faire du sport"], 0]]},
+    "cul": "Busan, deuxième ville du pays, est célèbre pour ses plages (해운대, 광안리) et son marché aux poissons 자갈치. On y parle un dialecte reconnaissable, le 경상도 사투리."
+  },
+  "N1-10": {
+    "dia": [["직원", "어서 오세요. 메뉴 여기 있어요.", "Bienvenue. Voici le menu."], ["손님", "불고기하고 냉면 주세요.", "Un bulgogi et des nouilles froides, s'il vous plaît."], ["직원", "냉면은 물냉면이요, 비빔냉면이요?", "Les nouilles froides, en bouillon ou épicées ?"], ["손님", "물냉면 주세요. 너무 맵게 하지 마세요.", "En bouillon, s'il vous plaît. Pas trop épicé."], ["직원", "네, 잠깐만 기다리세요.", "D'accord, patientez un instant."], ["손님", "여기요, 계산해 주세요.", "S'il vous plaît, l'addition."]],
+    "lec": {"t": "식당 안내", "ko": "우리 식당은 오전 열한 시에 문을 열어요. 점심 메뉴는 비빔밥하고 김치찌개예요. 물은 셀프예요. 식당 안에서 담배를 피우지 마세요. 맛있게 드세요!", "fr": "Notre restaurant ouvre à 11 h. Au menu du midi : bibimbap et ragoût de kimchi. L'eau est en libre-service. Ne fumez pas à l'intérieur. Bon appétit !",
+      "q": [["Qu'est-ce qui est interdit ?", ["Boire de l'eau", "Fumer à l'intérieur", "Payer par carte", "Commander un ragoût"], 1], ["Comment obtient-on de l'eau ?", ["On la commande", "Elle est payante", "En libre-service", "Elle n'est pas servie"], 2]]},
+    "cul": "Pour appeler le serveur, on dit simplement 여기요! (« ici ! ») ou 저기요!, même dans un restaurant chic : ce n'est pas impoli. Beaucoup de tables ont aussi une sonnette."
+  },
+  "N1-11": {
+    "dia": [["다은", "오늘 날씨가 어때요?", "Quel temps fait-il aujourd'hui ?"], ["노아", "비가 와요. 그리고 바람도 많이 불어요.", "Il pleut. Et il y a beaucoup de vent."], ["다은", "추워요?", "Il fait froid ?"], ["노아", "조금 추워요. 그래서 우산하고 코트를 가져왔어요.", "Un peu. Alors j'ai pris un parapluie et un manteau."], ["다은", "저는 비가 와서 오늘 집에 있어요.", "Moi, comme il pleut, je reste à la maison aujourd'hui."]],
+    "lec": {"t": "한국의 사계절", "ko": "한국에는 봄, 여름, 가을, 겨울이 있어요. 봄은 따뜻하지만 바람이 많이 불어요. 여름은 덥고 비가 많이 와요. 가을은 시원하고 하늘이 맑아요. 겨울은 춥고 눈이 와요.", "fr": "La Corée a quatre saisons : printemps, été, automne et hiver. Le printemps est doux mais venteux. L'été est chaud et très pluvieux. L'automne est frais et le ciel dégagé. L'hiver est froid et il neige.",
+      "q": [["Quelle saison est très pluvieuse ?", ["Le printemps", "L'été", "L'automne", "L'hiver"], 1], ["Comment est le ciel en automne ?", ["Nuageux", "Dégagé", "Pluvieux", "Neigeux"], 1]]},
+    "cul": "La saison des pluies (장마) dure environ un mois, de fin juin à fin juillet. Au printemps, la poussière jaune (황사) et les particules fines (미세먼지) font porter des masques : les applications météo affichent leur niveau chaque jour."
+  },
+  "N1-12": {
+    "dia": [["시우", "이번 토요일에 시간 있어요?", "Tu as du temps ce samedi ?"], ["안나", "네, 있어요. 왜요?", "Oui. Pourquoi ?"], ["시우", "같이 등산 갈까요?", "On va faire de la randonnée ensemble ?"], ["안나", "좋아요. 몇 시에 만날까요?", "D'accord. À quelle heure on se retrouve ?"], ["시우", "아침 아홉 시에 역 앞에서 만납시다.", "Retrouvons-nous à 9 h devant la gare."], ["안나", "네, 그럼 김밥을 사러 편의점에 갈게요.", "D'accord, alors j'irai acheter du gimbap à la supérette."]],
+    "lec": {"t": "방학 계획", "ko": "다음 달에 방학이 시작해요. 방학에 제주도에 갈 거예요. 제주도에서 바다를 보고 산에도 갈 거예요. 친구가 제주도에 살아요. 그래서 친구를 만나러 가요. 정말 기대돼요!", "fr": "Les vacances commencent le mois prochain. Je vais aller à Jeju. Là-bas, je verrai la mer et j'irai aussi en montagne. Un ami habite à Jeju. Alors j'y vais pour le voir. J'ai vraiment hâte !",
+      "q": [["Où ira le narrateur ?", ["À Busan", "À Séoul", "À Jeju", "À Gyeongju"], 2], ["Pourquoi y va-t-il, en partie ?", ["Pour travailler", "Pour voir un ami", "Pour étudier", "Pour déménager"], 1]]},
+    "cul": "La randonnée (등산) est l'un des loisirs préférés des Coréens : le pays est couvert à 70 % de montagnes. Le week-end, les sentiers proches des villes sont pleins de randonneurs très bien équipés."
+  },
+  "N1-13": {
+    "dia": [["은지", "이 사진은 누구예요?", "Qui est sur cette photo ?"], ["알렉스", "제 가족이에요. 이분은 아버지, 이분은 어머니예요.", "C'est ma famille. Voici mon père, voici ma mère."], ["은지", "형제가 있어요?", "Tu as des frères et sœurs ?"], ["알렉스", "누나가 한 명 있어요. 누나도 한국어를 공부해요.", "J'ai une grande sœur. Elle aussi apprend le coréen."], ["은지", "와, 가족이 다 멋있어요!", "Waouh, toute ta famille a l'air super !"]],
+    "lec": {"t": "우리 가족", "ko": "우리 가족은 네 명이에요. 아버지, 어머니, 오빠, 그리고 저예요. 아버지는 의사예요. 어머니는 선생님이에요. 오빠는 대학생이에요. 저도 학생이에요. 할머니는 부산에 사세요.", "fr": "Nous sommes quatre dans ma famille : mon père, ma mère, mon grand frère et moi. Mon père est médecin. Ma mère est professeure. Mon grand frère est étudiant. Moi aussi je suis élève. Ma grand-mère habite à Busan.",
+      "q": [["Combien sont-ils dans la famille (sans la grand-mère) ?", ["Trois", "Quatre", "Cinq", "Six"], 1], ["Que fait la mère ?", ["Médecin", "Professeure", "Étudiante", "Employée de bureau"], 1]]},
+    "cul": "Le mot pour un frère ou une sœur aîné(e) dépend du sexe de celui qui parle : un garçon dit 형 et 누나, une fille dit 오빠 et 언니. Ces mots servent aussi, entre amis, pour s'adresser à quelqu'un d'un peu plus âgé."
+  },
+  "N1-14": {
+    "dia": [["관광객", "실례합니다. 명동에 어떻게 가요?", "Excusez-moi. Comment va-t-on à Myeongdong ?"], ["행인", "지하철 4호선을 타세요.", "Prenez la ligne 4 du métro."], ["관광객", "여기에서 멀어요?", "C'est loin d'ici ?"], ["행인", "아니요, 지하철로 십 분쯤 걸려요. 명동역에서 내리세요.", "Non, environ dix minutes en métro. Descendez à la station Myeongdong."], ["관광객", "감사합니다.", "Merci."]],
+    "lec": {"t": "출근길", "ko": "저는 집에서 회사까지 버스하고 지하철을 타요. 집 앞 정류장에서 버스를 타요. 서울역에서 지하철로 갈아타요. 회사까지 사십 분쯤 걸려요. 퇴근할 때는 가끔 택시를 타요.", "fr": "Pour aller de chez moi au bureau, je prends le bus et le métro. Je prends le bus à l'arrêt devant chez moi. À la gare de Séoul, je change pour le métro. Il faut environ quarante minutes jusqu'au bureau. En rentrant, je prends parfois un taxi.",
+      "q": [["Où change-t-on pour le métro ?", ["Devant la maison", "À la gare de Séoul", "À Myeongdong", "Au bureau"], 1], ["Combien de temps dure le trajet ?", ["10 minutes", "20 minutes", "40 minutes", "1 heure"], 2]]},
+    "cul": "La carte de transport T-money se recharge dans les supérettes et fonctionne dans le bus, le métro et même certains taxis. En changeant de ligne dans les 30 minutes, la correspondance est presque gratuite."
+  }
+}

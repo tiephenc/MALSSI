@@ -6,6 +6,8 @@ import { split, HORIZ, MIXED } from '../hangul.js';
 import { playBtn } from '../tts.js';
 import { magpie } from '../magpie.js';
 import { DAY, startOfDay } from '../fsrs.js';
+import { inkScene } from '../scene.js';
+import { onLeave } from '../ui.js';
 
 // Syllabe du jour : tirée des mots déjà rencontrés (ou de la première unité), stable sur la journée.
 function syllableOfDay() {
@@ -41,7 +43,7 @@ export function viewToday(el) {
     : td.n ? `Déjà ${td.n} réponse${td.n > 1 ? 's' : ''} aujourd'hui, dont ${td.ok} juste${td.ok > 1 ? 's' : ''}.` : 'Une séance courte chaque jour vaut mieux qu\'une longue le dimanche.';
   el.innerHTML = `
     <div class="today"><div>
-      <div class="hero">
+      <div class="hero scene-card"><canvas class="scene-bg" aria-hidden="true"></canvas>
         <div class="block split" id="blk" aria-hidden="true">
           <span class="j i">${parts.i}</span><span class="j ${vcls}">${parts.v}</span>${parts.f ? `<span class="j f">${parts.f}</span>` : ''}
           <span class="full">${syl}</span></div>
@@ -62,5 +64,6 @@ export function viewToday(el) {
         <p class="small muted" style="margin:0 0 10px">${st.total} au total · ${st.mature} solides (intervalle de 3 semaines ou plus)</p>
         <div class="bar" aria-hidden="true"><i style="width:${st.total ? Math.round(st.mature / st.total * 100) : 0}%"></i></div></div>
     </aside></div>`;
+  onLeave(inkScene($('.scene-bg'), { petals: 18, moonX: 0.86, moonY: 0.3, scale: 0.8 }));
   requestAnimationFrame(() => setTimeout(() => { const b = $('#blk'); if (b) { b.classList.remove('split'); setTimeout(() => b.classList.add('join'), 900); } }, 350));
 }

@@ -12,3 +12,8 @@ export const pick = (a, n, not = []) => shuffle(a.filter(x => !not.includes(x)))
 export const gradeTag = g => g === '초급' ? '<span class="tag g1" title="Niveau débutant dans le 한국어기초사전">초급</span>' : g === '중급' ? '<span class="tag g2" title="Niveau intermédiaire dans le 한국어기초사전">중급</span>' : g === '고급' ? '<span class="tag g3" title="Niveau avancé dans le 한국어기초사전">고급</span>' : '';
 // Délégation globale : boutons d'écoute
 document.addEventListener('click', e => { const b = e.target.closest('[data-say]'); if (b) speak(b.dataset.say); });
+
+// Nettoyage à la sortie d'une vue (animations, minuteurs)
+const leaves = [];
+export const onLeave = fn => leaves.push(fn);
+export const leave = () => { while (leaves.length) { try { leaves.pop()(); } catch (e) {} } };

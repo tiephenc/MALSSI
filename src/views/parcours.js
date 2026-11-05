@@ -1,9 +1,10 @@
 // MALSSI · Parcours, unités et exercices
 import { C, unitOpen, wordInfo, rr, markEx, blankEx, exAnswer, plainEx } from '../content.js';
-import { S, save } from '../store.js';
-import { esc, $, $$, shuffle, pick, gradeTag, toast } from '../ui.js';
-import { playBtn, speak, hasVoice } from '../tts.js';
+import { S, save, logError } from '../store.js';
+import { esc, $, $$, shuffle, pick, gradeTag, toast, onLeave } from '../ui.js';
+import { playBtn, speak, speakSeq, hasVoice } from '../tts.js';
 import { split, join, INI, VOW, FIN } from '../hangul.js';
+import { carte, placeStations } from '../carte.js';
 
 const KO_LEVEL = { 0: '한글', 1: '1급', 2: '2급', 3: '3급', 4: '4급', 5: '5급', 6: '6급' };
 function unitStatus(u) {
@@ -18,6 +19,7 @@ export function viewParcours(el) {
   el.innerHTML = `
     <h1>Le parcours</h1>
     <p class="muted prose">Du hangeul au 6급, dans l'ordre du programme international de coréen standard. Chaque unité terminée ajoute ses mots à vos révisions. ${done} unité${done > 1 ? 's' : ''} terminée${done > 1 ? 's' : ''} sur ${all}.</p>
+    <div class="carte-wrap">${carte(C.etapes, C.etapes.map(e => e.unites.filter(u => S.units[u.id] && S.units[u.id].done).length))}</div>
     <nav class="lvl-tabs" aria-label="Niveaux">${C.etapes.map(e => { const us = e.unites, d = us.filter(u => S.units[u.id] && S.units[u.id].done).length;
       return `<a href="#lvl-${e.id}" class="${cur && cur.etape === e.id ? 'cur' : ''}"><b class="ko">${KO_LEVEL[e.niveau || 0]}</b><span class="bar"><i style="width:${Math.round(d / us.length * 100)}%"></i></span></a>`; }).join('')}</nav>
     ${C.etapes.map(e => { const d = e.unites.filter(u => S.units[u.id] && S.units[u.id].done).length; return `
@@ -31,6 +33,8 @@ export function viewParcours(el) {
           ${unitStatus(u)}</a></li>`).join('')}
       </ol>
     </section>`; }).join('')}`;
+  placeStations(el);
+  $$('.carte .stations a', el).forEach(a => a.onclick = ev => { ev.preventDefault(); const t = document.getElementById('lvl-' + a.dataset.lvl); t && t.scrollIntoView({ behavior: 'smooth' }); });
   $$('.lvl-tabs a', el).forEach(a => a.onclick = ev => { ev.preventDefault(); const t = document.querySelector(a.getAttribute('href')); t && t.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); });
 }
 
@@ -58,8 +62,12 @@ export function viewUnit(el, id) {
       ${hasVoice() ? '' : '<p class="note small">Aucune voix coréenne n\'est installée dans ce navigateur : l\'écoute est indisponible. Sous Windows, ajoutez la langue coréenne (Paramètres › Heure et langue › Voix) ; Chrome et Edge en proposent souvent une.</p>'}
     </header>
     <nav class="toc" aria-label="Sections de l'unité">
-      <a href="#s-cours">Cours</a>${gram ? u.points.map((p, i) => `<a href="#p-${i}" class="ko">${esc(p.f.split(' (')[0])}</a>`).join('') : ''}${!gram && u.lettres.length ? '<a href="#s-lettres">Lettres</a>' : ''}<a href="#s-mots">Mots</a><a href="#s-ex">Exercices</a>
+      ${u.dia ? '<a href="#s-dia">대화 Dialogue</a>' : ''}<a href="#s-cours">Cours</a>${gram ? u.points.map((p, i) => `<a href="#p-${i}" class="ko">${esc(p.f.split(' (')[0])}</a>`).join('') : ''}${!gram && u.lettres.length ? '<a href="#s-lettres">Lettres</a>' : ''}${u.lec ? '<a href="#s-lec">읽기 Lecture</a>' : ''}<a href="#s-mots">Mots</a>${u.cul ? '<a href="#s-cul">문화 Culture</a>' : ''}<a href="#s-ex">Exercices</a>
     </nav>
+    ${u.dia ? `<section class="sec" id="s-dia"><h2><span class="ko">대화</span> Dialogue</h2>
+      <p class="small muted">Écoutez d'abord sans lire, puis lisez en affichant la traduction.</p>
+      <div class="row" style="margin-bottom:12px"><button class="btn sm" id="dplay">Écouter tout le dialogue</button><button class="btn sm ghost" id="dtr" aria-pressed="false">Afficher la traduction</button></div>
+      <div class="dialog">${u.dia.map(([who, ko, fr], i) => `<div class="bub ${i % 2 ? 'r' : 'l'}"><span class="who ko">${esc(who)}</span><p class="ko">${esc(ko)} ${playBtn(ko)}</p><p class="tr small" hidden>${esc(fr)}</p></div>`).join('')}</div></section>` : ''}
     ${gram ? `<section class="sec prose" id="s-cours"><h2>Cours</h2><p>${esc(u.intro)}</p>${u.points.map(pointHtml).join('')}</section>`
     : `<section class="sec prose" id="s-cours"><h2>Cours</h2>
       ${u.explication.map(p => `<p>${p}</p>`).join('')}
@@ -70,11 +78,25 @@ export function viewUnit(el, id) {
         <div class="letter"><div class="g ko">${l.j}</div>
           <div class="meta"><div class="top"><span class="rr">${esc(l.rr)}</span>${l.nom ? `<span class="nm">${l.nom}</span>` : ''}${playBtn(l.son, l.j)}</div>
           <span class="muted">${l.fr}</span></div></div>`).join('')}</div></section>` : ''}`}
+    ${u.lec ? `<section class="sec" id="s-lec"><h2><span class="ko">읽기</span> Lecture</h2>
+      <article class="reading"><h3 class="ko">${esc(u.lec.t)}</h3><p class="ko rtxt">${esc(u.lec.ko)}</p>
+        <div class="row"><button class="btn sm" data-say="${esc(u.lec.ko)}">Écouter le texte</button><button class="btn sm ghost" id="ltr">Afficher la traduction</button></div>
+        <p class="tr" id="lfr" hidden>${esc(u.lec.fr)}</p></article>
+      <p class="small muted">Les questions de compréhension sont dans les exercices de l'unité.</p></section>` : ''}
     <section class="sec" id="s-mots"><h2>Les mots</h2>
       <p class="small muted">Prononciation, niveau et sens vérifiés dans le 한국어기초사전. Les gloses françaises sont rédigées pour MALSSI.</p>
       <div class="words">${u.mots.map(([ko, fr]) => wordRow(ko, fr)).join('')}</div></section>
+    ${u.cul ? `<section class="sec" id="s-cul"><h2><span class="ko">문화</span> Culture</h2><p class="culture prose">${esc(u.cul)}</p></section>` : ''}
     <section class="sec" id="s-ex"><h2>Exercices</h2><div id="quiz"></div></section>
     <div class="row unit-nav">${prevU ? `<a class="btn ghost" href="#/unite/${prevU.id}">← ${esc(prevU.titre)}</a>` : ''}${nextU ? `<a class="btn ghost" href="#/unite/${nextU.id}">${esc(nextU.titre)} →</a>` : ''}</div>`;
+  const dtr = $('#dtr', el); if (dtr) dtr.onclick = () => { const on = dtr.getAttribute('aria-pressed') !== 'true'; dtr.setAttribute('aria-pressed', on); dtr.textContent = on ? 'Masquer la traduction' : 'Afficher la traduction'; $$('.dialog .tr', el).forEach(t => t.hidden = !on); };
+  const dpl = $('#dplay', el); if (dpl) dpl.onclick = () => speakSeq(u.dia.map(d => d[1]));
+  const ltr = $('#ltr', el); if (ltr) ltr.onclick = () => { const f = $('#lfr', el); f.hidden = !f.hidden; ltr.textContent = f.hidden ? 'Afficher la traduction' : 'Masquer la traduction'; };
+  // barre de lecture
+  const bar = document.createElement('div'); bar.className = 'readbar'; bar.setAttribute('aria-hidden', 'true'); document.body.appendChild(bar);
+  const onScroll = () => { const h = document.documentElement; bar.style.setProperty('--p', Math.min(1, h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight))); };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+  onLeave(() => { removeEventListener('scroll', onScroll); bar.remove(); });
   $$('.toc a', el).forEach(a => a.onclick = ev => { ev.preventDefault(); const t = document.getElementById(a.getAttribute('href').slice(1)); t && t.scrollIntoView({ behavior: 'smooth' }); });
   startQuiz($('#quiz', el), u);
 }
@@ -102,13 +124,16 @@ function buildGrammarQ(u) {
     const others = pick(C.units.filter(x => x.niveau === u.niveau && x.points).flatMap(x => x.points.flatMap(p => p.ex.map(e => e[1]))), 3, [fr]);
     Q.push({ type: 'ecoute', prompt: null, say: plainEx(ko), right: fr, choices: shuffle([fr, ...others]), q: 'Écoutez la phrase, puis choisissez sa traduction.' });
   });
-  shuffle(u.mots).slice(0, 4).forEach(([ko, fr]) => {
+  shuffle(u.mots).slice(0, 3).forEach(([ko, fr]) => {
     Q.push({ type: 'sens', prompt: ko, ko: true, say: ko, right: fr, choices: shuffle([fr, ...pick(known.map(m => m[1]), 3, [fr])]), q: 'Que signifie ce mot ?' });
   });
   shuffle(u.mots).slice(0, 2).forEach(([ko, fr]) => {
     Q.push({ type: 'mot', prompt: fr, right: ko, choices: shuffle([ko, ...pick(known.map(m => m[0]), 3, [ko])]), koChoices: true, q: 'Quel mot correspond à ce sens ?' });
   });
-  return shuffle(Q).slice(0, 12);
+  const base = shuffle(Q).slice(0, 10);
+  // compréhension de la lecture : toujours posée, à la fin
+  if (u.lec) u.lec.q.forEach(([q, opts, k]) => base.push({ type: 'lec', prompt: q, right: opts[k], choices: shuffle(opts.slice()), q: 'Lecture : ' + u.lec.t, ctx: u.lec.ko }));
+  return base;
 }
 function buildQuestions(u) {
   if (u.points) return buildGrammarQ(u);
@@ -170,6 +195,7 @@ function startQuiz(box, u) {
     const head = `<div class="qprog"><span>Question ${i + 1} / ${Q.length}</span><span>${ok} bonne${ok > 1 ? 's' : ''} réponse${ok > 1 ? 's' : ''}</span></div><p class="q">${esc(q.q)}</p>`;
     if (q.type === 'bloc') return showBloc(q, head);
     const pr = q.prompt == null ? `<div class="prompt">${playBtn(q.say, 'le mot')}</div>` :
+      q.ctx ? `<details class="ctx"><summary>Relire le texte</summary><p class="ko">${esc(q.ctx)}</p></details><div class="prompt fr">${esc(q.prompt)}</div>` :
       q.sent ? `<div class="prompt sent ko">${esc(q.prompt)}</div>` :
       `<div class="prompt ${q.ko ? '' : 'fr'}">${esc(q.prompt)}${q.say && q.type !== 'sens' ? playBtn(q.say) : ''}</div>`;
     box.innerHTML = `<div class="quiz">${head}${pr}<div class="choices">${q.choices.map(c => `<button type="button" class="${q.koChoices ? 'ko' : ''}">${esc(c)}</button>`).join('')}</div><p class="feedback" aria-live="polite"></p></div>`;
@@ -177,7 +203,7 @@ function startQuiz(box, u) {
     $$('.choices button', box).forEach(b => b.onclick = () => {
       const good = b.textContent === q.right;
       $$('.choices button', box).forEach(x => { x.disabled = true; if (x.textContent === q.right) x.classList.add('right'); });
-      if (!good) b.classList.add('wrong'); else ok++;
+      if (!good) { b.classList.add('wrong'); logError({ u: u.id, q: q.q, p: q.prompt || q.say || '', a: q.right, g: b.textContent }); } else ok++;
       const fb = $('.feedback', box); fb.className = 'feedback ' + (good ? 'ok' : 'ko');
       fb.textContent = good ? 'Juste.' : 'La bonne réponse : ' + q.right + '.';
       if (q.type === 'sens' || q.type === 'mot') speak(q.type === 'sens' ? q.prompt : q.right);

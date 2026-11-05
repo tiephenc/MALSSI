@@ -7,7 +7,7 @@ export const dayKey = (t = Date.now()) => { const d = new Date(startOfDay(t)); r
 export function blank() {
   return { v: 1, updated: 0, cards: {}, units: {}, days: {}, nd: { d: '', n: 0 },
     set: { nd: 10, dir: 'kf', rr: 1, theme: 'auto', voice: '' },
-    focus: { set: { work: 25, brk: 5, sound: 1 }, log: {} }, anki: { decks: {} }, lists: {}, topik: {}, writing: {} };
+    focus: { set: { work: 25, brk: 5, sound: 1 }, log: {} }, anki: { decks: {} }, lists: {}, topik: {}, writing: {}, errors: [] };
 }
 function normalize(s) {
   const b = blank();
@@ -36,3 +36,6 @@ export function today() { const k = dayKey(); return S.days[k] || (S.days[k] = {
 export function newLeft() { return Math.max(0, S.set.nd - (S.nd.d === dayKey() ? S.nd.n : 0)); }
 export function countNew() { if (S.nd.d !== dayKey()) S.nd = { d: dayKey(), n: 0 }; S.nd.n++; }
 export function exportJSON() { return JSON.stringify(S); }
+
+// Carnet d'erreurs : les 300 dernières réponses fausses
+export function logError(e) { if (!S.errors) S.errors = []; S.errors.push(Object.assign({ at: Date.now() }, e)); if (S.errors.length > 300) S.errors.splice(0, S.errors.length - 300); save(); }

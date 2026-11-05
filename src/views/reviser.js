@@ -125,3 +125,17 @@ export function viewAnki(el) {
   $$('[data-on]', el).forEach(c => c.onchange = () => { const d = S.anki.decks[c.dataset.on]; if (c.checked) delete d.off; else d.off = 1; save(); });
   $$('[data-del]', el).forEach(b => b.onclick = async () => { const d = S.anki.decks[b.dataset.del]; if (!confirm(`Supprimer « ${d.name} » et l'avancement de ses cartes ?`)) return; await anki.remove(b.dataset.del); toast('Paquet supprimé.'); viewAnki(el); });
 }
+
+// ---------- Carnet d'erreurs ----------
+export function viewErreurs(el) {
+  const E = (S.errors || []).slice().reverse();
+  const byU = {}; E.forEach(e => (byU[e.u] = byU[e.u] || []).push(e));
+  el.innerHTML = `<h1>Carnet d'erreurs</h1>
+    <p class="muted prose">Les réponses manquées dans les exercices des unités, de la plus récente à la plus ancienne. Relisez la bonne réponse, puis refaites l'unité.</p>
+    ${E.length ? Object.entries(byU).map(([u, es]) => `<section class="errs"><h2><a href="#/unite/${esc(u)}">${esc(u)}</a> <small>${es.length} erreur${es.length > 1 ? 's' : ''}</small></h2>
+      <ul>${es.slice(0, 12).map(e => `<li><p class="small muted">${esc(e.q)}</p><p class="ko">${esc(e.p)}</p>
+        <p class="small"><span class="bad">${esc(e.g)}</span> → <b class="good">${esc(e.a)}</b></p></li>`).join('')}</ul></section>`).join('') +
+      '<button class="btn ghost" id="eclr">Vider le carnet</button>'
+    : '<div class="empty">Aucune erreur enregistrée. Les réponses manquées dans les exercices apparaîtront ici.</div>'}`;
+  const c = $('#eclr', el); if (c) c.onclick = () => { if (!confirm('Vider le carnet d\'erreurs ?')) return; S.errors = []; save(); viewErreurs(el); };
+}

@@ -19,3 +19,11 @@ export function speak(text, rate = 0.85) {
 }
 export const PLAY = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg>';
 export const playBtn = (text, label) => `<button class="play" type="button" data-say="${text.replace(/"/g, '&quot;')}" aria-label="Écouter ${label || text}">${PLAY}</button>`;
+
+// Lecture enchaînée (dialogue entier)
+export function speakSeq(lines, rate = 0.85) {
+  if (!('speechSynthesis' in window)) return;
+  speechSynthesis.cancel();
+  const v = voices.find(x => x.name === S.set.voice) || voices.find(x => /google/i.test(x.name)) || voices[0];
+  lines.forEach(t => { const u = new SpeechSynthesisUtterance(t); u.lang = 'ko-KR'; u.rate = rate; if (v) u.voice = v; speechSynthesis.speak(u); });
+}
