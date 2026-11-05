@@ -1,0 +1,4 @@
+node_modules/
+*.parquet
+lex.json
+.DS_Store

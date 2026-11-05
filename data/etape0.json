@@ -1,0 +1,365 @@
+{
+  "id": "etape0",
+  "titre": "Étape 0 · Le hangeul",
+  "intro": "Le hangeul se lit en quelques jours. Ces dix unités vous apprennent les 40 lettres, la façon dont elles s'assemblent en syllabes et les règles de prononciation qui changent un mot entre l'écrit et l'oral.",
+  "unites": [
+    {
+      "id": "H01",
+      "titre": "Des syllabes en blocs",
+      "objectif": "Je sais lire les six voyelles de base et écrire une syllabe sans consonne.",
+      "explication": [
+        "Le hangeul a été promulgué en 1446 par le roi Sejong, dans un ouvrage intitulé <i>Hunminjeongeum</i> (훈민정음, « les sons corrects pour instruire le peuple »). C'est un alphabet : chaque lettre (자모, <i>jamo</i>) note un son. Mais on n'écrit pas les lettres en ligne comme en français : on les regroupe en <b>blocs syllabiques</b>. Le mot 한국 (Corée) contient six lettres, rangées en deux blocs : 한 et 국.",
+        "Les voyelles de base reposent sur trois symboles : le point (le ciel), le trait horizontal ㅡ (la terre) et le trait vertical ㅣ (l'être humain). Le point s'est ensuite transformé en petit trait : ㅏ, c'est ㅣ avec un petit trait vers la droite.",
+        "Une syllabe commence toujours par une consonne. Quand on entend une voyelle seule, on écrit devant elle le cercle ㅇ, qui reste <b>muet</b> en début de syllabe. Ainsi « a » s'écrit 아.",
+        "Les voyelles <b>verticales</b> (ㅏ ㅓ ㅣ) se placent à droite de la consonne : 아, 어, 이. Les voyelles <b>horizontales</b> (ㅗ ㅜ ㅡ) se placent dessous : 오, 우, 으."
+      ],
+      "attention": "La romanisation officielle écrit ㅓ « eo » et ㅡ « eu », mais ce ne sont pas les sons du français « éo » ou « eu ». Fiez-vous à l'écoute, et oubliez la romanisation dès que possible : elle disparaît du site après le 1급.",
+      "lettres": [
+        {"j": "ㅏ", "rr": "a", "son": "아", "fr": "« a » de <i>papa</i>."},
+        {"j": "ㅓ", "rr": "eo", "son": "어", "fr": "« o » très ouvert, bouche grande ouverte et lèvres non arrondies, entre le « o » de <i>porte</i> et le « a »."},
+        {"j": "ㅗ", "rr": "o", "son": "오", "fr": "« ô » fermé de <i>eau</i>, lèvres bien arrondies."},
+        {"j": "ㅜ", "rr": "u", "son": "우", "fr": "« ou » de <i>loup</i>."},
+        {"j": "ㅡ", "rr": "eu", "son": "으", "fr": "Sans équivalent en français : dites « ou » en étirant les lèvres comme pour sourire."},
+        {"j": "ㅣ", "rr": "i", "son": "이", "fr": "« i » de <i>lit</i>."}
+      ],
+      "mots": [
+        ["아이", "enfant"],
+        ["오이", "concombre"],
+        ["이", "dent"],
+        ["오", "cinq"]
+      ]
+    },
+    {
+      "id": "H02",
+      "titre": "Le son « y » et les voyelles ㅐ ㅔ",
+      "objectif": "Je sais lire les voyelles en « y » et distinguer ㅐ, ㅔ, ㅒ, ㅖ.",
+      "explication": [
+        "Doublez le petit trait d'une voyelle et vous ajoutez le son « y » devant elle : ㅏ devient ㅑ (ya), ㅓ devient ㅕ (yeo), ㅗ devient ㅛ (yo), ㅜ devient ㅠ (yu).",
+        "En ajoutant un trait vertical à ㅏ et ㅓ, on obtient deux nouvelles voyelles : ㅐ (ae) et ㅔ (e). La norme les distingue (ㅐ plus ouvert, comme « è » ; ㅔ plus fermé, comme « é »), mais dans le coréen de Séoul d'aujourd'hui, la plupart des locuteurs les prononcent de la même façon. Il faut donc apprendre l'orthographe de chaque mot.",
+        "Le même jeu donne ㅒ (yae) et ㅖ (ye). Selon la norme de prononciation, ㅖ peut se dire [ㅔ] après une consonne autre que ㅇ et ㄹ."
+      ],
+      "attention": "예 et 네 veulent tous deux dire « oui » (poli). 네 est le plus courant à l'oral ; 예 est un peu plus formel.",
+      "lettres": [
+        {"j": "ㅑ", "rr": "ya", "son": "야", "fr": "« ya » de <i>yaourt</i>."},
+        {"j": "ㅕ", "rr": "yeo", "son": "여", "fr": "« y » + ㅓ (o très ouvert)."},
+        {"j": "ㅛ", "rr": "yo", "son": "요", "fr": "« yo » de <i>yoyo</i>, avec un o fermé."},
+        {"j": "ㅠ", "rr": "yu", "son": "유", "fr": "« you » de <i>youpi</i>."},
+        {"j": "ㅐ", "rr": "ae", "son": "애", "fr": "« è » de <i>mère</i>."},
+        {"j": "ㅔ", "rr": "e", "son": "에", "fr": "« é » ; aujourd'hui souvent identique à ㅐ."},
+        {"j": "ㅒ", "rr": "yae", "son": "얘", "fr": "« y » + ㅐ. Lettre rare."},
+        {"j": "ㅖ", "rr": "ye", "son": "예", "fr": "« y » + ㅔ."}
+      ],
+      "mots": [
+        ["우유", "lait"],
+        ["이유", "raison, cause"],
+        ["여우", "renard"],
+        ["여유", "temps libre, marge"],
+        ["예", "oui"],
+        ["애", "enfant (familier)"]
+      ]
+    },
+    {
+      "id": "H03",
+      "titre": "ㄴ ㅁ ㄹ ㅅ : les premières consonnes",
+      "objectif": "Je sais lire ㄴ, ㅁ, ㄹ et ㅅ et former mes premiers mots.",
+      "explication": [
+        "Les consonnes de base dessinent les organes qui les prononcent. ㄴ représente la langue qui touche la gencive du haut, ㅁ la bouche fermée, ㅅ une dent. ㄹ dérive de ㄴ.",
+        "Une consonne prend la place de ㅇ dans le bloc : 나, 머, 소, 미…",
+        "ㄹ change selon sa position : entre deux voyelles, c'est un « r » battu, comme le « r » de l'espagnol <i>pero</i> (나라 « na-ra ») ; en fin de syllabe, c'est un « l » (vous le verrez en H08).",
+        "ㅅ se prononce « s », mais devant ㅣ et les voyelles en « y », il devient presque « ch » : 시 se dit à peu près « chi »."
+      ],
+      "attention": "Ne roulez pas le ㄹ : un seul battement de langue, très léger, suffit.",
+      "lettres": [
+        {"j": "ㄴ", "rr": "n", "son": "나", "nom": "니은", "fr": "« n »."},
+        {"j": "ㅁ", "rr": "m", "son": "마", "nom": "미음", "fr": "« m »."},
+        {"j": "ㄹ", "rr": "r / l", "son": "라", "nom": "리을", "fr": "« r » battu entre voyelles, « l » en fin de syllabe."},
+        {"j": "ㅅ", "rr": "s", "son": "사", "nom": "시옷", "fr": "« s » ; presque « ch » devant ㅣ et les voyelles en « y »."}
+      ],
+      "mots": [
+        ["나무", "arbre"],
+        ["누나", "grande sœur (pour un garçon)"],
+        ["머리", "tête"],
+        ["소리", "son, bruit"],
+        ["이마", "front"],
+        ["나라", "pays"],
+        ["노래", "chanson"],
+        ["어머니", "mère"],
+        ["나이", "âge"],
+        ["너무", "trop"],
+        ["내일", "demain"],
+        ["우리", "nous"],
+        ["네", "oui"]
+      ]
+    },
+    {
+      "id": "H04",
+      "titre": "ㄱ ㄷ ㅂ ㅈ ㅎ : les consonnes douces",
+      "objectif": "Je sais lire ㄱ, ㄷ, ㅂ, ㅈ, ㅎ et je comprends pourquoi 고기 se dit « kogi ».",
+      "explication": [
+        "ㄱ représente la racine de la langue qui bloque la gorge. On lui ajoute un trait pour obtenir ㅋ (vous le verrez en H05), et ㄷ s'obtient à partir de ㄴ de la même manière.",
+        "ㄱ, ㄷ, ㅂ et ㅈ sont des consonnes <b>douces</b> : on les prononce sans tension et avec un léger souffle. Leur son change selon la place : en début de mot, elles sont proches de « k », « t », « p », « tch » ; entre deux sons voisés (voyelles, ㄴ, ㅁ, ㄹ, ㅇ), elles deviennent « g », « d », « b », « dj ». C'est pourquoi la romanisation écrit 고기 « gogi », alors qu'on entend plutôt « kogi ».",
+        "ㅎ est un « h » expiré, comme en anglais <i>hello</i>. Entre deux sons voisés, il s'affaiblit souvent jusqu'à presque disparaître."
+      ],
+      "attention": "Les verbes et adjectifs coréens se citent au dictionnaire avec la terminaison -다 : 가다 (aller), 보다 (voir). Vous apprendrez à les conjuguer au 1급.",
+      "lettres": [
+        {"j": "ㄱ", "rr": "g / k", "son": "가", "nom": "기역", "fr": "Entre « k » et « g »."},
+        {"j": "ㄷ", "rr": "d / t", "son": "다", "nom": "디귿", "fr": "Entre « t » et « d »."},
+        {"j": "ㅂ", "rr": "b / p", "son": "바", "nom": "비읍", "fr": "Entre « p » et « b »."},
+        {"j": "ㅈ", "rr": "j", "son": "자", "nom": "지읒", "fr": "Entre « tch » et « dj »."},
+        {"j": "ㅎ", "rr": "h", "son": "하", "nom": "히읗", "fr": "« h » expiré."}
+      ],
+      "mots": [
+        ["고기", "viande"],
+        ["바다", "mer"],
+        ["가수", "chanteur, chanteuse"],
+        ["지도", "carte géographique"],
+        ["하나", "un"],
+        ["다리", "jambe"],
+        ["바지", "pantalon"],
+        ["두부", "tofu (dubu)"],
+        ["기자", "journaliste"],
+        ["하루", "une journée"],
+        ["아버지", "père"],
+        ["구두", "chaussure"],
+        ["도시", "ville"],
+        ["여기", "ici"],
+        ["저기", "là-bas"],
+        ["비", "pluie"],
+        ["다시", "encore, de nouveau"],
+        ["오후", "après-midi"],
+        ["가다", "aller"],
+        ["주다", "donner"],
+        ["보다", "voir, regarder"]
+      ]
+    },
+    {
+      "id": "H05",
+      "titre": "ㅋ ㅌ ㅍ ㅊ : les consonnes aspirées",
+      "objectif": "Je sais lire les consonnes aspirées et les distinguer des douces.",
+      "explication": [
+        "Un trait de plus sur une consonne douce donne une consonne <b>aspirée</b> : ㄱ devient ㅋ, ㄷ devient ㅌ, ㅂ devient ㅍ, ㅈ devient ㅊ.",
+        "On les prononce avec un fort souffle d'air. Faites le test : tenez une feuille de papier devant votre bouche ; elle doit bouger nettement sur 코, 타, 파, 차.",
+        "Les consonnes aspirées ne changent pas entre deux voyelles : 커피 garde son « p » soufflé."
+      ],
+      "attention": "Le « p » français n'est pas aspiré : à l'oreille d'un Coréen, il ressemble plutôt au ㅃ que vous verrez en H06. Exagérez le souffle au début.",
+      "lettres": [
+        {"j": "ㅋ", "rr": "k", "son": "카", "nom": "키읔", "fr": "« k » avec un fort souffle."},
+        {"j": "ㅌ", "rr": "t", "son": "타", "nom": "티읕", "fr": "« t » avec un fort souffle."},
+        {"j": "ㅍ", "rr": "p", "son": "파", "nom": "피읖", "fr": "« p » avec un fort souffle."},
+        {"j": "ㅊ", "rr": "ch", "son": "차", "nom": "치읓", "fr": "« tch » avec un fort souffle."}
+      ],
+      "mots": [
+        ["코", "nez"],
+        ["키", "taille (d'une personne)"],
+        ["커피", "café"],
+        ["기차", "train"],
+        ["치마", "jupe"],
+        ["포도", "raisin"],
+        ["우표", "timbre"],
+        ["차", "thé"],
+        ["고추", "piment"],
+        ["피자", "pizza"],
+        ["토마토", "tomate"],
+        ["휴지", "papier, mouchoir en papier"],
+        ["버스", "bus"],
+        ["배추", "chou chinois"],
+        ["크다", "grand"],
+        ["타다", "prendre (un véhicule)"]
+      ]
+    },
+    {
+      "id": "H06",
+      "titre": "ㄲ ㄸ ㅃ ㅆ ㅉ : les consonnes tendues",
+      "objectif": "Je sais lire les consonnes tendues et entendre la différence entre 가, 카 et 까.",
+      "explication": [
+        "En doublant une consonne douce, on obtient une consonne <b>tendue</b> : ㄲ, ㄸ, ㅃ, ㅆ, ㅉ. On la prononce sans aucun souffle, gorge serrée, avec une attaque nette. Le son est souvent un peu plus aigu.",
+        "Le coréen oppose donc trois séries : douce (가), aspirée (카), tendue (까). C'est la difficulté majeure de la prononciation pour un francophone. L'exercice d'écoute de cette unité vous y entraîne.",
+        "Les noms des lettres tendues commencent par 쌍 (« paire ») : ㄲ s'appelle 쌍기역."
+      ],
+      "attention": "ㅆ est un « s » tendu : 싸다 (bon marché) et 사다 (acheter) sont deux mots différents.",
+      "lettres": [
+        {"j": "ㄲ", "rr": "kk", "son": "까", "nom": "쌍기역", "fr": "« k » sans souffle, attaque serrée."},
+        {"j": "ㄸ", "rr": "tt", "son": "따", "nom": "쌍디귿", "fr": "« t » sans souffle, attaque serrée."},
+        {"j": "ㅃ", "rr": "pp", "son": "빠", "nom": "쌍비읍", "fr": "« p » sans souffle, attaque serrée."},
+        {"j": "ㅆ", "rr": "ss", "son": "싸", "nom": "쌍시옷", "fr": "« s » appuyé et tendu."},
+        {"j": "ㅉ", "rr": "jj", "son": "짜", "nom": "쌍지읒", "fr": "« tch » sans souffle, attaque serrée."}
+      ],
+      "mots": [
+        ["아빠", "papa"],
+        ["오빠", "grand frère (pour une fille)"],
+        ["토끼", "lapin"],
+        ["꼬리", "queue (d'un animal)"],
+        ["아저씨", "monsieur, oncle (adulte d'âge mûr)"],
+        ["비싸다", "cher, coûteux"],
+        ["싸다", "bon marché, abordable"],
+        ["가짜", "faux, contrefaçon"],
+        ["이따가", "tout à l'heure (plus tard)"],
+        ["아까", "tout à l'heure (plus tôt)"],
+        ["어깨", "épaule"],
+        ["찌개", "ragoût (jjigae)"],
+        ["쓰레기", "déchet"],
+        ["바쁘다", "occupé"],
+        ["쓰다", "écrire"],
+        ["짜다", "salé"]
+      ]
+    },
+    {
+      "id": "H07",
+      "titre": "Les voyelles composées",
+      "objectif": "Je sais lire ㅘ ㅙ ㅚ ㅝ ㅞ ㅟ ㅢ et je connais les règles de ㅢ.",
+      "explication": [
+        "Les voyelles composées combinent une voyelle horizontale et une voyelle verticale dans le même bloc. ㅗ + ㅏ donne ㅘ (wa), ㅜ + ㅓ donne ㅝ (wo), ㅜ + ㅣ donne ㅟ (wi), ㅡ + ㅣ donne ㅢ (ui).",
+        "ㅙ (wae), ㅚ (oe) et ㅞ (we) se prononcent aujourd'hui presque de la même façon, « wé ». La norme décrit ㅚ comme une voyelle simple, mais elle admet la prononciation [웨] : le dictionnaire donne ainsi 회사 [회사/훼사].",
+        "ㅢ a trois prononciations. En tête de mot sans consonne, on dit « eu-i » rapide : 의자. Après une consonne, on dit [ㅣ] : 희다 se dit [히다]. Dans une autre syllabe que la première, [ㅣ] est aussi admis, et la particule 의 (« de ») se dit le plus souvent [에]."
+      ],
+      "attention": "왜 (pourquoi) et 뭐 (quoi) sont deux mots du quotidien : vous les entendrez partout.",
+      "lettres": [
+        {"j": "ㅘ", "rr": "wa", "son": "와", "fr": "« oua » de <i>ouate</i>."},
+        {"j": "ㅙ", "rr": "wae", "son": "왜", "fr": "« ouè »."},
+        {"j": "ㅚ", "rr": "oe", "son": "외", "fr": "Aujourd'hui « oué »."},
+        {"j": "ㅝ", "rr": "wo", "son": "워", "fr": "« ou » + ㅓ (o très ouvert)."},
+        {"j": "ㅞ", "rr": "we", "son": "웨", "fr": "« oué »."},
+        {"j": "ㅟ", "rr": "wi", "son": "위", "fr": "« oui »."},
+        {"j": "ㅢ", "rr": "ui", "son": "의", "fr": "ㅡ + ㅣ glissés ; [ㅣ] après une consonne."}
+      ],
+      "mots": [
+        ["과자", "biscuit, gâteau sec"],
+        ["사과", "pomme"],
+        ["돼지", "cochon, porc"],
+        ["회사", "entreprise, société"],
+        ["의자", "chaise"],
+        ["의사", "médecin"],
+        ["귀", "oreille"],
+        ["쥐", "souris, rat"],
+        ["위", "dessus, en haut"],
+        ["뒤", "derrière, arrière"],
+        ["왜", "pourquoi"],
+        ["뭐", "quoi"],
+        ["교회", "église"],
+        ["외국", "étranger, pays étranger"],
+        ["회의", "réunion"],
+        ["과일", "fruit"],
+        ["화가", "peintre"],
+        ["가위", "ciseaux"],
+        ["쉬다", "se reposer"],
+        ["의미", "sens, signification"],
+        ["희다", "blanc"],
+        ["외우다", "apprendre par cœur"]
+      ]
+    },
+    {
+      "id": "H08",
+      "titre": "Le 받침 : la consonne finale",
+      "objectif": "Je sais lire une syllabe avec consonne finale et je connais les sept sons possibles en fin de syllabe.",
+      "explication": [
+        "Une syllabe peut se terminer par une consonne, placée en bas du bloc : c'est le <b>받침</b> (<i>batchim</i>, « appui »). 바 + ㅂ donne 밥 (riz cuit).",
+        "En fin de syllabe, on n'entend que <b>sept sons</b> : [ㄱ], [ㄴ], [ㄷ], [ㄹ], [ㅁ], [ㅂ], [ㅇ]. Les autres consonnes s'y ramènent : ㅋ et ㄲ se disent [ㄱ] ; ㅅ, ㅆ, ㅈ, ㅊ, ㅌ (et ㅎ) se disent [ㄷ] ; ㅍ se dit [ㅂ]. Ainsi 옷 (vêtement), 낮 (journée) et 꽃 (fleur) se terminent tous par [ㄷ] : [옫], [낟], [꼳].",
+        "Les finales [ㄱ], [ㄷ], [ㅂ] ne sont pas relâchées : la bouche se ferme sans laisser sortir d'air, comme si on s'arrêtait net. 밥 ne se dit pas « ba-pe » mais « bap » avec les lèvres closes.",
+        "En finale, ㅇ se prononce « ng » (comme dans l'anglais <i>sing</i>) et ㄹ se prononce « l »."
+      ],
+      "attention": "L'orthographe garde la consonne d'origine (꽃, et non 꼳) : vous verrez en H09 qu'elle réapparaît devant une voyelle.",
+      "lettres": [
+        {"j": "ㄱ", "rr": "k", "son": "악", "fr": "Finale [k] non relâchée ; aussi pour ㅋ et ㄲ."},
+        {"j": "ㄴ", "rr": "n", "son": "안", "fr": "Finale [n]."},
+        {"j": "ㄷ", "rr": "t", "son": "앋", "fr": "Finale [t] non relâchée ; aussi pour ㅅ ㅆ ㅈ ㅊ ㅌ ㅎ."},
+        {"j": "ㄹ", "rr": "l", "son": "알", "fr": "Finale [l]."},
+        {"j": "ㅁ", "rr": "m", "son": "암", "fr": "Finale [m]."},
+        {"j": "ㅂ", "rr": "p", "son": "압", "fr": "Finale [p] non relâchée ; aussi pour ㅍ."},
+        {"j": "ㅇ", "rr": "ng", "son": "앙", "fr": "Finale « ng »."}
+      ],
+      "mots": [
+        ["밥", "riz cuit, repas"],
+        ["물", "eau"],
+        ["눈", "œil"],
+        ["집", "maison"],
+        ["책", "livre"],
+        ["꽃", "fleur"],
+        ["옷", "vêtement"],
+        ["부엌", "cuisine (pièce)"],
+        ["강", "fleuve"],
+        ["몸", "corps"],
+        ["산", "montagne"],
+        ["낮", "journée (période de jour)"],
+        ["앞", "devant, avant"],
+        ["빵", "pain"],
+        ["방", "chambre, pièce"],
+        ["문", "porte"],
+        ["달", "lune"],
+        ["밖", "dehors"],
+        ["팔", "bras"],
+        ["발", "pied"],
+        ["손", "main"],
+        ["밤", "nuit"],
+        ["돈", "argent"],
+        ["길", "route, chemin"],
+        ["맛", "goût, saveur"],
+        ["끝", "fin"]
+      ]
+    },
+    {
+      "id": "H09",
+      "titre": "Quand l'écrit et l'oral divergent",
+      "objectif": "Je connais les grandes règles de prononciation : liaison, assimilations et doubles finales.",
+      "explication": [
+        "<b>La liaison (연음).</b> Quand une syllabe à finale est suivie d'une syllabe qui commence par ㅇ muet, la finale passe dans la syllabe suivante : 음악 se dit [으막], 한국어 [한구거]. C'est la règle la plus fréquente.",
+        "<b>La nasalisation.</b> Une finale [ㄱ], [ㄷ] ou [ㅂ] devant ㄴ ou ㅁ devient nasale ([ㅇ], [ㄴ], [ㅁ]) : 국물 se dit [궁물], 작년 [장년].",
+        "<b>Le durcissement.</b> Après une finale [ㄱ], [ㄷ] ou [ㅂ], les consonnes douces ㄱ ㄷ ㅂ ㅅ ㅈ deviennent tendues : 학교 [학꾜], 식당 [식땅], 학생 [학쌩].",
+        "<b>La latéralisation.</b> ㄴ et ㄹ côte à côte se prononcent [ㄹㄹ] : 설날 [설랄], 신라 [실라].",
+        "<b>La palatalisation.</b> Une finale ㄷ ou ㅌ devant 이 devient [ㅈ] ou [ㅊ] : 같이 se dit [가치].",
+        "<b>L'aspiration.</b> ㅎ au contact de ㄱ, ㄷ, ㅈ donne [ㅋ], [ㅌ], [ㅊ] : 좋다 se dit [조타], 많다 [만타].",
+        "<b>Les doubles finales.</b> Certaines syllabes s'écrivent avec deux consonnes finales, mais on n'en prononce qu'une seule. Pour ㄳ, ㄵ, ㄼ, ㅄ, c'est généralement la première : 값 [갑], 앉다 [안따], 넓다 [널따]. Pour ㄺ, ㄻ, c'est généralement la seconde : 닭 [닥], 읽다 [익따], 젊다 [점따]. Il existe des exceptions, que vous apprendrez au fil des mots. Devant une voyelle, les deux consonnes se font entendre : 닭이 [달기]."
+      ],
+      "attention": "Sur chaque fiche de vocabulaire, la prononciation entre crochets vient du 한국어기초사전. Écoutez-la, puis lisez le mot à voix haute.",
+      "lettres": [],
+      "mots": [
+        ["음악", "musique"],
+        ["한국어", "coréen (langue)"],
+        ["국물", "bouillon"],
+        ["작년", "l'an dernier"],
+        ["학교", "école"],
+        ["식당", "restaurant"],
+        ["학생", "élève, étudiant"],
+        ["책상", "bureau, table de travail"],
+        ["설날", "nouvel an lunaire (Seollal)"],
+        ["같이", "ensemble"],
+        ["좋다", "bon, bien"],
+        ["많다", "nombreux, abondant"],
+        ["괜찮다", "pas mal, ça va"],
+        ["값", "prix"],
+        ["닭", "poulet, poule"],
+        ["앉다", "s'asseoir"],
+        ["넓다", "large, spacieux"],
+        ["읽다", "lire"],
+        ["젊다", "jeune"]
+      ]
+    },
+    {
+      "id": "H10",
+      "titre": "Mes premiers mots utiles",
+      "objectif": "Je sais saluer, remercier, me présenter avec des formules figées et lire des noms de pays.",
+      "explication": [
+        "Le hangeul est acquis : vous savez déchiffrer n'importe quel mot coréen. Cette dernière unité vous donne quelques mots de survie et trois <b>formules figées</b>. Vous comprendrez leur grammaire au 1급 ; pour l'instant, apprenez-les comme des blocs.",
+        "<b>안녕하세요</b> [안녕하세요] : bonjour (à tout moment de la journée). Elle vient de l'adjectif 안녕하다, « être en paix ».",
+        "<b>감사합니다</b> [감사함니다] : merci (poli). Notez la nasalisation : ㅂ devant ㄴ se dit [ㅁ]. Elle vient de 감사하다, « remercier ».",
+        "<b>저는 ○○입니다</b> [임니다] : je suis ○○. 저 est « moi » (forme modeste) ; 는 marque le thème de la phrase ; 입니다 signifie « c'est / je suis » au style poli formel."
+      ],
+      "attention": "Coréens et Japonais ont en commun ces mots d'origine chinoise : 한국 (韓國), 학생 (學生), 선생님 (先生 + 님, suffixe honorifique). Votre japonais vous aidera beaucoup pour ce vocabulaire sino-coréen.",
+      "lettres": [],
+      "mots": [
+        ["아니요", "non (poli)"],
+        ["안녕하다", "être en paix, aller bien"],
+        ["감사하다", "remercier"],
+        ["고맙다", "reconnaissant"],
+        ["미안하다", "désolé"],
+        ["저", "moi, je (modeste)"],
+        ["이름", "nom, prénom"],
+        ["사람", "personne, gens"],
+        ["친구", "ami, amie"],
+        ["선생님", "professeur"],
+        ["한국", "Corée (du Sud)"],
+        ["일본", "Japon"],
+        ["프랑스", "France"]
+      ]
+    }
+  ]
+}
