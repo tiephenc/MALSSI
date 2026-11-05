@@ -35,6 +35,8 @@ jobs:
       - name: Annuler un déploiement bloqué
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh api -X POST "repos/${{ github.repository }}/pages/deployments/cc14189aa36839d331af95d8a333d7a6bd932351/cancel" || true
+        run: |
+          gh api -X POST "repos/${{ github.repository }}/pages/deployments/cc14189aa36839d331af95d8a333d7a6bd932351/cancel" && echo "annulation demandée" || echo "rien à annuler"
+          sleep 60
       - id: deployment
         uses: actions/deploy-pages@v4
