@@ -1,6 +1,6 @@
 // MALSSI · page d'accueil
-// En haut : Séoul la nuit, interactive (le défilement fait avancer la caméra dans la ville, le pointeur
-// repousse la poussière de lumière, le survol du bouton calme la scène et assourdit l'ambiance).
+// En haut : un toit-terrasse de Séoul à l'heure dorée ; le défilement fait tomber la nuit puis lève les yeux
+// vers les étoiles. Le pointeur repousse les grains de lumière, le survol du bouton calme la scène et l'ambiance.
 // Puis : le prisme qui décompose la lumière, la montée vers les étoiles, l'écriture en blocs, la courbe d'oubli.
 import { C } from '../content.js';
 import { CONFIG } from '../config.js';
@@ -103,8 +103,9 @@ export function viewAccueil(el) {
     </section>
   </div>`;
   const hero = $('.lp-hero', el);
-  const city = cityScene($('.lp-city', el), { scrollEl: hero });
-  const city2 = cityScene($('.lp-city2', el), { small: true, seed: 77, moonX: 0.22, moonY: 0.28 });
+  const ui = $('.lp-ui', el);
+  const city = cityScene($('.lp-city', el), { scrollEl: hero, onT: t => { const k = Math.max(0, Math.min(1, (t - 0.5) / 0.16)); ui.style.setProperty('--k', k.toFixed(3)); } });
+  const city2 = cityScene($('.lp-city2', el), { small: true, seed: 77, t: 0.97, kind: 'toits', sunX: 0.7 });
   const prism = prismScene($('.lp-prism', el), { cx: innerWidth < 820 ? 0.5 : 0.7 });
   stopAccueil(); stop = () => { city.stop(); city2.stop(); prism(); };
   // chargement puis apparition de l'interface

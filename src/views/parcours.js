@@ -5,6 +5,7 @@ import { esc, $, $$, shuffle, pick, gradeTag, toast, onLeave } from '../ui.js';
 import { playBtn, speak, speakSeq, hasVoice } from '../tts.js';
 import { split, join, INI, VOW, FIN } from '../hangul.js';
 import { carte, placeStations } from '../carte.js';
+import { paintUnit, fontsReady, koTitle } from '../covers.js';
 
 const KO_LEVEL = { 0: '한글', 1: '1급', 2: '2급', 3: '3급', 4: '4급', 5: '5급', 6: '6급' };
 function unitStatus(u) {
@@ -17,6 +18,7 @@ export function viewParcours(el) {
   const all = C.units.length, done = C.units.filter(u => S.units[u.id] && S.units[u.id].done).length;
   const cur = C.units.find(u => !(S.units[u.id] && S.units[u.id].done));
   el.innerHTML = `
+    <a class="small" href="#/parcours">← L'étagère</a>
     <h1>Le parcours</h1>
     <p class="muted prose">Du hangeul au 6급, dans l'ordre du programme international de coréen standard. Chaque unité terminée ajoute ses mots à vos révisions. ${done} unité${done > 1 ? 's' : ''} terminée${done > 1 ? 's' : ''} sur ${all}.</p>
     <div class="carte-wrap">${carte(C.etapes, C.etapes.map(e => e.unites.filter(u => S.units[u.id] && S.units[u.id].done).length))}</div>
@@ -52,13 +54,16 @@ export function viewUnit(el, id) {
   if (!u) { el.innerHTML = '<div class="empty">Cette unité n\'existe pas. <a href="#/parcours">Retour au parcours</a></div>'; return; }
   if (!S.units[u.id]) { S.units[u.id] = { at: Date.now() }; save(); }
   const nextU = C.units[u.n + 1], prevU = C.units[u.n - 1];
+  fontsReady().then(() => { const im = el.querySelector('.unit-poster img'); if (im) im.src = paintUnit(u, C.units).cover; });
   const gram = !!u.points;
   el.innerHTML = `
     <header class="unit-head">
-      <a class="small" href="#/parcours">← Parcours</a>
-      <p class="code" style="margin:12px 0 4px">${u.id}${u.theme ? ' · ' + esc(u.theme) : ''}</p>
-      <h1>${esc(u.titre)}</h1>
-      <p class="goal">${esc(u.objectif)}</p>
+      <a class="small" href="#/parcours">← L'étagère</a>
+      <div class="rise"><p class="code" style="margin:12px 0 4px">${u.id}${u.theme ? ' / ' + esc(u.theme) : ''}</p></div>
+      <div class="rise"><h1>${esc(u.titre)}</h1></div>
+      <div class="rise"><p class="kot">${esc(koTitle(u).join(' · '))}</p></div>
+      <div class="rise"><p class="goal">${esc(u.objectif)}</p></div>
+      <div class="unit-poster" aria-hidden="true"><img alt=""></div>
       ${hasVoice() ? '' : '<p class="note small">Aucune voix coréenne n\'est installée dans ce navigateur : l\'écoute est indisponible. Sous Windows, ajoutez la langue coréenne (Paramètres › Heure et langue › Voix) ; Chrome et Edge en proposent souvent une.</p>'}
     </header>
     <nav class="toc" aria-label="Sections de l'unité">

@@ -1,272 +1,175 @@
-// MALSSI · Séoul la nuit, dessinée en code (aucune image) : ciel étoilé, nuages éclairés, lune orangée,
-// trois plans d'immeubles aux fenêtres allumées, enseignes néon en hangeul, mots holographiques flottants,
-// monorail qui passe, et une poussière de lumière que le pointeur repousse.
-// Le défilement fait avancer la caméra dans la ville ; calm(true) ralentit tout et disperse la poussière.
-const TAU = Math.PI * 2;
-function rng(seed) { let s = seed >>> 0 || 1; return () => (s = (s * 16807) % 2147483647) / 2147483647; }
-const SIGNS = ['노래방', '카페', '24시', '약국', '분식', '서점', '꽃집', '빵집', '한식', 'PC방', '편의점', '세탁'];
-const HOLO = ['별', '꿈', '말씨', '한글', '빛', '오늘', '사랑', '하늘'];
-const NEON = ['#ff4fa0', '#49e6f2', '#ff8a4c', '#b48cff', '#c6ff6b', '#ffd36b'];
+// MALSSI · Séoul peinte en code (aucune image), de l'heure dorée aux étoiles.
+// Accueil : on est sur un toit-terrasse ; le défilement fait passer du couchant à la nuit bleue,
+// puis la ville s'enfonce et le regard monte vers la voie lactée. Le pointeur décale les plans,
+// les feuilles bougent au vent, des grains de lumière dérivent ; calm(true) apaise la scène.
+import { pal, rng, sky, stars, nebula, sun, moon, clouds, hillside, glow, bokeh, rooftop, railing, pot, vine, scene, mix, rgba, TAU } from './paint.js';
 
-function isNight() {
-  const d = document.documentElement.dataset.theme;
-  return d !== 'light';
-}
-// Pré-rendu d'un plan d'immeubles sur un canevas hors écran (une fois par redimensionnement)
-function layer(w, h, opts, R) {
-  const c = document.createElement('canvas'); c.width = Math.ceil(w); c.height = Math.ceil(h);
-  const x = c.getContext('2d');
-  const night = isNight();
-  let px = -20;
-  const signs = [];
-  while (px < w + 20) {
-    const bw = opts.minW + R() * (opts.maxW - opts.minW);
-    const bh = h * (opts.minH + R() * (opts.maxH - opts.minH));
-    const top = h - bh;
-    x.fillStyle = opts.color; x.fillRect(px, top, bw, bh + 2);
-    // toits : antennes, réservoirs, panneaux
-    if (R() < 0.35) { x.fillRect(px + bw * 0.6, top - 10 - R() * 18, 2, 30); }
-    if (R() < 0.25) { x.fillRect(px + bw * 0.15, top - 8, bw * 0.25, 8); }
-    // fenêtres
-    const cw = opts.win, gap = opts.win * 0.9;
-    for (let wy = top + 8; wy < h - 6; wy += cw + gap) {
-      for (let wx = px + 5; wx < px + bw - cw - 4; wx += cw + gap) {
-        const r = R();
-        if (r < opts.lit) {
-          const warm = R() < 0.7;
-          x.fillStyle = night ? (warm ? `rgba(255,${190 + R() * 40 | 0},${120 + R() * 50 | 0},${0.55 + R() * 0.4})` : `rgba(140,${200 + R() * 50 | 0},255,${0.5 + R() * 0.4})`)
-            : `rgba(255,${210 + R() * 30 | 0},${160 + R() * 40 | 0},${0.35 + R() * 0.35})`;
-          x.fillRect(wx, wy, cw, cw * 1.3);
-        }
-      }
-    }
-    if (opts.signs && bw > 34 && R() < 0.55) signs.push({ x: px + bw / 2, y: top + 14 + R() * Math.min(60, bh * 0.3), t: SIGNS[(R() * SIGNS.length) | 0], c: NEON[(R() * NEON.length) | 0], vert: R() < 0.55, f: R() * TAU });
-    px += bw + opts.gap * R();
-  }
-  return { c, signs };
-}
+const KEY_T = [0.45, 0.76, 1];
+const isNight = () => document.documentElement.dataset.theme === 'dark';
+function plate(w, h, dpr) { const c = document.createElement('canvas'); c.width = Math.ceil(w * dpr); c.height = Math.ceil(h * dpr); const x = c.getContext('2d'); x.scale(dpr, dpr); return [c, x]; }
 
 export function cityScene(canvas, opts = {}) {
-  const ctx = canvas.getContext('2d'); if (!ctx) return { stop() {}, calm() {} };
+  const ctx = canvas.getContext('2d'); if (!ctx) return { stop() {}, calm() {}, t: () => 0 };
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const small = !!opts.small;
+  const seed = opts.seed || 20261106;
   let W = 1, H = 1, dpr = 1, raf = 0, visible = true, last = performance.now(), T = 0, speed = 1, target = 1;
-  let mx = 0.5, my = 0.5, emx = 0.5, emy = 0.5, mouse = null, scroll = 0;
-  let L = [], stars = [], clouds = [], dust = [], holos = [], train = { x: -2, next: 4 };
+  let mx = 0.5, my = 0.5, emx = 0.5, emy = 0.5, mouse = null, scroll = 0, tNow = KEY_T[0];
+  let plates = [], motes = [], shoot = { k: -1, wait: 6 }, buildId = 0;
+
+  // ---------- petites scènes fixes (carte du jour, fin de l'accueil) ----------
+  if (opts.small) {
+    const draw = () => {
+      const b = canvas.getBoundingClientRect(); dpr = Math.min(2, devicePixelRatio || 1);
+      W = Math.max(1, b.width); H = Math.max(1, b.height); canvas.width = W * dpr | 0; canvas.height = H * dpr | 0;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      const t = opts.t ?? (isNight() ? 0.8 : 0.45);
+      scene(ctx, W, H, { t, kind: opts.kind || 'toits', seed, sunX: opts.sunX ?? 0.3, scale: Math.max(0.8, Math.min(W, 1400) / 760), cs: Math.min(1, 700 / W) });
+    };
+    let rt = 0; const resize = () => { clearTimeout(rt); rt = setTimeout(draw, 120); };
+    const mo = new MutationObserver(resize); mo.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+    addEventListener('resize', resize);
+    (document.fonts ? document.fonts.ready : Promise.resolve()).then(draw);
+    return { stop() { mo.disconnect(); removeEventListener('resize', resize); }, calm() {}, t: () => opts.t ?? 0.45 };
+  }
+
+  // ---------- accueil ----------
+  function paintPlate(t) {
+    const P = pal(t), sc = Math.max(0.9, Math.min(W, 1600) / 1050), sunX = 0.3, hor = 0.62;
+    const [b, bx] = plate(W, H, 1), [cty, cx] = plate(W, H, Math.min(1.5, dpr)), [fg, fx] = plate(W, H, Math.min(1.5, dpr));
+    sky(bx, W, H, P, hor);
+    nebula(bx, rng(seed + 7), W, H, P);
+    stars(bx, rng(seed + 8), W, H, P, Math.round(W * H / 2600), hor);
+    const sy = H * (0.12 + (hor - 0.12) * P.sunY);
+    sun(bx, W * sunX, sy, 16 * sc, P); moon(bx, W * 0.8, H * 0.15, 15 * sc, P);
+    clouds(bx, rng(seed + 9), W, H, P, W < 700 ? 4 : 7, 0.05, hor - 0.12, sunX, W < 700 ? 1 : 0.42);
+    hillside(cx, rng(seed + 10), W, H, P, { y0: hor, y1: 1.02, rows: W < 700 ? 6 : 8, scale: sc, sunX });
+    glow(cx, W, H, W * sunX, sy, P);
+    bokeh(cx, rng(seed + 11), W, H, P, Math.round(W / 30), hor, 0.98, P.night * 0.7);
+    rooftop(fx, rng(seed + 12), W, H, P, 0.86, { scale: sc * 1.3 });
+    railing(fx, W, H, P, 0.79, { scale: sc * 1.2, x0: W * 0.46, x1: W });
+    pot(fx, rng(seed + 13), W * 0.09, H * 1.0, sc * 2.1, P); pot(fx, rng(seed + 14), W * 0.93, H * 1.01, sc * 1.7, P);
+    return { t, P, b, cty, fg, sy };
+  }
   function build() {
-    const R = rng(opts.seed || 20261106);
-    const b = canvas.getBoundingClientRect(); dpr = Math.min(1.75, devicePixelRatio || 1);
-    W = Math.max(1, b.width); H = Math.max(1, b.height);
+    const id = ++buildId;
+    const r = canvas.getBoundingClientRect(); dpr = Math.min(1.75, devicePixelRatio || 1);
+    W = Math.max(1, r.width); H = Math.max(1, r.height);
     canvas.width = W * dpr | 0; canvas.height = H * dpr | 0; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    const night = isNight(), ww = W * 1.25;
-    L = [
-      { d: 0.25, y: 0.56, ...layer(ww, H * 0.5, { color: night ? '#2a2363' : '#c98aa6', minW: 26, maxW: 70, minH: 0.25, maxH: 0.75, win: 2, lit: 0.18, gap: 6 }, R) },
-      { d: 0.55, y: 0.62, ...layer(ww, H * 0.5, { color: night ? '#1b1645' : '#8f5a86', minW: 34, maxW: 90, minH: 0.2, maxH: 0.8, win: 3, lit: 0.3, gap: 10, signs: !small }, R) },
-      { d: 1, y: 0.7, ...layer(ww, H * 0.42, { color: night ? '#0f0c2a' : '#4e2f57', minW: 50, maxW: 130, minH: 0.25, maxH: 0.95, win: 4, lit: 0.36, gap: 14, signs: true }, R) }];
-    stars = Array.from({ length: small ? 70 : 220 }, () => ({ x: R(), y: R() * 0.62, r: 0.4 + R() * 1.3, p: R() * TAU, s: 0.5 + R() * 1.5 }));
-    clouds = Array.from({ length: small ? 4 : 8 }, () => { const w = W * (0.22 + R() * 0.34), h = H * (0.03 + R() * 0.04); return { x: R() * 1.3 - 0.15, y: 0.06 + R() * 0.34, v: 0.002 + R() * 0.004, a: 0.75 + R() * 0.25, img: cloudSprite(w, h, R) }; });
-    dust = Array.from({ length: small ? 40 : 150 }, () => ({ x: R() * W, y: R() * H, vx: 0, vy: 0, r: 0.6 + R() * 1.8, p: R() * TAU, c: NEON[(R() * 4) | 0] }));
-    const narrow = W < 700, spots = narrow ? [[0.16, 0.13], [0.84, 0.15]] : [[0.1, 0.24], [0.22, 0.12], [0.86, 0.14], [0.93, 0.36], [0.06, 0.48]];
-    holos = small ? [] : spots.map(([x, y], i) => ({ t: HOLO[i], x: x + (R() - 0.5) * 0.03, y: y + (R() - 0.5) * 0.04, s: (narrow ? 22 : 26) + R() * 20, c: NEON[i % NEON.length], f: R() * TAU }));
-  }
-  function sky() {
-    const night = isNight();
-    const g = ctx.createLinearGradient(0, 0, 0, H);
-    if (night) { g.addColorStop(0, '#0b0a24'); g.addColorStop(0.45, '#1d1748'); g.addColorStop(0.72, '#47286a'); g.addColorStop(1, '#ff7a6b'); }
-    else { g.addColorStop(0, '#6f86c9'); g.addColorStop(0.4, '#c9a4d8'); g.addColorStop(0.72, '#ffb38a'); g.addColorStop(1, '#ffd9a8'); }
-    ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
-    if (night) for (const s of stars) {
-      const a = 0.35 + 0.65 * (0.5 + 0.5 * Math.sin(T * s.s + s.p));
-      ctx.globalAlpha = a; ctx.fillStyle = '#fff6ff';
-      ctx.beginPath(); ctx.arc(s.x * W + (emx - 0.5) * 4, s.y * H, s.r, 0, TAU); ctx.fill();
-    }
-    ctx.globalAlpha = 1;
-  }
-  function moon() {
-    const night = isNight();
-    const cx = W * (opts.moonX ?? 0.72) + (emx - 0.5) * 10, cy = H * (opts.moonY ?? 0.3) + (emy - 0.5) * 6 - scroll * H * 0.05;
-    const r = Math.min(W, H) * (small ? 0.12 : 0.15);
-    const halo = ctx.createRadialGradient(cx, cy, r * 0.8, cx, cy, r * 3.2);
-    halo.addColorStop(0, night ? 'rgba(255,120,70,.35)' : 'rgba(255,200,140,.45)'); halo.addColorStop(1, 'rgba(255,120,70,0)');
-    ctx.fillStyle = halo; ctx.beginPath(); ctx.arc(cx, cy, r * 3.2, 0, TAU); ctx.fill();
-    const g = ctx.createRadialGradient(cx - r * 0.3, cy - r * 0.3, r * 0.1, cx, cy, r);
-    g.addColorStop(0, night ? '#ffb27a' : '#fff1d6'); g.addColorStop(0.7, night ? '#ff7a45' : '#ffd08a'); g.addColorStop(1, night ? '#e2512f' : '#ffb26a');
-    ctx.fillStyle = g; ctx.beginPath(); ctx.arc(cx, cy, r, 0, TAU); ctx.fill();
-    ctx.globalAlpha = 0.12; ctx.fillStyle = '#7a2a1a';
-    [[-0.3, -0.1, 0.18], [0.25, 0.2, 0.12], [0.05, -0.4, 0.09], [0.35, -0.25, 0.07]].forEach(([a, b2, s]) => { ctx.beginPath(); ctx.arc(cx + a * r, cy + b2 * r, s * r, 0, TAU); ctx.fill(); });
-    ctx.globalAlpha = 1;
-  }
-  function cloudSprite(w, h, R) {
-    // nuage peint : ellipses aplaties, flou léger, bord supérieur éclairé par la lune, dessous rosé
-    const c = document.createElement('canvas'); c.width = Math.ceil(w + 40); c.height = Math.ceil(h * 3.4 + 40); const x = c.getContext('2d');
-    const night = isNight(), n = 10 + (R() * 6 | 0), blobs = [];
-    for (let i = 0; i < n; i++) { const rx = w * (0.08 + R() * 0.14), ry = h * (0.25 + R() * 0.4); blobs.push([20 + rx + R() * (w - 2 * rx), 20 + h * 0.6 + ry + R() * h * 0.9, rx, ry]); }
-    if ('filter' in x) x.filter = 'blur(5px)';
-    const pass = (col, dy) => { x.fillStyle = col; blobs.forEach(([bx, by, rx, ry]) => { x.beginPath(); x.ellipse(bx, by + dy, rx, ry, 0, 0, TAU); x.fill(); }); };
-    pass(night ? 'rgba(255,105,150,.30)' : 'rgba(255,170,140,.45)', h * 0.18);
-    pass(night ? 'rgba(46,38,104,.92)' : 'rgba(255,236,236,.85)', 0);
-    pass(night ? 'rgba(150,132,230,.22)' : 'rgba(255,255,255,.5)', -h * 0.14);
-    return c;
-  }
-  function cloudsDraw(dt) {
-    for (const c of clouds) {
-      c.x += c.v * dt * speed; if (c.x > 1.25) c.x = -0.45;
-      if (!c.img) continue;
-      ctx.globalAlpha = c.a; ctx.drawImage(c.img, c.x * W - c.img.width / 2 + (emx - 0.5) * 8, c.y * H - c.img.height / 2 - scroll * H * 0.08);
-    }
-    ctx.globalAlpha = 1;
-  }
-  function roof() {
-    // garde-corps du toit au premier plan
-    if (small) return;
-    const y = H * 0.93 + scroll * H * 0.05, night = isNight();
-    ctx.fillStyle = night ? '#090719' : '#3d2448'; ctx.fillRect(0, y, W, H - y + 2);
-    ctx.fillStyle = night ? 'rgba(255,79,160,.35)' : 'rgba(255,200,160,.5)'; ctx.fillRect(0, y, W, 1.5);
-    ctx.fillStyle = night ? '#0d0a24' : '#4a2c55';
-    ctx.fillRect(0, y - 26, W, 3);
-    for (let px = 12; px < W; px += 46) ctx.fillRect(px, y - 26, 3, 26);
-  }
-  function layers() {
-    // la caméra avance avec le défilement : chaque plan grossit autour d'un point de fuite, les plans proches plus vite
-    for (const l of L) {
-      const z = 1 + scroll * 0.5 * l.d, ox = (emx - 0.5) * 40 * l.d + (Math.sin(T * 0.05) * 18 * l.d);
-      const w = l.c.width, h = l.c.height, x = W / 2 - (w * z) / 2 - ox, y = H * l.y - (h * (z - 1)) * 0.3 + (emy - 0.5) * 10 * l.d + scroll * H * 0.12 * l.d;
-      ctx.drawImage(l.c, x, y, w * z, h * z);
-      if (l.signs.length) for (const s of l.signs) {
-        const sx = x + s.x * z, sy = y + s.y * z; if (sx < -40 || sx > W + 40) continue;
-        const fl = 0.75 + 0.25 * Math.sin(T * 7 + s.f) * (Math.sin(T * 0.7 + s.f) > 0.97 ? 1 : 0.15);
-        ctx.save(); ctx.globalAlpha = fl; ctx.shadowColor = s.c; ctx.shadowBlur = 12; ctx.fillStyle = s.c;
-        ctx.font = `${Math.round((l.d > 0.8 ? 15 : 11) * z)}px "Do Hyeon", sans-serif`; ctx.textAlign = 'center';
-        if (s.vert) [...s.t].forEach((ch, i) => ctx.fillText(ch, sx, sy + i * 15 * z * (l.d > 0.8 ? 1 : 0.75)));
-        else ctx.fillText(s.t, sx, sy);
-        ctx.restore();
-      }
-      if (l.d === 0.55) trainDraw(y + h * 0.42 * z, z);
-    }
-  }
-  function trainDraw(ty, z) {
-    if (small) return;
-    ctx.fillStyle = isNight() ? 'rgba(30,24,70,.9)' : 'rgba(90,60,90,.8)'; ctx.fillRect(0, ty, W, 4 * z);
-    for (let px = 20; px < W; px += 140) ctx.fillRect(px, ty, 5, H);
-    if (train.x > -1) {
-      const tw = W * 0.32, tx = train.x * (W + tw) - tw;
-      ctx.fillStyle = isNight() ? '#2c2560' : '#6d4a74'; ctx.fillRect(tx, ty - 16 * z, tw, 15 * z);
-      ctx.fillStyle = isNight() ? 'rgba(160,240,255,.85)' : 'rgba(255,240,210,.9)';
-      for (let k = tx + 8; k < tx + tw - 10; k += 16) ctx.fillRect(k, ty - 12 * z, 9, 6 * z);
-    }
-  }
-  function holoDraw() {
-    for (const h of holos) {
-      const x = h.x * W + (emx - 0.5) * 18, y = h.y * H + Math.sin(T * 0.8 + h.f) * 6 - scroll * H * 0.15;
-      ctx.save(); ctx.globalAlpha = 0.55 + 0.2 * Math.sin(T * 3 + h.f); ctx.shadowColor = h.c; ctx.shadowBlur = 18;
-      ctx.strokeStyle = h.c; ctx.lineWidth = 1.2; ctx.font = `${h.s}px "Do Hyeon", sans-serif`; ctx.textAlign = 'center';
-      ctx.strokeText(h.t, x, y);
-      // lignes de balayage de l'hologramme
-      ctx.globalAlpha *= 0.35; ctx.fillStyle = h.c;
-      for (let k = -h.s * 0.7; k < h.s * 0.2; k += 4) ctx.fillRect(x - h.s * 0.9, y + k, h.s * 1.8, 1);
-      ctx.restore();
-    }
-  }
-  function dustDraw(dt) {
-    ctx.save(); ctx.globalCompositeOperation = 'lighter';
-    for (const p of dust) {
-      // le pointeur repousse les grains, les plus proches s'illuminent
-      let glow = 0;
-      if (mouse) { const dx = p.x - mouse.x, dy = p.y - mouse.y, d2 = dx * dx + dy * dy, R2 = 160 * 160; if (d2 < R2) { const d = Math.sqrt(d2) || 1, f = (1 - d / 160); p.vx += dx / d * f * 1.6; p.vy += dy / d * f * 1.6; glow = f; } }
-      if (target < 0.5) { const dx = p.x - W / 2, dy = p.y - H / 2, d = Math.hypot(dx, dy) || 1; p.vx += dx / d * 0.05; p.vy += dy / d * 0.05; glow = Math.max(glow, 0.6); }
-      p.vx *= 0.92; p.vy *= 0.92; p.x += p.vx + Math.sin(T * 0.5 + p.p) * 0.15 * speed; p.y += p.vy - 0.12 * speed * dt * 60 / 60;
-      if (p.y < -10) { p.y = H + 10; p.x = Math.random() * W; } if (p.x < -10) p.x = W + 10; if (p.x > W + 10) p.x = -10;
-      const a = 0.25 + 0.35 * (0.5 + 0.5 * Math.sin(T * 2 + p.p)) + glow * 0.6;
-      ctx.globalAlpha = Math.min(1, a); ctx.fillStyle = p.c;
-      ctx.beginPath(); ctx.arc(p.x, p.y, p.r * (1 + glow * 1.4), 0, TAU); ctx.fill();
-    }
-    ctx.restore();
+    const R = rng(seed + 20);
+    motes = Array.from({ length: W < 700 ? 40 : 110 }, () => ({ x: R() * W, y: R() * H, vx: 0, vy: 0, r: 0.6 + R() * 1.8, p: R() * TAU }));
+    plates = [paintPlate(KEY_T[0])];
+    // les autres plaques se peignent ensuite, sans bloquer l'apparition
+    const next = i => { if (id !== buildId || i >= KEY_T.length) return; setTimeout(() => { if (id !== buildId) return; plates[i] = paintPlate(KEY_T[i]); next(i + 1); }, 60); };
+    next(1);
   }
   function frame(now) {
     const dt = Math.min(0.05, (now - last) / 1000); last = now;
-    speed += (target - speed) * Math.min(1, dt * 3);
-    T += dt * speed;
+    speed += (target - speed) * Math.min(1, dt * 3); T += dt * speed;
     emx += (mx - emx) * Math.min(1, dt * 4); emy += (my - emy) * Math.min(1, dt * 4);
     if (opts.scrollEl) { const r = opts.scrollEl.getBoundingClientRect(); scroll = Math.max(0, Math.min(1, -r.top / Math.max(1, r.height - innerHeight))); }
-    train.next -= dt * speed; if (train.x < 0 && train.next <= 0) { train.x = 0; }
-    if (train.x >= 0) { train.x += dt * speed * 0.09; if (train.x > 1) { train.x = -2; train.next = 9 + Math.random() * 8; } }
-    sky(); moon(); cloudsDraw(dt); holoDraw(); layers();
-    // brume au pied des immeubles
-    const fog = ctx.createLinearGradient(0, H * 0.82, 0, H);
-    fog.addColorStop(0, 'rgba(14,11,42,0)'); fog.addColorStop(1, isNight() ? 'rgba(14,11,42,.85)' : 'rgba(255,227,201,.7)');
-    ctx.fillStyle = fog; ctx.fillRect(0, H * 0.82, W, H * 0.18);
-    roof(); dustDraw(dt);
+    // position dans la journée
+    const seg = Math.min(KEY_T.length - 2, Math.floor(scroll * (KEY_T.length - 1))), f = Math.min(1, scroll * (KEY_T.length - 1) - seg);
+    const A = plates[seg] || plates[0], Bp = plates[seg + 1];
+    const ease = f * f * (3 - 2 * f), k = Bp ? ease : 0;
+    tNow = A.t + ((Bp ? Bp.t : A.t) - A.t) * k;
+    const P = pal(tNow);
+    const px = (emx - 0.5), py = (emy - 0.5);
+    const lift = Math.max(0, scroll - 0.45) / 0.55, up = lift * lift * (3 - 2 * lift);
+    ctx.clearRect(0, 0, W, H);
+    const draw = (img, ox, oy, a = 1) => { ctx.globalAlpha = a; ctx.drawImage(img, ox - W * 0.03, oy - H * 0.03, W * 1.06, H * 1.06); };
+    // ciel : légère dérive et parallaxe
+    const bo = -px * 10, bv = -py * 6;
+    draw(A.b, bo, bv); if (Bp) draw(Bp.b, bo, bv, k);
+    ctx.globalAlpha = 1;
+    // étoiles qui scintillent la nuit
+    if (P.stars > 0.1) for (let i = 0; i < 40; i++) { const sx = ((i * 97.3) % 1) * W + ((i * 211) % W), sy = ((i * 53) % 62) / 100 * H; ctx.globalAlpha = P.stars * (0.5 + 0.5 * Math.sin(T * (1 + i % 3) + i)); ctx.fillStyle = '#fffaf0'; ctx.fillRect(sx % W, sy, 1.6, 1.6); }
+    // étoile filante
+    if (P.stars > 0.5) { shoot.wait -= dt; if (shoot.k < 0 && shoot.wait <= 0) { shoot = { k: 0, x: W * (0.2 + Math.random() * 0.6), y: H * (0.05 + Math.random() * 0.2), wait: 5 + Math.random() * 7 }; }
+      if (shoot.k >= 0) { shoot.k += dt * 1.6; const L = 120, x = shoot.x + shoot.k * 260, y = shoot.y + shoot.k * 110; const g = ctx.createLinearGradient(x - L, y - L * 0.42, x, y); g.addColorStop(0, 'rgba(255,255,255,0)'); g.addColorStop(1, `rgba(255,250,240,${(1 - shoot.k) * 0.9})`); ctx.globalAlpha = 1; ctx.strokeStyle = g; ctx.lineWidth = 1.6; ctx.beginPath(); ctx.moveTo(x - L, y - L * 0.42); ctx.lineTo(x, y); ctx.stroke(); if (shoot.k > 1) shoot.k = -1; } }
+    // ville : s'enfonce quand on lève les yeux
+    const co = -px * 26, cv = -py * 10 + up * H * 0.42;
+    draw(A.cty, co, cv); if (Bp) draw(Bp.cty, co, cv, k);
+    // premier plan
+    const fo = -px * 48, fv = -py * 14 + scroll * H * 0.08 + up * H * 0.6;
+    const FA = A.fg, FB = Bp ? Bp.fg : null;
+    draw(FA, fo, fv); if (FB) draw(FB, fo, fv, k);
+    ctx.globalAlpha = 1;
+    // pothos qui retombe du haut à gauche, il bouge au vent
+    const sway = T * 0.9;
+    ctx.save(); ctx.translate(fo * 1.2, fv * 0.4);
+    vine(ctx, rng(seed + 30), -20, H * 0.08, Math.min(W, H) * 0.62, Math.max(1.4, W / 620), 0.75, P, sway);
+    if (W > 700) vine(ctx, rng(seed + 31), W + 20, H * 0.3, Math.min(W, H) * 0.42, W / 820, Math.PI - 0.5, P, sway + 1.3);
+    ctx.restore();
+    // grains de lumière : poussière dorée le jour, lucioles le soir ; le pointeur les repousse
+    ctx.save(); ctx.globalCompositeOperation = 'lighter';
+    const mc = P.night > 0.5 ? '#ffe7a8' : '#fff1cf';
+    for (const p of motes) {
+      let gl = 0;
+      if (mouse) { const dx = p.x - mouse.x, dy = p.y - mouse.y, d2 = dx * dx + dy * dy; if (d2 < 25600) { const d = Math.sqrt(d2) || 1, ff = 1 - d / 160; p.vx += dx / d * ff * 1.4; p.vy += dy / d * ff * 1.4; gl = ff; } }
+      if (target < 0.5) { const dx = p.x - W / 2, dy = p.y - H / 2, d = Math.hypot(dx, dy) || 1; p.vx += dx / d * 0.05; p.vy += dy / d * 0.05; gl = Math.max(gl, 0.5); }
+      p.vx *= 0.92; p.vy *= 0.92; p.x += p.vx + Math.sin(T * 0.5 + p.p) * 0.2 * speed; p.y += p.vy - 0.15 * speed;
+      if (p.y < -10) { p.y = H + 10; p.x = Math.random() * W; } if (p.x < -10) p.x = W + 10; if (p.x > W + 10) p.x = -10;
+      ctx.globalAlpha = Math.min(1, 0.18 + 0.35 * (0.5 + 0.5 * Math.sin(T * 2 + p.p)) + gl * 0.6);
+      ctx.fillStyle = mc; ctx.beginPath(); ctx.arc(p.x, p.y, p.r * (1 + gl), 0, TAU); ctx.fill();
+    }
+    ctx.restore();
+    if (opts.onT) opts.onT(tNow, scroll);
     if (!reduce && visible) raf = requestAnimationFrame(frame);
   }
   const io = new IntersectionObserver(([e]) => { visible = e.isIntersecting; cancelAnimationFrame(raf); if (visible) { last = performance.now(); raf = requestAnimationFrame(frame); } });
   const move = e => { const b = canvas.getBoundingClientRect(); mx = (e.clientX - b.left) / b.width; my = (e.clientY - b.top) / b.height; mouse = { x: e.clientX - b.left, y: e.clientY - b.top }; };
   const out = () => { mouse = null; mx = 0.5; my = 0.5; };
-  let rt = 0; const resize = () => { clearTimeout(rt); rt = setTimeout(() => { build(); if (reduce) frame(performance.now()); }, 80); };
-  const theme = new MutationObserver(resize); theme.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
-  build(); io.observe(canvas); addEventListener('resize', resize); addEventListener('pointermove', move, { passive: true }); document.addEventListener('pointerleave', out);
-  // les polices des enseignes peuvent arriver après le premier rendu
+  const onScroll = () => { if (reduce) frame(performance.now()); };
+  let rt = 0; const resize = () => { clearTimeout(rt); rt = setTimeout(() => { build(); if (reduce) frame(performance.now()); }, 120); };
+  build(); io.observe(canvas); addEventListener('resize', resize); addEventListener('pointermove', move, { passive: true }); document.addEventListener('pointerleave', out); addEventListener('scroll', onScroll, { passive: true });
   if (document.fonts) document.fonts.ready.then(() => { if (reduce) frame(performance.now()); });
   raf = requestAnimationFrame(frame);
   return {
-    stop() { cancelAnimationFrame(raf); io.disconnect(); theme.disconnect(); removeEventListener('resize', resize); removeEventListener('pointermove', move); document.removeEventListener('pointerleave', out); },
-    calm(on) { target = on ? 0.18 : 1; }
+    stop() { buildId++; cancelAnimationFrame(raf); io.disconnect(); removeEventListener('resize', resize); removeEventListener('pointermove', move); document.removeEventListener('pointerleave', out); removeEventListener('scroll', onScroll); },
+    calm(on) { target = on ? 0.18 : 1; },
+    t: () => tNow
   };
 }
 
-// Bandeau de la barre supérieure : un immeuble sous chaque enseigne, des immeubles bas entre elles,
-// un ciel étoilé et le monorail qui traverse de temps en temps.
+// Barre supérieure : un immeuble sous chaque enseigne, des toits bas entre elles, la lumière du moment.
 export function skyline(header) {
   const canvas = header.querySelector('.city-bg'); const ctx = canvas.getContext('2d'); if (!ctx) return () => {};
-  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  let W = 1, H = 1, dpr = 1, bld = [], stars = [], raf = 0, T = 0, last = performance.now(), tx = -1, wait = 6;
-  function build() {
-    const R = rng(1106);
-    const b = header.getBoundingClientRect(); dpr = Math.min(2, devicePixelRatio || 1);
-    W = b.width; H = b.height; canvas.width = W * dpr | 0; canvas.height = H * dpr | 0; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    const signs = [...header.querySelectorAll('.sign, .brand-sign')].map(s => { const r = s.getBoundingClientRect(); return { x: r.left - b.left, w: r.width, y: r.bottom - b.top }; });
-    bld = [];
-    let x = -10;
-    const night = isNight();
-    const sorted = signs.sort((a, c) => a.x - c.x);
-    for (const s of sorted) {
-      while (x < s.x - 14) { const w = 18 + R() * 40; bld.push({ x, w: Math.min(w, s.x - 6 - x), top: H * (0.55 + R() * 0.3), back: true }); x += w + 2; }
+  function draw() {
+    const R = rng(1106), night = isNight(), P = pal(night ? 0.78 : 0.47);
+    const b = header.getBoundingClientRect(), dpr = Math.min(2, devicePixelRatio || 1);
+    const W = b.width, H = b.height; canvas.width = W * dpr | 0; canvas.height = H * dpr | 0; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, W, H);
+    if (night) for (let i = 0; i < W / 8; i++) { ctx.globalAlpha = 0.3 + R() * 0.6; ctx.fillStyle = '#fffaf0'; ctx.fillRect(R() * W, R() * H * 0.5, 1 + R() * 0.6, 1 + R() * 0.6); }
+    ctx.globalAlpha = 1;
+    // lueur du soleil couché derrière la ville
+    const g = ctx.createRadialGradient(W * 0.3, H * 1.1, 0, W * 0.3, H * 1.1, W * 0.5); g.addColorStop(0, rgba(P.rim, night ? 0.18 : 0.55)); g.addColorStop(1, rgba(P.rim, 0));
+    ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+    const signs = [...header.querySelectorAll('.sign, .brand-sign')].map(s => { const r = s.getBoundingClientRect(); return { x: r.left - b.left, w: r.width, y: r.bottom - b.top }; }).sort((a, c) => a.x - c.x);
+    const bld = []; let x = -10;
+    for (const s of signs) {
+      while (x < s.x - 14) { const w = 18 + R() * 40; bld.push({ x, w: Math.min(w, s.x - 6 - x), top: H * (0.55 + R() * 0.3) }); x += w + 2; }
       bld.push({ x: s.x - 8, w: s.w + 16, top: s.y + 10, front: true }); x = s.x + s.w + 10;
     }
-    while (x < W + 10) { const w = 20 + R() * 46; bld.push({ x, w, top: H * (0.5 + R() * 0.35), back: true }); x += w + 2; }
-    bld.forEach(o => { o.wins = []; for (let wy = o.top + 8; wy < H - 4; wy += 7) for (let wx = o.x + 4; wx < o.x + o.w - 5; wx += 7) if (R() < (o.front ? 0.3 : 0.2)) o.wins.push([wx, wy, R() < 0.75, R() * TAU]); });
-    stars = Array.from({ length: Math.round(W / 9) }, () => ({ x: R() * W, y: R() * H * 0.45, r: 0.4 + R(), p: R() * TAU }));
-    canvas.dataset.night = night ? '1' : '0';
-  }
-  function draw(now) {
-    const dt = Math.min(0.05, (now - last) / 1000); last = now; T += dt;
-    const night = isNight();
-    ctx.clearRect(0, 0, W, H);
-    if (night) for (const s of stars) { ctx.globalAlpha = 0.3 + 0.6 * (0.5 + 0.5 * Math.sin(T * 1.5 + s.p)); ctx.fillStyle = '#fff'; ctx.fillRect(s.x, s.y, s.r, s.r); }
-    ctx.globalAlpha = 1;
-    // monorail derrière les immeubles de premier plan
-    const ty = H * 0.62;
-    ctx.fillStyle = night ? '#241d55' : '#b98aa2'; ctx.fillRect(0, ty, W, 3);
-    wait -= dt; if (tx < 0 && wait <= 0) tx = 0;
-    if (tx >= 0) { tx += dt * 0.06; const tw = Math.min(260, W * 0.3), x = tx * (W + tw) - tw;
-      ctx.fillStyle = night ? '#2f2766' : '#8f6a8c'; ctx.fillRect(x, ty - 11, tw, 10);
-      ctx.fillStyle = night ? 'rgba(150,240,255,.9)' : 'rgba(255,245,220,.95)'; for (let k = x + 6; k < x + tw - 8; k += 12) ctx.fillRect(k, ty - 9, 7, 4);
-      if (tx > 1) { tx = -1; wait = 14 + Math.random() * 10; } }
+    while (x < W + 10) { const w = 20 + R() * 46; bld.push({ x, w, top: H * (0.5 + R() * 0.35) }); x += w + 2; }
+    // rang lointain, brumeux
+    let fx = -10; ctx.fillStyle = mix(P.ws, P.haze, 0.55);
+    while (fx < W) { const w = 14 + R() * 30, h = H * (0.2 + R() * 0.25); ctx.fillRect(fx, H - h, w, h); fx += w + 1; }
     for (const o of bld) {
-      ctx.fillStyle = o.front ? (night ? '#130f33' : '#5b3a63') : (night ? '#1e1848' : '#a5759a');
-      ctx.fillRect(o.x, o.top, o.w, H - o.top);
-      if (o.front) { ctx.fillRect(o.x + 4, o.top - 3, o.w - 8, 3); }
-      for (const [wx, wy, warm, p] of o.wins) {
-        const a = 0.55 + 0.35 * Math.sin(T * 0.4 + p);
-        ctx.fillStyle = warm ? `rgba(255,196,130,${night ? a : a * 0.6})` : `rgba(140,220,255,${night ? a : a * 0.5})`;
+      const face = o.front ? mix(P.ws, P.fg, 0.35) : mix(P.wl, P.haze, 0.25), side = mix(face, P.fg, 0.3);
+      ctx.fillStyle = face; ctx.fillRect(o.x, o.top, o.w, H - o.top);
+      ctx.fillStyle = side; ctx.fillRect(o.x + o.w * 0.78, o.top, o.w * 0.22, H - o.top);
+      ctx.fillStyle = mix(P.roof[(R() * 4) | 0], P.haze, 0.2); ctx.fillRect(o.x - 1, o.top - 2, o.w + 2, 3);
+      if (!night) { ctx.fillStyle = rgba(P.rim, 0.55); ctx.fillRect(o.x, o.top, 2, H - o.top); }
+      for (let wy = o.top + 8; wy < H - 4; wy += 8) for (let wx = o.x + 4; wx < o.x + o.w * 0.75 - 4; wx += 7) {
+        const r = R(); if (r > 0.42) continue;
+        ctx.fillStyle = night && r < 0.3 ? rgba(r < 0.25 ? '#ffd29a' : '#bfe3ff', 0.85) : rgba(mix(P.ws, '#2a2540', 0.4), 0.45);
         ctx.fillRect(wx, wy, 3, 4);
       }
     }
-    if (!reduce) raf = requestAnimationFrame(draw);
   }
-  const ro = new ResizeObserver(() => { build(); if (reduce) draw(performance.now()); });
-  ro.observe(header);
-  const theme = new MutationObserver(() => { build(); if (reduce) draw(performance.now()); }); theme.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
-  if (document.fonts) document.fonts.ready.then(() => build());
-  build(); raf = requestAnimationFrame(draw);
-  return () => { cancelAnimationFrame(raf); ro.disconnect(); theme.disconnect(); };
+  const ro = new ResizeObserver(draw); ro.observe(header);
+  const mo = new MutationObserver(draw); mo.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+  if (document.fonts) document.fonts.ready.then(draw);
+  draw();
+  return () => { ro.disconnect(); mo.disconnect(); };
 }

@@ -1,3 +1,4 @@
-/* MALSSI · feuille de styles : base, puis univers « nuit étoilée de Séoul » */
+/* MALSSI · feuille de styles : base, univers « heure dorée de Séoul », étagère des leçons */
 @import 'malssi.css';
 @import 'starlight.css';
+@import 'etagere.css';

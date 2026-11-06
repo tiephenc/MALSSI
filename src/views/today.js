@@ -64,6 +64,6 @@ export function viewToday(el) {
         <p class="small muted" style="margin:0 0 10px">${st.total} au total · ${st.mature} solides (intervalle de 3 semaines ou plus)</p>
         <div class="bar" aria-hidden="true"><i style="width:${st.total ? Math.round(st.mature / st.total * 100) : 0}%"></i></div></div>
     </aside></div>`;
-  { const sc = cityScene($('.scene-bg'), { small: true, moonX: 0.86, moonY: 0.32 }); onLeave(() => sc.stop()); }
+  { const sc = cityScene($('.scene-bg'), { small: true, sunX: 0.78 }); onLeave(() => sc.stop()); }
   requestAnimationFrame(() => setTimeout(() => { const b = $('#blk'); if (b) { b.classList.remove('split'); setTimeout(() => b.classList.add('join'), 900); } }, 350));
 }

@@ -14,13 +14,14 @@ import { viewProfil, viewAbout, applyTheme } from './views/profil.js';
 import { viewListes, viewDico } from './views/mots.js';
 import { viewTopik, viewEcriture, stopTopik } from './views/topik.js';
 import { viewAccueil, stopAccueil } from './views/accueil.js';
+import { viewEtagere } from './views/etagere.js';
 
 const NAV = [
   ['#/', '오늘', 'Aujourd\'hui'], ['#/parcours', '배움', 'Parcours'], ['#/reviser', '복습', 'Révisions'],
   ['#/listes', '단어', 'Mots'], ['#/topik', '시험', 'TOPIK'], ['#/profil', '나', 'Profil']];
 const TITLES = { erreurs: 'Carnet d\'erreurs', accueil: 'Accueil', listes: 'Listes par niveau', dico: 'Dictionnaire', topik: 'Entraînement TOPIK', ecriture: 'Atelier d\'écriture', '': 'Aujourd\'hui', parcours: 'Parcours', unite: 'Unité', reviser: 'Révisions', vocabulaire: 'Vocabulaire', anki: 'Import Anki', profil: 'Profil', apropos: 'À propos' };
 
-const NEONC = ['#ff4fa0', '#49e6f2', '#ff8a4c', '#c6ff6b', '#b48cff', '#ffd36b'];
+const NEONC = ['#e2665c', '#2f8f88', '#e9a23e', '#5b7fc4', '#cf5f8c', '#6f9a52'];
 const MORE = [['#/dico', 'Dictionnaire'], ['#/vocabulaire', 'Mes mots'], ['#/erreurs', 'Carnet d\'erreurs'], ['#/anki', 'Importer Anki'], ['#/ecriture', 'Atelier d\'écriture'], ['#/accueil', 'Accueil'], ['#/apropos', 'À propos · Soutenir']];
 function shell() {
   document.body.innerHTML = `<a class="sr" href="#main">Aller au contenu</a>
@@ -29,7 +30,7 @@ function shell() {
       <canvas class="city-bg" aria-hidden="true"></canvas>
       <a class="brand-sign" href="#/" aria-label="말씨, aujourd'hui">${magpie(30, { label: '' })}<b class="ko">말씨</b></a>
       <nav class="nav signs" aria-label="Navigation principale">${NAV.map(([h, k, l], i) => `<a class="sign" href="${h}" style="--c:${NEONC[i]}"><b lang="ko">${k}</b><span>${l}</span></a>`).join('')}</nav>
-      <details class="more"><summary class="sign mini" style="--c:#f3ecff"><b lang="ko">더보기</b><span>Plus</span></summary>
+      <details class="more"><summary class="sign mini" style="--c:#5d5574"><b lang="ko">더보기</b><span>Plus</span></summary>
         <div class="more-menu">${MORE.map(([h, l]) => `<a href="${h}">${l}</a>`).join('')}</div></details>
     </header>
     <main id="main" tabindex="-1"></main>
@@ -41,7 +42,7 @@ function shell() {
   document.addEventListener('click', e => { const m = $('.more'); if (m && m.open && !e.target.closest('.more')) m.open = false; if (e.target.closest('.more-menu a')) m.open = false; });
 }
 function route() {
-  stopKeys(); stopTopik(); stopAccueil(); leave(); document.body.classList.remove('is-landing');
+  stopKeys(); stopTopik(); stopAccueil(); leave(); document.body.classList.remove('is-landing', 'is-shelf');
   const h = location.hash.replace(/^#\/?/, ''), [page, arg] = h.split('/');
   const el = $('#main');
   $$('.nav a').forEach(a => a.toggleAttribute('aria-current', false));
@@ -59,7 +60,7 @@ function route() {
     else if (page === 'dico') viewDico(el, arg);
     else if (page === 'topik') viewTopik(el);
     else if (page === 'ecriture') viewEcriture(el, arg);
-    else if (page === 'parcours') viewParcours(el);
+    else if (page === 'parcours') { if (arg === 'liste') viewParcours(el); else viewEtagere(el); }
     else if (page === 'unite') viewUnit(el, arg);
     else if (page === 'reviser') viewReviser(el);
     else if (page === 'vocabulaire') viewVocab(el);
