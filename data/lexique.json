@@ -77,7 +77,7 @@
 "unite": "H02"
 },
 "여유": {
-"fr": "temps libre, marge",
+"fr": "marge, temps libre",
 "pron": "여유",
 "niveau": "중급",
 "origine": "餘裕",
@@ -85,7 +85,7 @@
 "dico_fr": "réserve, aisance, loisir, temps libre, temps disponible, marge, argent disponible, (n.) (vivre) à l'aise",
 "dico_def": "État dans lequel il reste du temps, de l'espace ou de l'argent car en quantité suffisante.",
 "sens": 1,
-"unite": "H02"
+"unite": "N6-10"
 },
 "예": {
 "fr": "exemple",
@@ -1306,7 +1306,7 @@
 "dico_fr": "main",
 "dico_def": "Partie du corps se situant au bout des poignets, utilisée pour toucher ou prendre quelque chose.",
 "sens": 1,
-"unite": "N6-05"
+"unite": "N6-09"
 },
 "밤": {
 "fr": "nuit",
@@ -1537,7 +1537,7 @@
 "dico_fr": "s'asseoir",
 "dico_def": "Poser son corps sur un objet ou sur le sol en mettant son poids au niveau de ses fesses, en gardant son buste droit.",
 "sens": 1,
-"unite": "N1-10"
+"unite": "N3-14"
 },
 "넓다": {
 "fr": "large, spacieux",
@@ -1570,7 +1570,7 @@
 "dico_fr": "jeune",
 "dico_def": "(Âge) Qui est à son meilleur moment.",
 "sens": 1,
-"unite": "H09"
+"unite": "N3-13"
 },
 "아니요": {
 "fr": "non (poli)",
@@ -2186,7 +2186,7 @@
 "dico_fr": "week-end",
 "dico_def": "Fin d'une semaine.",
 "sens": 1,
-"unite": "N1-09"
+"unite": "N3-15"
 },
 "점심": {
 "fr": "déjeuner",
@@ -2593,7 +2593,7 @@
 "dico_fr": "cigarette, cigare",
 "dico_def": "Feuilles de tabac séchées, finement coupées, enroulées dans du papier et destinées à être fumées.",
 "sens": 2,
-"unite": "N1-08"
+"unite": "N3-16"
 },
 "맵다": {
 "fr": "épicé, piquant",
@@ -2758,7 +2758,7 @@
 "dico_fr": "fatigué, épuisé",
 "dico_def": "Dont le corps ou l’esprit est exténué de façon à se sentir las.",
 "sens": 1,
-"unite": "N1-09"
+"unite": "N3-13"
 },
 "그리고": {
 "fr": "et",
@@ -3058,7 +3058,7 @@
 "unite": "N1-12"
 },
 "시간": {
-"fr": "temps, heure",
+"fr": "temps",
 "pron": "시간",
 "niveau": "초급",
 "origine": "時間",
@@ -3066,7 +3066,7 @@
 "dico_fr": "temps, heure, moment",
 "dico_def": "Intervalle de temps entre un moment et un autre.",
 "sens": 1,
-"unite": "N1-12"
+"unite": "N5-11"
 },
 "내년": {
 "fr": "l'année prochaine",
@@ -3121,7 +3121,7 @@
 "dico_fr": "projet, plan, dessein",
 "dico_def": "Fait de penser à l'ensemble des détails d'un projet que l'on va exécuter avant de prendre une décision.",
 "sens": 1,
-"unite": "N3-08"
+"unite": "N3-16"
 },
 "콘서트": {
 "fr": "concert",
@@ -3385,7 +3385,7 @@
 "dico_fr": "arriéré, retardé, loin",
 "dico_def": "Qui est trop en arrière par rapport à un certain niveau.",
 "sens": 5,
-"unite": "N1-14"
+"unite": "N3-16"
 },
 "가깝다": {
 "fr": "proche",
@@ -3396,7 +3396,7 @@
 "dico_fr": "(adj.) proche, près, avoisinant, à côté, à proximité, dans les environs",
 "dico_def": "Qui n'est pas loin d'un endroit.",
 "sens": 1,
-"unite": "N1-14"
+"unite": "N3-12"
 },
 "왼쪽": {
 "fr": "gauche",
@@ -3770,7 +3770,7 @@
 "dico_fr": "ignorer, ne pas savoir, ne pas connaître",
 "dico_def": "Ne pas connaître ou comprendre une personne, un objet, un fait, etc.",
 "sens": 1,
-"unite": "N2-03"
+"unite": "N3-13"
 },
 "알다": {
 "fr": "savoir, connaître",
@@ -3781,7 +3781,7 @@
 "dico_fr": "savoir, connaître, apprendre",
 "dico_def": "Acquérir une information ou une connaissance sur un objet ou sur une situation par l'éducation, l’expérience, la réflexion, etc.",
 "sens": 1,
-"unite": "N2-03"
+"unite": "N3-13"
 },
 "말하다": {
 "fr": "parler, dire",
@@ -4045,7 +4045,7 @@
 "dico_fr": "expérience",
 "dico_def": "Fait de faire ou de vivre  quelque chose en personne ; connaissance ou technique ainsi acquises.",
 "sens": 1,
-"unite": "N2-05"
+"unite": "N5-09"
 },
 "처음": {
 "fr": "première fois, début",
@@ -4144,7 +4144,7 @@
 "dico_fr": "santé",
 "dico_def": "Bon état physique et moral, qui ne présente pas d'anomalie.",
 "sens": 1,
-"unite": "N2-06"
+"unite": "N5-10"
 },
 "진찰": {
 "fr": "consultation (médicale)",
@@ -4169,15 +4169,15 @@
 "unite": "N2-06"
 },
 "낫다": {
-"fr": "meilleur, préférable",
+"fr": "être mieux, préférable",
 "pron": "낟따",
 "niveau": "초급",
 "origine": null,
-"pos": "형용사",
-"dico_fr": "l'emporter sur, valoir mieux, prévaloir, être préférable",
-"dico_def": "Qui est meilleur qu'une autre chose.",
-"sens": 2,
-"unite": "N5-03"
+"pos": "동사",
+"dico_fr": "guérir, aller mieux",
+"dico_def": "(Maladies, blessures, etc.) Disparaître pour revenir à l'état normal.",
+"sens": 1,
+"unite": "N5-11"
 },
 "조심하다": {
 "fr": "faire attention",
@@ -4188,7 +4188,7 @@
 "dico_fr": "prendre garde, se mettre en garde, prendre des précautions, se méfier de",
 "dico_def": "Faire attention à ses propos, à son comportement, etc., pour éviter un mal.",
 "sens": 1,
-"unite": "N2-06"
+"unite": "N4-13"
 },
 "규칙": {
 "fr": "règle",
@@ -4309,7 +4309,7 @@
 "dico_fr": "commencer, débuter, ouvrir, démarrer",
 "dico_def": "Accomplir la première étape d'un évènement ou d'une action, ou faire accomplir cette étape par une tierce personne.",
 "sens": 1,
-"unite": "N2-07"
+"unite": "N3-15"
 },
 "끝나다": {
 "fr": "finir",
@@ -4408,7 +4408,7 @@
 "dico_fr": "typhon",
 "dico_def": "Vent accompagné d'une forte tempête de pluie, qui souffle généralement entre les mois de juillet et septembre, du Pacifique vers les pays de l'est du continent asiatique tels que la Corée ou le Japon.",
 "sens": 1,
-"unite": "N2-08"
+"unite": "N4-14"
 },
 "장마": {
 "fr": "saison des pluies",
@@ -4441,7 +4441,7 @@
 "dico_fr": "s'arrêter, s'interrompre",
 "dico_def": "(Action, mouvement, phénomène, etc. qui était en cours) Ne plus continuer et cesser.",
 "sens": 1,
-"unite": "N2-08"
+"unite": "N6-08"
 },
 "예보": {
 "fr": "prévision",
@@ -4474,7 +4474,7 @@
 "dico_fr": "déjà",
 "dico_def": "Plus rapidement qu'on ne pense.",
 "sens": 1,
-"unite": "N2-11"
+"unite": "N3-15"
 },
 "시험": {
 "fr": "examen",
@@ -4554,7 +4554,7 @@
 "unite": "N2-09"
 },
 "직장": {
-"fr": "lieu de travail, emploi",
+"fr": "lieu de travail",
 "pron": "직짱",
 "niveau": "초급",
 "origine": "職場",
@@ -4562,7 +4562,7 @@
 "dico_fr": "lieu de travail",
 "dico_def": "Endroit où l'on travaille en contrepartie d'une rémunération.",
 "sens": 1,
-"unite": "N2-09"
+"unite": "N5-10"
 },
 "출장": {
 "fr": "voyage d'affaires",
@@ -4617,7 +4617,7 @@
 "dico_fr": "continuellement, constamment, toujours, à tout instant, sans arrêt, sans cesse",
 "dico_def": "De façon continuelle, sans interruption.",
 "sens": 3,
-"unite": "N2-09"
+"unite": "N3-14"
 },
 "필요하다": {
 "fr": "nécessaire",
@@ -4782,7 +4782,7 @@
 "dico_fr": "étroit",
 "dico_def": "(Superficie d'une surface, d'un sol, etc.) Qui est petite.",
 "sens": 1,
-"unite": "N2-10"
+"unite": "N3-12"
 },
 "약속하다": {
 "fr": "promettre",
@@ -4793,7 +4793,7 @@
 "dico_fr": "promettre, s'engager à, donner sa parole, faire une promesse, prendre l'engagement de, être d'accord",
 "dico_def": "Décider à l'avance de faire quelque chose avec quelqu'un.",
 "sens": 1,
-"unite": "N2-11"
+"unite": "N3-16"
 },
 "연락하다": {
 "fr": "contacter",
@@ -4815,7 +4815,7 @@
 "dico_fr": "arriver à, atteindre, parvenir à",
 "dico_def": "Parvenir à destination.",
 "sens": 1,
-"unite": "N2-11"
+"unite": "N3-12"
 },
 "출발하다": {
 "fr": "partir",
@@ -4826,7 +4826,7 @@
 "dico_fr": "partir, démarrer",
 "dico_def": "Prendre un chemin vers une destination.",
 "sens": 1,
-"unite": "N2-11"
+"unite": "N4-12"
 },
 "아직": {
 "fr": "encore, pas encore",
@@ -4837,7 +4837,7 @@
 "dico_fr": "encore, toujours",
 "dico_def": "Terme indiquant qu’il faut encore qu’une certaine période s’écoule pour qu'une chose ou un état devienne tel ou tel, ou continue sans s’arrêter.",
 "sens": 1,
-"unite": "N2-11"
+"unite": "N3-15"
 },
 "정말": {
 "fr": "vraiment",
@@ -4903,7 +4903,7 @@
 "dico_fr": "(n.) petit, peu",
 "dico_def": "Quantité ou degré faible.",
 "sens": 1,
-"unite": "N2-11"
+"unite": "N4-12"
 },
 "변하다": {
 "fr": "changer",
@@ -4914,7 +4914,7 @@
 "dico_fr": "changer, se transformer, évoluer",
 "dico_def": "(Quelque chose) Devenir un autre ou changer de nature.",
 "sens": 1,
-"unite": "N2-11"
+"unite": "N4-11"
 },
 "실력": {
 "fr": "compétence, niveau",
@@ -4925,7 +4925,7 @@
 "dico_fr": "compétence, talent",
 "dico_def": "Capacité à réussir à faire quelque chose.",
 "sens": 1,
-"unite": "N2-11"
+"unite": "N4-10"
 },
 "잘하다": {
 "fr": "bien faire, être doué",
@@ -5060,7 +5060,7 @@
 "unite": "N2-12"
 },
 "어른": {
-"fr": "adulte, aîné",
+"fr": "adulte",
 "pron": "어른",
 "niveau": "초급",
 "origine": null,
@@ -5068,7 +5068,7 @@
 "dico_fr": "adulte, grande personne",
 "dico_def": "Personne ayant fini de grandir.",
 "sens": 1,
-"unite": "N2-12"
+"unite": "N5-12"
 },
 "손님": {
 "fr": "client, invité",
@@ -5189,7 +5189,7 @@
 "dico_fr": "qui manque, inoubliable",
 "dico_def": "Qui donne le désir de revoir ou rencontrer.",
 "sens": 1,
-"unite": "N2-13"
+"unite": "N4-11"
 },
 "고향": {
 "fr": "ville natale",
@@ -5200,7 +5200,7 @@
 "dico_fr": "pays natal, ville natale",
 "dico_def": "Endroit où l'on est né et a grandi.",
 "sens": 1,
-"unite": "N2-13"
+"unite": "N3-15"
 },
 "이웃": {
 "fr": "voisin",
@@ -5222,7 +5222,7 @@
 "dico_fr": "quartier, village, hameau",
 "dico_def": "Lieu où se groupent plusieurs maisons et leurs habitants.",
 "sens": 1,
-"unite": "N2-13"
+"unite": "N4-11"
 },
 "느끼다": {
 "fr": "ressentir",
@@ -5258,7 +5258,7 @@
 "unite": "N3-01"
 },
 "줄": {
-"fr": "file, ligne",
+"fr": "file d'attente",
 "pron": "줄",
 "niveau": "초급",
 "origine": null,
@@ -5266,7 +5266,7 @@
 "dico_fr": "ligne, file, rang, rangée, raie, trait",
 "dico_def": "Personnes ou objets formant une file indienne.",
 "sens": 2,
-"unite": "N3-01"
+"unite": "N5-11"
 },
 "서다": {
 "fr": "se tenir debout",
@@ -5277,7 +5277,7 @@
 "dico_fr": "être debout, se tenir debout",
 "dico_def": "(Homme ou animal) Redresser son corps en posant ses pieds (pattes) sur le sol.",
 "sens": 1,
-"unite": "N3-01"
+"unite": "N3-14"
 },
 "붐비다": {
 "fr": "être bondé",
@@ -5376,7 +5376,7 @@
 "dico_fr": "nature, caractère",
 "dico_def": "Caractéristique ou apparence qui est détenue à l'origine par quelque chose.",
 "sens": 2,
-"unite": "N3-01"
+"unite": "N5-12"
 },
 "사과하다": {
 "fr": "s'excuser",
@@ -5387,7 +5387,7 @@
 "dico_fr": "s'excuser, présenter ses excuses",
 "dico_def": "Admettre ses fautes et demander pardon.",
 "sens": 1,
-"unite": "N3-02"
+"unite": "N4-12"
 },
 "변명": {
 "fr": "excuse, justification",
@@ -5607,7 +5607,7 @@
 "dico_fr": "proposition, suggestion, offre",
 "dico_def": "Action de présenter une opinion ou un sujet à débattre.",
 "sens": 1,
-"unite": "N3-03"
+"unite": "N6-11"
 },
 "명령": {
 "fr": "ordre",
@@ -5761,7 +5761,7 @@
 "dico_fr": "cause, raison, motif, origine",
 "dico_def": "Acte ou événement qui a provoqué une action, ou qui a changé l'état d'une chose.",
 "sens": 1,
-"unite": "N4-03"
+"unite": "N4-14"
 },
 "증가": {
 "fr": "augmentation",
@@ -5849,7 +5849,7 @@
 "dico_fr": "à l'avance",
 "dico_def": "De manière préalable à l'arrivée de quelque chose.",
 "sens": 1,
-"unite": "N3-05"
+"unite": "N4-12"
 },
 "예약": {
 "fr": "réservation",
@@ -6014,7 +6014,7 @@
 "dico_fr": "décision, détermination, conclusion",
 "dico_def": "Fait de décider précisément la manière de faire quelque chose ; contenu de cette décision.",
 "sens": 1,
-"unite": "N3-06"
+"unite": "N4-12"
 },
 "선택": {
 "fr": "choix",
@@ -6025,7 +6025,7 @@
 "dico_fr": "choix, option, sélection",
 "dico_def": "Action de choisir ce dont on a besoin parmi plusieurs choses.",
 "sens": 1,
-"unite": "N3-06"
+"unite": "N4-12"
 },
 "확인": {
 "fr": "vérification",
@@ -6091,7 +6091,7 @@
 "dico_fr": "mémoire, souvenir",
 "dico_def": "Fait de ne pas oublier une figure, un événement, des connaissances ou une expérience du passé ou de se remémorer.",
 "sens": 1,
-"unite": "N3-06"
+"unite": "N4-11"
 },
 "잊다": {
 "fr": "oublier",
@@ -6179,7 +6179,7 @@
 "dico_fr": "erreur, faute",
 "dico_def": "Maladresse commise du fait de ne pas être bien renseigné ou de ne pas faire attention.",
 "sens": 1,
-"unite": "N3-07"
+"unite": "N4-12"
 },
 "잃어버리다": {
 "fr": "perdre",
@@ -6215,15 +6215,15 @@
 "unite": "N3-07"
 },
 "놓치다": {
-"fr": "rater, manquer",
+"fr": "rater, laisser échapper",
 "pron": "녿치다",
 "niveau": "중급",
 "origine": null,
 "pos": "동사",
-"dico_fr": "rater, manquer, louper",
-"dico_def": "A la suite d'une erreur, ne pas pouvoir réaliser ce qu'on voulait ou pouvait faire.",
-"sens": 3,
-"unite": "N3-07"
+"dico_fr": "laisser s'échapper",
+"dico_def": "Lâcher par erreur ce que l'on prenait ou tenait.",
+"sens": 1,
+"unite": "N6-09"
 },
 "깨지다": {
 "fr": "se casser",
@@ -6256,7 +6256,7 @@
 "dico_fr": "(n.) enfin, à la fin, finalement, après tout",
 "dico_def": "Dernière étape d'un travail ou d'une situation donnée.",
 "sens": 1,
-"unite": "N3-07"
+"unite": "N3-11"
 },
 "하마터면": {
 "fr": "pour un peu, faillir",
@@ -6300,7 +6300,7 @@
 "dico_fr": "regret, remords, repentir, repentance",
 "dico_def": "Action de prendre conscience d'une faute passée et de s'en vouloir.",
 "sens": 1,
-"unite": "N3-07"
+"unite": "N5-10"
 },
 "울다": {
 "fr": "pleurer",
@@ -6314,7 +6314,7 @@
 "unite": "N3-07"
 },
 "참다": {
-"fr": "se retenir, supporter",
+"fr": "supporter, se retenir",
 "pron": "참따",
 "niveau": "초급",
 "origine": null,
@@ -6322,7 +6322,7 @@
 "dico_fr": "supporter, endurer, souffrir avec patience, prendre patience, patienter, tolérer, s'abstenir de, réprimer, refréner, mettre un frein à, brider, contenir, dompter, refouler, retenir, surmonter, vaincre, se contrôler, se maîtriser, se modérer, se retenir, se contenir, se contraindre, s'empêcher de",
 "dico_def": "Contenir ses rires, ses larmes, sa douleur, sa toux, etc.",
 "sens": 1,
-"unite": "N5-06"
+"unite": "N5-11"
 },
 "방법": {
 "fr": "méthode, façon",
@@ -6333,7 +6333,7 @@
 "dico_fr": "méthode, moyen, procédé",
 "dico_def": "Moyen ou façon de procéder utilisé(e) pour faire quelque chose.",
 "sens": 1,
-"unite": "N3-08"
+"unite": "N3-11"
 },
 "순서": {
 "fr": "ordre, séquence",
@@ -6369,15 +6369,15 @@
 "unite": "N3-08"
 },
 "지키다": {
-"fr": "respecter, protéger",
+"fr": "respecter, tenir",
 "pron": "지키다",
 "niveau": "초급",
 "origine": null,
 "pos": "동사",
-"dico_fr": "défendre, protéger",
-"dico_def": "Protéger ou surveiller afin de ne pas perdre un patrimoine, des intérêts, la sécurité, etc., ou de ne pas subir d'attaque extérieure.",
-"sens": 1,
-"unite": "N3-08"
+"dico_fr": "tenir, observer, respecter, suivre",
+"dico_def": "Respecter une promesse, la loi, les règles, etc., sans les enfreindre.",
+"sens": 4,
+"unite": "N3-16"
 },
 "주의": {
 "fr": "attention, prudence",
@@ -6432,7 +6432,7 @@
 "dico_fr": "suffisamment",
 "dico_def": "D'une manière suffisante sans manquer de rien.",
 "sens": 1,
-"unite": "N3-08"
+"unite": "N4-10"
 },
 "규칙적": {
 "fr": "régulier",
@@ -6454,7 +6454,7 @@
 "dico_fr": "habitude, usage, coutume, pratique",
 "dico_def": "Manière d'agir qui s'est figée par une longue répétition.",
 "sens": 1,
-"unite": "N4-09"
+"unite": "N4-13"
 },
 "줄이다": {
 "fr": "réduire",
@@ -6465,7 +6465,7 @@
 "dico_fr": "réduire, diminuer",
 "dico_def": "Rendre plus petit que d'origine, la longueur, la largueur, le volume, etc., de quelque chose.",
 "sens": 1,
-"unite": "N3-08"
+"unite": "N4-15"
 },
 "늘리다": {
 "fr": "augmenter, accroître",
@@ -6509,7 +6509,7 @@
 "dico_fr": "s'ouvrir, être ouvert",
 "dico_def": "(Ce qui était fermé ou attaché) Être écarté ou défait.",
 "sens": 2,
-"unite": "N3-09"
+"unite": "N3-14"
 },
 "닫히다": {
 "fr": "se fermer",
@@ -6520,7 +6520,7 @@
 "dico_fr": "se fermer, fermer, être fermé, être clos, se refermer, se visser",
 "dico_def": "(Porte, couvercle, tiroir, etc. ouvert(e)) Retrouver son état initial.",
 "sens": 1,
-"unite": "N3-09"
+"unite": "N3-14"
 },
 "팔리다": {
 "fr": "se vendre",
@@ -6775,6 +6775,655 @@
 "sens": 1,
 "unite": "N3-10"
 },
+"조언": {
+"fr": "conseil",
+"pron": "조언",
+"niveau": "중급",
+"origine": "助言",
+"pos": "명사",
+"dico_fr": "recommandation, aide, avis",
+"dico_def": "Action de donner à quelqu'un des conseils en vue de l'aider ou de lui faire comprendre quelque chose ; un tel conseil.",
+"sens": 1,
+"unite": "N3-11"
+},
+"충고": {
+"fr": "conseil, avertissement",
+"pron": "충고",
+"niveau": "중급",
+"origine": "忠告",
+"pos": "명사",
+"dico_fr": "conseil",
+"dico_def": "Indication donnée avec sincérité à quelqu'un sur le défaut ou l'erreur de ce dernier ; telle parole.",
+"sens": 1,
+"unite": "N3-11"
+},
+"걱정되다": {
+"fr": "être inquiet",
+"pron": "걱쩡되다/걱쩡뒈다",
+"niveau": "없음",
+"origine": null,
+"pos": "동사",
+"dico_fr": "s'inquiéter, se tracasser, se tourmenter, s'alarmer, se préoccuper, se soucier, être inquiet",
+"dico_def": "Éprouver de l'inquiétude et de la peur par crainte qu'une mauvaise chose se produise.",
+"sens": 1,
+"unite": "N3-11"
+},
+"막차": {
+"fr": "dernier bus, dernier train",
+"pron": "막차",
+"niveau": "중급",
+"origine": "막車",
+"pos": "명사",
+"dico_fr": "dernier train, dernier bus, dernier autobus",
+"dico_def": "Véhicule assurant le dernier service de la journée.",
+"sens": 1,
+"unite": "N3-11"
+},
+"끊기다": {
+"fr": "être coupé, s'arrêter",
+"pron": "끈키다",
+"niveau": "중급",
+"origine": null,
+"pos": "동사",
+"dico_fr": "s'arrêter",
+"dico_def": "(Travail ou idée) Ne plus faire ou stopper ce qui était maintenu.",
+"sens": 3,
+"unite": "N3-11"
+},
+"재료": {
+"fr": "ingrédient, matériau",
+"pron": "재료",
+"niveau": "초급",
+"origine": "材料",
+"pos": "명사",
+"dico_fr": "ingrédient, matériau",
+"dico_def": "Ce qu'on utilise pour fabriquer quelque chose.",
+"sens": 1,
+"unite": "N3-11"
+},
+"불가피하다": {
+"fr": "inévitable",
+"pron": "불가피하다",
+"niveau": "중급",
+"origine": "不可避하다",
+"pos": "형용사",
+"dico_fr": "inévitable, inéluctable",
+"dico_def": "Qu'on ne peut éviter.",
+"sens": 1,
+"unite": "N3-11"
+},
+"그냥": {
+"fr": "simplement, comme ça",
+"pron": "그냥",
+"niveau": "초급",
+"origine": null,
+"pos": "부사",
+"dico_fr": "Comme cela",
+"dico_def": "De cette manière et continuellement.",
+"sens": 2,
+"unite": "N3-11"
+},
+"상황": {
+"fr": "situation",
+"pron": "상황",
+"niveau": "중급",
+"origine": "狀況",
+"pos": "명사",
+"dico_fr": "état, condition, situation, circonstances",
+"dico_def": "Situation ou tournure qui montre comment une chose évolue.",
+"sens": 1,
+"unite": "N5-02"
+},
+"무리하다": {
+"fr": "en faire trop, se surmener",
+"pron": "무리하다",
+"niveau": "없음",
+"origine": "無理하다",
+"pos": "동사",
+"dico_fr": "se surmener, tenter l'impossible",
+"dico_def": "Dévier de ce qui est à notre portée à cause d'un dépassement de ses limites.",
+"sens": 1,
+"unite": "N3-11"
+},
+"챙기다": {
+"fr": "prendre soin de, emporter",
+"pron": "챙기다",
+"niveau": "중급",
+"origine": null,
+"pos": "동사",
+"dico_fr": "prendre, ne pas oublier",
+"dico_def": "Ne pas manquer ni sauter.",
+"sens": 2,
+"unite": "N3-11"
+},
+"이사하다": {
+"fr": "déménager",
+"pron": "이사하다",
+"niveau": "없음",
+"origine": "移徙하다",
+"pos": "동사",
+"dico_fr": "déménager, emménager",
+"dico_def": "Quitter son lieu de vie et se déplacer vers un autre endroit.",
+"sens": 1,
+"unite": "N3-12"
+},
+"짐": {
+"fr": "bagage, affaires",
+"pron": "짐",
+"niveau": "초급",
+"origine": null,
+"pos": "명사",
+"dico_fr": "fardeau, bagage, charge, faix, cargaison, marchandise",
+"dico_def": "Objet empaqueté pour être transporté quelque part.",
+"sens": 1,
+"unite": "N3-12"
+},
+"상자": {
+"fr": "boîte, carton",
+"pron": "상자",
+"niveau": "초급",
+"origine": "箱子",
+"pos": "명사",
+"dico_fr": "boîte, caisse, coffre, coffret",
+"dico_def": "Récipient en cube fait en bois ou en carton dans le but de mettre quelque chose à l'intérieur.",
+"sens": 1,
+"unite": "N3-12"
+},
+"옮기다": {
+"fr": "déplacer, transporter",
+"pron": "옴기다",
+"niveau": "중급",
+"origine": null,
+"pos": "동사",
+"dico_fr": "déplacer, transporter, transférer, transplanter",
+"dico_def": "Faire passer quelqu'un ou quelque chose d'un lieu à un autre.",
+"sens": 1,
+"unite": "N3-12"
+},
+"월세": {
+"fr": "loyer mensuel",
+"pron": "월쎄",
+"niveau": "중급",
+"origine": "月貰",
+"pos": "명사",
+"dico_fr": "location, loyer",
+"dico_def": "Fait de louer tous les mois une maison ou une chambre ; cet argent payé.",
+"sens": 1,
+"unite": "N3-12"
+},
+"보증금": {
+"fr": "caution, dépôt de garantie",
+"pron": "보증금",
+"niveau": "고급",
+"origine": "保證金",
+"pos": "명사",
+"dico_fr": "caution",
+"dico_def": "Paiement partiel effectué venant en déduction du versement total lors d'un emprunt et versé au créancier par anticipation et à titre de gage.",
+"sens": 1,
+"unite": "N3-12"
+},
+"계약": {
+"fr": "contrat",
+"pron": "계약/게약",
+"niveau": "중급",
+"origine": "契約",
+"pos": "명사",
+"dico_fr": "contrat, accord, marché",
+"dico_def": "Engagements pris et portés dans un document écrit en termes d'obligations ou de responsabilités à assumer dans une transaction pécuniaire.",
+"sens": 1,
+"unite": "N3-12"
+},
+"집주인": {
+"fr": "propriétaire",
+"pron": "집쭈인",
+"niveau": "없음",
+"origine": "집主人",
+"pos": "명사",
+"dico_fr": "propriétaire, locateur, bailleur",
+"dico_def": "Propriétaire d'un logement.",
+"sens": 1,
+"unite": "N3-12"
+},
+"설거지": {
+"fr": "vaisselle",
+"pron": "설거지",
+"niveau": "초급",
+"origine": null,
+"pos": "명사",
+"dico_fr": "lavage de la vaisselle, vaisselle",
+"dico_def": "Fait de nettoyer et ranger la vaisselle après un repas.",
+"sens": 1,
+"unite": "N3-12"
+},
+"대신": {
+"fr": "remplacement, substitut",
+"pron": "대신",
+"niveau": "중급",
+"origine": "代身",
+"pos": "명사",
+"dico_fr": "remplacement, substitution, remplaçant, substitut, suppléant",
+"dico_def": "Se dit lorsqu’un objet est utilisé pour remplir la fonction d’un autre objet ; objet remplissant ainsi cette fonction.",
+"sens": 1,
+"unite": "N3-12"
+},
+"정리하다": {
+"fr": "ranger, mettre en ordre",
+"pron": "정니하다",
+"niveau": "없음",
+"origine": "整理하다",
+"pos": "동사",
+"dico_fr": "arranger, ranger, mettre en ordre",
+"dico_def": "Rassembler ou débarrasser quelque chose qui est dispersé ou désordonné.",
+"sens": 1,
+"unite": "N3-12"
+},
+"교통": {
+"fr": "circulation, transports",
+"pron": "교통",
+"niveau": "초급",
+"origine": "交通",
+"pos": "명사",
+"dico_fr": "circulation, trafic, transport",
+"dico_def": "Fait que des gens se déplacent ou des marchandises sont déplacées par le biais d'un moyen de transport comme une voiture, un train, un bateau, un avion, etc.",
+"sens": 1,
+"unite": "N4-03"
+},
+"표정": {
+"fr": "expression du visage",
+"pron": "표정",
+"niveau": "중급",
+"origine": "表情",
+"pos": "명사",
+"dico_fr": "expression, air, figure, mine",
+"dico_def": "Fait de laisser paraître sur le visage un sentiment ou une pensée que l'on a dans le cœur ; un tel aspect.",
+"sens": 1,
+"unite": "N4-07"
+},
+"얼굴": {
+"fr": "visage",
+"pron": "얼굴",
+"niveau": "초급",
+"origine": null,
+"pos": "명사",
+"dico_fr": "visage",
+"dico_def": "Partie antérieure de la tête, où se trouvent les yeux, le nez et la bouche",
+"sens": 1,
+"unite": "N6-05"
+},
+"기분": {
+"fr": "humeur",
+"pron": "기분",
+"niveau": "초급",
+"origine": "氣分",
+"pos": "명사",
+"dico_fr": "humeur",
+"dico_def": "État sentimental, tel que la déplaisance, la gaîté, la mélancolie, la colère, etc.",
+"sens": 1,
+"unite": "N3-13"
+},
+"행복하다": {
+"fr": "heureux",
+"pron": "행보카다",
+"niveau": "없음",
+"origine": "幸福하다",
+"pos": "형용사",
+"dico_fr": "heureux",
+"dico_def": "Être content grâce à la sensation de satisfaction et joie abondante dans la vie.",
+"sens": 1,
+"unite": "N3-13"
+},
+"슬프다": {
+"fr": "triste",
+"pron": "슬프다",
+"niveau": "초급",
+"origine": null,
+"pos": "형용사",
+"dico_fr": "triste, affligé, chagriné",
+"dico_def": "(Cœur) Douloureux et en peine, au point d'en avoir les larmes aux yeux.",
+"sens": 1,
+"unite": "N3-13"
+},
+"화나다": {
+"fr": "se fâcher",
+"pron": "화나다",
+"niveau": "초급",
+"origine": "火나다",
+"pos": "동사",
+"dico_fr": "s'énerver, se fâcher, s'irriter",
+"dico_def": "Devenir fâché à cause du mécontentement et d'une forte insatisfaction.",
+"sens": 1,
+"unite": "N3-13"
+},
+"거짓말": {
+"fr": "mensonge",
+"pron": "거진말",
+"niveau": "초급",
+"origine": null,
+"pos": "명사",
+"dico_fr": "mensonge",
+"dico_def": "Parole présentant comme vrai quelque chose qui ne l'est pas.",
+"sens": 1,
+"unite": "N4-04"
+},
+"척": {
+"fr": "apparence mensongère, semblant",
+"pron": "척",
+"niveau": "없음",
+"origine": null,
+"pos": "의존 명사",
+"dico_fr": "(Pas d'expression équivalente)",
+"dico_def": "Nom dépendant indiquant une conduite ou une apparence mensongère qui présente comme vrai ce qui ne l'est pas.",
+"sens": 1,
+"unite": "N3-13"
+},
+"눈치": {
+"fr": "tact, perspicacité",
+"pron": "눈치",
+"niveau": "중급",
+"origine": null,
+"pos": "명사",
+"dico_fr": "sens, intuition, (n.) être perspicace, avoir du nez, avoir le nez creux, avoir le nez fin",
+"dico_def": "Capacité de connaître et de comprendre la pensée ou la situation de son interlocuteur bien que ce dernier n'en parle pas.",
+"sens": 1,
+"unite": "N4-07"
+},
+"솔직하다": {
+"fr": "franc, sincère",
+"pron": "솔찌카다",
+"niveau": "중급",
+"origine": "率直하다",
+"pos": "형용사",
+"dico_fr": "franc, sincère, ouvert",
+"dico_def": "Qui n'a pas de fausseté ni d'apprêt.",
+"sens": 1,
+"unite": "N3-13"
+},
+"변화": {
+"fr": "changement",
+"pron": "변화",
+"niveau": "중급",
+"origine": "變化",
+"pos": "명사",
+"dico_fr": "changement, modification, transformation, évolution",
+"dico_def": "Fait que la forme, l'état, la propriété, etc. d'une chose devienne différent(e).",
+"sens": 1,
+"unite": "N4-07"
+},
+"어둡다": {
+"fr": "sombre",
+"pron": "어둡따",
+"niveau": "초급",
+"origine": null,
+"pos": "형용사",
+"dico_fr": "sombre, obscur, ténébreux",
+"dico_def": "Qui manque de clarté due à l’absence ou de la faible intensité de la lumière.",
+"sens": 1,
+"unite": "N3-14"
+},
+"밝다": {
+"fr": "lumineux, clair",
+"pron": "박따",
+"niveau": "초급",
+"origine": null,
+"pos": "형용사",
+"dico_fr": "clair, éclairé, radieux",
+"dico_def": "(Lumière émise par un objet) Qui est lumineux.",
+"sens": 3,
+"unite": "N5-06"
+},
+"익숙해지다": {
+"fr": "s'habituer",
+"pron": "익쑤캐지다",
+"niveau": "없음",
+"origine": null,
+"pos": "동사",
+"dico_fr": "s'habituer",
+"dico_def": "Faire l'expérience d'une chose plusieurs fois et ne plus être maladroit.",
+"sens": 1,
+"unite": "N3-14"
+},
+"붙다": {
+"fr": "réussir (un examen), coller",
+"pron": "붇따",
+"niveau": "초급",
+"origine": null,
+"pos": "동사",
+"dico_fr": "se coller, adhérer",
+"dico_def": "Être en contact avec quelque chose et ne pas s'en détacher.",
+"sens": 1,
+"unite": "N6-05"
+},
+"남다": {
+"fr": "rester",
+"pron": "남따",
+"niveau": "초급",
+"origine": null,
+"pos": "동사",
+"dico_fr": "rester",
+"dico_def": "(Reste) Se produire du fait de ne pas avoir tout consommé.",
+"sens": 1,
+"unite": "N3-14"
+},
+"벽": {
+"fr": "mur",
+"pron": "벽",
+"niveau": "초급",
+"origine": "壁",
+"pos": "명사",
+"dico_fr": "mur, muraille, rempart cloison, paroi",
+"dico_def": "Partie qui condamne fermement le pourtour d'une maison ou d'une chambre.",
+"sens": 1,
+"unite": "N3-14"
+},
+"노력": {
+"fr": "effort",
+"pron": "노력",
+"niveau": "초급",
+"origine": "努力",
+"pos": "명사",
+"dico_fr": "effort",
+"dico_def": "Fait de se donner de la peine et de travailler dur pour atteindre un objectif.",
+"sens": 1,
+"unite": "N4-05"
+},
+"지나다": {
+"fr": "passer (temps)",
+"pron": "지나다",
+"niveau": "초급",
+"origine": null,
+"pos": "동사",
+"dico_fr": "passer, couler, s'écouler",
+"dico_def": "(Temps) S'écouler et donc dépasser une periode determinée.",
+"sens": 1,
+"unite": "N3-15"
+},
+"넘다": {
+"fr": "dépasser",
+"pron": "넘따",
+"niveau": "초급",
+"origine": null,
+"pos": "동사",
+"dico_fr": "dépasser",
+"dico_def": "Arriver à s'échapper d'un certain temps, d'une certaine période, d'un certain champ, etc.",
+"sens": 1,
+"unite": "N3-15"
+},
+"매번": {
+"fr": "chaque fois",
+"pron": "매번",
+"niveau": "중급",
+"origine": "每番",
+"pos": "명사",
+"dico_fr": "(à) chaque fois, toutes les fois, toujours",
+"dico_def": "Chaque tour.",
+"sens": 1,
+"unite": "N3-15"
+},
+"졸업하다": {
+"fr": "obtenir son diplôme",
+"pron": "조러파다",
+"niveau": "없음",
+"origine": "卒業하다",
+"pos": "동사",
+"dico_fr": "finir ses études, achever ses études, terminer ses études, sortir diplômé d'une école",
+"dico_def": "(Élève ou étudiant(e)) Terminer un programme d'enseignement défini par une école ou une université.",
+"sens": 1,
+"unite": "N3-15"
+},
+"결혼하다": {
+"fr": "se marier",
+"pron": "결혼하다",
+"niveau": "없음",
+"origine": "結婚하다",
+"pos": "동사",
+"dico_fr": "se marier, épouser",
+"dico_def": "(Homme et femme) S'unir officiellement par les liens du mariage.",
+"sens": 1,
+"unite": "N3-15"
+},
+"생각나다": {
+"fr": "revenir à l'esprit",
+"pron": "생강나다",
+"niveau": "초급",
+"origine": null,
+"pos": "동사",
+"dico_fr": "venir à l'esprit, revenir",
+"dico_def": "(Nouvelle idée) Se manifester chez quelqu'un.",
+"sens": 1,
+"unite": "N3-15"
+},
+"오랜만": {
+"fr": "longtemps (après)",
+"pron": "오랜만",
+"niveau": "초급",
+"origine": null,
+"pos": "명사",
+"dico_fr": "(n.) après longtemps",
+"dico_def": "Moment après une longue période depuis que quelque chose s’est produit.",
+"sens": 1,
+"unite": "N3-15"
+},
+"세월": {
+"fr": "temps, années",
+"pron": "세월",
+"niveau": "중급",
+"origine": "歲月",
+"pos": "명사",
+"dico_fr": "temps",
+"dico_def": "Temps qui s'écoule.",
+"sens": 1,
+"unite": "N3-15"
+},
+"추억": {
+"fr": "souvenir",
+"pron": "추억",
+"niveau": "중급",
+"origine": "追憶",
+"pos": "명사",
+"dico_fr": "souvenir, mémoire",
+"dico_def": "Action de penser à ce qui s'est passé autrefois ; une telle pensée ou une telle chose.",
+"sens": 1,
+"unite": "N4-11"
+},
+"결심": {
+"fr": "décision ferme",
+"pron": "결씸",
+"niveau": "초급",
+"origine": "決心",
+"pos": "명사",
+"dico_fr": "résolution, détermination, décision",
+"dico_def": "Fait d'être fermement déterminé à faire quelque chose ; cet état d'esprit.",
+"sens": 1,
+"unite": "N6-01"
+},
+"목표": {
+"fr": "objectif",
+"pron": "목표",
+"niveau": "중급",
+"origine": "目標",
+"pos": "명사",
+"dico_fr": "objectif",
+"dico_def": "Chose concrète à atteindre pour réaliser un but.",
+"sens": 1,
+"unite": "N4-05"
+},
+"새해": {
+"fr": "nouvelle année",
+"pron": "새해",
+"niveau": "초급",
+"origine": null,
+"pos": "명사",
+"dico_fr": "nouvelle année, nouvel an",
+"dico_def": "Année qui commence.",
+"sens": 1,
+"unite": "N3-16"
+},
+"끊다": {
+"fr": "arrêter (une habitude)",
+"pron": "끈타",
+"niveau": "초급",
+"origine": null,
+"pos": "동사",
+"dico_fr": "arrêter",
+"dico_def": "Faire cesser ou stopper un travail ou une idée.",
+"sens": 3,
+"unite": "N3-16"
+},
+"저축하다": {
+"fr": "épargner",
+"pron": "저추카다",
+"niveau": "없음",
+"origine": "貯蓄하다",
+"pos": "동사",
+"dico_fr": "épargner, mettre en réserve",
+"dico_def": "Faire des économies d'argent, de biens, etc. et les mettre de côté.",
+"sens": 1,
+"unite": "N3-16"
+},
+"다이어트": {
+"fr": "régime",
+"pron": null,
+"niveau": "초급",
+"origine": "diet",
+"pos": "명사",
+"dico_fr": "régime (diététique)",
+"dico_def": "Fait de manger en contrôlant le type et la quantité d'aliments, pour la santé ou pour la beauté.",
+"sens": 1,
+"unite": "N3-16"
+},
+"칭찬": {
+"fr": "compliment, éloge",
+"pron": "칭찬",
+"niveau": "초급",
+"origine": "稱讚",
+"pos": "명사",
+"dico_fr": "compliment, éloge, louange",
+"dico_def": "Action d'adresser une parole pour féliciter très fort un mérite, un accomplissement positif, etc.",
+"sens": 1,
+"unite": "N3-16"
+},
+"겸손하다": {
+"fr": "modeste",
+"pron": "겸손하다",
+"niveau": "없음",
+"origine": "謙遜/謙巽하다",
+"pos": "형용사",
+"dico_fr": "modeste, humble, sans prétentions",
+"dico_def": "Qui a une attitude respectueuse des autres et fait preuve d’humilité.",
+"sens": 1,
+"unite": "N3-16"
+},
+"포기하다": {
+"fr": "renoncer",
+"pron": "포기하다",
+"niveau": "없음",
+"origine": "抛棄하다",
+"pos": "동사",
+"dico_fr": "abandonner, enterrer, renoncer",
+"dico_def": "Laisser tomber à mi-chemin ce que l'on était en train de faire ou de penser.",
+"sens": 1,
+"unite": "N5-11"
+},
 "장점": {
 "fr": "avantage, point fort",
 "pron": "장쩜",
@@ -6850,7 +7499,7 @@
 "dico_fr": "solution, résolution, règlement, arrangement",
 "dico_def": "(Évènement, problème, tâche, etc.) Action de bien régler et de terminer.",
 "sens": 1,
-"unite": "N4-01"
+"unite": "N4-13"
 },
 "방안": {
 "fr": "mesure, moyen",
@@ -6938,7 +7587,7 @@
 "dico_fr": "gratuité",
 "dico_def": "(n.) Sans frais.",
 "sens": 1,
-"unite": "N4-01"
+"unite": "N5-13"
 },
 "통계": {
 "fr": "statistiques",
@@ -6949,7 +7598,7 @@
 "dico_fr": "statistiques",
 "dico_def": "Fait d'exprimer en chiffres le total d'un nombre ou d'un nombre de fois d'un cas particulier, selon un système défini.",
 "sens": 2,
-"unite": "N4-02"
+"unite": "N6-11"
 },
 "그래프": {
 "fr": "graphique",
@@ -7127,17 +7776,6 @@
 "sens": 2,
 "unite": "N4-03"
 },
-"교통": {
-"fr": "circulation, transports",
-"pron": "교통",
-"niveau": "초급",
-"origine": "交通",
-"pos": "명사",
-"dico_fr": "circulation, trafic, transport",
-"dico_def": "Fait que des gens se déplacent ou des marchandises sont déplacées par le biais d'un moyen de transport comme une voiture, un train, un bateau, un avion, etc.",
-"sens": 1,
-"unite": "N4-03"
-},
 "막히다": {
 "fr": "être bouché, embouteillé",
 "pron": "마키다",
@@ -7202,7 +7840,7 @@
 "dico_fr": "dommage, préjudice, dégâts",
 "dico_def": "Fait d'être l'objet d'une perte qui porte atteinte à la vie, au physique, aux biens, à l'honneur, etc. ; une telle perte.",
 "sens": 1,
-"unite": "N4-03"
+"unite": "N4-14"
 },
 "책임": {
 "fr": "responsabilité",
@@ -7224,7 +7862,7 @@
 "dico_fr": "jugement, décision",
 "dico_def": "Fait de fixer une idée sur une chose, selon une logique ou un critère.",
 "sens": 1,
-"unite": "N4-04"
+"unite": "N6-07"
 },
 "추측": {
 "fr": "supposition",
@@ -7235,7 +7873,7 @@
 "dico_fr": "présomption, supposition",
 "dico_def": "Action de présumer en se fondant sur un fait ou une chose visible.",
 "sens": 1,
-"unite": "N4-04"
+"unite": "N5-09"
 },
 "사실": {
 "fr": "fait, réalité",
@@ -7245,17 +7883,6 @@
 "pos": "명사",
 "dico_fr": "réalité, fait",
 "dico_def": "Chose qui s'était passée ou qui se passe réellement.",
-"sens": 1,
-"unite": "N4-04"
-},
-"거짓말": {
-"fr": "mensonge",
-"pron": "거진말",
-"niveau": "초급",
-"origine": null,
-"pos": "명사",
-"dico_fr": "mensonge",
-"dico_def": "Parole présentant comme vrai quelque chose qui ne l'est pas.",
 "sens": 1,
 "unite": "N4-04"
 },
@@ -7290,7 +7917,7 @@
 "dico_fr": "possibilité, chance, éventualité, probabilité",
 "dico_def": "Nature d'une chose susceptible de se réaliser dans le futur.",
 "sens": 1,
-"unite": "N4-04"
+"unite": "N5-09"
 },
 "확률": {
 "fr": "probabilité",
@@ -7312,7 +7939,7 @@
 "dico_fr": "naturel, normal, juste, correct, impartial, inévitable, raisonnable, équitable",
 "dico_def": "Naturellement ainsi, si l'on examine la raison.",
 "sens": 1,
-"unite": "N4-04"
+"unite": "N5-09"
 },
 "분명하다": {
 "fr": "clair, évident",
@@ -7402,28 +8029,6 @@
 "sens": 3,
 "unite": "N4-05"
 },
-"노력": {
-"fr": "effort",
-"pron": "노력",
-"niveau": "초급",
-"origine": "努力",
-"pos": "명사",
-"dico_fr": "effort",
-"dico_def": "Fait de se donner de la peine et de travailler dur pour atteindre un objectif.",
-"sens": 1,
-"unite": "N4-05"
-},
-"목표": {
-"fr": "objectif",
-"pron": "목표",
-"niveau": "중급",
-"origine": "目標",
-"pos": "명사",
-"dico_fr": "objectif",
-"dico_def": "Chose concrète à atteindre pour réaliser un but.",
-"sens": 1,
-"unite": "N4-05"
-},
 "정직하다": {
 "fr": "honnête",
 "pron": "정지카다",
@@ -7488,7 +8093,7 @@
 "dico_fr": "marcher, aller à pied, se rendre à pied",
 "dico_def": "Avancer vers une destination en faisant l'usage de ses jambes.",
 "sens": 1,
-"unite": "N4-05"
+"unite": "N5-11"
 },
 "들르다": {
 "fr": "passer (chez)",
@@ -7524,7 +8129,7 @@
 "unite": "N4-05"
 },
 "동시": {
-"fr": "simultanéité",
+"fr": "simultanéité, en même temps",
 "pron": "동시",
 "niveau": "초급",
 "origine": "同時",
@@ -7532,7 +8137,7 @@
 "dico_fr": "(n.) en même temps, à la fois, simultanément",
 "dico_def": "Même moment.",
 "sens": 1,
-"unite": "N4-05"
+"unite": "N5-10"
 },
 "마침": {
 "fr": "justement",
@@ -7587,7 +8192,7 @@
 "dico_fr": "valeur",
 "dico_def": "Prix ou valeur marchande.",
 "sens": 1,
-"unite": "N4-06"
+"unite": "N5-10"
 },
 "소용": {
 "fr": "utilité",
@@ -7686,7 +8291,7 @@
 "dico_fr": "attente, espérance, espoir",
 "dico_def": "Action d'attendre et d'espérer la réalisation de quelque chose.",
 "sens": 1,
-"unite": "N5-02"
+"unite": "N6-08"
 },
 "별로": {
 "fr": "pas particulièrement, pas vraiment",
@@ -7710,17 +8315,6 @@
 "sens": 4,
 "unite": "N4-06"
 },
-"표정": {
-"fr": "expression du visage",
-"pron": "표정",
-"niveau": "중급",
-"origine": "表情",
-"pos": "명사",
-"dico_fr": "expression, air, figure, mine",
-"dico_def": "Fait de laisser paraître sur le visage un sentiment ou une pensée que l'on a dans le cœur ; un tel aspect.",
-"sens": 1,
-"unite": "N4-07"
-},
 "태도": {
 "fr": "attitude",
 "pron": "태도",
@@ -7730,7 +8324,7 @@
 "dico_fr": "attitude",
 "dico_def": "Manière de bouger son corps ou attitude manifeste face à une chose.",
 "sens": 1,
-"unite": "N5-04"
+"unite": "N5-12"
 },
 "반응": {
 "fr": "réaction",
@@ -7741,18 +8335,7 @@
 "dico_fr": "réaction",
 "dico_def": "Fait de montrer une certaine action ou attitude face à une stimulation ; une telle action ou attitude.",
 "sens": 1,
-"unite": "N4-07"
-},
-"눈치": {
-"fr": "tact, perspicacité",
-"pron": "눈치",
-"niveau": "중급",
-"origine": null,
-"pos": "명사",
-"dico_fr": "sens, intuition, (n.) être perspicace, avoir du nez, avoir le nez creux, avoir le nez fin",
-"dico_def": "Capacité de connaître et de comprendre la pensée ou la situation de son interlocuteur bien que ce dernier n'en parle pas.",
-"sens": 1,
-"unite": "N4-07"
+"unite": "N5-09"
 },
 "짐작": {
 "fr": "supposition, estimation",
@@ -7809,19 +8392,8 @@
 "sens": 1,
 "unite": "N4-07"
 },
-"변화": {
-"fr": "changement",
-"pron": "변화",
-"niveau": "중급",
-"origine": "變化",
-"pos": "명사",
-"dico_fr": "changement, modification, transformation, évolution",
-"dico_def": "Fait que la forme, l'état, la propriété, etc. d'une chose devienne différent(e).",
-"sens": 1,
-"unite": "N4-07"
-},
 "행동": {
-"fr": "comportement, action",
+"fr": "comportement",
 "pron": "행동",
 "niveau": "초급",
 "origine": "行動",
@@ -7829,7 +8401,7 @@
 "dico_fr": "action, comportement, conduite, mouvement",
 "dico_def": "Fait d'effectuer une tâche ou un geste en bougeant son corps.",
 "sens": 1,
-"unite": "N4-07"
+"unite": "N5-12"
 },
 "침묵": {
 "fr": "silence",
@@ -7840,7 +8412,7 @@
 "dico_fr": "silence, mutisme",
 "dico_def": "Fait d'être silencieux, sans rien dire ; un tel état.",
 "sens": 1,
-"unite": "N4-07"
+"unite": "N6-08"
 },
 "모습": {
 "fr": "apparence, allure",
@@ -7852,17 +8424,6 @@
 "dico_def": "Traits d'une personne ou d'un objet.",
 "sens": 1,
 "unite": "N4-07"
-},
-"상황": {
-"fr": "situation",
-"pron": "상황",
-"niveau": "중급",
-"origine": "狀況",
-"pos": "명사",
-"dico_fr": "état, condition, situation, circonstances",
-"dico_def": "Situation ou tournure qui montre comment une chose évolue.",
-"sens": 1,
-"unite": "N5-02"
 },
 "관찰": {
 "fr": "observation",
@@ -7895,7 +8456,7 @@
 "dico_fr": "base, fond, fondement, motif, raison",
 "dico_def": "Fait d'être le fondement d'une  chose ou d'une opinion ; une cause.",
 "sens": 2,
-"unite": "N4-08"
+"unite": "N5-09"
 },
 "결론": {
 "fr": "conclusion",
@@ -8093,7 +8654,7 @@
 "dico_fr": "manque, insuffisance",
 "dico_def": "Fait d’être insuffisant ou inférieur à la quantité ou au niveau requis.",
 "sens": 1,
-"unite": "N4-09"
+"unite": "N5-13"
 },
 "스트레스": {
 "fr": "stress",
@@ -8126,7 +8687,7 @@
 "dico_fr": "naturel",
 "dico_def": "Ce qui n'a pas été forcé et n'est pas étrange.",
 "sens": 1,
-"unite": "N4-09"
+"unite": "N5-12"
 },
 "흔하다": {
 "fr": "commun, fréquent",
@@ -8160,6 +8721,721 @@
 "dico_def": "Remettre en état ce qui était en panne ou hors d'usage.",
 "sens": 1,
 "unite": "N4-09"
+},
+"노력하다": {
+"fr": "faire des efforts",
+"pron": "노려카다",
+"niveau": "없음",
+"origine": "努力하다",
+"pos": "동사",
+"dico_fr": "faire des efforts, se donner de la peine, se donner du mal, peiner, s'ingénier à, s'efforcer de",
+"dico_def": "Se donner de la peine et faire des efforts en vue de réaliser un objectif.",
+"sens": 1,
+"unite": "N5-04"
+},
+"보람": {
+"fr": "satisfaction, récompense morale",
+"pron": "보람",
+"niveau": "중급",
+"origine": null,
+"pos": "명사",
+"dico_fr": "sentiment de satisfaction, gratification",
+"dico_def": "Bon résultat ou sentiment de satisfaction qu'on reçoit après l'accomplissement de quelque chose.",
+"sens": 1,
+"unite": "N4-10"
+},
+"대가": {
+"fr": "prix, contrepartie",
+"pron": "대까",
+"niveau": "중급",
+"origine": "代價",
+"pos": "명사",
+"dico_fr": "prix",
+"dico_def": "Somme d'argent qu'on verse comme prix d'un produit.",
+"sens": 4,
+"unite": "N4-10"
+},
+"철저히": {
+"fr": "méticuleusement",
+"pron": "철쩌히",
+"niveau": "중급",
+"origine": "徹底히",
+"pos": "부사",
+"dico_fr": "parfaitement et méticuleusement",
+"dico_def": "De manière très prudente et méticuleuse pour mener une affaire.",
+"sens": 1,
+"unite": "N4-10"
+},
+"감동적": {
+"fr": "émouvant",
+"pron": "감동적",
+"niveau": "중급",
+"origine": "感動的",
+"pos": "명사",
+"dico_fr": "(n.) émouvant, touchant, impressionnant",
+"dico_def": "Fait de toucher profondément quelqu'un en provoquant une forte émotion.",
+"sens": 1,
+"unite": "N4-10"
+},
+"눈물": {
+"fr": "larme",
+"pron": "눈물",
+"niveau": "초급",
+"origine": null,
+"pos": "명사",
+"dico_fr": "larme, pleurs",
+"dico_def": "Liquide clair qui coule des yeux d'un homme ou d'un animal.",
+"sens": 1,
+"unite": "N4-10"
+},
+"중요하다": {
+"fr": "important",
+"pron": "중요하다",
+"niveau": "없음",
+"origine": "重要하다",
+"pos": "형용사",
+"dico_fr": "important, grave, sérieux",
+"dico_def": "Qui est précieux et absolument indispensable.",
+"sens": 1,
+"unite": "N4-10"
+},
+"성과": {
+"fr": "résultat, performance",
+"pron": "성꽈",
+"niveau": "중급",
+"origine": "成果",
+"pos": "명사",
+"dico_fr": "résultat, fruit",
+"dico_def": "Résultat de l'accomplissement de quelque chose.",
+"sens": 1,
+"unite": "N4-10"
+},
+"보상": {
+"fr": "compensation, récompense",
+"pron": "보상",
+"niveau": "중급",
+"origine": "報償",
+"pos": "명사",
+"dico_fr": "récompense, paiement, rétribution",
+"dico_def": "Action de gratifier quelqu'un en remerciement d' un travail, d'un service rendu, ou d'un bienfait reçu.",
+"sens": 2,
+"unite": "N4-10"
+},
+"투자": {
+"fr": "investissement",
+"pron": "투자",
+"niveau": "중급",
+"origine": "投資",
+"pos": "명사",
+"dico_fr": "investissement",
+"dico_def": "Fait de fournir de l'argent, de son temps ou des efforts dans un travail ou un projet pour obtenir du profit.",
+"sens": 1,
+"unite": "N4-10"
+},
+"정도": {
+"fr": "degré, niveau",
+"pron": "정도",
+"niveau": "초급",
+"origine": "程度",
+"pos": "명사",
+"dico_fr": "degré, mesure",
+"dico_def": "Quantité ou niveau indiquant le bon ou le mauvais ou le plus ou le moins pour évaluer la nature ou la valeur d'une chose.",
+"sens": 2,
+"unite": "N4-10"
+},
+"비례": {
+"fr": "proportion",
+"pron": "비례",
+"niveau": "고급",
+"origine": "比例",
+"pos": "명사",
+"dico_fr": "proportion, raison",
+"dico_def": "Changement régulier d'un nombre ou d'une quantité, en fonction du changement d'un(e) autre nombre ou quantité.",
+"sens": 1,
+"unite": "N4-10"
+},
+"유년": {
+"fr": "enfance",
+"pron": "유년",
+"niveau": "없음",
+"origine": "幼年",
+"pos": "명사",
+"dico_fr": "enfance",
+"dico_def": "Moment où l'on est jeune en âge.",
+"sens": 1,
+"unite": "N4-11"
+},
+"사라지다": {
+"fr": "disparaître",
+"pron": "사라지다",
+"niveau": "중급",
+"origine": null,
+"pos": "동사",
+"dico_fr": "disparaître",
+"dico_def": "(Vie) S'interrompre.",
+"sens": 3,
+"unite": "N4-11"
+},
+"옛날": {
+"fr": "passé, ancien temps",
+"pron": "옌날",
+"niveau": "초급",
+"origine": null,
+"pos": "명사",
+"dico_fr": "passé, ancien temps",
+"dico_def": "Jours s’étant écoulés il y a très longtemps.",
+"sens": 1,
+"unite": "N4-11"
+},
+"골목": {
+"fr": "ruelle",
+"pron": "골목",
+"niveau": "중급",
+"origine": null,
+"pos": "명사",
+"dico_fr": "ruelle, allée, passage",
+"dico_def": "Espace long et étroit séparant les bâtiments d'habitation.",
+"sens": 1,
+"unite": "N4-11"
+},
+"사진첩": {
+"fr": "album photo",
+"pron": "사진첩",
+"niveau": "중급",
+"origine": "寫眞帖",
+"pos": "명사",
+"dico_fr": "album de photos, album-photo",
+"dico_def": "Livre permettant de conserver des photos en les collant (sur les pages vierges) ou les insérant (dans des pochettes sur chaque page).",
+"sens": 1,
+"unite": "N4-11"
+},
+"떠오르다": {
+"fr": "revenir à l'esprit",
+"pron": "떠오르다",
+"niveau": "중급",
+"origine": null,
+"pos": "동사",
+"dico_fr": "se rappeler, se souvenir, se remémorer, venir à l'esprit",
+"dico_def": "(Mémoire ou pensée) Revenir à l'esprit ou en tête.",
+"sens": 2,
+"unite": "N4-11"
+},
+"예전": {
+"fr": "autrefois",
+"pron": "예전",
+"niveau": "고급",
+"origine": null,
+"pos": "명사",
+"dico_fr": "(n.) autrefois",
+"dico_def": "Temps reculé, il y a assez longtemps.",
+"sens": 1,
+"unite": "N4-11"
+},
+"첫사랑": {
+"fr": "premier amour",
+"pron": "첟싸랑",
+"niveau": "중급",
+"origine": null,
+"pos": "명사",
+"dico_fr": "(Pas d'expression équivalente)",
+"dico_def": "Premier amour.",
+"sens": 1,
+"unite": "N4-11"
+},
+"시절": {
+"fr": "époque, période",
+"pron": "시절",
+"niveau": "중급",
+"origine": "時節",
+"pos": "명사",
+"dico_fr": "époque, années, âge, période, enfance, jeunesse",
+"dico_def": "Temps ou moment spécifique.",
+"sens": 1,
+"unite": "N4-11"
+},
+"되돌리다": {
+"fr": "faire revenir, rétablir",
+"pron": "되돌리다/뒈돌리다",
+"niveau": "중급",
+"origine": null,
+"pos": "동사",
+"dico_fr": "retourner en arrière, revenir sur ses pas, s'en retourner, ramener (le temps) en arrière",
+"dico_def": "Faire avancer dans le sens opposé à la direction initiale.",
+"sens": 1,
+"unite": "N4-11"
+},
+"후회하다": {
+"fr": "regretter",
+"pron": "후회하다/후훼하다",
+"niveau": "없음",
+"origine": "後悔하다",
+"pos": "동사",
+"dico_fr": "regretter",
+"dico_def": "Se reprocher d'avoir commis une faute après avoir reconnu en être l'auteur.",
+"sens": 1,
+"unite": "N5-02"
+},
+"아쉽다": {
+"fr": "regrettable, dommage",
+"pron": "아쉽따",
+"niveau": "중급",
+"origine": null,
+"pos": "형용사",
+"dico_fr": "regrettable",
+"dico_def": "(Quelque chose) Regrettable et déplorable, ayant encore du regret.",
+"sens": 2,
+"unite": "N5-02"
+},
+"그때": {
+"fr": "à ce moment-là",
+"pron": "그때",
+"niveau": "초급",
+"origine": null,
+"pos": "명사",
+"dico_fr": "ce moment-là, cette époque, ce temps-là",
+"dico_def": "Un moment mentionné auparavant.",
+"sens": 1,
+"unite": "N4-12"
+},
+"반성": {
+"fr": "réflexion sur soi, examen de conscience",
+"pron": "반성",
+"niveau": "중급",
+"origine": "反省",
+"pos": "명사",
+"dico_fr": "réflexion, autocritique",
+"dico_def": "Fait de méditer sur ses paroles ou son action pour examiner son erreur ou pour la comprendre et se repentir",
+"sens": 1,
+"unite": "N4-12"
+},
+"과거": {
+"fr": "passé",
+"pron": "과거",
+"niveau": "초급",
+"origine": "過去",
+"pos": "명사",
+"dico_fr": "passé",
+"dico_def": "Temps passé.",
+"sens": 2,
+"unite": "N4-12"
+},
+"교훈": {
+"fr": "leçon, enseignement",
+"pron": "교훈",
+"niveau": "중급",
+"origine": "敎訓",
+"pos": "명사",
+"dico_fr": "leçon, instruction",
+"dico_def": "Action d’enseigner ce qui peut être utile ou guider à avoir un bon comportement.",
+"sens": 2,
+"unite": "N6-06"
+},
+"경고": {
+"fr": "avertissement",
+"pron": "경고",
+"niveau": "중급",
+"origine": "警告",
+"pos": "명사",
+"dico_fr": "avertissement",
+"dico_def": "Action de prévenir quelqu’un d’un danger, afin qu’il y prenne garde ou l'évite ; une telle prévention.",
+"sens": 1,
+"unite": "N5-07"
+},
+"고민하다": {
+"fr": "s'inquiéter, se tourmenter",
+"pron": "고민하다",
+"niveau": "없음",
+"origine": "苦悶하다",
+"pos": "동사",
+"dico_fr": "s'inquiéter",
+"dico_def": "Se tourmenter et être préoccupé à cause des soucis.",
+"sens": 1,
+"unite": "N4-13"
+},
+"해치다": {
+"fr": "nuire, abîmer",
+"pron": "해치다",
+"niveau": "중급",
+"origine": "害치다",
+"pos": "동사",
+"dico_fr": "nuire à quelque chose",
+"dico_def": "Causer des dégâts à un état pour le détériorer.",
+"sens": 1,
+"unite": "N4-13"
+},
+"결석": {
+"fr": "absence (en classe)",
+"pron": "결썩",
+"niveau": "초급",
+"origine": "缺席",
+"pos": "명사",
+"dico_fr": "absence, absentéisme",
+"dico_def": "Fait de ne pas se présenter à une occasion solennelle, comme à l’école ou à une réunion.",
+"sens": 1,
+"unite": "N4-13"
+},
+"배탈": {
+"fr": "indigestion",
+"pron": "배탈",
+"niveau": "초급",
+"origine": "배頉",
+"pos": "명사",
+"dico_fr": "troubles digestifs, indigestion, diarrhée",
+"dico_def": "Fait d'avoir mal au ventre ou de tomber malade, d'indigestion ou de diarrhée, à cause de ce que l'on a mangé.",
+"sens": 1,
+"unite": "N4-13"
+},
+"과로": {
+"fr": "surmenage",
+"pron": "과로",
+"niveau": "중급",
+"origine": "過勞",
+"pos": "명사",
+"dico_fr": "surmenage, excès de travail, excès de fatigue",
+"dico_def": "Fait de travailler jusqu'à l'épuisement physique ; fatigue extrême qui en résulte.",
+"sens": 1,
+"unite": "N4-13"
+},
+"위험하다": {
+"fr": "dangereux",
+"pron": "위험하다",
+"niveau": "없음",
+"origine": "危險하다",
+"pos": "형용사",
+"dico_fr": "dangereux",
+"dico_def": "Qui n'est pas sécurisé, avec des risques de se voir causer du tort ou se blesser.",
+"sens": 1,
+"unite": "N4-13"
+},
+"대책": {
+"fr": "mesure, contre-mesure",
+"pron": "대책",
+"niveau": "중급",
+"origine": "對策",
+"pos": "명사",
+"dico_fr": "mesure spécifique, disposition particulière",
+"dico_def": "Moyen pris pour faire face à une situation difficile.",
+"sens": 1,
+"unite": "N4-13"
+},
+"예방": {
+"fr": "prévention",
+"pron": "예방",
+"niveau": "중급",
+"origine": "豫防",
+"pos": "명사",
+"dico_fr": "prévention",
+"dico_def": "Fait de prévenir une maladie ou un accident.",
+"sens": 1,
+"unite": "N5-01"
+},
+"방치하다": {
+"fr": "laisser à l'abandon, négliger",
+"pron": "방치하다",
+"niveau": "없음",
+"origine": "放置하다",
+"pos": "동사",
+"dico_fr": "abandonner, négliger, délaisser",
+"dico_def": "Laisser quelque chose ou quelqu'un tel quel dans l'indifférence.",
+"sens": 1,
+"unite": "N4-13"
+},
+"심각하다": {
+"fr": "grave, sérieux",
+"pron": "심가카다",
+"niveau": "중급",
+"origine": "深刻하다",
+"pos": "형용사",
+"dico_fr": "grave, sérieux",
+"dico_def": "(État ou degré) Très profond, désespéré ou important.",
+"sens": 1,
+"unite": "N4-13"
+},
+"당장": {
+"fr": "tout de suite",
+"pron": "당장",
+"niveau": "중급",
+"origine": "當場",
+"pos": "명사",
+"dico_fr": "tout de suite",
+"dico_def": "Heure suivant la survenue d'un évènement.",
+"sens": 2,
+"unite": "N4-13"
+},
+"폭우": {
+"fr": "pluie torrentielle",
+"pron": "포구",
+"niveau": "중급",
+"origine": "暴雨",
+"pos": "명사",
+"dico_fr": "orage, averse",
+"dico_def": "Pluie qui tombe subitement et abondamment.",
+"sens": 1,
+"unite": "N4-14"
+},
+"홍수": {
+"fr": "inondation",
+"pron": "홍수",
+"niveau": "중급",
+"origine": null,
+"pos": "명사",
+"dico_fr": "inondation, déluge",
+"dico_def": "Eau de fleuve ou de rivière dont le débit s'est accru considérablement de manière brutale en raison de précipitations importantes.",
+"sens": 1,
+"unite": "N4-14"
+},
+"통제": {
+"fr": "contrôle, restriction",
+"pron": "통제",
+"niveau": "고급",
+"origine": "統制",
+"pos": "명사",
+"dico_fr": "contrôle, restriction",
+"dico_def": "Fait de limiter une action selon une directive ou un but.",
+"sens": 1,
+"unite": "N4-14"
+},
+"화재": {
+"fr": "incendie",
+"pron": "화재",
+"niveau": "중급",
+"origine": "火災",
+"pos": "명사",
+"dico_fr": "incendie, feu",
+"dico_def": "Malheur ou sinistre entraînant la destruction d'un logement ou d'objets par le feu.",
+"sens": 1,
+"unite": "N4-14"
+},
+"발견하다": {
+"fr": "découvrir",
+"pron": "발견하다",
+"niveau": "없음",
+"origine": "發見하다",
+"pos": "동사",
+"dico_fr": "découvrir",
+"dico_def": "Trouver pour la première fois quelque chose qu'on n'avait pas encore trouvé ou qui n'était pas connu au monde.",
+"sens": 1,
+"unite": "N4-14"
+},
+"설계하다": {
+"fr": "concevoir, dessiner",
+"pron": "설계하다/설게하다",
+"niveau": "없음",
+"origine": "設計하다",
+"pos": "동사",
+"dico_fr": "dessiner, planifier, tracer un plan",
+"dico_def": "Établir un plan sur l'architecture, le génie civile, la machinerie, etc. ou réaliser un plan sur le papier, etc.",
+"sens": 2,
+"unite": "N4-14"
+},
+"건축가": {
+"fr": "architecte",
+"pron": "건축까",
+"niveau": "고급",
+"origine": "建築家",
+"pos": "명사",
+"dico_fr": "architecte",
+"dico_def": "Personne dotée de connaissances et de techniques spécialisées dans l'architecture et qui travaille dans ce domaine.",
+"sens": 1,
+"unite": "N4-14"
+},
+"체포하다": {
+"fr": "arrêter (une personne)",
+"pron": "체포하다",
+"niveau": "없음",
+"origine": "逮捕하다",
+"pos": "동사",
+"dico_fr": "arrêter",
+"dico_def": "Appréhender une personne ayant commis un crime ou une personne soupçonnée d'un crime.",
+"sens": 1,
+"unite": "N4-14"
+},
+"시민": {
+"fr": "citoyen",
+"pron": "시민",
+"niveau": "초급",
+"origine": "市民",
+"pos": "명사",
+"dico_fr": "citoyen(ne)",
+"dico_def": "Personne qui vit dans une même ville (que ses concitoyens).",
+"sens": 1,
+"unite": "N4-14"
+},
+"오염": {
+"fr": "pollution",
+"pron": "오염",
+"niveau": "중급",
+"origine": "汚染",
+"pos": "명사",
+"dico_fr": "pollution, contamination, souillure, salissure",
+"dico_def": "Fait de devenir sale.",
+"sens": 1,
+"unite": "N4-14"
+},
+"조사하다": {
+"fr": "enquêter",
+"pron": "조사하다",
+"niveau": "없음",
+"origine": "調査하다",
+"pos": "동사",
+"dico_fr": "effectuer une enquête sur, effectuer des investigations sur, étudier",
+"dico_def": "Examiner ou regarder attentivement le contenu d'une affaire ou d'une chose.",
+"sens": 1,
+"unite": "N4-14"
+},
+"복구": {
+"fr": "rétablissement, reconstruction",
+"pron": "복꾸",
+"niveau": "고급",
+"origine": "復舊",
+"pos": "명사",
+"dico_fr": "réparation, reconstruction",
+"dico_def": "Fait de remettre en état une chose qui est tombée en panne ou de reconstruire quelque chose qui a été détruit.",
+"sens": 1,
+"unite": "N4-14"
+},
+"봉사": {
+"fr": "service, bénévolat",
+"pron": "봉사",
+"niveau": "중급",
+"origine": "奉仕",
+"pos": "명사",
+"dico_fr": "service, bénévolat",
+"dico_def": "Action de travailler avec dévouement pour les autres sans penser à ses propres intérêts.",
+"sens": 2,
+"unite": "N4-15"
+},
+"참여하다": {
+"fr": "participer",
+"pron": "차며하다",
+"niveau": "없음",
+"origine": "參與하다",
+"pos": "동사",
+"dico_fr": "participer, prendre part, s'associer, se rallier",
+"dico_def": "Travailler avec d'autres en intervenant dans une tâche que plusieurs personnes accomplissent collectivement.",
+"sens": 1,
+"unite": "N4-15"
+},
+"환경": {
+"fr": "environnement",
+"pron": "환경",
+"niveau": "중급",
+"origine": "環境",
+"pos": "명사",
+"dico_fr": "environnement",
+"dico_def": "État ou condition de la nature qui influence la vie de tous les êtres vivants.",
+"sens": 1,
+"unite": "N4-15"
+},
+"보호하다": {
+"fr": "protéger",
+"pron": "보호하다",
+"niveau": "없음",
+"origine": "保護하다",
+"pos": "동사",
+"dico_fr": "prendre quelqu'un sous sa protection, prendre quelqu'un sous sa tutelle, sauvegarder",
+"dico_def": "Protéger et prendre soin de quelqu’un ou de quelque chose afin de le mettre à l'abri d'un danger ou d'une difficulté.",
+"sens": 1,
+"unite": "N5-05"
+},
+"일회용품": {
+"fr": "produit jetable",
+"pron": "일회용품/일훼용품",
+"niveau": "중급",
+"origine": "一回用品",
+"pos": "명사",
+"dico_fr": "produit jetable, jetable, à usage unique",
+"dico_def": "Produit utilitaire conçu de façon à être jeté après un seul usage.",
+"sens": 1,
+"unite": "N4-15"
+},
+"재활용": {
+"fr": "recyclage",
+"pron": "재화룡",
+"niveau": "중급",
+"origine": "再活用",
+"pos": "명사",
+"dico_fr": "recyclage",
+"dico_def": "Action d'utiliser ou de faire utiliser de nouveau un produit jetable pour un autre usage.",
+"sens": 1,
+"unite": "N4-15"
+},
+"이루다": {
+"fr": "réaliser, accomplir",
+"pron": "이루다",
+"niveau": "중급",
+"origine": null,
+"pos": "동사",
+"dico_fr": "réaliser, atteindre",
+"dico_def": "Obtenir le résultat souhaité.",
+"sens": 2,
+"unite": "N4-15"
+},
+"무례하다": {
+"fr": "impoli",
+"pron": "무례하다",
+"niveau": "없음",
+"origine": "無禮하다",
+"pos": "형용사",
+"dico_fr": "impoli, incongru, insolent",
+"dico_def": "Qui n'a pas de respect dans ses paroles ou son comportement.",
+"sens": 1,
+"unite": "N5-07"
+},
+"부끄럽다": {
+"fr": "honteux",
+"pron": "부끄럽따",
+"niveau": "초급",
+"origine": null,
+"pos": "형용사",
+"dico_fr": "honteux, déshonorant, indigne",
+"dico_def": "Qui est honteux, qui n'est pas digne.",
+"sens": 2,
+"unite": "N4-15"
+},
+"답답하다": {
+"fr": "étouffant, frustrant",
+"pron": "답따파다",
+"niveau": "초급",
+"origine": null,
+"pos": "형용사",
+"dico_fr": "étouffant, suffocant, asphyxiant",
+"dico_def": "Qui donne l'impression d’étouffer ou d'avoir du mal à respirer.",
+"sens": 1,
+"unite": "N5-06"
+},
+"지역": {
+"fr": "région, quartier",
+"pron": "지역",
+"niveau": "중급",
+"origine": "地域",
+"pos": "명사",
+"dico_fr": "région, zone, coin, quartier",
+"dico_def": "Terrain dont l'étendue est divisée selon certains critères ou caractéristiques.",
+"sens": 1,
+"unite": "N4-15"
+},
+"책임감": {
+"fr": "sens des responsabilités",
+"pron": "채김감",
+"niveau": "중급",
+"origine": "責任感",
+"pos": "명사",
+"dico_fr": "sens des responsabilités",
+"dico_def": "Conscience consistant à considérer une tâche prise en charge ou un devoir comme important.",
+"sens": 1,
+"unite": "N5-04"
+},
+"실천하다": {
+"fr": "mettre en pratique",
+"pron": "실천하다",
+"niveau": "없음",
+"origine": "實踐하다",
+"pos": "동사",
+"dico_fr": "mettre en pratique, exercer, exécuter",
+"dico_def": "Appliquer une théorie, un plan ou une idée par des actions réelles.",
+"sens": 1,
+"unite": "N4-15"
 },
 "운": {
 "fr": "chance, sort",
@@ -8282,17 +9558,6 @@
 "sens": 2,
 "unite": "N5-01"
 },
-"예방": {
-"fr": "prévention",
-"pron": "예방",
-"niveau": "중급",
-"origine": "豫防",
-"pos": "명사",
-"dico_fr": "prévention",
-"dico_def": "Fait de prévenir une maladie ou un accident.",
-"sens": 1,
-"unite": "N5-01"
-},
 "미처": {
 "fr": "préalablement, à temps (avec négation)",
 "pron": "미처",
@@ -8359,28 +9624,6 @@
 "sens": 1,
 "unite": "N5-02"
 },
-"아쉽다": {
-"fr": "regrettable, dommage",
-"pron": "아쉽따",
-"niveau": "중급",
-"origine": null,
-"pos": "형용사",
-"dico_fr": "regrettable",
-"dico_def": "(Quelque chose) Regrettable et déplorable, ayant encore du regret.",
-"sens": 2,
-"unite": "N5-02"
-},
-"후회하다": {
-"fr": "regretter",
-"pron": "후회하다/후훼하다",
-"niveau": "없음",
-"origine": "後悔하다",
-"pos": "동사",
-"dico_fr": "regretter",
-"dico_def": "Se reprocher d'avoir commis une faute après avoir reconnu en être l'auteur.",
-"sens": 1,
-"unite": "N5-02"
-},
 "과정": {
 "fr": "processus",
 "pron": "과정",
@@ -8401,7 +9644,7 @@
 "dico_fr": "(adv.) jusqu'à la fin, jusqu'au dernier moment",
 "dico_def": "Tout le temps, jusqu'au bout.",
 "sens": 1,
-"unite": "N5-02"
+"unite": "N6-08"
 },
 "어차피": {
 "fr": "de toute façon",
@@ -8524,17 +9767,6 @@
 "sens": 1,
 "unite": "N5-03"
 },
-"포기하다": {
-"fr": "abandonner",
-"pron": "포기하다",
-"niveau": "없음",
-"origine": "抛棄하다",
-"pos": "동사",
-"dico_fr": "abandonner, enterrer, renoncer",
-"dico_def": "Laisser tomber à mi-chemin ce que l'on était en train de faire ou de penser.",
-"sens": 1,
-"unite": "N5-03"
-},
 "선호": {
 "fr": "préférence",
 "pron": "선호",
@@ -8612,17 +9844,6 @@
 "sens": 1,
 "unite": "N5-04"
 },
-"책임감": {
-"fr": "sens des responsabilités",
-"pron": "채김감",
-"niveau": "중급",
-"origine": "責任感",
-"pos": "명사",
-"dico_fr": "sens des responsabilités",
-"dico_def": "Conscience consistant à considérer une tâche prise en charge ou un devoir comme important.",
-"sens": 1,
-"unite": "N5-04"
-},
 "의무": {
 "fr": "obligation, devoir",
 "pron": "의무",
@@ -8686,17 +9907,6 @@
 "pos": "동사",
 "dico_fr": "changer, être changé, être modifié, subir une modification, se transformer, se modifier, varier",
 "dico_def": "Devenir différent.",
-"sens": 1,
-"unite": "N5-04"
-},
-"노력하다": {
-"fr": "faire des efforts",
-"pron": "노려카다",
-"niveau": "없음",
-"origine": "努力하다",
-"pos": "동사",
-"dico_fr": "faire des efforts, se donner de la peine, se donner du mal, peiner, s'ingénier à, s'efforcer de",
-"dico_def": "Se donner de la peine et faire des efforts en vue de réaliser un objectif.",
 "sens": 1,
 "unite": "N5-04"
 },
@@ -8788,17 +9998,6 @@
 "sens": 1,
 "unite": "N5-05"
 },
-"보호하다": {
-"fr": "protéger",
-"pron": "보호하다",
-"niveau": "없음",
-"origine": "保護하다",
-"pos": "동사",
-"dico_fr": "prendre quelqu'un sous sa protection, prendre quelqu'un sous sa tutelle, sauvegarder",
-"dico_def": "Protéger et prendre soin de quelqu’un ou de quelque chose afin de le mettre à l'abri d'un danger ou d'une difficulté.",
-"sens": 1,
-"unite": "N5-05"
-},
 "절약": {
 "fr": "économie, épargne",
 "pron": "저략",
@@ -8811,7 +10010,7 @@
 "unite": "N5-05"
 },
 "비용": {
-"fr": "coût, frais",
+"fr": "coût",
 "pron": "비용",
 "niveau": "중급",
 "origine": "費用",
@@ -8819,7 +10018,7 @@
 "dico_fr": "coût, frais, dépense",
 "dico_def": "Somme d'argent qu'on emploie à quelque chose.",
 "sens": 1,
-"unite": "N5-05"
+"unite": "N6-11"
 },
 "뛰어나다": {
 "fr": "remarquable, excellent",
@@ -8984,18 +10183,7 @@
 "dico_fr": "être fatigué",
 "dico_def": "Ne plus avoir de force après avoir effectué un travail dur ou être épuisé par une tâche.",
 "sens": 1,
-"unite": "N5-06"
-},
-"답답하다": {
-"fr": "étouffant, frustrant",
-"pron": "답따파다",
-"niveau": "초급",
-"origine": null,
-"pos": "형용사",
-"dico_fr": "étouffant, suffocant, asphyxiant",
-"dico_def": "Qui donne l'impression d’étouffer ou d'avoir du mal à respirer.",
-"sens": 1,
-"unite": "N5-06"
+"unite": "N6-10"
 },
 "짜증": {
 "fr": "énervement",
@@ -9017,17 +10205,6 @@
 "dico_fr": "insatisfaction, mécontentement",
 "dico_def": "Fait de ne pas être content, de ne pas être satisfait.",
 "sens": 1,
-"unite": "N5-06"
-},
-"밝다": {
-"fr": "lumineux, clair",
-"pron": "박따",
-"niveau": "초급",
-"origine": null,
-"pos": "형용사",
-"dico_fr": "clair, éclairé, radieux",
-"dico_def": "(Lumière émise par un objet) Qui est lumineux.",
-"sens": 3,
 "unite": "N5-06"
 },
 "핑계": {
@@ -9082,17 +10259,6 @@
 "pos": "동사",
 "dico_fr": "lancer, envoyer, projeter",
 "dico_def": "Faire partir en l'air un objet tenu dans ses mains en bougeant ses bras.",
-"sens": 1,
-"unite": "N5-07"
-},
-"무례하다": {
-"fr": "impoli",
-"pron": "무례하다",
-"niveau": "없음",
-"origine": "無禮하다",
-"pos": "형용사",
-"dico_fr": "impoli, incongru, insolent",
-"dico_def": "Qui n'a pas de respect dans ses paroles ou son comportement.",
 "sens": 1,
 "unite": "N5-07"
 },
@@ -9159,17 +10325,6 @@
 "pos": "명사",
 "dico_fr": "danger, risque",
 "dico_def": "Fait de ne pas être en sécurité, avec des risques de se voir causer du tort ou se blesser ; un tel état.",
-"sens": 1,
-"unite": "N5-07"
-},
-"경고": {
-"fr": "avertissement",
-"pron": "경고",
-"niveau": "중급",
-"origine": "警告",
-"pos": "명사",
-"dico_fr": "avertissement",
-"dico_def": "Action de prévenir quelqu’un d’un danger, afin qu’il y prenne garde ou l'évite ; une telle prévention.",
 "sens": 1,
 "unite": "N5-07"
 },
@@ -9360,6 +10515,732 @@
 "sens": 1,
 "unite": "N5-08"
 },
+"그럴듯하다": {
+"fr": "plausible",
+"pron": "그럴뜨타다",
+"niveau": "없음",
+"origine": null,
+"pos": "형용사",
+"dico_fr": "vraisemblable, convenable, plausible",
+"dico_def": "Qui est conforme à la raison et compréhensible.",
+"sens": 1,
+"unite": "N5-09"
+},
+"실제로": {
+"fr": "réellement",
+"pron": "실쩨로",
+"niveau": "중급",
+"origine": "實際로",
+"pos": "부사",
+"dico_fr": "(Pas d'expression équivalente)",
+"dico_def": "Avec réalisme, sans fard ni artifice ; réellement.",
+"sens": 1,
+"unite": "N5-09"
+},
+"시도하다": {
+"fr": "essayer, tenter",
+"pron": "시도하다",
+"niveau": "없음",
+"origine": "試圖하다",
+"pos": "동사",
+"dico_fr": "tenter, essayer",
+"dico_def": "Planifier ou agir pour réaliser quelque chose.",
+"sens": 1,
+"unite": "N5-09"
+},
+"상식": {
+"fr": "sens commun",
+"pron": "상식",
+"niveau": "중급",
+"origine": "常識",
+"pos": "명사",
+"dico_fr": "sens commun, bon sens, connaissance élémentaire",
+"dico_def": "Connaissance ou faculté de jugement dont chacun est censé disposer normalement.",
+"sens": 1,
+"unite": "N5-09"
+},
+"짐작하다": {
+"fr": "présumer",
+"pron": "짐자카다",
+"niveau": "없음",
+"origine": "斟酌하다",
+"pos": "동사",
+"dico_fr": "supposer, conjecturer, présumer, induire",
+"dico_def": "Imaginer grossièrement des raisons ou des circonstances.",
+"sens": 1,
+"unite": "N6-07"
+},
+"이해하다": {
+"fr": "comprendre",
+"pron": "이해하다",
+"niveau": "없음",
+"origine": "理解하다",
+"pos": "동사",
+"dico_fr": "comprendre, prendre conscience, assimiler",
+"dico_def": "Se rendre compte d'une chose ; bien connaître une chose et l'accepter.",
+"sens": 1,
+"unite": "N5-09"
+},
+"입장": {
+"fr": "position, point de vue",
+"pron": "입짱",
+"niveau": "중급",
+"origine": "立場",
+"pos": "명사",
+"dico_fr": "position, place",
+"dico_def": "Circonstance ou situation devant laquelle on se trouve à un moment donné ; attitude que l’on prend dans une telle situation.",
+"sens": 2,
+"unite": "N6-04"
+},
+"의심": {
+"fr": "doute, soupçon",
+"pron": "의심",
+"niveau": "중급",
+"origine": "疑心",
+"pos": "명사",
+"dico_fr": "doute, soupçon, suspicion, méfiance",
+"dico_def": "État d'esprit d'une personne qui n'est pas sûre ou qui n'arrive pas à croire quelque chose.",
+"sens": 1,
+"unite": "N5-09"
+},
+"믿음": {
+"fr": "confiance, foi",
+"pron": "미듬",
+"niveau": "중급",
+"origine": null,
+"pos": "명사",
+"dico_fr": "confiance, foi",
+"dico_def": "Sentiment de se fier à quelque chose ou à quelqu'un.",
+"sens": 1,
+"unite": "N5-09"
+},
+"비로소": {
+"fr": "enfin, seulement alors",
+"pron": "비로소",
+"niveau": "중급",
+"origine": null,
+"pos": "부사",
+"dico_fr": "pour la première fois, c'est seulement (maintement ou aujourd'hui), ce n'est que",
+"dico_def": "(Chose qui n'avait pas changé jusque là) Mais qui, à l'occasion d'un événement, change.",
+"sens": 1,
+"unite": "N5-10"
+},
+"겨우": {
+"fr": "à peine, tout juste",
+"pron": "겨우",
+"niveau": "중급",
+"origine": null,
+"pos": "부사",
+"dico_fr": "(adv.) à peine, difficilement, péniblement, tout juste, de justesse",
+"dico_def": "D'une manière très difficile.",
+"sens": 1,
+"unite": "N5-10"
+},
+"소중하다": {
+"fr": "précieux",
+"pron": "소중하다",
+"niveau": "초급",
+"origine": "所重하다",
+"pos": "형용사",
+"dico_fr": "cher",
+"dico_def": "Qui est très précieux.",
+"sens": 1,
+"unite": "N5-10"
+},
+"깨닫다": {
+"fr": "se rendre compte",
+"pron": "깨닫따",
+"niveau": "중급",
+"origine": null,
+"pos": "동사",
+"dico_fr": "réaliser, comprendre, percer",
+"dico_def": "Se rendre compte de la nature d'une chose, d'une raison, d'une vérité, etc. suite à une réflexion profonde.",
+"sens": 1,
+"unite": "N6-04"
+},
+"잃다": {
+"fr": "perdre",
+"pron": "일타",
+"niveau": "초급",
+"origine": null,
+"pos": "동사",
+"dico_fr": "perdre, égarer",
+"dico_def": "Ne plus être en possession d'un objet qui a disparu sans que l'on ne s'en rende compte.",
+"sens": 1,
+"unite": "N5-10"
+},
+"대학원": {
+"fr": "école doctorale, master",
+"pron": "대하권",
+"niveau": "초급",
+"origine": "大學院",
+"pos": "명사",
+"dico_fr": "études universitaires du cycle supérieur, deuxième et troisième cycle universitaire, école doctorale",
+"dico_def": "Institution où les étudiants diplômés du premier cycle reçoivent une formation spécialisée et effectuent des recherches.",
+"sens": 1,
+"unite": "N5-10"
+},
+"병행하다": {
+"fr": "mener de front",
+"pron": "병행하다",
+"niveau": "없음",
+"origine": "竝行하다",
+"pos": "동사",
+"dico_fr": "aller de pair avec, faire deux choses parallèlement, mener deux affaires de front",
+"dico_def": "Mener deux ou plusieurs choses en même temps.",
+"sens": 1,
+"unite": "N5-10"
+},
+"한편": {
+"fr": "d'un autre côté",
+"pron": "한편",
+"niveau": "중급",
+"origine": "한便",
+"pos": "명사",
+"dico_fr": "même côté, même clan, même groupe",
+"dico_def": "Même équipe.",
+"sens": 1,
+"unite": "N5-10"
+},
+"반성하다": {
+"fr": "réfléchir sur soi-même",
+"pron": "반성하다",
+"niveau": "없음",
+"origine": "反省하다",
+"pos": "동사",
+"dico_fr": "regretter, réfléchir sur soi-même",
+"dico_def": "Revenir sur ses propos et actes pour réfléchir à ses fautes ou en exprimer des regrets.",
+"sens": 1,
+"unite": "N5-10"
+},
+"균형": {
+"fr": "équilibre",
+"pron": "균형",
+"niveau": "중급",
+"origine": "均衡",
+"pos": "명사",
+"dico_fr": "équilibre, impartialité",
+"dico_def": "État de ce qui est stable sans inclinaison ou penchant d'un quelconque côté.",
+"sens": 1,
+"unite": "N6-10"
+},
+"오히려": {
+"fr": "plutôt, au contraire",
+"pron": "오히려",
+"niveau": "중급",
+"origine": null,
+"pos": "부사",
+"dico_fr": "(adv.) au contraire, en revanche, encore davantage",
+"dico_def": "De manière à être complètement différent ou le contraire d'une prévision ou d'une attente générale.",
+"sens": 1,
+"unite": "N5-11"
+},
+"인내심": {
+"fr": "patience",
+"pron": "인내심",
+"niveau": "고급",
+"origine": "忍耐心",
+"pos": "명사",
+"dico_fr": "patience, endurance, persévérance",
+"dico_def": "État d’esprit apte à supporter et endurer les peines ou les difficultés.",
+"sens": 1,
+"unite": "N5-11"
+},
+"끼니": {
+"fr": "repas",
+"pron": "끼니",
+"niveau": "고급",
+"origine": null,
+"pos": "명사",
+"dico_fr": "repas",
+"dico_def": "Fait de manger tous les jours à des heures fixes ; aliment ainsi consommé.",
+"sens": 1,
+"unite": "N5-11"
+},
+"손해": {
+"fr": "perte, préjudice",
+"pron": "손해",
+"niveau": "중급",
+"origine": "損害",
+"pos": "명사",
+"dico_fr": "perte, dommage, préjudice, dégât",
+"dico_def": "Action de perdre de l'argent, des richesses, etc. ou subir des dommages psychologiques.",
+"sens": 1,
+"unite": "N6-01"
+},
+"비효율적": {
+"fr": "inefficace",
+"pron": "비효율쩍",
+"niveau": "없음",
+"origine": "非效率的",
+"pos": "명사",
+"dico_fr": "(n.) inefficace",
+"dico_def": "Ce qui donne un résultat insatisfaisant par rapport aux efforts fournis.",
+"sens": 1,
+"unite": "N5-11"
+},
+"낭비": {
+"fr": "gaspillage",
+"pron": "낭비",
+"niveau": "중급",
+"origine": "浪費",
+"pos": "명사",
+"dico_fr": "gaspillage, prodigalité, gâchage, perte, dilapidation, dépenses désordonnées",
+"dico_def": "Action de gaspiller du temps, de l'argent, des objets, etc., sans se contrôler.",
+"sens": 1,
+"unite": "N5-11"
+},
+"선택하다": {
+"fr": "choisir",
+"pron": "선태카다",
+"niveau": "없음",
+"origine": "選擇하다",
+"pos": "동사",
+"dico_fr": "sélectionner, choisir",
+"dico_def": "Sélectionner et choisir ce qui est nécessaire parmi plusieurs.",
+"sens": 1,
+"unite": "N5-11"
+},
+"대안": {
+"fr": "alternative",
+"pron": "대안",
+"niveau": "고급",
+"origine": "代案",
+"pos": "명사",
+"dico_fr": "alternative, mesure, solution",
+"dico_def": "proposition faite pour en remplacer une autre.",
+"sens": 1,
+"unite": "N5-11"
+},
+"불평": {
+"fr": "plainte, récrimination",
+"pron": "불평",
+"niveau": "중급",
+"origine": "不平",
+"pos": "명사",
+"dico_fr": "mécontentement, plainte",
+"dico_def": "Fait de ne pas être content de quelqu’un ou de quelque chose ; expression du mécontentement par des paroles.",
+"sens": 1,
+"unite": "N5-11"
+},
+"사랑스럽다": {
+"fr": "adorable",
+"pron": "사랑스럽따",
+"niveau": "중급",
+"origine": null,
+"pos": "형용사",
+"dico_fr": "adorable",
+"dico_def": "Mignon, au point de provoquer de l'affection.",
+"sens": 1,
+"unite": "N5-12"
+},
+"걱정스럽다": {
+"fr": "inquiétant",
+"pron": "걱쩡스럽따",
+"niveau": "중급",
+"origine": null,
+"pos": "형용사",
+"dico_fr": "inquiet, préoccupé, soucieux",
+"dico_def": "Qui a peur et est anxieux, craignant quelque chose.",
+"sens": 1,
+"unite": "N5-12"
+},
+"자랑스럽다": {
+"fr": "dont on est fier",
+"pron": "자랑스럽따",
+"niveau": "중급",
+"origine": null,
+"pos": "형용사",
+"dico_fr": "fier",
+"dico_def": "(Personne ou chose) Dont on peut se vanter.",
+"sens": 1,
+"unite": "N5-12"
+},
+"부담스럽다": {
+"fr": "pesant, gênant",
+"pron": "부담스럽따",
+"niveau": "중급",
+"origine": "負擔스럽다",
+"pos": "형용사",
+"dico_fr": "pesant, gênant",
+"dico_def": "(Tâche ou situation) Qui devient difficie à supporter.",
+"sens": 1,
+"unite": "N5-12"
+},
+"어른스럽다": {
+"fr": "mûr pour son âge",
+"pron": "어른스럽따",
+"niveau": "없음",
+"origine": null,
+"pos": "형용사",
+"dico_fr": "enfant-adulte?",
+"dico_def": "Dont le comportement ou la pensée a un aspect mature malgré son jeune âge.",
+"sens": 1,
+"unite": "N5-12"
+},
+"고집스럽다": {
+"fr": "têtu, obstiné",
+"pron": "고집쓰럽따",
+"niveau": "없음",
+"origine": "固執스럽다",
+"pos": "형용사",
+"dico_fr": "têtu, entêté, obstiné",
+"dico_def": "Qui ne sait pas plier sa pensée ou son opinion, et a une attitude très butée.",
+"sens": 1,
+"unite": "N5-12"
+},
+"아름답다": {
+"fr": "beau",
+"pron": "아름답따",
+"niveau": "초급",
+"origine": null,
+"pos": "형용사",
+"dico_fr": "beau, charmant,élégant, ravissant, éblouissant, raffiné",
+"dico_def": "(Chose vue, voix, couleur, etc.) Pouvant donner du plaisir et de la satisfaction aux yeux et aux oreilles.",
+"sens": 1,
+"unite": "N5-12"
+},
+"정답다": {
+"fr": "chaleureux, affectueux",
+"pron": "정답따",
+"niveau": "고급",
+"origine": "情답다",
+"pos": "형용사",
+"dico_fr": "affectueux, doux, tendre",
+"dico_def": "Qui donne une impression chaleureuse et intime.",
+"sens": 1,
+"unite": "N5-12"
+},
+"전문가": {
+"fr": "expert, spécialiste",
+"pron": "전문가",
+"niveau": "중급",
+"origine": "專門家",
+"pos": "명사",
+"dico_fr": "spécialiste, expert(e)",
+"dico_def": "Personne qui a beaucoup de connaissances, d'expériences et de techniques dans un domaine déterminé.",
+"sens": 1,
+"unite": "N5-12"
+},
+"인상": {
+"fr": "impression",
+"pron": "인상",
+"niveau": "중급",
+"origine": "人相",
+"pos": "명사",
+"dico_fr": "impression, air, présentation, physionomie, mine, traits, apparence",
+"dico_def": "Physionomie du visage humain.",
+"sens": 1,
+"unite": "N5-12"
+},
+"불가능": {
+"fr": "impossibilité",
+"pron": "불가능",
+"niveau": "중급",
+"origine": "不可能",
+"pos": "명사",
+"dico_fr": "impossibilité",
+"dico_def": "Ce qui ne peut être réalisé ou ce que l’on ne peut faire.",
+"sens": 1,
+"unite": "N5-13"
+},
+"불편": {
+"fr": "inconfort, incommodité",
+"pron": "불편",
+"niveau": "초급",
+"origine": "不便",
+"pos": "명사",
+"dico_fr": "inconfort, incommodité, gêne",
+"dico_def": "Fait de ne pas être facile à utiliser.",
+"sens": 1,
+"unite": "N5-13"
+},
+"불규칙": {
+"fr": "irrégularité",
+"pron": "불규칙",
+"niveau": "중급",
+"origine": "不規則",
+"pos": "명사",
+"dico_fr": "irrégularité",
+"dico_def": "Fait de ne pas être conforme à la régularité ; manque de régularité.",
+"sens": 1,
+"unite": "N5-13"
+},
+"무관심": {
+"fr": "indifférence",
+"pron": "무관심",
+"niveau": "중급",
+"origine": "無關心",
+"pos": "명사",
+"dico_fr": "indiffférence, détachement, insouciance, insensibilité, désintérêt",
+"dico_def": "Absence d’intérêt ou d’attention.",
+"sens": 1,
+"unite": "N5-13"
+},
+"무책임": {
+"fr": "irresponsabilité",
+"pron": "무채김",
+"niveau": "중급",
+"origine": null,
+"pos": "명사",
+"dico_fr": "irresponsabilité",
+"dico_def": "État de celui (ou celle) ou de ce qui n’a pas le sens des responsabilités dans son travail ou les affaires le concernant.",
+"sens": 1,
+"unite": "N5-13"
+},
+"비공개": {
+"fr": "non-public, huis clos",
+"pron": "비공개",
+"niveau": "없음",
+"origine": "非公開",
+"pos": "명사",
+"dico_fr": "huit clos",
+"dico_def": "Fait de ne pas annoncer ou révéler un fait ou un contenu à l’extérieur.",
+"sens": 1,
+"unite": "N5-13"
+},
+"비정규직": {
+"fr": "travail temporaire, emploi précaire",
+"pron": "비정규직",
+"niveau": "없음",
+"origine": "非正規職",
+"pos": "명사",
+"dico_fr": "travail temporaire, contrat à durée déterminé",
+"dico_def": "Poste ou fonction pour lesquels la durée du contrat de travail ou les avantages sociaux ne sont pas entièrement garantis.",
+"sens": 1,
+"unite": "N5-13"
+},
+"비현실적": {
+"fr": "irréaliste",
+"pron": "비현실쩍",
+"niveau": "없음",
+"origine": "非現實的",
+"pos": "명사",
+"dico_fr": "(n.) irréaliste, irréel, irréalisable",
+"dico_def": "Ce qui n’existe pas ou qui ne peut pas se réaliser.",
+"sens": 1,
+"unite": "N5-13"
+},
+"미완성": {
+"fr": "inachèvement",
+"pron": "미완성",
+"niveau": "없음",
+"origine": "未完成",
+"pos": "명사",
+"dico_fr": "inachèvement",
+"dico_def": "Ce qui n'est pas encore terminé.",
+"sens": 1,
+"unite": "N5-13"
+},
+"미성년자": {
+"fr": "mineur",
+"pron": "미성년자",
+"niveau": "중급",
+"origine": "未成年者",
+"pos": "명사",
+"dico_fr": "mineur(e)",
+"dico_def": "Personne qui n'est pas encore adulte légalement.",
+"sens": 1,
+"unite": "N5-13"
+},
+"미해결": {
+"fr": "non résolu",
+"pron": "미해결",
+"niveau": "없음",
+"origine": "未解決",
+"pos": "명사",
+"dico_fr": "(n.) non résolu",
+"dico_def": "Fait qu'il n'y ait pas encore de solution à une chose.",
+"sens": 1,
+"unite": "N5-13"
+},
+"정규직": {
+"fr": "emploi permanent",
+"pron": "정규직",
+"niveau": "고급",
+"origine": "正規職",
+"pos": "명사",
+"dico_fr": "contrat à durée indéterminée",
+"dico_def": "Poste ou fonction à plein temps pour lequel(laquelle) l'emploi est garanti jusqu'à un âge déterminé.",
+"sens": 1,
+"unite": "N5-13"
+},
+"완성": {
+"fr": "achèvement",
+"pron": "완성",
+"niveau": "중급",
+"origine": "完成",
+"pos": "명사",
+"dico_fr": "achèvement, accomplissement",
+"dico_def": "Fait de réaliser complètement.",
+"sens": 1,
+"unite": "N5-13"
+},
+"의성어": {
+"fr": "onomatopée",
+"pron": "의성어",
+"niveau": "고급",
+"origine": "擬聲語",
+"pos": "명사",
+"dico_fr": "onomatopée",
+"dico_def": "Terme imitant le son émis par une personne, un animal, un objet, etc.",
+"sens": 1,
+"unite": "N5-14"
+},
+"의태어": {
+"fr": "idéophone (forme, mouvement)",
+"pron": "의태어",
+"niveau": "고급",
+"origine": "擬態語",
+"pos": "명사",
+"dico_fr": "idéophone",
+"dico_def": "Mot imitant la forme ou le mouvement d'une personne, d'un animal, d'un objet, etc.",
+"sens": 1,
+"unite": "N5-14"
+},
+"반짝반짝": {
+"fr": "en scintillant",
+"pron": "반짝빤짝",
+"niveau": "중급",
+"origine": null,
+"pos": "부사",
+"dico_fr": "en scintillant, en clignotant, en brillant",
+"dico_def": "Idéophone exprimant la manière dont une petite lumière s'allume et s'éteint momentanément et alternativement.",
+"sens": 1,
+"unite": "N5-14"
+},
+"두근두근": {
+"fr": "en battant fortement (cœur)",
+"pron": "두근두근",
+"niveau": "없음",
+"origine": null,
+"pos": "부사",
+"dico_fr": "(Pas d'expression équivalente)",
+"dico_def": "Idéophone indiquant la manière dont le coeur bat fortement, rapidement et en continu sous l'effet de la surprise, de l'anxiété ou de l' attente.",
+"sens": 1,
+"unite": "N5-14"
+},
+"살금살금": {
+"fr": "silencieusement, à pas de loup",
+"pron": "살금살금",
+"niveau": "고급",
+"origine": null,
+"pos": "부사",
+"dico_fr": "(Pas d'expression équivalente)",
+"dico_def": "Idéophone indiquant la manière de continuer de se déplacer silencieusement, avec précaution et tel que personne ne le remarque en regardant autour de soi.",
+"sens": 1,
+"unite": "N5-14"
+},
+"엉금엉금": {
+"fr": "en rampant lentement",
+"pron": "엉그멍금",
+"niveau": "고급",
+"origine": null,
+"pos": "부사",
+"dico_fr": "(Pas d'expression équivalente)",
+"dico_def": "Idéophone illustrant la manière dont on marche à grands pas ou rampe lentement.",
+"sens": 1,
+"unite": "N5-14"
+},
+"쿨쿨": {
+"fr": "profondément (dormir)",
+"pron": "쿨쿨",
+"niveau": "중급",
+"origine": null,
+"pos": "부사",
+"dico_fr": "(Pas d'expression équivalente)",
+"dico_def": "Onomatopée reflétant le son émis lorsque l'on respire fort quand l'on dort profondément ; idéophone décrivant un tel aspect.",
+"sens": 1,
+"unite": "N5-14"
+},
+"똑똑": {
+"fr": "toc toc",
+"pron": "똑똑",
+"niveau": "고급",
+"origine": null,
+"pos": "부사",
+"dico_fr": "toc toc, ploc ploc, plic plic",
+"dico_def": "Onomatopée décrivant un petit objet ou une goutte d'eau qui tombe de manière répétitive ;  idéophone décrivant cette manière de tomber.",
+"sens": 1,
+"unite": "N5-14"
+},
+"멍멍": {
+"fr": "ouaf ouaf",
+"pron": "멍멍",
+"niveau": "중급",
+"origine": null,
+"pos": "부사",
+"dico_fr": "ouaf ouaf",
+"dico_def": "Onomatopée illustrant l'aboiement d'un chien.",
+"sens": 1,
+"unite": "N5-14"
+},
+"야옹": {
+"fr": "miaou",
+"pron": "야옹",
+"niveau": "중급",
+"origine": null,
+"pos": "부사",
+"dico_fr": "miaou",
+"dico_def": "Onomatopée évoquant le miaulement du chat.",
+"sens": 1,
+"unite": "N5-14"
+},
+"두드리다": {
+"fr": "frapper, taper",
+"pron": "두드리다",
+"niveau": "중급",
+"origine": null,
+"pos": "동사",
+"dico_fr": "frapper, battre, cogner, taper",
+"dico_def": "Donner à plusieurs reprises des coups sur quelque chose ou à quelqu'un au point de faire un bruit.",
+"sens": 1,
+"unite": "N5-14"
+},
+"빛나다": {
+"fr": "briller",
+"pron": "빈나다",
+"niveau": "중급",
+"origine": null,
+"pos": "동사",
+"dico_fr": "éclairer, briller",
+"dico_def": "(Lumière) Émettre une forte lumière.",
+"sens": 1,
+"unite": "N5-14"
+},
+"기어가다": {
+"fr": "ramper",
+"pron": "기어가다/기여가다",
+"niveau": "고급",
+"origine": null,
+"pos": "동사",
+"dico_fr": "ramper, progresser sur le ventre",
+"dico_def": "Aller quelque part en rampant.",
+"sens": 1,
+"unite": "N5-14"
+},
+"흉내": {
+"fr": "imitation",
+"pron": "흉내",
+"niveau": "중급",
+"origine": null,
+"pos": "명사",
+"dico_fr": "imitation",
+"dico_def": "Reproduction de la voix, du bruit, du comportement, etc. de quelqu'un ou d'un animal.",
+"sens": 1,
+"unite": "N5-14"
+},
+"생생하다": {
+"fr": "vivant, frais",
+"pron": "생생하다",
+"niveau": "중급",
+"origine": null,
+"pos": "형용사",
+"dico_fr": "frais",
+"dico_def": "Qui n'est pas fané, ni abîmé mais bien vivant.",
+"sens": 1,
+"unite": "N5-14"
+},
 "각오": {
 "fr": "résolution, détermination",
 "pron": "가고",
@@ -9368,17 +11249,6 @@
 "pos": "명사",
 "dico_fr": "résolution, décision, détermination",
 "dico_def": "Etat d'un individu prêt à affronter une épreuve.",
-"sens": 1,
-"unite": "N6-01"
-},
-"결심": {
-"fr": "décision ferme",
-"pron": "결씸",
-"niveau": "초급",
-"origine": "決心",
-"pos": "명사",
-"dico_fr": "résolution, détermination, décision",
-"dico_def": "Fait d'être fermement déterminé à faire quelque chose ; cet état d'esprit.",
 "sens": 1,
 "unite": "N6-01"
 },
@@ -9402,18 +11272,7 @@
 "dico_fr": "foi, conviction",
 "dico_def": "Forte croyance dans une idée ; volonté dans l'effort de réaliser cette idée.",
 "sens": 1,
-"unite": "N6-01"
-},
-"손해": {
-"fr": "perte, préjudice",
-"pron": "손해",
-"niveau": "중급",
-"origine": "損害",
-"pos": "명사",
-"dico_fr": "perte, dommage, préjudice, dégât",
-"dico_def": "Action de perdre de l'argent, des richesses, etc. ou subir des dommages psychologiques.",
-"sens": 1,
-"unite": "N6-01"
+"unite": "N6-07"
 },
 "가난하다": {
 "fr": "pauvre",
@@ -9600,18 +11459,18 @@
 "dico_fr": "regrettable, pitoyable",
 "dico_def": "Être attristé et se sentir frustré du fait que quelque chose ne marche pas comme on le veut ou le fait que quelqu'un ou quelque chose fait pitié et est malheureux.",
 "sens": 1,
-"unite": "N6-02"
+"unite": "N6-08"
 },
 "벅차다": {
-"fr": "accablant, débordant",
+"fr": "accablant, au-delà de ses forces",
 "pron": "벅차다",
 "niveau": "고급",
 "origine": null,
 "pos": "형용사",
-"dico_fr": "profondément ému",
-"dico_def": "(Coeur) Qui déborde d'émotions, de joie ou d'espoir.",
-"sens": 2,
-"unite": "N6-02"
+"dico_fr": "qui dépasse les forces de quelqu'un, qui est au-dessus des forces de quelqu'un",
+"dico_def": "Qui est difficile à faire ou à supporter.",
+"sens": 1,
+"unite": "N6-10"
 },
 "감격": {
 "fr": "émotion profonde",
@@ -9855,17 +11714,6 @@
 "sens": 5,
 "unite": "N6-04"
 },
-"깨닫다": {
-"fr": "se rendre compte",
-"pron": "깨닫따",
-"niveau": "중급",
-"origine": null,
-"pos": "동사",
-"dico_fr": "réaliser, comprendre, percer",
-"dico_def": "Se rendre compte de la nature d'une chose, d'une raison, d'une vérité, etc. suite à une réflexion profonde.",
-"sens": 1,
-"unite": "N6-04"
-},
 "불구하다": {
 "fr": "malgré, en dépit de",
 "pron": "불구하다",
@@ -9943,17 +11791,6 @@
 "sens": 1,
 "unite": "N6-04"
 },
-"입장": {
-"fr": "position, point de vue",
-"pron": "입짱",
-"niveau": "중급",
-"origine": "立場",
-"pos": "명사",
-"dico_fr": "position, place",
-"dico_def": "Circonstance ou situation devant laquelle on se trouve à un moment donné ; attitude que l’on prend dans une telle situation.",
-"sens": 2,
-"unite": "N6-04"
-},
 "반박": {
 "fr": "réfutation",
 "pron": "반박",
@@ -9966,7 +11803,7 @@
 "unite": "N6-04"
 },
 "견해": {
-"fr": "opinion, avis",
+"fr": "opinion, point de vue",
 "pron": "견해",
 "niveau": "중급",
 "origine": "見解",
@@ -9974,7 +11811,7 @@
 "dico_fr": "avis, opinion, point de vue, jugement, vue",
 "dico_def": "Opinion ou pensée que chacun a au sujet d’une personne, d’une chose ou d’un phénomène.",
 "sens": 1,
-"unite": "N6-04"
+"unite": "N6-07"
 },
 "시사점": {
 "fr": "suggestion, enseignement implicite",
@@ -10031,17 +11868,6 @@
 "sens": 1,
 "unite": "N6-05"
 },
-"얼굴": {
-"fr": "visage",
-"pron": "얼굴",
-"niveau": "초급",
-"origine": null,
-"pos": "명사",
-"dico_fr": "visage",
-"dico_def": "Partie antérieure de la tête, où se trouvent les yeux, le nez et la bouche",
-"sens": 1,
-"unite": "N6-05"
-},
 "두껍다": {
 "fr": "épais",
 "pron": "두껍따",
@@ -10083,17 +11909,6 @@
 "pos": "명사",
 "dico_fr": "une tournée",
 "dico_def": "Action d'inviter autrui pour un repas ou un verre de manière copieuse.",
-"sens": 1,
-"unite": "N6-05"
-},
-"붙다": {
-"fr": "réussir (un examen), coller",
-"pron": "붇따",
-"niveau": "초급",
-"origine": null,
-"pos": "동사",
-"dico_fr": "se coller, adhérer",
-"dico_def": "Être en contact avec quelque chose et ne pas s'en détacher.",
 "sens": 1,
 "unite": "N6-05"
 },
@@ -10185,17 +12000,6 @@
 "sens": 1,
 "unite": "N6-06"
 },
-"교훈": {
-"fr": "leçon, enseignement",
-"pron": "교훈",
-"niveau": "중급",
-"origine": "敎訓",
-"pos": "명사",
-"dico_fr": "leçon, instruction",
-"dico_def": "Action d’enseigner ce qui peut être utile ou guider à avoir un bon comportement.",
-"sens": 2,
-"unite": "N6-06"
-},
 "지혜": {
 "fr": "sagesse",
 "pron": "지혜/지헤",
@@ -10250,5 +12054,797 @@
 "dico_def": "Soulever quelque chose à deux par chaque extrémité.",
 "sens": 1,
 "unite": "N6-06"
+},
+"돌이키다": {
+"fr": "revenir sur, repenser à",
+"pron": "도리키다",
+"niveau": "고급",
+"origine": null,
+"pos": "동사",
+"dico_fr": "changer d'avis, se raviser, revenir sur",
+"dico_def": "Penser à une chose autrement en changeant une décision ferme.",
+"sens": 4,
+"unite": "N6-07"
+},
+"바라다": {
+"fr": "souhaiter",
+"pron": "바라다",
+"niveau": "초급",
+"origine": null,
+"pos": "동사",
+"dico_fr": "souhaiter, vouloir, désirer, espérer",
+"dico_def": "Souhaiter que quelque chose se produise, comme on y pensait ou comme on l'espérait.",
+"sens": 1,
+"unite": "N6-07"
+},
+"단언하다": {
+"fr": "affirmer",
+"pron": "다넌하다",
+"niveau": "없음",
+"origine": "斷言하다",
+"pos": "동사",
+"dico_fr": "affirmer, attester de, déclarer",
+"dico_def": "Parler avec assurance, sans aucune hésitation, en étant sûr de ce dont on parle.",
+"sens": 1,
+"unite": "N6-07"
+},
+"회상": {
+"fr": "souvenir, retour sur le passé",
+"pron": "회상/훼상",
+"niveau": "고급",
+"origine": "回想",
+"pos": "명사",
+"dico_fr": "réflexion, souvenir, mémoire",
+"dico_def": "Fait de repenser à une chose passée ; une telle pensée.",
+"sens": 1,
+"unite": "N6-07"
+},
+"진정하다": {
+"fr": "sincère, vrai",
+"pron": "진정하다",
+"niveau": "중급",
+"origine": "眞正하다",
+"pos": "형용사",
+"dico_fr": "sincère, vrai",
+"dico_def": "Qui est juste, sans mensonge.",
+"sens": 4,
+"unite": "N6-07"
+},
+"평화": {
+"fr": "paix",
+"pron": "평화",
+"niveau": "중급",
+"origine": "平和",
+"pos": "명사",
+"dico_fr": "paix, tranquilité, sérénité",
+"dico_def": "Caractère de ce qui est calme et harmonieux, sans soucis ni incident.",
+"sens": 1,
+"unite": "N6-07"
+},
+"성찰": {
+"fr": "introspection",
+"pron": "성찰",
+"niveau": "없음",
+"origine": "省察",
+"pos": "명사",
+"dico_fr": "examen de conscience, introspection, réflexion, réflexion sur soi-même",
+"dico_def": "Action de réfléchir sur soi-même.",
+"sens": 1,
+"unite": "N6-07"
+},
+"회고": {
+"fr": "rétrospective, souvenir",
+"pron": "회고/훼고",
+"niveau": "없음",
+"origine": "回顧",
+"pos": "명사",
+"dico_fr": "rétrospection, souvenir, mémoire",
+"dico_def": "Fait de repenser à une chose passée.",
+"sens": 1,
+"unite": "N6-07"
+},
+"소망": {
+"fr": "souhait, vœu",
+"pron": "소망",
+"niveau": "없음",
+"origine": "所望",
+"pos": "명사",
+"dico_fr": "objet du désir, chose espérée, chose convoitée, espoir, espérance, désir, souhait, aspiration, attente",
+"dico_def": "Fait d'espérer quelque chose ; chose espérée.",
+"sens": 1,
+"unite": "N6-07"
+},
+"통찰": {
+"fr": "perspicacité",
+"pron": "통찰",
+"niveau": "없음",
+"origine": "洞察",
+"pos": "명사",
+"dico_fr": "perspicacité, discernement, perception",
+"dico_def": "Fait de voir exactement et avec lucidité à travers un objet, un phénomène, etc.",
+"sens": 1,
+"unite": "N6-07"
+},
+"사색": {
+"fr": "méditation, réflexion",
+"pron": "사색",
+"niveau": "고급",
+"origine": "思索",
+"pos": "명사",
+"dico_fr": "pensée, méditation, réflexion profonde, contemplation",
+"dico_def": "Action de se livrer à une profonde réflexion sur un sujet afin d'en trouver le sens fondamental.",
+"sens": 2,
+"unite": "N6-07"
+},
+"풀리다": {
+"fr": "se calmer, se dissiper",
+"pron": "풀리다",
+"niveau": "중급",
+"origine": null,
+"pos": "동사",
+"dico_fr": "se calmer",
+"dico_def": "(Mauvais sentiment, humeur, etc.) Disparaître.",
+"sens": 2,
+"unite": "N6-08"
+},
+"아쉬움": {
+"fr": "regret",
+"pron": "아쉬움",
+"niveau": "중급",
+"origine": null,
+"pos": "명사",
+"dico_fr": "regret",
+"dico_def": "Sentiment de manque et de peine éprouvé parce que ce qu'on espérait ne s'est pas réalisé comme on le voulait.",
+"sens": 1,
+"unite": "N6-08"
+},
+"현실": {
+"fr": "réalité",
+"pron": "현실",
+"niveau": "중급",
+"origine": "現實",
+"pos": "명사",
+"dico_fr": "réalité, réel",
+"dico_def": "Fait ou état réel.",
+"sens": 1,
+"unite": "N6-08"
+},
+"간절하다": {
+"fr": "ardent, fervent",
+"pron": "간절하다",
+"niveau": "중급",
+"origine": "懇切하다",
+"pos": "형용사",
+"dico_fr": "ardent, pressant",
+"dico_def": "Qui est pressant dans l'effort ou le cœur, avec passion.",
+"sens": 1,
+"unite": "N6-08"
+},
+"소원": {
+"fr": "souhait, vœu",
+"pron": "소원",
+"niveau": "중급",
+"origine": "所願",
+"pos": "명사",
+"dico_fr": "voeu, souhait, désir",
+"dico_def": "Fait d'espérer l'accomplissement de quelque chose ; cette chose espérée.",
+"sens": 1,
+"unite": "N6-08"
+},
+"그리움": {
+"fr": "nostalgie, manque",
+"pron": "그리움",
+"niveau": "중급",
+"origine": null,
+"pos": "명사",
+"dico_fr": "nostalgie, regret, affection, attachement",
+"dico_def": "Désir douloureux de revoir quelque chose ou quelqu'un qui lui manque.",
+"sens": 1,
+"unite": "N6-08"
+},
+"외면하다": {
+"fr": "détourner le regard, ignorer",
+"pron": "외면하다/웨면하다",
+"niveau": "없음",
+"origine": "外面하다",
+"pos": "동사",
+"dico_fr": "se détourner, ignorer",
+"dico_def": "Tourner le visage pour de ne pas se retrouver face à quelqu'un.",
+"sens": 1,
+"unite": "N6-08"
+},
+"원망": {
+"fr": "rancune, reproche",
+"pron": "원망",
+"niveau": "고급",
+"origine": "怨望",
+"pos": "명사",
+"dico_fr": "rancoeur, ressentiment, haine",
+"dico_def": "Action de garder de la rancune envers quelqu'un ou de le détester, parce que quelque chose ne plaît pas.",
+"sens": 1,
+"unite": "N6-08"
+},
+"체념": {
+"fr": "résignation",
+"pron": "체념",
+"niveau": "고급",
+"origine": "諦念",
+"pos": "명사",
+"dico_fr": "résignation",
+"dico_def": "Renonciation totale sans attente ou espoir.",
+"sens": 1,
+"unite": "N6-08"
+},
+"희망": {
+"fr": "espoir",
+"pron": "히망",
+"niveau": "초급",
+"origine": "希望",
+"pos": "명사",
+"dico_fr": "espoir, espérance, désir, souhait, vœu",
+"dico_def": "Fait d'espérer quelque chose concernant l'avenir avec une certaine attente.",
+"sens": 1,
+"unite": "N6-08"
+},
+"깨다": {
+"fr": "se réveiller",
+"pron": "깨다",
+"niveau": "초급",
+"origine": null,
+"pos": "동사",
+"dico_fr": "se réveiller, se reprendre, se ranimer, revenir à soi, reprendre ses esprits, reprendre conscience, se dégriser, se dessoûler, se désenivrer",
+"dico_def": "Retrouver toute sa lucidité après un moment d'ivresse.",
+"sens": 1,
+"unite": "N6-09"
+},
+"들키다": {
+"fr": "être découvert",
+"pron": "들키다",
+"niveau": "중급",
+"origine": null,
+"pos": "동사",
+"dico_fr": "être trouvé, être découvert, être vu, être pris, être surpris, se faire repérer, être révélé, être dévoilé",
+"dico_def": "(Quelque chose que l'on voulait cacher) Se faire connaître.",
+"sens": 1,
+"unite": "N6-09"
+},
+"몰래": {
+"fr": "en cachette",
+"pron": "몰래",
+"niveau": "중급",
+"origine": null,
+"pos": "부사",
+"dico_fr": "secrètement, en cachette",
+"dico_def": "À l'insu de quelqu'un.",
+"sens": 1,
+"unite": "N6-09"
+},
+"조심스럽다": {
+"fr": "prudent, délicat",
+"pron": "조심스럽따",
+"niveau": "중급",
+"origine": "操心스럽다",
+"pos": "형용사",
+"dico_fr": "prudent, circonspect",
+"dico_def": "Qui fait attention à ses propos, à son comportement, etc., pour ne pas commettre une faute ou une erreur.",
+"sens": 1,
+"unite": "N6-09"
+},
+"행여": {
+"fr": "par hasard, si jamais",
+"pron": "행여",
+"niveau": "없음",
+"origine": "幸여",
+"pos": "부사",
+"dico_fr": "par hasard, par un coup de chance",
+"dico_def": "Au cas où.",
+"sens": 1,
+"unite": "N6-09"
+},
+"애지중지": {
+"fr": "en le considérant comme précieux",
+"pron": "애지중지",
+"niveau": "고급",
+"origine": "愛之重之",
+"pos": "부사",
+"dico_fr": "(Pas d'expression équivalente)",
+"dico_def": "Idéophone indiquant la manière dont on aime beaucoup quelqu'un ou quelque chose et le considère comme important.",
+"sens": 1,
+"unite": "N6-09"
+},
+"보살피다": {
+"fr": "prendre soin de",
+"pron": "보살피다",
+"niveau": "중급",
+"origine": null,
+"pos": "동사",
+"dico_fr": "soigner, s'occuper de, se charger de, avoir en charge, prendre soin de",
+"dico_def": "Aider en protégeant avec soin.",
+"sens": 1,
+"unite": "N6-09"
+},
+"염려": {
+"fr": "inquiétude",
+"pron": "염녀",
+"niveau": "고급",
+"origine": "念慮",
+"pos": "명사",
+"dico_fr": "préoccupation, souci, anxiété",
+"dico_def": "Fait de s’inquiéter de ce qui va se passer à l’avenir et d’en être angoissé ; cette inquiétude.",
+"sens": 1,
+"unite": "N6-09"
+},
+"안절부절": {
+"fr": "dans l'inquiétude, impatient",
+"pron": "안절부절",
+"niveau": "고급",
+"origine": null,
+"pos": "부사",
+"dico_fr": "(Pas d'expression équivalente)",
+"dico_def": "Idéophone indiquant la manière dont quelqu'un ne sait pas quoi faire ou panique étant impatient et inquiet.",
+"sens": 1,
+"unite": "N6-09"
+},
+"정성": {
+"fr": "dévouement, soin sincère",
+"pron": "정성",
+"niveau": "중급",
+"origine": "精誠",
+"pos": "명사",
+"dico_fr": "dévouement, dévotion, soin, sincérité",
+"dico_def": "Cœur pur et dévoué d'une personne qui s'efforce à placer toute son attention à quelque chose.",
+"sens": 1,
+"unite": "N6-09"
+},
+"노심초사": {
+"fr": "anxiété, se ronger les sangs",
+"pron": "노심초사",
+"niveau": "없음",
+"origine": "勞心焦思",
+"pos": "명사",
+"dico_fr": "(n.) action de s’inquiéter, action de se faire du soucis, action de se tourmenter, action de se tracasser",
+"dico_def": "Action d'être très inquiet et d'avoir beaucoup de tracas (au sujet de quelque chose) à en donner de l'anxiété.",
+"sens": 1,
+"unite": "N6-09"
+},
+"메모하다": {
+"fr": "prendre des notes",
+"pron": null,
+"niveau": "없음",
+"origine": "memo하다",
+"pos": "동사",
+"dico_fr": "prendre des notes",
+"dico_def": "Écrire un contenu de manière simple pour ne pas l'oublier ou pour le transférer à quelqu'un d'autre.",
+"sens": 1,
+"unite": "N6-09"
+},
+"재빨리": {
+"fr": "rapidement",
+"pron": "재빨리",
+"niveau": "중급",
+"origine": null,
+"pos": "부사",
+"dico_fr": "rapidement",
+"dico_def": "(Mouvement) D'une manière agile et rapide.",
+"sens": 1,
+"unite": "N6-09"
+},
+"정신없다": {
+"fr": "débordé, étourdi",
+"pron": "정시넙따",
+"niveau": "중급",
+"origine": "精神없다",
+"pos": "형용사",
+"dico_fr": "très actif, occupé, débordé",
+"dico_def": "Très occupé.",
+"sens": 2,
+"unite": "N6-10"
+},
+"육아": {
+"fr": "éducation des enfants",
+"pron": "유가",
+"niveau": "고급",
+"origine": "育兒",
+"pos": "명사",
+"dico_fr": "soins maternels, soins au nourrisson",
+"dico_def": "Fait de prendre soin d'un petit enfant et de l'élever.",
+"sens": 1,
+"unite": "N6-10"
+},
+"맞벌이": {
+"fr": "double revenu (couple)",
+"pron": "맏뻐리",
+"niveau": "중급",
+"origine": null,
+"pos": "명사",
+"dico_fr": "ménage à double salaire, ménage à double revenu",
+"dico_def": "Fait que la femme et le mari travaillent tous les deux  dans un ménage ; ce travail.",
+"sens": 1,
+"unite": "N6-10"
+},
+"살림": {
+"fr": "tenue du foyer",
+"pron": "살림",
+"niveau": "중급",
+"origine": null,
+"pos": "명사",
+"dico_fr": "ménage",
+"dico_def": "Fait de vivre en fondant un foyer.",
+"sens": 1,
+"unite": "N6-10"
+},
+"병행": {
+"fr": "conduite en parallèle",
+"pron": "병행",
+"niveau": "고급",
+"origine": "竝行",
+"pos": "명사",
+"dico_fr": "(Pas d'expression équivalente)",
+"dico_def": "Fait de conduire deux ou plusieurs choses en même temps.",
+"sens": 1,
+"unite": "N6-10"
+},
+"쫓기다": {
+"fr": "être pressé, poursuivi",
+"pron": "쫃끼다",
+"niveau": "중급",
+"origine": null,
+"pos": "동사",
+"dico_fr": "être traqué, être poursuivi",
+"dico_def": "Être pourchassé par quelque chose qui court derrière avec hâte ou qui suit les traces.",
+"sens": 1,
+"unite": "N6-10"
+},
+"녹초": {
+"fr": "épuisement, fatigue extrême",
+"pron": "녹초",
+"niveau": "고급",
+"origine": null,
+"pos": "명사",
+"dico_fr": "épuisement, exténuation, fatigue extrême",
+"dico_def": "État d’une personne totalement épuisée qui n'a ni force ni vigueur.",
+"sens": 1,
+"unite": "N6-10"
+},
+"휴식": {
+"fr": "repos",
+"pron": "휴식",
+"niveau": "중급",
+"origine": "休息",
+"pos": "명사",
+"dico_fr": "pause, repos",
+"dico_def": "Action d'arrêter le travail et de se reposer momentanément.",
+"sens": 1,
+"unite": "N6-10"
+},
+"일상": {
+"fr": "quotidien",
+"pron": "일쌍",
+"niveau": "중급",
+"origine": "日常",
+"pos": "명사",
+"dico_fr": "quotidien, vie quotidienne, routine",
+"dico_def": "Vie ordinaire qui se répète tous les jours.",
+"sens": 1,
+"unite": "N6-10"
+},
+"분주하다": {
+"fr": "débordé, très occupé",
+"pron": "분주하다",
+"niveau": "고급",
+"origine": "奔走하다",
+"pos": "형용사",
+"dico_fr": "être pris, être très chargé, être surchargé, être débordé, être dépassé",
+"dico_def": "Qui est très occupé au point de ne pas avoir tous ses esprits.",
+"sens": 2,
+"unite": "N6-10"
+},
+"허덕이다": {
+"fr": "peiner, haleter",
+"pron": "허더기다",
+"niveau": "없음",
+"origine": null,
+"pos": "동사",
+"dico_fr": "haleter, suffoquer, peiner, souffrir",
+"dico_def": "Se donner beaucoup de mal à faire quelque chose par manque de force.",
+"sens": 1,
+"unite": "N6-10"
+},
+"저렴하다": {
+"fr": "bon marché",
+"pron": "저렴하다",
+"niveau": "중급",
+"origine": "低廉하다",
+"pos": "형용사",
+"dico_fr": "bon marché, peu coûteux, d'un prix modéré",
+"dico_def": "(Prix) Qui n'est pas cher.",
+"sens": 1,
+"unite": "N6-11"
+},
+"이롭다": {
+"fr": "bénéfique",
+"pron": "이롭따",
+"niveau": "중급",
+"origine": "利롭다",
+"pos": "형용사",
+"dico_fr": "bénéfique, utile, profitable",
+"dico_def": "Qui constitue une aide ou un avantage.",
+"sens": 1,
+"unite": "N6-11"
+},
+"해롭다": {
+"fr": "nuisible",
+"pron": "해롭따",
+"niveau": "중급",
+"origine": "害롭다",
+"pos": "형용사",
+"dico_fr": "nuisible, mauvais pour la santé",
+"dico_def": "Qui n'est pas bénéfique mais nocif.",
+"sens": 1,
+"unite": "N6-11"
+},
+"지나치다": {
+"fr": "excessif",
+"pron": "지나치다",
+"niveau": "중급",
+"origine": null,
+"pos": "형용사",
+"dico_fr": "démesuré, exagéré",
+"dico_def": "(Degré) Qui est excessif par rapport à un critère donné.",
+"sens": 3,
+"unite": "N6-11"
+},
+"효율": {
+"fr": "efficacité",
+"pron": "효율",
+"niveau": "고급",
+"origine": "效率",
+"pos": "명사",
+"dico_fr": "efficacité, rendement",
+"dico_def": "Rapport entre les efforts ou la force consacrés et ses résultats.",
+"sens": 1,
+"unite": "N6-11"
+},
+"대중교통": {
+"fr": "transports en commun",
+"pron": "대중교통",
+"niveau": "중급",
+"origine": "大衆交通",
+"pos": "명사",
+"dico_fr": "transport en commun, transport collectif",
+"dico_def": "Moyens de transport comme le bus ou le métro qu'utilisent plusieurs personnes en même temps ; moyen d'utiliser ce transport.",
+"sens": 1,
+"unite": "N6-11"
+},
+"설득하다": {
+"fr": "persuader",
+"pron": "설뜨카다",
+"niveau": "없음",
+"origine": "說得하다",
+"pos": "동사",
+"dico_fr": "persuader quelqu'un, convaincre quelqu'un",
+"dico_def": "Bien expliquer ou donner de bons conseils à quelqu'un pour qu'il suive cette parole ou qu'il la comprenne.",
+"sens": 1,
+"unite": "N6-11"
+},
+"논지": {
+"fr": "thèse, argument principal",
+"pron": "논지",
+"niveau": "없음",
+"origine": "論旨",
+"pos": "명사",
+"dico_fr": "sujet d’argumentation, intention, propos, argument",
+"dico_def": "Objectif ou intention d’un texte écrit ou parlé qui devient la base d'un sujet de discussion.",
+"sens": 1,
+"unite": "N6-11"
+},
+"뒷받침하다": {
+"fr": "étayer, soutenir",
+"pron": "뒤빧침하다/뒫빧침하다",
+"niveau": "없음",
+"origine": null,
+"pos": "동사",
+"dico_fr": "patronner, appuyer, soutenir, épauler, donner son appui à, pistonner, étayer, encourager",
+"dico_def": "Soutenir et accorder l'appui à quelque chose.",
+"sens": 1,
+"unite": "N6-11"
+},
+"사례": {
+"fr": "exemple, cas",
+"pron": "사례",
+"niveau": "중급",
+"origine": "事例",
+"pos": "명사",
+"dico_fr": "précédent, cas, exemple, modèle",
+"dico_def": "Exemple d'un événement réellement survenu dans le passé. .",
+"sens": 1,
+"unite": "N6-11"
+},
+"객관적": {
+"fr": "objectif",
+"pron": "객꽌적",
+"niveau": "중급",
+"origine": "客觀的",
+"pos": "명사",
+"dico_fr": "(n.) objectif",
+"dico_def": "Fait de voir ou penser un fait ou une chose tel(le) qu’il(elle) est, sans engager ses opinions ni ses sentiments personnels.",
+"sens": 1,
+"unite": "N6-11"
+},
+"타당성": {
+"fr": "pertinence, validité",
+"pron": "타당썽",
+"niveau": "고급",
+"origine": "妥當性",
+"pos": "명사",
+"dico_fr": "pertinence, validité",
+"dico_def": "Nature correcte correspondant à la logique des choses.",
+"sens": 1,
+"unite": "N6-11"
+},
+"문단": {
+"fr": "paragraphe",
+"pron": "문단",
+"niveau": "고급",
+"origine": "文段",
+"pos": "명사",
+"dico_fr": "paragraphe",
+"dico_def": "Unité de regroupement de phrases qui expriment une idée complète dans un texte.",
+"sens": 1,
+"unite": "N6-12"
+},
+"논증": {
+"fr": "argumentation",
+"pron": "논증",
+"niveau": "고급",
+"origine": "論證",
+"pos": "명사",
+"dico_fr": "démonstration, argumentation",
+"dico_def": "Action de prouver qu’un argument ou une théorie est juste ou non, en le démontrant avec un raisonnement logique ; le fondement ou la cause de celle-ci.",
+"sens": 1,
+"unite": "N6-12"
+},
+"마무리": {
+"fr": "conclusion, finition",
+"pron": "마무리",
+"niveau": "중급",
+"origine": null,
+"pos": "명사",
+"dico_fr": "finition, finissage, accomplissement",
+"dico_def": "Fait de terminer un travail ou une tâche.",
+"sens": 1,
+"unite": "N6-12"
+},
+"논술": {
+"fr": "dissertation",
+"pron": "논술",
+"niveau": "고급",
+"origine": "論述",
+"pos": "명사",
+"dico_fr": "dissertation, exposé",
+"dico_def": "Action de présenter une opinion sur un sujet, à l'oral ou à l'écrit, de manière logique.",
+"sens": 1,
+"unite": "N6-12"
+},
+"제시하다": {
+"fr": "présenter",
+"pron": "제시하다",
+"niveau": "없음",
+"origine": "提示하다",
+"pos": "동사",
+"dico_fr": "présenter",
+"dico_def": "Montrer un objet en vue d'une inspection ou d'une enquête.",
+"sens": 2,
+"unite": "N6-12"
+},
+"예시": {
+"fr": "exemple",
+"pron": "예시",
+"niveau": "고급",
+"origine": "例示",
+"pos": "명사",
+"dico_fr": "présentation d’un exemple",
+"dico_def": "Fait de montrer quelque chose comme modèle.",
+"sens": 1,
+"unite": "N6-12"
+},
+"반론": {
+"fr": "objection",
+"pron": "발론",
+"niveau": "고급",
+"origine": "反論",
+"pos": "명사",
+"dico_fr": "réfutation, contradiction, objection",
+"dico_def": "Action de réfuter l'argument ou l'opinion de quelqu'un d'autre ; cet argument contraire.",
+"sens": 1,
+"unite": "N6-12"
+},
+"요약하다": {
+"fr": "résumer",
+"pron": "요야카다",
+"niveau": "없음",
+"origine": "要約하다",
+"pos": "동사",
+"dico_fr": "résumer",
+"dico_def": "Choisir l'essentiel dans des propos ou dans un texte et le(s) rendre plus court(s).",
+"sens": 1,
+"unite": "N6-12"
+},
+"강조하다": {
+"fr": "mettre l'accent sur, insister",
+"pron": "강조하다",
+"niveau": "없음",
+"origine": "強調하다",
+"pos": "동사",
+"dico_fr": "insister, solliciter, mettre l'accent sur, mettre en valeur",
+"dico_def": "Mettre fortement en exergue ou en avant quelque chose.",
+"sens": 1,
+"unite": "N6-12"
+},
+"제기하다": {
+"fr": "soulever (une question)",
+"pron": "제기하다",
+"niveau": "없음",
+"origine": "提起하다",
+"pos": "동사",
+"dico_fr": "proposer, soulever, évoquer",
+"dico_def": "Présenter une opinion ou un problème.",
+"sens": 1,
+"unite": "N6-12"
+},
+"관심사": {
+"fr": "sujet d'intérêt",
+"pron": "관심사",
+"niveau": "중급",
+"origine": "關心事",
+"pos": "명사",
+"dico_fr": "préoccupation",
+"dico_def": "Objet qui éveille l’intérêt.",
+"sens": 1,
+"unite": "N6-12"
+},
+"서술하다": {
+"fr": "décrire, exposer",
+"pron": "서술하다",
+"niveau": "없음",
+"origine": "敍述하다",
+"pos": "동사",
+"dico_fr": "décrire, relater, narrer, raconter",
+"dico_def": "Présenter un fait, un événement, une pensée, etc., à l'oral ou à l'écrit, de manière logique et dans un certain ordre.",
+"sens": 1,
+"unite": "N6-12"
+},
+"우려": {
+"fr": "inquiétude, crainte",
+"pron": "우려",
+"niveau": "중급",
+"origine": "憂慮",
+"pos": "명사",
+"dico_fr": "anxiété",
+"dico_def": "Fait de s'inquiéter ou de se soucier de quelque chose ; cette inquiétude ou ce souci.",
+"sens": 1,
+"unite": "N6-12"
+},
+"구체적": {
+"fr": "concret",
+"pron": "구체적",
+"niveau": "중급",
+"origine": "具體的",
+"pos": "명사",
+"dico_fr": "(n.) concret",
+"dico_def": "Ce qui a une forme visible.",
+"sens": 1,
+"unite": "N6-12"
+},
+"논리적": {
+"fr": "logique",
+"pron": "놀리적",
+"niveau": "중급",
+"origine": "論理的",
+"pos": "명사",
+"dico_fr": "logique, rationnel, cohérent",
+"dico_def": "Ce qui est conforme à la logique.",
+"sens": 1,
+"unite": "N6-12"
 }
 }

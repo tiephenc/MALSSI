@@ -8,7 +8,7 @@ const out = path.join(root, 'build');
 fs.rmSync(out, { recursive: true, force: true }); fs.mkdirSync(out);
 const js = await build({ entryPoints: [path.join(root, 'src/app.js')], bundle: true, format: 'esm', minify: true, target: ['es2020'], write: false, legalComments: 'none' });
 const jsCode = js.outputFiles[0].contents;
-const css = await build({ entryPoints: [path.join(root, 'css/malssi.css')], bundle: true, minify: true, write: false, loader: { '.css': 'css' } });
+const css = await build({ entryPoints: [path.join(root, 'css/index.css')], bundle: true, minify: true, write: false, loader: { '.css': 'css' } });
 const cssCode = css.outputFiles[0].contents;
 const h = crypto.createHash('sha1').update(jsCode).update(cssCode).digest('hex').slice(0, 10);
 fs.writeFileSync(path.join(out, `m-${h}.js`), jsCode);

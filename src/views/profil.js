@@ -7,7 +7,7 @@ import { koVoices, hasVoice, speak } from '../tts.js';
 import { stats } from '../content.js';
 import { magpie } from '../magpie.js';
 
-export function applyTheme() { const t = S.set.theme; if (t === 'auto') document.documentElement.removeAttribute('data-theme'); else document.documentElement.dataset.theme = t; }
+export function applyTheme() { const t = S.set.theme === 'light' ? 'light' : 'dark'; document.documentElement.dataset.theme = t; }
 
 function accountHtml() {
   if (!sync.enabled) return '';
@@ -31,7 +31,7 @@ export function viewProfil(el, rerender) {
       <label class="field">Nouveaux mots par jour<input type="number" id="pnd" min="0" max="100" value="${S.set.nd}"></label>
       <label class="field">Sens des cartes<select id="pdir"><option value="kf" ${S.set.dir === 'kf' ? 'selected' : ''}>Coréen → français</option><option value="fk" ${S.set.dir === 'fk' ? 'selected' : ''}>Français → coréen</option></select></label>
       <label class="row"><input type="checkbox" id="prr" ${S.set.rr ? 'checked' : ''}> Afficher la romanisation (utile au début ; à désactiver dès que possible)</label>
-      <label class="field">Thème<select id="pth"><option value="auto">Comme l'appareil</option><option value="light" ${S.set.theme === 'light' ? 'selected' : ''}>Jour</option><option value="dark" ${S.set.theme === 'dark' ? 'selected' : ''}>Nuit</option></select></label>
+      <label class="field">Ambiance<select id="pth"><option value="auto">Nuit étoilée</option><option value="light" ${S.set.theme === 'light' ? 'selected' : ''}>Coucher de soleil</option></select></label>
       <label class="field">Voix coréenne${hasVoice() ? `<select id="pvo">${voices.map(v => `<option ${v.name === S.set.voice ? 'selected' : ''}>${esc(v.name)}</option>`).join('')}</select>` : '<span class="small">Aucune voix coréenne n\'est installée dans ce navigateur.</span>'}</label>
       ${hasVoice() ? '<div><button class="btn sm" id="ptest">Tester : 안녕하세요</button></div>' : ''}
     </div></section>

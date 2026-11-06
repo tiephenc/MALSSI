@@ -6,7 +6,7 @@ import { split, HORIZ, MIXED } from '../hangul.js';
 import { playBtn } from '../tts.js';
 import { magpie } from '../magpie.js';
 import { DAY, startOfDay } from '../fsrs.js';
-import { inkScene } from '../scene.js';
+import { cityScene } from '../city.js';
 import { onLeave } from '../ui.js';
 
 // Syllabe du jour : tirée des mots déjà rencontrés (ou de la première unité), stable sur la journée.
@@ -64,6 +64,6 @@ export function viewToday(el) {
         <p class="small muted" style="margin:0 0 10px">${st.total} au total · ${st.mature} solides (intervalle de 3 semaines ou plus)</p>
         <div class="bar" aria-hidden="true"><i style="width:${st.total ? Math.round(st.mature / st.total * 100) : 0}%"></i></div></div>
     </aside></div>`;
-  onLeave(inkScene($('.scene-bg'), { petals: 18, moonX: 0.86, moonY: 0.3, scale: 0.8 }));
+  { const sc = cityScene($('.scene-bg'), { small: true, moonX: 0.86, moonY: 0.32 }); onLeave(() => sc.stop()); }
   requestAnimationFrame(() => setTimeout(() => { const b = $('#blk'); if (b) { b.classList.remove('split'); setTimeout(() => b.classList.add('join'), 900); } }, 350));
 }

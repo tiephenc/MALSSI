@@ -2,10 +2,10 @@
 
 Site gratuit pour apprendre le coréen en français, du hangeul au TOPIK II (6급). Il reprend le moteur de KOTONOHA :
 
-- un parcours de 70 unités : le hangeul (10 unités), puis les niveaux 1급 à 6급 (60 unités, 137 points de grammaire) ;
+- un parcours de 94 unités : le hangeul (10 unités), puis les niveaux 1급 à 6급 (84 unités, 185 points de grammaire, 1 168 mots vérifiés) ;
 - des listes de vocabulaire par niveau et un dictionnaire intégré (≈20 000 sens du 한국어기초사전) ;
 - des épreuves blanches au format du TOPIK I et II et un atelier d'écriture (questions 51 à 54) ;
-- une page d'accueil animée ;
+- une identité visuelle « Séoul la nuit » : onglets en enseignes néon au sommet des tours, page d'accueil animée (ville en canvas, prisme qui décompose la lumière, ambiance sonore facultative) ;
 - la révision espacée FSRS-4.5, avec une séance du jour ;
 - un vocabulaire vérifié dans le 한국어기초사전 ;
 - l'import de paquets Anki (.apkg), lus sur l'appareil ;
